@@ -29,6 +29,10 @@
 		031BF5AF1CE37B4800DD028A /* KashmirTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KashmirTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		031BF5B41CE37B4800DD028A /* KashmirTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KashmirTests.swift; sourceTree = "<group>"; };
 		031BF5B61CE37B4800DD028A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		031BF5C41CE37EDE00DD028A /* Kashmir.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kashmir.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		031BF5E01CE37FA700DD028A /* Kashmir.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kashmir.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		031BF5ED1CE3800F00DD028A /* Kashmir.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kashmir.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		031BF5FA1CE3805900DD028A /* Kashmir.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kashmir.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +48,34 @@
 			buildActionMask = 2147483647;
 			files = (
 				031BF5B01CE37B4800DD028A /* Kashmir.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		031BF5C01CE37EDE00DD028A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		031BF5DC1CE37FA700DD028A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		031BF5E91CE3800F00DD028A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		031BF5F61CE3805900DD028A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +96,10 @@
 			children = (
 				031BF5A51CE37B4800DD028A /* Kashmir.framework */,
 				031BF5AF1CE37B4800DD028A /* KashmirTests.xctest */,
+				031BF5C41CE37EDE00DD028A /* Kashmir.framework */,
+				031BF5E01CE37FA700DD028A /* Kashmir.framework */,
+				031BF5ED1CE3800F00DD028A /* Kashmir.framework */,
+				031BF5FA1CE3805900DD028A /* Kashmir.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,6 +130,34 @@
 			buildActionMask = 2147483647;
 			files = (
 				031BF5A91CE37B4800DD028A /* Kashmir.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		031BF5C11CE37EDE00DD028A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		031BF5DD1CE37FA700DD028A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		031BF5EA1CE3800F00DD028A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		031BF5F71CE3805900DD028A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +200,78 @@
 			productReference = 031BF5AF1CE37B4800DD028A /* KashmirTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		031BF5C31CE37EDE00DD028A /* Kashmir OSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 031BF5D51CE37EDE00DD028A /* Build configuration list for PBXNativeTarget "Kashmir OSX" */;
+			buildPhases = (
+				031BF5BF1CE37EDE00DD028A /* Sources */,
+				031BF5C01CE37EDE00DD028A /* Frameworks */,
+				031BF5C11CE37EDE00DD028A /* Headers */,
+				031BF5C21CE37EDE00DD028A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Kashmir OSX";
+			productName = "Kashmir OSX";
+			productReference = 031BF5C41CE37EDE00DD028A /* Kashmir.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		031BF5DF1CE37FA700DD028A /* Kashmir iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 031BF5E51CE37FA700DD028A /* Build configuration list for PBXNativeTarget "Kashmir iOS" */;
+			buildPhases = (
+				031BF5DB1CE37FA700DD028A /* Sources */,
+				031BF5DC1CE37FA700DD028A /* Frameworks */,
+				031BF5DD1CE37FA700DD028A /* Headers */,
+				031BF5DE1CE37FA700DD028A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Kashmir iOS";
+			productName = "Kashmir iOS";
+			productReference = 031BF5E01CE37FA700DD028A /* Kashmir.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		031BF5EC1CE3800F00DD028A /* Kashmir tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 031BF5F21CE3800F00DD028A /* Build configuration list for PBXNativeTarget "Kashmir tvOS" */;
+			buildPhases = (
+				031BF5E81CE3800F00DD028A /* Sources */,
+				031BF5E91CE3800F00DD028A /* Frameworks */,
+				031BF5EA1CE3800F00DD028A /* Headers */,
+				031BF5EB1CE3800F00DD028A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Kashmir tvOS";
+			productName = "Kashmir tvOS";
+			productReference = 031BF5ED1CE3800F00DD028A /* Kashmir.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		031BF5F91CE3805900DD028A /* Kashmir watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 031BF5FF1CE3805900DD028A /* Build configuration list for PBXNativeTarget "Kashmir watchOS" */;
+			buildPhases = (
+				031BF5F51CE3805900DD028A /* Sources */,
+				031BF5F61CE3805900DD028A /* Frameworks */,
+				031BF5F71CE3805900DD028A /* Headers */,
+				031BF5F81CE3805900DD028A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Kashmir watchOS";
+			productName = "Kashmir watchOS";
+			productReference = 031BF5FA1CE3805900DD028A /* Kashmir.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -150,6 +286,18 @@
 						CreatedOnToolsVersion = 7.3.1;
 					};
 					031BF5AE1CE37B4800DD028A = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					031BF5C31CE37EDE00DD028A = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					031BF5DF1CE37FA700DD028A = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					031BF5EC1CE3800F00DD028A = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					031BF5F91CE3805900DD028A = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
 				};
@@ -168,6 +316,10 @@
 			targets = (
 				031BF5A41CE37B4800DD028A /* Kashmir */,
 				031BF5AE1CE37B4800DD028A /* KashmirTests */,
+				031BF5C31CE37EDE00DD028A /* Kashmir OSX */,
+				031BF5DF1CE37FA700DD028A /* Kashmir iOS */,
+				031BF5EC1CE3800F00DD028A /* Kashmir tvOS */,
+				031BF5F91CE3805900DD028A /* Kashmir watchOS */,
 			);
 		};
 /* End PBXProject section */
@@ -181,6 +333,34 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		031BF5AD1CE37B4800DD028A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		031BF5C21CE37EDE00DD028A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		031BF5DE1CE37FA700DD028A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		031BF5EB1CE3800F00DD028A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		031BF5F81CE3805900DD028A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -202,6 +382,34 @@
 			buildActionMask = 2147483647;
 			files = (
 				031BF5B51CE37B4800DD028A /* KashmirTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		031BF5BF1CE37EDE00DD028A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		031BF5DB1CE37FA700DD028A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		031BF5E81CE3800F00DD028A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		031BF5F51CE3805900DD028A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +572,181 @@
 			};
 			name = Release;
 		};
+		031BF5D61CE37EDE00DD028A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "$(SRCROOT)/Kashmir/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rockncode.kashmir.osx;
+				PRODUCT_MODULE_NAME = Kashmir;
+				PRODUCT_NAME = Kashmir;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = macosx;
+			};
+			name = Debug;
+		};
+		031BF5D71CE37EDE00DD028A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "$(SRCROOT)/Kashmir/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rockncode.kashmir.osx;
+				PRODUCT_MODULE_NAME = Kashmir;
+				PRODUCT_NAME = Kashmir;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = macosx;
+			};
+			name = Release;
+		};
+		031BF5E61CE37FA700DD028A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Kashmir/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rockncode.kashmir.ios;
+				PRODUCT_MODULE_NAME = Kashmir;
+				PRODUCT_NAME = Kashmir;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		031BF5E71CE37FA700DD028A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Kashmir/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rockncode.kashmir.ios;
+				PRODUCT_MODULE_NAME = Kashmir;
+				PRODUCT_NAME = Kashmir;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		031BF5F31CE3800F00DD028A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Kashmir/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rockncode.kashmir.tvos;
+				PRODUCT_MODULE_NAME = Kashmir;
+				PRODUCT_NAME = Kashmir;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Debug;
+		};
+		031BF5F41CE3800F00DD028A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Kashmir/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rockncode.kashmir.tvos;
+				PRODUCT_MODULE_NAME = Kashmir;
+				PRODUCT_NAME = Kashmir;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		031BF6001CE3805900DD028A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Kashmir/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rockncode.kashmir.watchos;
+				PRODUCT_MODULE_NAME = Kashmir;
+				PRODUCT_NAME = Kashmir;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "watchsimulator watchos";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		031BF6011CE3805900DD028A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Kashmir/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rockncode.kashmir.watchos;
+				PRODUCT_MODULE_NAME = Kashmir;
+				PRODUCT_NAME = Kashmir;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "watchsimulator watchos";
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -389,6 +772,38 @@
 			buildConfigurations = (
 				031BF5BD1CE37B4800DD028A /* Debug */,
 				031BF5BE1CE37B4800DD028A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		031BF5D51CE37EDE00DD028A /* Build configuration list for PBXNativeTarget "Kashmir OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				031BF5D61CE37EDE00DD028A /* Debug */,
+				031BF5D71CE37EDE00DD028A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		031BF5E51CE37FA700DD028A /* Build configuration list for PBXNativeTarget "Kashmir iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				031BF5E61CE37FA700DD028A /* Debug */,
+				031BF5E71CE37FA700DD028A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		031BF5F21CE3800F00DD028A /* Build configuration list for PBXNativeTarget "Kashmir tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				031BF5F31CE3800F00DD028A /* Debug */,
+				031BF5F41CE3800F00DD028A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		031BF5FF1CE3805900DD028A /* Build configuration list for PBXNativeTarget "Kashmir watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				031BF6001CE3805900DD028A /* Debug */,
+				031BF6011CE3805900DD028A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
