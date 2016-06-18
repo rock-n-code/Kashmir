@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "031BF5DF1CE37FA700DD028A"
-               BuildableName = "Kashmir.framework"
+               BuildableName = "KashmirKit.framework"
                BlueprintName = "Kashmir iOS"
                ReferencedContainer = "container:Kashmir.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "031BF5DF1CE37FA700DD028A"
-            BuildableName = "Kashmir.framework"
+            BuildableName = "KashmirKit.framework"
             BlueprintName = "Kashmir iOS"
             ReferencedContainer = "container:Kashmir.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "031BF5DF1CE37FA700DD028A"
-            BuildableName = "Kashmir.framework"
+            BuildableName = "KashmirKit.framework"
             BlueprintName = "Kashmir iOS"
             ReferencedContainer = "container:Kashmir.xcodeproj">
          </BuildableReference>
