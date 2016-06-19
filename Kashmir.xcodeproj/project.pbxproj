@@ -284,15 +284,19 @@
 				TargetAttributes = {
 					031BF5A41CE37B4800DD028A = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 					};
 					031BF5AE1CE37B4800DD028A = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 					};
 					031BF5C31CE37EDE00DD028A = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
 					031BF5DF1CE37FA700DD028A = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 7FMNM89WKG;
+						DevelopmentTeamName = "Rock & Code";
 					};
 					031BF5EC1CE3800F00DD028A = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -529,6 +533,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rockncode.kashmir;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -547,6 +552,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rockncode.kashmir;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -558,6 +564,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rockncode.KashmirTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -569,6 +576,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rockncode.KashmirTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
