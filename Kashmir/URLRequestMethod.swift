@@ -7,3 +7,22 @@
 //
 
 import Foundation
+
+extension URLRequest {
+
+	public enum Method: String {
+		case get
+		case head
+		case post
+		case put
+		case delete
+		case connect
+		case options
+		case trace
+
+		public var rawValue: String {
+			return "\(self)".uppercased()
+		}
+	}
+
+}

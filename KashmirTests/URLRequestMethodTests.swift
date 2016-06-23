@@ -22,4 +22,17 @@ class URLRequestMethodTests: XCTestCase {
 		super.tearDown()
 	}
 
+	// MARK: - Properties tests
+
+	func testRawValue() {
+		XCTAssertEqual(URLRequest.Method.get.rawValue, "GET")
+		XCTAssertEqual(URLRequest.Method.head.rawValue, "HEAD")
+		XCTAssertEqual(URLRequest.Method.post.rawValue, "POST")
+		XCTAssertEqual(URLRequest.Method.put.rawValue, "PUT")
+		XCTAssertEqual(URLRequest.Method.delete.rawValue, "DELETE")
+		XCTAssertEqual(URLRequest.Method.connect.rawValue, "CONNECT")
+		XCTAssertEqual(URLRequest.Method.options.rawValue, "OPTIONS")
+		XCTAssertEqual(URLRequest.Method.trace.rawValue, "TRACE")
+	}
+
 }
