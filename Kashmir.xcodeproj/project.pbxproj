@@ -10,6 +10,7 @@
 		031BF5A91CE37B4800DD028A /* Kashmir.h in Headers */ = {isa = PBXBuildFile; fileRef = 031BF5A81CE37B4800DD028A /* Kashmir.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		031BF5B01CE37B4800DD028A /* Kashmir.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 031BF5A51CE37B4800DD028A /* Kashmir.framework */; };
 		031BF5B51CE37B4800DD028A /* KashmirTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031BF5B41CE37B4800DD028A /* KashmirTests.swift */; };
+		032A85E01D1B879800401E29 /* URLResponseStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032A85DF1D1B879800401E29 /* URLResponseStatusCode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +34,7 @@
 		031BF5E01CE37FA700DD028A /* KashmirKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KashmirKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		031BF5ED1CE3800F00DD028A /* KashmirKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KashmirKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		031BF5FA1CE3805900DD028A /* KashmirKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KashmirKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		032A85DF1D1B879800401E29 /* URLResponseStatusCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = URLResponseStatusCode.swift; path = Shared/URLResponseStatusCode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				031BF5A81CE37B4800DD028A /* Kashmir.h */,
+				032A85DE1D1B875500401E29 /* Enumerations */,
 				031BF5AA1CE37B4800DD028A /* Info.plist */,
 			);
 			path = Kashmir;
@@ -120,6 +123,14 @@
 				031BF5B61CE37B4800DD028A /* Info.plist */,
 			);
 			path = KashmirTests;
+			sourceTree = "<group>";
+		};
+		032A85DE1D1B875500401E29 /* Enumerations */ = {
+			isa = PBXGroup;
+			children = (
+				032A85DF1D1B879800401E29 /* URLResponseStatusCode.swift */,
+			);
+			name = Enumerations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -378,6 +389,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				032A85E01D1B879800401E29 /* URLResponseStatusCode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
