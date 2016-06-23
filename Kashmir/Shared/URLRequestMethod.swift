@@ -16,9 +16,12 @@ extension URLRequest {
 		case post
 		case put
 		case delete
+		case patch
 		case connect
 		case options
 		case trace
+
+		// MARK: - Properties
 
 		public var rawValue: String {
 			return "\(self)".uppercased()

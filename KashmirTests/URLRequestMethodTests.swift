@@ -30,6 +30,7 @@ class URLRequestMethodTests: XCTestCase {
 		XCTAssertEqual(URLRequest.Method.post.rawValue, "POST")
 		XCTAssertEqual(URLRequest.Method.put.rawValue, "PUT")
 		XCTAssertEqual(URLRequest.Method.delete.rawValue, "DELETE")
+		XCTAssertEqual(URLRequest.Method.patch.rawValue, "PATCH")
 		XCTAssertEqual(URLRequest.Method.connect.rawValue, "CONNECT")
 		XCTAssertEqual(URLRequest.Method.options.rawValue, "OPTIONS")
 		XCTAssertEqual(URLRequest.Method.trace.rawValue, "TRACE")

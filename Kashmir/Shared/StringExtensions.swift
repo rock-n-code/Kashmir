@@ -10,7 +10,7 @@ import Foundation
 
 extension String {
 
-	// MARK: - Properties
+	// MARK: - Functions
 
 	public func urlEncoded() -> String {
 		let customAllowedSet = CharacterSet(charactersIn:"!*'();:@&=+$,/?%#[]").inverted

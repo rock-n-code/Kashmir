@@ -13,8 +13,8 @@
 		032A85E01D1B879800401E29 /* URLResponseStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032A85DF1D1B879800401E29 /* URLResponseStatusCode.swift */; };
 		032A85E31D1BA4F300401E29 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032A85E21D1BA4F300401E29 /* StringExtensions.swift */; };
 		032A85E61D1BA56300401E29 /* StringExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032A85E51D1BA56300401E29 /* StringExtensionsTests.swift */; };
-		032A85ED1D1BA98900401E29 /* URLRequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032A85EC1D1BA98900401E29 /* URLRequestMethod.swift */; };
 		032A85F01D1BA9B700401E29 /* URLRequestMethodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032A85EF1D1BA9B700401E29 /* URLRequestMethodTests.swift */; };
+		03B8E5401D24F1B000E40586 /* URLRequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B8E53F1D24F1B000E40586 /* URLRequestMethod.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +41,8 @@
 		032A85DF1D1B879800401E29 /* URLResponseStatusCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = URLResponseStatusCode.swift; path = Shared/URLResponseStatusCode.swift; sourceTree = "<group>"; };
 		032A85E21D1BA4F300401E29 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringExtensions.swift; path = Shared/StringExtensions.swift; sourceTree = "<group>"; };
 		032A85E51D1BA56300401E29 /* StringExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensionsTests.swift; sourceTree = "<group>"; };
-		032A85EC1D1BA98900401E29 /* URLRequestMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLRequestMethod.swift; sourceTree = "<group>"; };
 		032A85EF1D1BA9B700401E29 /* URLRequestMethodTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLRequestMethodTests.swift; sourceTree = "<group>"; };
+		03B8E53F1D24F1B000E40586 /* URLRequestMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = URLRequestMethod.swift; path = Shared/URLRequestMethod.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,7 +139,7 @@
 		032A85DE1D1B875500401E29 /* Enumerations */ = {
 			isa = PBXGroup;
 			children = (
-				032A85EC1D1BA98900401E29 /* URLRequestMethod.swift */,
+				03B8E53F1D24F1B000E40586 /* URLRequestMethod.swift */,
 				032A85DF1D1B879800401E29 /* URLResponseStatusCode.swift */,
 			);
 			name = Enumerations;
@@ -425,8 +425,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				032A85ED1D1BA98900401E29 /* URLRequestMethod.swift in Sources */,
 				032A85E31D1BA4F300401E29 /* StringExtensions.swift in Sources */,
+				03B8E5401D24F1B000E40586 /* URLRequestMethod.swift in Sources */,
 				032A85E01D1B879800401E29 /* URLResponseStatusCode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
