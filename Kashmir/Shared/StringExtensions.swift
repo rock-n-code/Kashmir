@@ -7,3 +7,15 @@
 //
 
 import Foundation
+
+extension String {
+
+	// MARK: - Properties
+
+	public var urlEncoded: String {
+		let customAllowedSet = CharacterSet(charactersIn:"!*'();:@&=+$,/?%#[]").inverted
+
+		return self.addingPercentEncoding(withAllowedCharacters: customAllowedSet)!
+	}
+	
+}
