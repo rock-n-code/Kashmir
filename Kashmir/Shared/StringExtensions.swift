@@ -12,7 +12,7 @@ extension String {
 
 	// MARK: - Properties
 
-	public var urlEncoded: String {
+	public func urlEncoded() -> String {
 		let customAllowedSet = CharacterSet(charactersIn:"!*'();:@&=+$,/?%#[]").inverted
 
 		return self.addingPercentEncoding(withAllowedCharacters: customAllowedSet)!

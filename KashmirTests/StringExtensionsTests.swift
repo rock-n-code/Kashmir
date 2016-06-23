@@ -22,12 +22,12 @@ class StringExtensionsTests: XCTestCase {
 		super.tearDown()
 	}
 
-	// MARK: - Properties tests
+	// MARK: - Functions tests
 
 	func testUrlEncoded() {
-		XCTAssertEqual("".urlEncoded, "")
-		XCTAssertEqual("test/test".urlEncoded, "test%2Ftest")
-		XCTAssertEqual("test/test=42".urlEncoded, "test%2Ftest%3D42")
+		XCTAssertEqual("".urlEncoded(), "")
+		XCTAssertEqual("test/test".urlEncoded(), "test%2Ftest")
+		XCTAssertEqual("test/test=42".urlEncoded(), "test%2Ftest%3D42")
 	}
 	
 }
