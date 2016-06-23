@@ -11,6 +11,8 @@
 		031BF5B01CE37B4800DD028A /* Kashmir.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 031BF5A51CE37B4800DD028A /* Kashmir.framework */; };
 		031BF5B51CE37B4800DD028A /* KashmirTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031BF5B41CE37B4800DD028A /* KashmirTests.swift */; };
 		032A85E01D1B879800401E29 /* URLResponseStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032A85DF1D1B879800401E29 /* URLResponseStatusCode.swift */; };
+		032A85E31D1BA4F300401E29 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032A85E21D1BA4F300401E29 /* StringExtensions.swift */; };
+		032A85E61D1BA56300401E29 /* StringExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032A85E51D1BA56300401E29 /* StringExtensionsTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,8 @@
 		031BF5ED1CE3800F00DD028A /* KashmirKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KashmirKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		031BF5FA1CE3805900DD028A /* KashmirKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KashmirKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		032A85DF1D1B879800401E29 /* URLResponseStatusCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = URLResponseStatusCode.swift; path = Shared/URLResponseStatusCode.swift; sourceTree = "<group>"; };
+		032A85E21D1BA4F300401E29 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringExtensions.swift; path = Shared/StringExtensions.swift; sourceTree = "<group>"; };
+		032A85E51D1BA56300401E29 /* StringExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensionsTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,7 @@
 			children = (
 				031BF5A81CE37B4800DD028A /* Kashmir.h */,
 				032A85DE1D1B875500401E29 /* Enumerations */,
+				032A85E11D1BA4CD00401E29 /* Extensions */,
 				031BF5AA1CE37B4800DD028A /* Info.plist */,
 			);
 			path = Kashmir;
@@ -120,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				031BF5B41CE37B4800DD028A /* KashmirTests.swift */,
+				032A85E41D1BA53300401E29 /* Extensions */,
 				031BF5B61CE37B4800DD028A /* Info.plist */,
 			);
 			path = KashmirTests;
@@ -131,6 +137,22 @@
 				032A85DF1D1B879800401E29 /* URLResponseStatusCode.swift */,
 			);
 			name = Enumerations;
+			sourceTree = "<group>";
+		};
+		032A85E11D1BA4CD00401E29 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				032A85E21D1BA4F300401E29 /* StringExtensions.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		032A85E41D1BA53300401E29 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				032A85E51D1BA56300401E29 /* StringExtensionsTests.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -389,6 +411,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				032A85E31D1BA4F300401E29 /* StringExtensions.swift in Sources */,
 				032A85E01D1B879800401E29 /* URLResponseStatusCode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,6 +420,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				032A85E61D1BA56300401E29 /* StringExtensionsTests.swift in Sources */,
 				031BF5B51CE37B4800DD028A /* KashmirTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
