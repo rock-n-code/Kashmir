@@ -51,10 +51,10 @@
 		031BF5AF1CE37B4800DD028A /* KashmirTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KashmirTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		031BF5B41CE37B4800DD028A /* KashmirTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KashmirTests.swift; sourceTree = "<group>"; };
 		031BF5B61CE37B4800DD028A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		031BF5C41CE37EDE00DD028A /* KashmirKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KashmirKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		031BF5E01CE37FA700DD028A /* KashmirKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KashmirKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		031BF5ED1CE3800F00DD028A /* KashmirKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KashmirKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		031BF5FA1CE3805900DD028A /* KashmirKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KashmirKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		031BF5C41CE37EDE00DD028A /* Kashmir.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kashmir.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		031BF5E01CE37FA700DD028A /* Kashmir.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kashmir.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		031BF5ED1CE3800F00DD028A /* Kashmir.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kashmir.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		031BF5FA1CE3805900DD028A /* Kashmir.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kashmir.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		032320791D245B0A00BB79A1 /* URLResponseErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = URLResponseErrors.swift; path = Shared/URLResponseErrors.swift; sourceTree = "<group>"; };
 		032A85DF1D1B879800401E29 /* URLResponseStatusCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = URLResponseStatusCode.swift; path = Shared/URLResponseStatusCode.swift; sourceTree = "<group>"; };
 		032A85E21D1BA4F300401E29 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringExtensions.swift; path = Shared/StringExtensions.swift; sourceTree = "<group>"; };
@@ -124,10 +124,10 @@
 			children = (
 				031BF5A51CE37B4800DD028A /* Kashmir.framework */,
 				031BF5AF1CE37B4800DD028A /* KashmirTests.xctest */,
-				031BF5C41CE37EDE00DD028A /* KashmirKit.framework */,
-				031BF5E01CE37FA700DD028A /* KashmirKit.framework */,
-				031BF5ED1CE3800F00DD028A /* KashmirKit.framework */,
-				031BF5FA1CE3805900DD028A /* KashmirKit.framework */,
+				031BF5C41CE37EDE00DD028A /* Kashmir.framework */,
+				031BF5E01CE37FA700DD028A /* Kashmir.framework */,
+				031BF5ED1CE3800F00DD028A /* Kashmir.framework */,
+				031BF5FA1CE3805900DD028A /* Kashmir.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -289,7 +289,7 @@
 			);
 			name = "Kashmir OSX";
 			productName = "Kashmir OSX";
-			productReference = 031BF5C41CE37EDE00DD028A /* KashmirKit.framework */;
+			productReference = 031BF5C41CE37EDE00DD028A /* Kashmir.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		031BF5DF1CE37FA700DD028A /* Kashmir iOS */ = {
@@ -307,7 +307,7 @@
 			);
 			name = "Kashmir iOS";
 			productName = "Kashmir iOS";
-			productReference = 031BF5E01CE37FA700DD028A /* KashmirKit.framework */;
+			productReference = 031BF5E01CE37FA700DD028A /* Kashmir.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		031BF5EC1CE3800F00DD028A /* Kashmir tvOS */ = {
@@ -325,7 +325,7 @@
 			);
 			name = "Kashmir tvOS";
 			productName = "Kashmir tvOS";
-			productReference = 031BF5ED1CE3800F00DD028A /* KashmirKit.framework */;
+			productReference = 031BF5ED1CE3800F00DD028A /* Kashmir.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		031BF5F91CE3805900DD028A /* Kashmir watchOS */ = {
@@ -343,7 +343,7 @@
 			);
 			name = "Kashmir watchOS";
 			productName = "Kashmir watchOS";
-			productReference = 031BF5FA1CE3805900DD028A /* KashmirKit.framework */;
+			productReference = 031BF5FA1CE3805900DD028A /* Kashmir.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -703,8 +703,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rockncode.kashmir.osx;
-				PRODUCT_MODULE_NAME = KashmirKit;
-				PRODUCT_NAME = KashmirKit;
+				PRODUCT_MODULE_NAME = Kashmir;
+				PRODUCT_NAME = Kashmir;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = macosx;
@@ -728,8 +728,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rockncode.kashmir.osx;
-				PRODUCT_MODULE_NAME = KashmirKit;
-				PRODUCT_NAME = KashmirKit;
+				PRODUCT_MODULE_NAME = Kashmir;
+				PRODUCT_NAME = Kashmir;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = macosx;
@@ -751,8 +751,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rockncode.kashmir.ios;
-				PRODUCT_MODULE_NAME = KashmirKit;
-				PRODUCT_NAME = KashmirKit;
+				PRODUCT_MODULE_NAME = Kashmir;
+				PRODUCT_NAME = Kashmir;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
@@ -776,8 +776,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rockncode.kashmir.ios;
-				PRODUCT_MODULE_NAME = KashmirKit;
-				PRODUCT_NAME = KashmirKit;
+				PRODUCT_MODULE_NAME = Kashmir;
+				PRODUCT_NAME = Kashmir;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
@@ -799,8 +799,8 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rockncode.kashmir.tvos;
-				PRODUCT_MODULE_NAME = KashmirKit;
-				PRODUCT_NAME = KashmirKit;
+				PRODUCT_MODULE_NAME = Kashmir;
+				PRODUCT_NAME = Kashmir;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
@@ -823,8 +823,8 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rockncode.kashmir.tvos;
-				PRODUCT_MODULE_NAME = KashmirKit;
-				PRODUCT_NAME = KashmirKit;
+				PRODUCT_MODULE_NAME = Kashmir;
+				PRODUCT_NAME = Kashmir;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
@@ -848,8 +848,8 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rockncode.kashmir.watchos;
-				PRODUCT_MODULE_NAME = KashmirKit;
-				PRODUCT_NAME = KashmirKit;
+				PRODUCT_MODULE_NAME = Kashmir;
+				PRODUCT_NAME = Kashmir;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "watchsimulator watchos";
@@ -873,8 +873,8 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rockncode.kashmir.watchos;
-				PRODUCT_MODULE_NAME = KashmirKit;
-				PRODUCT_NAME = KashmirKit;
+				PRODUCT_MODULE_NAME = Kashmir;
+				PRODUCT_NAME = Kashmir;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "watchsimulator watchos";
