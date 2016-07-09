@@ -274,9 +274,9 @@
 			productReference = 031BF5AF1CE37B4800DD028A /* KashmirTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		031BF5C31CE37EDE00DD028A /* Kashmir OSX */ = {
+		031BF5C31CE37EDE00DD028A /* Kashmir macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 031BF5D51CE37EDE00DD028A /* Build configuration list for PBXNativeTarget "Kashmir OSX" */;
+			buildConfigurationList = 031BF5D51CE37EDE00DD028A /* Build configuration list for PBXNativeTarget "Kashmir macOS" */;
 			buildPhases = (
 				031BF5BF1CE37EDE00DD028A /* Sources */,
 				031BF5C01CE37EDE00DD028A /* Frameworks */,
@@ -287,7 +287,7 @@
 			);
 			dependencies = (
 			);
-			name = "Kashmir OSX";
+			name = "Kashmir macOS";
 			productName = "Kashmir OSX";
 			productReference = 031BF5C41CE37EDE00DD028A /* Kashmir.framework */;
 			productType = "com.apple.product-type.framework";
@@ -398,7 +398,7 @@
 			targets = (
 				031BF5A41CE37B4800DD028A /* Kashmir */,
 				031BF5AE1CE37B4800DD028A /* KashmirTests */,
-				031BF5C31CE37EDE00DD028A /* Kashmir OSX */,
+				031BF5C31CE37EDE00DD028A /* Kashmir macOS */,
 				031BF5DF1CE37FA700DD028A /* Kashmir iOS */,
 				031BF5EC1CE3800F00DD028A /* Kashmir tvOS */,
 				031BF5F91CE3805900DD028A /* Kashmir watchOS */,
@@ -915,7 +915,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		031BF5D51CE37EDE00DD028A /* Build configuration list for PBXNativeTarget "Kashmir OSX" */ = {
+		031BF5D51CE37EDE00DD028A /* Build configuration list for PBXNativeTarget "Kashmir macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				031BF5D61CE37EDE00DD028A /* Debug */,
