@@ -1,5 +1,5 @@
 //
-//  URLResponseErrors.swift
+//  URLResponseFaults.swift
 //  Kashmir
 //
 //  Created by Javier Cicchelli on 29/06/16.
@@ -10,7 +10,7 @@ import Foundation
 
 extension URLResponse {
 
-	public enum Error: ErrorProtocol {
+	public enum Fault: Error {
 		case unauthorizedAccess
 		case forbiddenAccess
 		case resourceNotFound
