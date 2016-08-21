@@ -55,7 +55,6 @@
 		031BF5A81CE37B4800DD028A /* Kashmir.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Kashmir.h; sourceTree = "<group>"; };
 		031BF5AA1CE37B4800DD028A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		031BF5AF1CE37B4800DD028A /* KashmirTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KashmirTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		031BF5B41CE37B4800DD028A /* KashmirTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KashmirTests.swift; sourceTree = "<group>"; };
 		031BF5B61CE37B4800DD028A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		031BF5C41CE37EDE00DD028A /* Kashmir.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kashmir.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		031BF5E01CE37FA700DD028A /* Kashmir.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kashmir.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -155,7 +154,6 @@
 		031BF5B31CE37B4800DD028A /* KashmirTests */ = {
 			isa = PBXGroup;
 			children = (
-				031BF5B41CE37B4800DD028A /* KashmirTests.swift */,
 				032A85EE1D1BA9A100401E29 /* Enumerations */,
 				032A85E41D1BA53300401E29 /* Extensions */,
 				031BF5B61CE37B4800DD028A /* Info.plist */,
@@ -480,7 +478,6 @@
 			files = (
 				032A85F01D1BA9B700401E29 /* URLRequestMethodTests.swift in Sources */,
 				032A85E61D1BA56300401E29 /* StringExtensionsTests.swift in Sources */,
-				031BF5B51CE37B4800DD028A /* KashmirTests.swift in Sources */,
 				03E668E11D69B00800F6110A /* NSObjectExtensionsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
