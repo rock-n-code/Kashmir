@@ -10,9 +10,9 @@ import Foundation
 
 extension String {
 
-	// MARK: - Functions
+	// MARK: - Properties
 
-	public func urlEncoded() -> String {
+	public var urlEncoded: String {
 		let customAllowedSet = CharacterSet(charactersIn:"!*'();:@&=+$,/?%#[]").inverted
 
 		return self.addingPercentEncoding(withAllowedCharacters: customAllowedSet)!
