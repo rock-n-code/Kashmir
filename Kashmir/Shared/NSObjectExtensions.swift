@@ -10,4 +10,14 @@ import Foundation
 
 extension NSObject {
 
+	// MARK: - Properties
+
+	public static var name: String {
+		return "\(self)"
+	}
+
+	public var name: String {
+		return "\(type(of: self))"
+	}
+
 }
