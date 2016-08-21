@@ -16,7 +16,7 @@ extension NSObject {
 		return "\(self)"
 	}
 
-	public var name: String {
+	public var nameClass: String {
 		return "\(type(of: self))"
 	}
 
