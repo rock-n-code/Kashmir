@@ -9,12 +9,11 @@
 /* Begin PBXBuildFile section */
 		031BF5A91CE37B4800DD028A /* Kashmir.h in Headers */ = {isa = PBXBuildFile; fileRef = 031BF5A81CE37B4800DD028A /* Kashmir.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		031BF5B01CE37B4800DD028A /* Kashmir.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 031BF5A51CE37B4800DD028A /* Kashmir.framework */; };
-		031BF5B51CE37B4800DD028A /* KashmirTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031BF5B41CE37B4800DD028A /* KashmirTests.swift */; };
-		0323207A1D245B0A00BB79A1 /* URLResponseFaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032320791D245B0A00BB79A1 /* URLResponseFaults.swift */; };
-		0323207B1D245B0A00BB79A1 /* URLResponseFaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032320791D245B0A00BB79A1 /* URLResponseFaults.swift */; };
-		0323207C1D245B0A00BB79A1 /* URLResponseFaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032320791D245B0A00BB79A1 /* URLResponseFaults.swift */; };
-		0323207D1D245B0A00BB79A1 /* URLResponseFaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032320791D245B0A00BB79A1 /* URLResponseFaults.swift */; };
-		0323207E1D245B0A00BB79A1 /* URLResponseFaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032320791D245B0A00BB79A1 /* URLResponseFaults.swift */; };
+		0323207A1D245B0A00BB79A1 /* URLResponseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032320791D245B0A00BB79A1 /* URLResponseError.swift */; };
+		0323207B1D245B0A00BB79A1 /* URLResponseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032320791D245B0A00BB79A1 /* URLResponseError.swift */; };
+		0323207C1D245B0A00BB79A1 /* URLResponseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032320791D245B0A00BB79A1 /* URLResponseError.swift */; };
+		0323207D1D245B0A00BB79A1 /* URLResponseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032320791D245B0A00BB79A1 /* URLResponseError.swift */; };
+		0323207E1D245B0A00BB79A1 /* URLResponseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032320791D245B0A00BB79A1 /* URLResponseError.swift */; };
 		032A85E01D1B879800401E29 /* URLResponseStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032A85DF1D1B879800401E29 /* URLResponseStatusCode.swift */; };
 		032A85E31D1BA4F300401E29 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032A85E21D1BA4F300401E29 /* StringExtensions.swift */; };
 		032A85E61D1BA56300401E29 /* StringExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032A85E51D1BA56300401E29 /* StringExtensionsTests.swift */; };
@@ -60,7 +59,7 @@
 		031BF5E01CE37FA700DD028A /* Kashmir.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kashmir.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		031BF5ED1CE3800F00DD028A /* Kashmir.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kashmir.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		031BF5FA1CE3805900DD028A /* Kashmir.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kashmir.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		032320791D245B0A00BB79A1 /* URLResponseFaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = URLResponseFaults.swift; path = Shared/URLResponseFaults.swift; sourceTree = "<group>"; };
+		032320791D245B0A00BB79A1 /* URLResponseError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = URLResponseError.swift; path = Shared/URLResponseError.swift; sourceTree = "<group>"; };
 		032A85DF1D1B879800401E29 /* URLResponseStatusCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = URLResponseStatusCode.swift; path = Shared/URLResponseStatusCode.swift; sourceTree = "<group>"; };
 		032A85E21D1BA4F300401E29 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringExtensions.swift; path = Shared/StringExtensions.swift; sourceTree = "<group>"; };
 		032A85E51D1BA56300401E29 /* StringExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensionsTests.swift; sourceTree = "<group>"; };
@@ -164,7 +163,7 @@
 		032320781D245ACA00BB79A1 /* Errors */ = {
 			isa = PBXGroup;
 			children = (
-				032320791D245B0A00BB79A1 /* URLResponseFaults.swift */,
+				032320791D245B0A00BB79A1 /* URLResponseError.swift */,
 			);
 			name = Errors;
 			sourceTree = "<group>";
@@ -464,7 +463,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0323207A1D245B0A00BB79A1 /* URLResponseFaults.swift in Sources */,
+				0323207A1D245B0A00BB79A1 /* URLResponseError.swift in Sources */,
 				03E668DB1D69AFEE00F6110A /* NSObjectExtensions.swift in Sources */,
 				032A85E31D1BA4F300401E29 /* StringExtensions.swift in Sources */,
 				03B8E5401D24F1B000E40586 /* URLRequestMethod.swift in Sources */,
@@ -489,7 +488,7 @@
 				03B8E5491D24F2A600E40586 /* StringExtensions.swift in Sources */,
 				03E668DC1D69AFEE00F6110A /* NSObjectExtensions.swift in Sources */,
 				03B8E5411D24F28E00E40586 /* URLRequestMethod.swift in Sources */,
-				0323207B1D245B0A00BB79A1 /* URLResponseFaults.swift in Sources */,
+				0323207B1D245B0A00BB79A1 /* URLResponseError.swift in Sources */,
 				03B8E5451D24F29E00E40586 /* URLResponseStatusCode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -501,7 +500,7 @@
 				03B8E54A1D24F2A600E40586 /* StringExtensions.swift in Sources */,
 				03E668DD1D69AFEE00F6110A /* NSObjectExtensions.swift in Sources */,
 				03B8E5421D24F28F00E40586 /* URLRequestMethod.swift in Sources */,
-				0323207C1D245B0A00BB79A1 /* URLResponseFaults.swift in Sources */,
+				0323207C1D245B0A00BB79A1 /* URLResponseError.swift in Sources */,
 				03B8E5461D24F29E00E40586 /* URLResponseStatusCode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -513,7 +512,7 @@
 				03B8E54B1D24F2A700E40586 /* StringExtensions.swift in Sources */,
 				03E668DE1D69AFEE00F6110A /* NSObjectExtensions.swift in Sources */,
 				03B8E5431D24F29000E40586 /* URLRequestMethod.swift in Sources */,
-				0323207D1D245B0A00BB79A1 /* URLResponseFaults.swift in Sources */,
+				0323207D1D245B0A00BB79A1 /* URLResponseError.swift in Sources */,
 				03B8E5471D24F29F00E40586 /* URLResponseStatusCode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -525,7 +524,7 @@
 				03B8E54C1D24F2A800E40586 /* StringExtensions.swift in Sources */,
 				03E668DF1D69AFEE00F6110A /* NSObjectExtensions.swift in Sources */,
 				03B8E5441D24F29100E40586 /* URLRequestMethod.swift in Sources */,
-				0323207E1D245B0A00BB79A1 /* URLResponseFaults.swift in Sources */,
+				0323207E1D245B0A00BB79A1 /* URLResponseError.swift in Sources */,
 				03B8E5481D24F2A000E40586 /* URLResponseStatusCode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
