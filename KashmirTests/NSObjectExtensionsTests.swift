@@ -32,7 +32,7 @@ class NSObjectExtensionsTests: XCTestCase {
 		XCTAssertEqual(OtherTest.name, "OtherTest")
 	}
 
-	func testNameOfClass() {
+	func testNameClass() {
 		XCTAssertEqual(Test().nameClass, "Test")
 		XCTAssertEqual(OtherTest().nameClass, "OtherTest")
 	}
