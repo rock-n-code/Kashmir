@@ -22,4 +22,24 @@ class BundleExtensionsTests: XCTestCase {
 		super.tearDown()
 	}
 
+	// MARK: - Functions tests
+
+	func testUrlForResource() {
+		let url = Bundle.url(forResource: "Test")
+
+		XCTAssertNotNil(url)
+	}
+
+	func testUrlForResourceWithExtension() {
+		let url = Bundle.url(forResource: "Info", withExtension: "plist")
+
+		XCTAssertNotNil(url)
+	}
+
+	func testEmptyUrlForResourceWithExtension() {
+		let url = Bundle.url(forResource: "Info")
+
+		XCTAssertNil(url)
+	}
+
 }
