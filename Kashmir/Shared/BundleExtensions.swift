@@ -36,5 +36,22 @@ extension Bundle {
 		return url
 	}
 
+	static func urls(forResource named: String, withExtension fileExtension: String? = nil) -> [URL] {
+		var urls = [URL]()
+
+		for framework in allFrameworks {
+			if let url = framework.url(forResource: named, withExtension: fileExtension) {
+				urls.append(url)
+			}
+		}
+
+		for bundle in allBundles {
+			if let url = bundle.url(forResource: named, withExtension: fileExtension) {
+				urls.append(url)
+			}
+		}
+
+		return urls
+	}
 
 }
