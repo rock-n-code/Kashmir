@@ -12,7 +12,7 @@ extension Bundle {
 
 	// MARK: - Functions
 
-	static func url(forResource named: String, withExtension fileExtension: String? = nil) -> URL? {
+	public static func url(forResource named: String, withExtension fileExtension: String? = nil) -> URL? {
 		var url: URL?
 
 		for framework in allFrameworks {
@@ -36,7 +36,7 @@ extension Bundle {
 		return url
 	}
 
-	static func urls(forResource named: String, withExtension fileExtension: String? = nil) -> [URL] {
+	public static func urls(forResource named: String, withExtension fileExtension: String? = nil) -> [URL] {
 		var urls = [URL]()
 
 		for framework in allFrameworks {
