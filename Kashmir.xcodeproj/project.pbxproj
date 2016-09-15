@@ -25,6 +25,18 @@
 		0340747E1D7088C2004099AC /* BundleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034074791D7088C2004099AC /* BundleExtensions.swift */; };
 		034074801D7088D7004099AC /* BundleExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0340747F1D7088D7004099AC /* BundleExtensionsTests.swift */; };
 		034074861D714695004099AC /* Test in Resources */ = {isa = PBXBuildFile; fileRef = 034074851D714695004099AC /* Test */; };
+		03B67C6D1D8AF116001DFFE6 /* DataStackError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B67C6C1D8AF116001DFFE6 /* DataStackError.swift */; };
+		03B67C701D8AF154001DFFE6 /* DataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B67C6F1D8AF154001DFFE6 /* DataStack.swift */; };
+		03B67C731D8AF1BF001DFFE6 /* DataStackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B67C721D8AF1BF001DFFE6 /* DataStackTests.swift */; };
+		03B67C771D8AF773001DFFE6 /* Test.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 03B67C751D8AF773001DFFE6 /* Test.xcdatamodeld */; };
+		03B67C781D8AF884001DFFE6 /* DataStackError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B67C6C1D8AF116001DFFE6 /* DataStackError.swift */; };
+		03B67C791D8AF884001DFFE6 /* DataStackError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B67C6C1D8AF116001DFFE6 /* DataStackError.swift */; };
+		03B67C7A1D8AF885001DFFE6 /* DataStackError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B67C6C1D8AF116001DFFE6 /* DataStackError.swift */; };
+		03B67C7B1D8AF886001DFFE6 /* DataStackError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B67C6C1D8AF116001DFFE6 /* DataStackError.swift */; };
+		03B67C7C1D8AF88A001DFFE6 /* DataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B67C6F1D8AF154001DFFE6 /* DataStack.swift */; };
+		03B67C7D1D8AF88A001DFFE6 /* DataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B67C6F1D8AF154001DFFE6 /* DataStack.swift */; };
+		03B67C7E1D8AF88B001DFFE6 /* DataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B67C6F1D8AF154001DFFE6 /* DataStack.swift */; };
+		03B67C7F1D8AF88C001DFFE6 /* DataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B67C6F1D8AF154001DFFE6 /* DataStack.swift */; };
 		03B8E5401D24F1B000E40586 /* URLRequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B8E53F1D24F1B000E40586 /* URLRequestMethod.swift */; };
 		03B8E5411D24F28E00E40586 /* URLRequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B8E53F1D24F1B000E40586 /* URLRequestMethod.swift */; };
 		03B8E5421D24F28F00E40586 /* URLRequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B8E53F1D24F1B000E40586 /* URLRequestMethod.swift */; };
@@ -74,6 +86,10 @@
 		034074791D7088C2004099AC /* BundleExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BundleExtensions.swift; path = Shared/BundleExtensions.swift; sourceTree = "<group>"; };
 		0340747F1D7088D7004099AC /* BundleExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BundleExtensionsTests.swift; sourceTree = "<group>"; };
 		034074851D714695004099AC /* Test */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Test; sourceTree = "<group>"; };
+		03B67C6C1D8AF116001DFFE6 /* DataStackError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataStackError.swift; path = Shared/DataStackError.swift; sourceTree = "<group>"; };
+		03B67C6F1D8AF154001DFFE6 /* DataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataStack.swift; path = Shared/DataStack.swift; sourceTree = "<group>"; };
+		03B67C721D8AF1BF001DFFE6 /* DataStackTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStackTests.swift; sourceTree = "<group>"; };
+		03B67C761D8AF773001DFFE6 /* Test.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Test.xcdatamodel; sourceTree = "<group>"; };
 		03B8E53F1D24F1B000E40586 /* URLRequestMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = URLRequestMethod.swift; path = Shared/URLRequestMethod.swift; sourceTree = "<group>"; };
 		03E668DA1D69AFEE00F6110A /* NSObjectExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NSObjectExtensions.swift; path = Shared/NSObjectExtensions.swift; sourceTree = "<group>"; };
 		03E668E01D69B00800F6110A /* NSObjectExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObjectExtensionsTests.swift; sourceTree = "<group>"; };
@@ -154,6 +170,7 @@
 				031BF5A81CE37B4800DD028A /* Kashmir.h */,
 				032A85DE1D1B875500401E29 /* Enumerations */,
 				032320781D245ACA00BB79A1 /* Errors */,
+				03B67C6E1D8AF142001DFFE6 /* Managers */,
 				032A85E11D1BA4CD00401E29 /* Extensions */,
 				031BF5AA1CE37B4800DD028A /* Info.plist */,
 			);
@@ -164,8 +181,10 @@
 			isa = PBXGroup;
 			children = (
 				032A85EE1D1BA9A100401E29 /* Enumerations */,
+				03B67C711D8AF1B0001DFFE6 /* Managers */,
 				032A85E41D1BA53300401E29 /* Extensions */,
 				034074841D71467E004099AC /* Resources */,
+				03B67C741D8AF762001DFFE6 /* Data Models */,
 				031BF5B61CE37B4800DD028A /* Info.plist */,
 			);
 			path = KashmirTests;
@@ -175,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				032320791D245B0A00BB79A1 /* URLResponseError.swift */,
+				03B67C6C1D8AF116001DFFE6 /* DataStackError.swift */,
 			);
 			name = Errors;
 			sourceTree = "<group>";
@@ -222,6 +242,30 @@
 				034074851D714695004099AC /* Test */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		03B67C6E1D8AF142001DFFE6 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				03B67C6F1D8AF154001DFFE6 /* DataStack.swift */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		03B67C711D8AF1B0001DFFE6 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				03B67C721D8AF1BF001DFFE6 /* DataStackTests.swift */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		03B67C741D8AF762001DFFE6 /* Data Models */ = {
+			isa = PBXGroup;
+			children = (
+				03B67C751D8AF773001DFFE6 /* Test.xcdatamodeld */,
+			);
+			name = "Data Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -486,6 +530,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0323207A1D245B0A00BB79A1 /* URLResponseError.swift in Sources */,
+				03B67C6D1D8AF116001DFFE6 /* DataStackError.swift in Sources */,
+				03B67C701D8AF154001DFFE6 /* DataStack.swift in Sources */,
 				03E668DB1D69AFEE00F6110A /* NSObjectExtensions.swift in Sources */,
 				032A85E31D1BA4F300401E29 /* StringExtensions.swift in Sources */,
 				03B8E5401D24F1B000E40586 /* URLRequestMethod.swift in Sources */,
@@ -501,7 +547,9 @@
 				032A85F01D1BA9B700401E29 /* URLRequestMethodTests.swift in Sources */,
 				032A85E61D1BA56300401E29 /* StringExtensionsTests.swift in Sources */,
 				03E668E11D69B00800F6110A /* NSObjectExtensionsTests.swift in Sources */,
+				03B67C731D8AF1BF001DFFE6 /* DataStackTests.swift in Sources */,
 				034074801D7088D7004099AC /* BundleExtensionsTests.swift in Sources */,
+				03B67C771D8AF773001DFFE6 /* Test.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,6 +558,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				03B8E5491D24F2A600E40586 /* StringExtensions.swift in Sources */,
+				03B67C781D8AF884001DFFE6 /* DataStackError.swift in Sources */,
+				03B67C7C1D8AF88A001DFFE6 /* DataStack.swift in Sources */,
 				03E668DC1D69AFEE00F6110A /* NSObjectExtensions.swift in Sources */,
 				03B8E5411D24F28E00E40586 /* URLRequestMethod.swift in Sources */,
 				0323207B1D245B0A00BB79A1 /* URLResponseError.swift in Sources */,
@@ -523,6 +573,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				03B8E54A1D24F2A600E40586 /* StringExtensions.swift in Sources */,
+				03B67C791D8AF884001DFFE6 /* DataStackError.swift in Sources */,
+				03B67C7D1D8AF88A001DFFE6 /* DataStack.swift in Sources */,
 				03E668DD1D69AFEE00F6110A /* NSObjectExtensions.swift in Sources */,
 				03B8E5421D24F28F00E40586 /* URLRequestMethod.swift in Sources */,
 				0323207C1D245B0A00BB79A1 /* URLResponseError.swift in Sources */,
@@ -536,6 +588,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				03B8E54B1D24F2A700E40586 /* StringExtensions.swift in Sources */,
+				03B67C7A1D8AF885001DFFE6 /* DataStackError.swift in Sources */,
+				03B67C7E1D8AF88B001DFFE6 /* DataStack.swift in Sources */,
 				03E668DE1D69AFEE00F6110A /* NSObjectExtensions.swift in Sources */,
 				03B8E5431D24F29000E40586 /* URLRequestMethod.swift in Sources */,
 				0323207D1D245B0A00BB79A1 /* URLResponseError.swift in Sources */,
@@ -549,6 +603,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				03B8E54C1D24F2A800E40586 /* StringExtensions.swift in Sources */,
+				03B67C7B1D8AF886001DFFE6 /* DataStackError.swift in Sources */,
+				03B67C7F1D8AF88C001DFFE6 /* DataStack.swift in Sources */,
 				03E668DF1D69AFEE00F6110A /* NSObjectExtensions.swift in Sources */,
 				03B8E5441D24F29100E40586 /* URLRequestMethod.swift in Sources */,
 				0323207E1D245B0A00BB79A1 /* URLResponseError.swift in Sources */,
@@ -998,6 +1054,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		03B67C751D8AF773001DFFE6 /* Test.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				03B67C761D8AF773001DFFE6 /* Test.xcdatamodel */,
+			);
+			currentVersion = 03B67C761D8AF773001DFFE6 /* Test.xcdatamodel */;
+			path = Test.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 031BF59C1CE37B4800DD028A /* Project object */;
 }
