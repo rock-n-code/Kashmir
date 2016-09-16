@@ -9,7 +9,7 @@ Pod::Spec.new do |spec|
                                 :file => "LICENSE"
                             }
     spec.source             = {
-                                git: "https://github.com/rock-n-code/Kashmir", 
+                                git: "https://github.com/rock-n-code/Kashmir.git", 
                                 tag: "#{spec.version}"
                             }
     spec.authors            = {
@@ -23,13 +23,16 @@ Pod::Spec.new do |spec|
     spec.watchos.deployment_target  = "3.0"
 
     # Build settings
-    spec.requires_arc   = true 
+    spec.requires_arc           = true
+    spec.pod_target_xcconfig    = { 
+                                    "SWIFT_VERSION" => "3.0" 
+                                } 
 
     # Source files
-    spec.source_files           = "Kashmir/Shared/*.{h, swift}"
-    spec.osx.source_files       = "Kashmir/macOS/*.{h, swift}"
-    spec.ios.source_files       = "Kashmir/iOS/*.{h, swift}"
-    spec.tvos.source_files      = "Kashmir/macOS/*.{h, swift}"
-    spec.watchos.source_files   = "Kashmir/macOS/*.{h, swift}"
+    spec.source_files           = "Kashmir/Shared/**/*.{h,swift}"
+    spec.osx.source_files       = "Kashmir/macOS/**/*.{h,swift}"
+    spec.ios.source_files       = "Kashmir/iOS/**/*.{h,swift}"
+    spec.tvos.source_files      = "Kashmir/tvOS/**/*.{h,swift}"
+    spec.watchos.source_files   = "Kashmir/watchOS/**/*.{h,swift}"
 
 end
