@@ -2,7 +2,7 @@ Pod::Spec.new do |spec|
     # Specification
     spec.name               = "Kashmir"
     spec.version            = "0.1.3"
-    spec.summary            = "Utility framework to help building of macOS, iOS, tvOS and watchOS apps, the Rock & Code way."
+    spec.summary            = "Utility framework to help building macOS, iOS, tvOS and watchOS apps, the Rock & Code way."
     spec.homepage           = "http://git.rock-n-co.de/RockAndCode/Kashmir"
     spec.license            = {
                                 :type => "MIT", 
@@ -23,7 +23,7 @@ Pod::Spec.new do |spec|
     spec.watchos.deployment_target  = "3.0"
 
     # Build settings
-    spec.requires_arc           = true
+    spec.requires_arc   = true
    
     # Source files
     spec.source_files           = "Kashmir/Shared/**/*.{h,swift}"
