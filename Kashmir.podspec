@@ -24,10 +24,7 @@ Pod::Spec.new do |spec|
 
     # Build settings
     spec.requires_arc           = true
-    spec.pod_target_xcconfig    = { 
-                                    "SWIFT_VERSION" => "3.0" 
-                                } 
-
+   
     # Source files
     spec.source_files           = "Kashmir/Shared/**/*.{h,swift}"
     spec.osx.source_files       = "Kashmir/macOS/**/*.{h,swift}"
