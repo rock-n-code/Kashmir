@@ -33,11 +33,11 @@ public class DataStack {
 		try isNotEmpty(modelName)
 
 		guard let url = Bundle.url(forResource: modelName, withExtension: "momd") else {
-			throw DataStackError.ObjectModelNotFound
+			throw DataStackError.objectModelNotFound
 		}
 
 		guard let objectModel = NSManagedObjectModel(contentsOf: url) else {
-			throw DataStackError.ObjectModelNotCreated
+			throw DataStackError.objectModelNotCreated
 		}
 
 		try doesNotExists(modelName)
@@ -61,7 +61,7 @@ public class DataStack {
 
 		guard let container = containers[modelName]
 			else {
-				throw DataStackError.ContainerNotFound
+				throw DataStackError.containerNotFound
 		}
 
 		let coordinator = container.persistentStoreCoordinator
@@ -69,7 +69,7 @@ public class DataStack {
 		for store in coordinator.persistentStores {
 			guard let url = store.url
 				else {
-					throw DataStackError.StoreUrlNotFound
+					throw DataStackError.storeUrlNotFound
 			}
 
 			try coordinator.remove(store)
@@ -124,19 +124,19 @@ public class DataStack {
 
 	private func isNotEmpty(_ modelName: String) throws {
 		guard !modelName.isEmpty else {
-			throw DataStackError.ContainerNameIsEmpty
+			throw DataStackError.containerNameIsEmpty
 		}
 	}
 
 	private func doesNotExists(_ modelName: String) throws {
 		guard !containers.keys.contains(modelName) else {
-			throw DataStackError.ContainerNameExists
+			throw DataStackError.containerNameExists
 		}
 	}
 
 	private func doesExists(_ modelName: String) throws {
 		guard containers.keys.contains(modelName) else {
-			throw DataStackError.ContainerNameNotExists
+			throw DataStackError.containerNameNotExists
 		}
 	}
 
