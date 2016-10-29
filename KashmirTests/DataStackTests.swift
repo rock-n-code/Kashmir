@@ -63,7 +63,7 @@ class DataStackTests: XCTestCase {
 		do {
 			try manager.add("")
 		}
-		catch DataStackError.ContainerNameIsEmpty {
+		catch DataStackError.containerNameIsEmpty {
 			XCTAssertTrue(true)
 		}
 		catch {
@@ -74,7 +74,7 @@ class DataStackTests: XCTestCase {
 	func testAddNotExistingModelName() {
 		do {
 			try manager.add("xxx")
-		} catch DataStackError.ObjectModelNotFound {
+		} catch DataStackError.objectModelNotFound {
 			XCTAssertTrue(true)
 		}
 		catch {
@@ -87,7 +87,7 @@ class DataStackTests: XCTestCase {
 			try manager.add(modelName)
 			try manager.add(modelName)
 		}
-		catch DataStackError.ContainerNameExists {
+		catch DataStackError.containerNameExists {
 			XCTAssertTrue(true)
 		}
 		catch {
@@ -114,7 +114,7 @@ class DataStackTests: XCTestCase {
 		do {
 			try manager.remove("")
 		}
-		catch DataStackError.ContainerNameIsEmpty {
+		catch DataStackError.containerNameIsEmpty {
 			XCTAssertTrue(true)
 		}
 		catch {
@@ -128,7 +128,7 @@ class DataStackTests: XCTestCase {
 			try manager.remove(modelName)
 			try manager.remove(modelName)
 		}
-		catch DataStackError.ContainerNameNotExists {
+		catch DataStackError.containerNameNotExists {
 			XCTAssertTrue(true)
 		}
 		catch {
@@ -154,7 +154,7 @@ class DataStackTests: XCTestCase {
 		do {
 			_ = try manager.foreContext(of: "")
 		}
-		catch DataStackError.ContainerNameIsEmpty {
+		catch DataStackError.containerNameIsEmpty {
 			XCTAssertTrue(true)
 		}
 		catch {
@@ -166,7 +166,7 @@ class DataStackTests: XCTestCase {
 		do {
 			_ = try manager.foreContext(of: "xxx")
 		}
-		catch DataStackError.ContainerNameNotExists {
+		catch DataStackError.containerNameNotExists {
 			XCTAssertTrue(true)
 		}
 		catch {
@@ -193,7 +193,7 @@ class DataStackTests: XCTestCase {
 		do {
 			_ = try manager.backContext(of: "")
 		}
-		catch DataStackError.ContainerNameIsEmpty {
+		catch DataStackError.containerNameIsEmpty {
 			XCTAssertTrue(true)
 		}
 		catch {
@@ -205,7 +205,7 @@ class DataStackTests: XCTestCase {
 		do {
 			_ = try manager.backContext(of: "xxx")
 		}
-		catch DataStackError.ContainerNameNotExists {
+		catch DataStackError.containerNameNotExists {
 			XCTAssertTrue(true)
 		}
 		catch {
