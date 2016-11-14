@@ -386,9 +386,9 @@
 			productReference = 021309EE1DDA6DFD0071940B /* Kashmir.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		021309F51DDA6DFD0071940B /* Kashmir_iOSTests */ = {
+		021309F51DDA6DFD0071940B /* KashmirTests_iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 02130A041DDA6DFD0071940B /* Build configuration list for PBXNativeTarget "Kashmir_iOSTests" */;
+			buildConfigurationList = 02130A041DDA6DFD0071940B /* Build configuration list for PBXNativeTarget "KashmirTests_iOS" */;
 			buildPhases = (
 				021309F21DDA6DFD0071940B /* Sources */,
 				021309F31DDA6DFD0071940B /* Frameworks */,
@@ -399,7 +399,7 @@
 			dependencies = (
 				021309F91DDA6DFD0071940B /* PBXTargetDependency */,
 			);
-			name = Kashmir_iOSTests;
+			name = KashmirTests_iOS;
 			productName = Kashmir_iOSTests;
 			productReference = 021309F61DDA6DFD0071940B /* KashmirTests_iOS.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -575,7 +575,7 @@
 				031BF5A41CE37B4800DD028A /* Kashmir */,
 				021309ED1DDA6DFD0071940B /* Kashmir_iOS */,
 				031BF5AE1CE37B4800DD028A /* KashmirTests */,
-				021309F51DDA6DFD0071940B /* Kashmir_iOSTests */,
+				021309F51DDA6DFD0071940B /* KashmirTests_iOS */,
 				031BF5C31CE37EDE00DD028A /* Kashmir macOS */,
 				031BF5DF1CE37FA700DD028A /* Kashmir iOS */,
 				031BF5EC1CE3800F00DD028A /* Kashmir tvOS */,
@@ -1237,7 +1237,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		02130A041DDA6DFD0071940B /* Build configuration list for PBXNativeTarget "Kashmir_iOSTests" */ = {
+		02130A041DDA6DFD0071940B /* Build configuration list for PBXNativeTarget "KashmirTests_iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				02130A011DDA6DFD0071940B /* Debug */,
