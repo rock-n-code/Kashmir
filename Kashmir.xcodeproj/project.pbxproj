@@ -16,6 +16,9 @@
 		02130A141DDA71B00071940B /* StringExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02130A111DDA71B00071940B /* StringExtensionsTests.swift */; };
 		02130A161DDA71BE0071940B /* Test in Resources */ = {isa = PBXBuildFile; fileRef = 02130A151DDA71BE0071940B /* Test */; };
 		02130A1C1DDA71DE0071940B /* Test.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 02130A1A1DDA71DE0071940B /* Test.xcdatamodeld */; };
+		02130A231DDA75050071940B /* UIDeviceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02130A211DDA75000071940B /* UIDeviceExtensions.swift */; };
+		02130A241DDA75070071940B /* UIDeviceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02130A211DDA75000071940B /* UIDeviceExtensions.swift */; };
+		02130A251DDA75840071940B /* UIDeviceExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02130A1F1DDA74F00071940B /* UIDeviceExtensionsTests.swift */; };
 		031BF5A91CE37B4800DD028A /* Kashmir.h in Headers */ = {isa = PBXBuildFile; fileRef = 031BF5A81CE37B4800DD028A /* Kashmir.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		031BF5B01CE37B4800DD028A /* Kashmir.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 031BF5A51CE37B4800DD028A /* Kashmir.framework */; };
 		0323207A1D245B0A00BB79A1 /* URLResponseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032320791D245B0A00BB79A1 /* URLResponseError.swift */; };
@@ -90,6 +93,8 @@
 		02130A111DDA71B00071940B /* StringExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringExtensionsTests.swift; path = Shared/StringExtensionsTests.swift; sourceTree = "<group>"; };
 		02130A151DDA71BE0071940B /* Test */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Test; path = Shared/Test; sourceTree = "<group>"; };
 		02130A1B1DDA71DE0071940B /* Test.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Test.xcdatamodel; sourceTree = "<group>"; };
+		02130A1F1DDA74F00071940B /* UIDeviceExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIDeviceExtensionsTests.swift; path = KashmirTests/iOS/UIDeviceExtensionsTests.swift; sourceTree = SOURCE_ROOT; };
+		02130A211DDA75000071940B /* UIDeviceExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIDeviceExtensions.swift; path = Kashmir/iOS/UIDeviceExtensions.swift; sourceTree = SOURCE_ROOT; };
 		031BF5A51CE37B4800DD028A /* Kashmir.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kashmir.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		031BF5A81CE37B4800DD028A /* Kashmir.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Kashmir.h; sourceTree = "<group>"; };
 		031BF5AA1CE37B4800DD028A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -175,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				02130A061DDA6EA90071940B /* Kashmir_iOS.h */,
+				02130A1D1DDA74D30071940B /* Extensions */,
 				02130A051DDA6EA90071940B /* Info_iOS.plist */,
 			);
 			path = Kashmir_iOS;
@@ -183,10 +189,27 @@
 		021309FA1DDA6DFD0071940B /* KashmirTests_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				02130A1E1DDA74DE0071940B /* Extensions */,
 				02130A091DDA6EC00071940B /* Info_iOS.plist */,
 			);
 			name = KashmirTests_iOS;
 			path = Kashmir_iOSTests;
+			sourceTree = "<group>";
+		};
+		02130A1D1DDA74D30071940B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				02130A211DDA75000071940B /* UIDeviceExtensions.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		02130A1E1DDA74DE0071940B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				02130A1F1DDA74F00071940B /* UIDeviceExtensionsTests.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 		031BF59B1CE37B4800DD028A = {
@@ -650,6 +673,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02130A231DDA75050071940B /* UIDeviceExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -657,6 +681,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02130A251DDA75840071940B /* UIDeviceExtensionsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -714,6 +739,7 @@
 				03B8E5421D24F28F00E40586 /* URLRequestMethod.swift in Sources */,
 				0323207C1D245B0A00BB79A1 /* URLResponseError.swift in Sources */,
 				03B8E5461D24F29E00E40586 /* URLResponseStatusCode.swift in Sources */,
+				02130A241DDA75070071940B /* UIDeviceExtensions.swift in Sources */,
 				0340747C1D7088C2004099AC /* BundleExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -825,6 +851,7 @@
 		02130A011DDA6DFD0071940B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -845,6 +872,7 @@
 		02130A021DDA6DFD0071940B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
