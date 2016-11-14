@@ -180,11 +180,12 @@
 			path = Kashmir_iOS;
 			sourceTree = "<group>";
 		};
-		021309FA1DDA6DFD0071940B /* Kashmir_iOSTests */ = {
+		021309FA1DDA6DFD0071940B /* KashmirTests_iOS */ = {
 			isa = PBXGroup;
 			children = (
 				02130A091DDA6EC00071940B /* Info_iOS.plist */,
 			);
+			name = KashmirTests_iOS;
 			path = Kashmir_iOSTests;
 			sourceTree = "<group>";
 		};
@@ -194,7 +195,7 @@
 				031BF5A71CE37B4800DD028A /* Kashmir */,
 				021309EF1DDA6DFD0071940B /* Kashmir_iOS */,
 				031BF5B31CE37B4800DD028A /* KashmirTests */,
-				021309FA1DDA6DFD0071940B /* Kashmir_iOSTests */,
+				021309FA1DDA6DFD0071940B /* KashmirTests_iOS */,
 				031BF5A61CE37B4800DD028A /* Products */,
 			);
 			sourceTree = "<group>";
