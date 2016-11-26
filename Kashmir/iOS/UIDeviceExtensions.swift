@@ -3,7 +3,7 @@
 //  KLMCheckInservices
 //
 //  Created by Javier Cicchelli on 31/10/2016.
-//  Copyright © 2016 KLM. All rights reserved.
+//  Copyright © 2016 Rock & Code. All rights reserved.
 //
 
 import UIKit
