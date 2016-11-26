@@ -10,7 +10,7 @@ import Foundation
 
 extension NSObject {
 
-	// MARK: - Properties
+	// MARK: Properties
 
 	/// Returns the name of the class as a *String* type.
 	public static var name: String {
