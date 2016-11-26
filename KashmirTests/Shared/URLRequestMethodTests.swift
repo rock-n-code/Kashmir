@@ -12,7 +12,7 @@ import XCTest
 
 class URLRequestMethodTests: XCTestCase {
 
-	// MARK: - Setup
+	// MARK: Setup
 
 	override func setUp() {
 		super.setUp()
@@ -22,7 +22,7 @@ class URLRequestMethodTests: XCTestCase {
 		super.tearDown()
 	}
 
-	// MARK: - Properties tests
+	// MARK: Properties tests
 
 	func testRawValue() {
 		XCTAssertEqual(URLRequest.Method.get.rawValue, "GET")
