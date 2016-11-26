@@ -10,13 +10,12 @@ import Foundation
 
 extension Bundle {
 
-	// MARK: - Functions
+	// MARK: Functions
 
 	/// Search for the first appearance of a file within all the declared frameworks and bundles and provide a URL containing the physical location of the requested file in case it is found.
 	///
-	/// - parameter named:         The name of the file to search
+	/// - parameter named: The name of the file to search
 	/// - parameter fileExtension: The file extension of the file to search (if any)
-	///
 	/// - returns: A *URL* containing the physical location of the requested file in case it is actually found.
 	public static func url(forResource named: String, withExtension fileExtension: String? = nil) -> URL? {
 		var url: URL?
@@ -44,9 +43,8 @@ extension Bundle {
 
 	/// Search for the all the appearances of a file within all the declared frameworks and bundles and provide an array of URLs containing the physical locations of the requested file in case it is found.
 	///
-	/// - parameter named:         The name of the file to search
+	/// - parameter named: The name of the file to search
 	/// - parameter fileExtension: The file extension of the file to search (if any)
-	///
 	/// - returns: An array of *URL* containing the physical locations of the requested file in case it is actually found. Otherwise it returns an empty array.
 	public static func urls(forResource named: String, withExtension fileExtension: String? = nil) -> [URL] {
 		var urls = [URL]()

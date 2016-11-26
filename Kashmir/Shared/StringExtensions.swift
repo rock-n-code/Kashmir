@@ -10,7 +10,7 @@ import Foundation
 
 extension String {
 
-	// MARK: - Properties
+	// MARK: Properties
 
 	/// Returns an encoded version of the current string to use with *URL* paths.
 	public var urlEncoded: String {
