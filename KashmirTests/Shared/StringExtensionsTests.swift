@@ -12,7 +12,7 @@ import XCTest
 
 class StringExtensionsTests: XCTestCase {
 
-	// MARK: - Setup
+	// MARK: Setup
 
 	override func setUp() {
 		super.setUp()
@@ -22,7 +22,7 @@ class StringExtensionsTests: XCTestCase {
 		super.tearDown()
 	}
 
-	// MARK: - Properties tests
+	// MARK: Properties tests
 
 	func testUrlEncoded() {
 		XCTAssertEqual("".urlEncoded, "")

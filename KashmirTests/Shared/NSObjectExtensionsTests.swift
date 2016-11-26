@@ -15,7 +15,7 @@ class OtherTest: NSObject {}
 
 class NSObjectExtensionsTests: XCTestCase {
 
-	// MARK: - Setup
+	// MARK: Setup
 
 	override func setUp() {
 		super.setUp()
@@ -25,7 +25,7 @@ class NSObjectExtensionsTests: XCTestCase {
 		super.tearDown()
 	}
 
-	// MARK: - Properties tests
+	// MARK: Properties tests
 
 	func testName() {
 		XCTAssertEqual(Test.name, "Test")

@@ -12,7 +12,7 @@ import XCTest
 
 class BundleExtensionsTests: XCTestCase {
 
-	// MARK: - Setup
+	// MARK: Setup
 
 	override func setUp() {
 		super.setUp()
@@ -22,7 +22,7 @@ class BundleExtensionsTests: XCTestCase {
 		super.tearDown()
 	}
 
-	// MARK: - Functions tests
+	// MARK: Functions tests
 
 	func testUrlForResource() {
 		let url = Bundle.url(forResource: "Test")
@@ -63,7 +63,7 @@ class BundleExtensionsTests: XCTestCase {
 		XCTAssertEqual(urls.count, 0)
 	}
 
-	// MARK: - Performance tests
+	// MARK: Performance tests
 
 	func testUrlForResourcePerformance() {
 		measure {

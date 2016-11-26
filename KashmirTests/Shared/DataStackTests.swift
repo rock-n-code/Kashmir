@@ -12,12 +12,12 @@ import XCTest
 
 class DataStackTests: XCTestCase {
 
-	// MARK: - Constants
+	// MARK: Constants
 
 	let manager = DataStack.manager
 	let modelName = "Test"
 
-	// MARK: - Setup
+	// MARK: Setup
 
     override func setUp() {
         super.setUp()
@@ -27,13 +27,13 @@ class DataStackTests: XCTestCase {
         super.tearDown()
     }
 
-	// MARK: - Properties tests
+	// MARK: Properties tests
 
 	func testManager() {
 		XCTAssertNotNil(DataStack.manager)
 	}
 
-	// MARK: - Initialisation tests
+	// MARK: Initialisation tests
 
 	func testInit() {
 		let instance = DataStack()
@@ -43,7 +43,7 @@ class DataStackTests: XCTestCase {
 		XCTAssertTrue(instance.containers.isEmpty)
 	}
 
-	// MARK: - Functions tests
+	// MARK: Functions tests
 
 	func testAddModelName() {
 		do {
@@ -236,7 +236,7 @@ class DataStackTests: XCTestCase {
 		}
 	}
 
-	// MARK: - Performance tests
+	// MARK: Performance tests
     
     func testManagerPerformance() {
         measure {
