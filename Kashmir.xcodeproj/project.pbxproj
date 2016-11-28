@@ -41,6 +41,10 @@
 		027FD2B01DEA4BFE009814AB /* XibableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027FD2AD1DEA4BC5009814AB /* XibableView.swift */; };
 		027FD2B91DEA4CC5009814AB /* XibableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027FD2B21DEA4C35009814AB /* XibableViewTests.swift */; };
 		027FD2BC1DEA4EB4009814AB /* NSObjectExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E668DA1D69AFEE00F6110A /* NSObjectExtensions.swift */; };
+		02CDE5DC1DEC9F5C00EE7892 /* ReachabilityError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CDE5DB1DEC9F5C00EE7892 /* ReachabilityError.swift */; };
+		02CDE5DD1DEC9F5C00EE7892 /* ReachabilityError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CDE5DB1DEC9F5C00EE7892 /* ReachabilityError.swift */; };
+		02CDE5DE1DEC9F5C00EE7892 /* ReachabilityError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CDE5DB1DEC9F5C00EE7892 /* ReachabilityError.swift */; };
+		02CDE5DF1DEC9F5C00EE7892 /* ReachabilityError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CDE5DB1DEC9F5C00EE7892 /* ReachabilityError.swift */; };
 		02CDE5E11DEC9FE100EE7892 /* NetworkConnectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CDE5E01DEC9FE100EE7892 /* NetworkConnectivity.swift */; };
 		02CDE5E21DEC9FE100EE7892 /* NetworkConnectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CDE5E01DEC9FE100EE7892 /* NetworkConnectivity.swift */; };
 		02CDE5E31DEC9FE100EE7892 /* NetworkConnectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CDE5E01DEC9FE100EE7892 /* NetworkConnectivity.swift */; };
@@ -144,6 +148,7 @@
 		027FD2AD1DEA4BC5009814AB /* XibableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XibableView.swift; path = Kashmir/iOS/XibableView.swift; sourceTree = SOURCE_ROOT; };
 		027FD2B21DEA4C35009814AB /* XibableViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XibableViewTests.swift; path = KashmirTests/iOS/XibableViewTests.swift; sourceTree = SOURCE_ROOT; };
 		027FD2B61DEA4CA7009814AB /* TestView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TestView.xib; path = KashmirTests/iOS/TestView.xib; sourceTree = SOURCE_ROOT; };
+		02CDE5DB1DEC9F5C00EE7892 /* ReachabilityError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReachabilityError.swift; path = Shared/ReachabilityError.swift; sourceTree = "<group>"; };
 		02CDE5E01DEC9FE100EE7892 /* NetworkConnectivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkConnectivity.swift; path = Shared/NetworkConnectivity.swift; sourceTree = "<group>"; };
 		02CDE5E51DEC9FFC00EE7892 /* NetworkStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkStatus.swift; path = Shared/NetworkStatus.swift; sourceTree = "<group>"; };
 		02CDE5EF1DECA12A00EE7892 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Network.swift; path = Shared/Network.swift; sourceTree = "<group>"; };
@@ -400,6 +405,7 @@
 			children = (
 				03B67C6C1D8AF116001DFFE6 /* DataStackError.swift */,
 				0225926D1DEA5BA0005DD338 /* DataSourceError.swift */,
+				02CDE5DB1DEC9F5C00EE7892 /* ReachabilityError.swift */,
 				032320791D245B0A00BB79A1 /* URLResponseError.swift */,
 			);
 			name = Errors;
@@ -831,6 +837,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02CDE5DC1DEC9F5C00EE7892 /* ReachabilityError.swift in Sources */,
 				0323207A1D245B0A00BB79A1 /* URLResponseError.swift in Sources */,
 				03B67C6D1D8AF116001DFFE6 /* DataStackError.swift in Sources */,
 				02CDE5E61DEC9FFC00EE7892 /* NetworkStatus.swift in Sources */,
@@ -881,6 +888,7 @@
 				0323207B1D245B0A00BB79A1 /* URLResponseError.swift in Sources */,
 				03B8E5451D24F29E00E40586 /* URLResponseStatusCode.swift in Sources */,
 				02CDE5E71DEC9FFC00EE7892 /* NetworkStatus.swift in Sources */,
+				02CDE5DD1DEC9F5C00EE7892 /* ReachabilityError.swift in Sources */,
 				0340747B1D7088C2004099AC /* BundleExtensions.swift in Sources */,
 				0225927B1DEA5BF9005DD338 /* DataSourceError.swift in Sources */,
 			);
@@ -892,6 +900,7 @@
 			files = (
 				03B8E54A1D24F2A600E40586 /* StringExtensions.swift in Sources */,
 				02CDE5E31DEC9FE100EE7892 /* NetworkConnectivity.swift in Sources */,
+				02CDE5DE1DEC9F5C00EE7892 /* ReachabilityError.swift in Sources */,
 				0225927A1DEA5BF8005DD338 /* DataSourceError.swift in Sources */,
 				03B67C791D8AF884001DFFE6 /* DataStackError.swift in Sources */,
 				03B67C7D1D8AF88A001DFFE6 /* DataStack.swift in Sources */,
@@ -922,6 +931,7 @@
 				0323207D1D245B0A00BB79A1 /* URLResponseError.swift in Sources */,
 				03B8E5471D24F29F00E40586 /* URLResponseStatusCode.swift in Sources */,
 				02CDE5E91DEC9FFC00EE7892 /* NetworkStatus.swift in Sources */,
+				02CDE5DF1DEC9F5C00EE7892 /* ReachabilityError.swift in Sources */,
 				0340747D1D7088C2004099AC /* BundleExtensions.swift in Sources */,
 				022592791DEA5BF8005DD338 /* DataSourceError.swift in Sources */,
 			);
