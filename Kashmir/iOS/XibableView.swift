@@ -12,19 +12,19 @@ import UIKit
 ///
 /// - important: This class **must** be used in case it is required to integrate a custom view into a storyboard.
 /// - seealso: For more information on [how to reuse a custom view with xib file in a storyboard](http://stackoverflow.com/questions/30335089/reuse-a-uiview-xib-in-storyboard/37668821#37668821)
-class XibableView: UIView {
+public class XibableView: UIView {
     
     // MARK: Initializers
     
     
-    override init(frame: CGRect) {
+    override public init(frame: CGRect) {
         super.init(frame: frame)
         
         setupXib()
     }
     
     required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
+        super.init?(coder: aDecoder)
         
         setupXib()
     }

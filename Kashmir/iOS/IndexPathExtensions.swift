@@ -6,9 +6,7 @@
 //  Copyright © 2016 Rock & Code. All rights reserved.
 //
 
-import Foundation
-
-extension IndexPath {
+public extension IndexPath {
     
     // MARK: Properties
     

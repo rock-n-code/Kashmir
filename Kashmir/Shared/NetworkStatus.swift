@@ -26,7 +26,7 @@ extension Network {
         
         /// Initializer with network reachability flags.
         ///
-        /// - Parameter flags: A set of flags provided by the network reachability check.
+        /// - parameter flags: A set of flags provided by the network reachability check.
         public init(flags: SCNetworkReachabilityFlags) {
             switch flags {
             case _ where flags.isReachableViaWiFi:
@@ -51,6 +51,12 @@ extension Network.Status: Equatable {
     
     // MARK: Functions
     
+    /// Checks if two `Status` instances are equal.
+    ///
+    /// - Parameters:
+    ///   - lhs: A `Status` instance at the left side of the `==` operator.
+    ///   - rhs: A `Status` instance at the right side of the `==` operator.
+    /// - Returns: A boolean value that represents if the two given `Status` instances are equal.
     public static func == (lhs: Network.Status, rhs: Network.Status) -> Bool {
         switch (lhs, rhs) {
             case (.notReachable, .notReachable): return true
@@ -58,5 +64,5 @@ extension Network.Status: Equatable {
             default: return false
         }
     }
+    
 }
-

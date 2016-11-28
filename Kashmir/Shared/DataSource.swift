@@ -6,10 +6,8 @@
 //  Copyright © 2016 Rock & Code. All rights reserved.
 //
 
-import Foundation
-
 /// This protocol defines the minimal requirements a compliant data source instance should implement in order to provide data to a view controller.
-protocol DataSource: class {
+public protocol DataSource: class {
     
     /// Generic placeholder for the data type instances to use as the source from where the data for the data source is generated.
     associatedtype SourceData
@@ -63,7 +61,7 @@ protocol DataSource: class {
 
 // MARK: -
 
-extension DataSource {
+public extension DataSource {
     
     // MARK: Properties
     

@@ -6,10 +6,8 @@
 //  Copyright © 2016 Rock & Code. All rights reserved.
 //
 
-import Foundation
-
 /// This protocol defines the basic implementation of a section item used by the data dictionary within any class that implements the `DataSource` protocol.
-protocol Sectionable: DataUnitable, Hashable {
+public protocol Sectionable: DataUnitable, Hashable {
     
     // MARK: Properties
     
@@ -25,7 +23,7 @@ protocol Sectionable: DataUnitable, Hashable {
 
 // MARK: - Hashable
 
-extension Sectionable {
+public extension Sectionable {
     
     // MARK: Properties
     
@@ -37,6 +35,16 @@ extension Sectionable {
 
 // MARK: - Equatable
 
-func ==<S: Sectionable> (lhs: S, rhs: S) -> Bool {
-    return  lhs.index == rhs.index && lhs.id == rhs.id
+extension Sectionable {
+    
+    /// Checks if two `Sectionable` instances are equal.
+    ///
+    /// - Parameters:
+    ///   - lhs: A `Sectionable` instance at the left side of the `==` operator.
+    ///   - rhs: A `Sectionable` instance at the right side of the `==` operator.
+    /// - Returns: A boolean value that represents if the two given `Sectionable` instances are equal.
+    public static func == (lhs: Self, rhs: Self) -> Bool {
+        return lhs.index == rhs.index && lhs.id == rhs.id
+    }
+    
 }

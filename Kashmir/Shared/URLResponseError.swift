@@ -6,8 +6,6 @@
 //  Copyright © 2016 Rock & Code. All rights reserved.
 //
 
-import Foundation
-
 /// Representation for the error codes defined on the **StatusCode** enumeration of *URLResponse*.
 ///
 /// - **unauthorizedAccess**: Similar to *forbiddenAccess*, but specifically for use when authentication is required and has failed or has not yet been provided.

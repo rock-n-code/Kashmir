@@ -8,26 +8,26 @@
 
 import UIKit
 
-extension UIDevice {
+public extension UIDevice {
     
     // MARK: Properties
 
     /// Gets the version number of the `UIDevice` instance's operating system.
-    public var version: Float {
+    var version: Float {
         return Float(UIDevice.current.systemVersion)!
     }
     
     /// Check if the current device is in portrait mode.
     ///
     /// - important: This method checks for the orientation state of the device's status bar instead of checking the `UIDevice` instance's orientation.
-    public var isPortrait: Bool {
+    var isPortrait: Bool {
         return UIApplication.shared.statusBarOrientation.isPortrait
     }
     
     /// Check if the current device is in landscape mode.
     ///
     /// - important: This method checks for the orientation state of the device's status bar instead of checking the `UIDevice` instance's orientation.
-    public var isLandscape: Bool {
+    var isLandscape: Bool {
         return UIApplication.shared.statusBarOrientation.isLandscape
     }
 
