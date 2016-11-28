@@ -39,6 +39,10 @@
 		027FD2B01DEA4BFE009814AB /* XibableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027FD2AD1DEA4BC5009814AB /* XibableView.swift */; };
 		027FD2B91DEA4CC5009814AB /* XibableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027FD2B21DEA4C35009814AB /* XibableViewTests.swift */; };
 		027FD2BC1DEA4EB4009814AB /* NSObjectExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E668DA1D69AFEE00F6110A /* NSObjectExtensions.swift */; };
+		02CDE5F01DECA12A00EE7892 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CDE5EF1DECA12A00EE7892 /* Network.swift */; };
+		02CDE5F11DECA12A00EE7892 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CDE5EF1DECA12A00EE7892 /* Network.swift */; };
+		02CDE5F21DECA12A00EE7892 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CDE5EF1DECA12A00EE7892 /* Network.swift */; };
+		02CDE5F31DECA12A00EE7892 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CDE5EF1DECA12A00EE7892 /* Network.swift */; };
 		031BF5A91CE37B4800DD028A /* Kashmir.h in Headers */ = {isa = PBXBuildFile; fileRef = 031BF5A81CE37B4800DD028A /* Kashmir.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		031BF5B01CE37B4800DD028A /* Kashmir.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 031BF5A51CE37B4800DD028A /* Kashmir.framework */; };
 		0323207A1D245B0A00BB79A1 /* URLResponseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032320791D245B0A00BB79A1 /* URLResponseError.swift */; };
@@ -128,6 +132,7 @@
 		027FD2AD1DEA4BC5009814AB /* XibableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XibableView.swift; path = Kashmir/iOS/XibableView.swift; sourceTree = SOURCE_ROOT; };
 		027FD2B21DEA4C35009814AB /* XibableViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XibableViewTests.swift; path = KashmirTests/iOS/XibableViewTests.swift; sourceTree = SOURCE_ROOT; };
 		027FD2B61DEA4CA7009814AB /* TestView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TestView.xib; path = KashmirTests/iOS/TestView.xib; sourceTree = SOURCE_ROOT; };
+		02CDE5EF1DECA12A00EE7892 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Network.swift; path = Shared/Network.swift; sourceTree = "<group>"; };
 		031BF5A51CE37B4800DD028A /* Kashmir.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kashmir.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		031BF5A81CE37B4800DD028A /* Kashmir.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Kashmir.h; sourceTree = "<group>"; };
 		031BF5AA1CE37B4800DD028A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -303,6 +308,14 @@
 			name = XIBs;
 			sourceTree = "<group>";
 		};
+		02CDE5F41DECA14000EE7892 /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				02CDE5EF1DECA12A00EE7892 /* Network.swift */,
+			);
+			name = Structs;
+			sourceTree = "<group>";
+		};
 		031BF59B1CE37B4800DD028A = {
 			isa = PBXGroup;
 			children = (
@@ -333,6 +346,7 @@
 			isa = PBXGroup;
 			children = (
 				031BF5A81CE37B4800DD028A /* Kashmir.h */,
+				02CDE5F41DECA14000EE7892 /* Structs */,
 				032A85DE1D1B875500401E29 /* Enumerations */,
 				032320781D245ACA00BB79A1 /* Errors */,
 				0225926F1DEA5BBE005DD338 /* Protocols */,
@@ -798,6 +812,7 @@
 				03E668DB1D69AFEE00F6110A /* NSObjectExtensions.swift in Sources */,
 				032A85E31D1BA4F300401E29 /* StringExtensions.swift in Sources */,
 				03B8E5401D24F1B000E40586 /* URLRequestMethod.swift in Sources */,
+				02CDE5F01DECA12A00EE7892 /* Network.swift in Sources */,
 				032A85E01D1B879800401E29 /* URLResponseStatusCode.swift in Sources */,
 				022592771DEA5BD1005DD338 /* Sectionable.swift in Sources */,
 				0340747A1D7088C2004099AC /* BundleExtensions.swift in Sources */,
@@ -830,6 +845,7 @@
 				03B67C781D8AF884001DFFE6 /* DataStackError.swift in Sources */,
 				03B67C7C1D8AF88A001DFFE6 /* DataStack.swift in Sources */,
 				03E668DC1D69AFEE00F6110A /* NSObjectExtensions.swift in Sources */,
+				02CDE5F11DECA12A00EE7892 /* Network.swift in Sources */,
 				03B8E5411D24F28E00E40586 /* URLRequestMethod.swift in Sources */,
 				0323207B1D245B0A00BB79A1 /* URLResponseError.swift in Sources */,
 				03B8E5451D24F29E00E40586 /* URLResponseStatusCode.swift in Sources */,
@@ -852,6 +868,7 @@
 				0323207C1D245B0A00BB79A1 /* URLResponseError.swift in Sources */,
 				03B8E5461D24F29E00E40586 /* URLResponseStatusCode.swift in Sources */,
 				022592861DEAE989005DD338 /* IndexPathExtensions.swift in Sources */,
+				02CDE5F21DECA12A00EE7892 /* Network.swift in Sources */,
 				02130A241DDA75070071940B /* UIDeviceExtensions.swift in Sources */,
 				0340747C1D7088C2004099AC /* BundleExtensions.swift in Sources */,
 			);
@@ -865,6 +882,7 @@
 				03B67C7A1D8AF885001DFFE6 /* DataStackError.swift in Sources */,
 				03B67C7E1D8AF88B001DFFE6 /* DataStack.swift in Sources */,
 				03E668DE1D69AFEE00F6110A /* NSObjectExtensions.swift in Sources */,
+				02CDE5F31DECA12A00EE7892 /* Network.swift in Sources */,
 				03B8E5431D24F29000E40586 /* URLRequestMethod.swift in Sources */,
 				0323207D1D245B0A00BB79A1 /* URLResponseError.swift in Sources */,
 				03B8E5471D24F29F00E40586 /* URLResponseStatusCode.swift in Sources */,
