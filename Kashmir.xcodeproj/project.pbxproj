@@ -35,6 +35,8 @@
 		022592851DEAE986005DD338 /* IndexPathExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022592831DEAE97F005DD338 /* IndexPathExtensions.swift */; };
 		022592861DEAE989005DD338 /* IndexPathExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022592831DEAE97F005DD338 /* IndexPathExtensions.swift */; };
 		022592891DEAE99F005DD338 /* IndexPathExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022592871DEAE99A005DD338 /* IndexPathExtensionsTests.swift */; };
+		02384AC11DECB76700B664D3 /* NetworkStatusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02384AC01DECB76700B664D3 /* NetworkStatusTests.swift */; };
+		02384AC41DECD29600B664D3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02384AC31DECD29600B664D3 /* SystemConfiguration.framework */; };
 		027FD2AF1DEA4BFC009814AB /* XibableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027FD2AD1DEA4BC5009814AB /* XibableView.swift */; };
 		027FD2B01DEA4BFE009814AB /* XibableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027FD2AD1DEA4BC5009814AB /* XibableView.swift */; };
 		027FD2B91DEA4CC5009814AB /* XibableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027FD2B21DEA4C35009814AB /* XibableViewTests.swift */; };
@@ -43,6 +45,10 @@
 		02CDE5E21DEC9FE100EE7892 /* NetworkConnectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CDE5E01DEC9FE100EE7892 /* NetworkConnectivity.swift */; };
 		02CDE5E31DEC9FE100EE7892 /* NetworkConnectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CDE5E01DEC9FE100EE7892 /* NetworkConnectivity.swift */; };
 		02CDE5E41DEC9FE100EE7892 /* NetworkConnectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CDE5E01DEC9FE100EE7892 /* NetworkConnectivity.swift */; };
+		02CDE5E61DEC9FFC00EE7892 /* NetworkStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CDE5E51DEC9FFC00EE7892 /* NetworkStatus.swift */; };
+		02CDE5E71DEC9FFC00EE7892 /* NetworkStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CDE5E51DEC9FFC00EE7892 /* NetworkStatus.swift */; };
+		02CDE5E81DEC9FFC00EE7892 /* NetworkStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CDE5E51DEC9FFC00EE7892 /* NetworkStatus.swift */; };
+		02CDE5E91DEC9FFC00EE7892 /* NetworkStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CDE5E51DEC9FFC00EE7892 /* NetworkStatus.swift */; };
 		02CDE5F01DECA12A00EE7892 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CDE5EF1DECA12A00EE7892 /* Network.swift */; };
 		02CDE5F11DECA12A00EE7892 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CDE5EF1DECA12A00EE7892 /* Network.swift */; };
 		02CDE5F21DECA12A00EE7892 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CDE5EF1DECA12A00EE7892 /* Network.swift */; };
@@ -133,10 +139,13 @@
 		0225927F1DEA5C50005DD338 /* SectionableTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SectionableTests.swift; path = Shared/SectionableTests.swift; sourceTree = "<group>"; };
 		022592831DEAE97F005DD338 /* IndexPathExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IndexPathExtensions.swift; path = Kashmir/iOS/IndexPathExtensions.swift; sourceTree = SOURCE_ROOT; };
 		022592871DEAE99A005DD338 /* IndexPathExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IndexPathExtensionsTests.swift; path = KashmirTests/iOS/IndexPathExtensionsTests.swift; sourceTree = SOURCE_ROOT; };
+		02384AC01DECB76700B664D3 /* NetworkStatusTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkStatusTests.swift; path = Shared/NetworkStatusTests.swift; sourceTree = "<group>"; };
+		02384AC31DECD29600B664D3 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		027FD2AD1DEA4BC5009814AB /* XibableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XibableView.swift; path = Kashmir/iOS/XibableView.swift; sourceTree = SOURCE_ROOT; };
 		027FD2B21DEA4C35009814AB /* XibableViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XibableViewTests.swift; path = KashmirTests/iOS/XibableViewTests.swift; sourceTree = SOURCE_ROOT; };
 		027FD2B61DEA4CA7009814AB /* TestView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TestView.xib; path = KashmirTests/iOS/TestView.xib; sourceTree = SOURCE_ROOT; };
 		02CDE5E01DEC9FE100EE7892 /* NetworkConnectivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkConnectivity.swift; path = Shared/NetworkConnectivity.swift; sourceTree = "<group>"; };
+		02CDE5E51DEC9FFC00EE7892 /* NetworkStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkStatus.swift; path = Shared/NetworkStatus.swift; sourceTree = "<group>"; };
 		02CDE5EF1DECA12A00EE7892 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Network.swift; path = Shared/Network.swift; sourceTree = "<group>"; };
 		031BF5A51CE37B4800DD028A /* Kashmir.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kashmir.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		031BF5A81CE37B4800DD028A /* Kashmir.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Kashmir.h; sourceTree = "<group>"; };
@@ -184,6 +193,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02384AC41DECD29600B664D3 /* SystemConfiguration.framework in Frameworks */,
 				031BF5B01CE37B4800DD028A /* Kashmir.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,6 +291,14 @@
 			name = Protocols;
 			sourceTree = "<group>";
 		};
+		02384AC21DECD29600B664D3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				02384AC31DECD29600B664D3 /* SystemConfiguration.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		027FD2AC1DEA4BB2009814AB /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -328,6 +346,7 @@
 				021309EF1DDA6DFD0071940B /* Kashmir_iOS */,
 				031BF5B31CE37B4800DD028A /* KashmirTests */,
 				021309FA1DDA6DFD0071940B /* KashmirTests_iOS */,
+				02384AC21DECD29600B664D3 /* Frameworks */,
 				031BF5A61CE37B4800DD028A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -390,6 +409,7 @@
 			isa = PBXGroup;
 			children = (
 				02CDE5E01DEC9FE100EE7892 /* NetworkConnectivity.swift */,
+				02CDE5E51DEC9FFC00EE7892 /* NetworkStatus.swift */,
 				03B8E53F1D24F1B000E40586 /* URLRequestMethod.swift */,
 				032A85DF1D1B879800401E29 /* URLResponseStatusCode.swift */,
 			);
@@ -420,6 +440,7 @@
 			isa = PBXGroup;
 			children = (
 				02130A0B1DDA71950071940B /* URLRequestMethodTests.swift */,
+				02384AC01DECB76700B664D3 /* NetworkStatusTests.swift */,
 			);
 			name = Enumerations;
 			sourceTree = "<group>";
@@ -812,6 +833,7 @@
 			files = (
 				0323207A1D245B0A00BB79A1 /* URLResponseError.swift in Sources */,
 				03B67C6D1D8AF116001DFFE6 /* DataStackError.swift in Sources */,
+				02CDE5E61DEC9FFC00EE7892 /* NetworkStatus.swift in Sources */,
 				03B67C701D8AF154001DFFE6 /* DataStack.swift in Sources */,
 				022592761DEA5BD1005DD338 /* Itemable.swift in Sources */,
 				022592751DEA5BD1005DD338 /* DataUnitable.swift in Sources */,
@@ -838,6 +860,7 @@
 				02130A131DDA71B00071940B /* NSObjectExtensionsTests.swift in Sources */,
 				02130A121DDA71B00071940B /* BundleExtensionsTests.swift in Sources */,
 				02130A0E1DDA719F0071940B /* DataStackTests.swift in Sources */,
+				02384AC11DECB76700B664D3 /* NetworkStatusTests.swift in Sources */,
 				022592821DEA5C50005DD338 /* SectionableTests.swift in Sources */,
 				022592801DEA5C50005DD338 /* DataSourceTests.swift in Sources */,
 				02130A1C1DDA71DE0071940B /* Test.xcdatamodeld in Sources */,
@@ -857,6 +880,7 @@
 				03B8E5411D24F28E00E40586 /* URLRequestMethod.swift in Sources */,
 				0323207B1D245B0A00BB79A1 /* URLResponseError.swift in Sources */,
 				03B8E5451D24F29E00E40586 /* URLResponseStatusCode.swift in Sources */,
+				02CDE5E71DEC9FFC00EE7892 /* NetworkStatus.swift in Sources */,
 				0340747B1D7088C2004099AC /* BundleExtensions.swift in Sources */,
 				0225927B1DEA5BF9005DD338 /* DataSourceError.swift in Sources */,
 			);
@@ -877,6 +901,7 @@
 				0323207C1D245B0A00BB79A1 /* URLResponseError.swift in Sources */,
 				03B8E5461D24F29E00E40586 /* URLResponseStatusCode.swift in Sources */,
 				022592861DEAE989005DD338 /* IndexPathExtensions.swift in Sources */,
+				02CDE5E81DEC9FFC00EE7892 /* NetworkStatus.swift in Sources */,
 				02CDE5F21DECA12A00EE7892 /* Network.swift in Sources */,
 				02130A241DDA75070071940B /* UIDeviceExtensions.swift in Sources */,
 				0340747C1D7088C2004099AC /* BundleExtensions.swift in Sources */,
@@ -896,6 +921,7 @@
 				03B8E5431D24F29000E40586 /* URLRequestMethod.swift in Sources */,
 				0323207D1D245B0A00BB79A1 /* URLResponseError.swift in Sources */,
 				03B8E5471D24F29F00E40586 /* URLResponseStatusCode.swift in Sources */,
+				02CDE5E91DEC9FFC00EE7892 /* NetworkStatus.swift in Sources */,
 				0340747D1D7088C2004099AC /* BundleExtensions.swift in Sources */,
 				022592791DEA5BF8005DD338 /* DataSourceError.swift in Sources */,
 			);
