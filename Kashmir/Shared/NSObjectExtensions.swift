@@ -6,19 +6,17 @@
 //  Copyright © 2016 Rock & Code. All rights reserved.
 //
 
-import Foundation
-
-extension NSObject {
+public extension NSObject {
 
 	// MARK: Properties
 
 	/// Returns the name of the class as a *String* type.
-	public static var name: String {
+	static var name: String {
 		return "\(self)"
 	}
 
 	/// Returns the name of the class of the object instance as a *String* type.
-	public var nameClass: String {
+	var nameClass: String {
 		return "\(type(of: self))"
 	}
 

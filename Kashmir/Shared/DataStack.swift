@@ -6,7 +6,6 @@
 //  Copyright © 2016 Rock & Code. All rights reserved.
 //
 
-import Foundation
 import CoreData
 
 /// This class simplifies the creation and management of multiple Core Data stack by handling the creation of the *NSPersistentContainer* instances.

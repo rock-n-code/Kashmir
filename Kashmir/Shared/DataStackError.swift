@@ -6,8 +6,6 @@
 //  Copyright © 2016 Rock & Code. All rights reserved.
 //
 
-import Foundation
-
 /// Representation of the errors that could be encountered while using *DataStack*.
 ///
 /// - **objectModelNotFound**: A file of extension *.momd* containing the object model to use with *CoreData* was not found on any of the bundles included on the project or workspace.
