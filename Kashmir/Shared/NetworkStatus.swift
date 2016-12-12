@@ -12,10 +12,12 @@ extension Network {
     
     // MARK: Enumerations
     
-    /// Representatiobn of the possible network statuses on macOS, iOS and tvOS devices.
-    ///
-    /// - **notReachable**: The Internet connection is not reachable by any of the connectivity modems.
-    /// - **reachable**: The Internet connection is reachable via a defined connectivity modem.
+    /**
+    Representatiobn of the possible network statuses on macOS, iOS and tvOS devices.
+     
+    * **notReachable**: The Internet connection is not reachable by any of the connectivity modems.
+    * **reachable**: The Internet connection is reachable via a defined connectivity modem.
+    */
     public enum Status {
         /// The Internet connection is not reachable by any of the connectivity modems.
         case notReachable
@@ -24,9 +26,11 @@ extension Network {
         
         // MARK: Initializations
         
-        /// Initializer with network reachability flags.
-        ///
-        /// - parameter flags: A set of flags provided by the network reachability check.
+        /**
+        Initializer with network reachability flags.
+         
+        - parameter flags: A set of flags provided by the network reachability check.
+        */
         public init(flags: SCNetworkReachabilityFlags) {
             switch flags {
                 case _ where flags.isReachableViaWiFi:
@@ -51,12 +55,14 @@ extension Network.Status: Equatable {
     
     // MARK: Functions
     
-    /// Checks if two `Status` instances are equal.
-    ///
-    /// - Parameters:
-    ///   - lhs: A `Status` instance at the left side of the `==` operator.
-    ///   - rhs: A `Status` instance at the right side of the `==` operator.
-    /// - Returns: A boolean value that represents if the two given `Status` instances are equal.
+    /**
+    Checks if two `Status` instances are equal.
+     
+    - parameters:
+        - lhs: A `Status` instance at the left side of the `==` operator.
+        - rhs: A `Status` instance at the right side of the `==` operator.
+    - returns: A boolean value that represents if the two given `Status` instances are equal.
+    */
     public static func == (lhs: Network.Status, rhs: Network.Status) -> Bool {
         switch (lhs, rhs) {
             case (.notReachable, .notReachable): return true

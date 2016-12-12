@@ -47,7 +47,11 @@ public extension SCNetworkReachabilityFlags {
         return contains(.isLocalAddress)
     }
     
-    /// Checks if the `connectionAutomatic` flag is included.
+    /**
+    Checks if the `connectionAutomatic` flag is included.
+     
+    - note: The `connectionAutomatic` flag only exists on the **iOS** platform, on other platforms the value `false` is returned. In addittion, it is a synonym for the `connectionOnTraffic` flag.
+    */
     var isConnectionAutomatic : Bool {
         #if os(iOS)
             return contains(.connectionAutomatic)
@@ -76,9 +80,11 @@ public extension SCNetworkReachabilityFlags {
         return isReachable && !isConnectionRequired
     }
     
-    /// Checks if the `isWWAN` flag in included.
-    ///
-    /// - note: The `isWWAN` flag only exists on the **iOS** platform, on other platforms the value `false` is returned.
+    /**
+    Checks if the `isWWAN` flag in included.
+    
+    - note: The `isWWAN` flag only exists on the **iOS** platform, on other platforms the value `false` is returned.
+    */
     var isOnWWAN: Bool {
         #if os(iOS)
             return contains(.isWWAN)
@@ -87,9 +93,11 @@ public extension SCNetworkReachabilityFlags {
         #endif
     }
     
-    /// Checks if a device is able to connect to the network via a WWAN modem.
-    ///
-    /// - note: The WWAN modems are used by **iOS** devices only, on other types of devices it just checks if the device is able to connect to the network.
+    /**
+    Checks if a device is able to connect to the network via a WWAN modem.
+
+    - note: The WWAN modems are used by **iOS** devices only, on other types of devices it just checks if the device is able to connect to the network.
+    */
     var isReachableViaWWAN: Bool {
         #if os(iOS)
             return isConnected && isOnWWAN

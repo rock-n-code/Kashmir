@@ -10,11 +10,13 @@ extension Network {
     
     // MARK: Enumerations
     
-    /// Representation of the possible network connectivity modems on macOS, iOS and tvOS devices.
-    ///
-    /// - **wifi**: The WiFi modem.
-    /// - **wwan**: The WWAN modem on iOS devices.
-    /// - **any**: Any other modem used for Internet connection.
+    /**
+    Representation of the possible network connectivity modems on macOS, iOS and tvOS devices.
+    
+    * **wifi**: The WiFi modem.
+    * **wwan**: The WWAN modem on iOS devices.
+    * **any**: Any other modem used for Internet connection.
+    */
     public enum Connectivity {
         /// The WiFi modem.
         case wifi
