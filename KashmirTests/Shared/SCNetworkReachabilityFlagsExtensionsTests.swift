@@ -108,6 +108,22 @@ class SCNetworkReachabilityFlagsExtensionsTests: XCTestCase {
         
         XCTAssertFalse(flags.isALocalAddress)
     }
+    
+    func testIsConnectionAutomatic() {
+        let flags = SCNetworkReachabilityFlags(rawValue: 1 << 3)
+        
+        #if os(iOS)
+            XCTAssertTrue(flags.isConnectionAutomatic)
+        #else
+            XCTAssertFalse(flags.isConnectionAutomatic)
+        #endif
+    }
+    
+    func testIsNotConnectionAutomatic() {
+        let flags = SCNetworkReachabilityFlags(rawValue: 1 << 2 + 1 << 4)
+        
+        XCTAssertFalse(flags.isConnectionAutomatic)
+    }
 
     func testIsDirectConnection() {
         let flags = SCNetworkReachabilityFlags(rawValue: 1 << 17)

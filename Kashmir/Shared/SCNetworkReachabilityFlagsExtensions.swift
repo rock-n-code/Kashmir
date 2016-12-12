@@ -10,6 +10,8 @@ import SystemConfiguration
 
 public extension SCNetworkReachabilityFlags {
     
+    // MARK: Properties
+    
     /// Checks if the `reachable` flag is included.
     var isReachable: Bool {
         return contains(.reachable)
@@ -43,6 +45,15 @@ public extension SCNetworkReachabilityFlags {
     /// Checks if the `isLocalAddress` flag is included.
     var isALocalAddress: Bool {
         return contains(.isLocalAddress)
+    }
+    
+    /// Checks if the `connectionAutomatic` flag is included.
+    var isConnectionAutomatic : Bool {
+        #if os(iOS)
+            return contains(.connectionAutomatic)
+        #else
+            return false
+        #endif
     }
     
     /// Checks if the `isDirectConnection` flag is included.
