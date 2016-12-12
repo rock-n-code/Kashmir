@@ -108,3 +108,33 @@ public extension SCNetworkReachabilityFlags {
     }
     
 }
+
+// MARK: - CustomStringConvertible
+
+extension SCNetworkReachabilityFlags: CustomStringConvertible {
+
+    // MARK: Properties
+    
+    public var description: String {
+        var flags = ""
+        
+        #if os(iOS)
+            flags = isOnWWAN ? "W" : "-"
+            flags = isConnectionAutomatic ? "A" : "-"
+        #else
+            flags += "XX"
+        #endif
+        
+        flags += " "
+        flags += isReachable ? "R" : "-"
+        flags += isTransientConnection ? "t" : "-"
+        flags += isConnectionRequired ? "c" : "-"
+        flags += isConnectionOnTraffic ? "C" : "-"
+        flags += isInterventionRequired ? "i" : "-"
+        flags += isConnectionOnDemand ? "D" : "-"
+        flags += isALocalAddress ? "l" : "-"
+        flags += isDirectConnection ? "d" : "-"
+        
+        return flags
+    }
+}
