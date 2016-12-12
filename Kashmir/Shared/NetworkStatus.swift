@@ -29,16 +29,16 @@ extension Network {
         /// - parameter flags: A set of flags provided by the network reachability check.
         public init(flags: SCNetworkReachabilityFlags) {
             switch flags {
-            case _ where flags.isReachableViaWiFi:
-                self = .reachable(.wifi)
-            case _ where flags.isReachableViaWWAN:
-                #if os(iOS)
-                    self = .reachable(.wwan)
-                #else
-                    self = .reachable(.any)
-                #endif
-            default:
-                self = .notReachable
+                case _ where flags.isReachableViaWiFi:
+                    self = .reachable(.wifi)
+                case _ where flags.isReachableViaWWAN:
+                    #if os(iOS)
+                        self = .reachable(.wwan)
+                    #else
+                        self = .reachable(.any)
+                    #endif
+                default:
+                    self = .notReachable
             }
         }
     }

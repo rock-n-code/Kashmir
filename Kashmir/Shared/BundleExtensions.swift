@@ -6,7 +6,6 @@
 //  Copyright © 2016 Rock & Code. All rights reserved.
 //
 
-
 public extension Bundle {
 
 	// MARK: Functions
