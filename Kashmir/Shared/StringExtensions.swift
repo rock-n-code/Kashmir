@@ -16,5 +16,11 @@ public extension String {
 
 		return self.addingPercentEncoding(withAllowedCharacters: customAllowedSet)!
 	}
-	
+    
+    // MARK: Functions
+    
+    func indexes(of character: Character) -> [Int] {
+        return characters.enumerated().filter { $0.element == character }.map { $0.offset }
+    }
+    
 }

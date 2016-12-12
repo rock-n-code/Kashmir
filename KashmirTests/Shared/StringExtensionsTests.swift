@@ -30,5 +30,13 @@ class StringExtensionsTests: XCTestCase {
 		XCTAssertEqual("test/test".urlEncoded, "test%2Ftest")
 		XCTAssertEqual("test/test=42".urlEncoded, "test%2Ftest%3D42")
 	}
+    
+    // MARK: Functions tests
+    
+    func testIndexesOfCharacter() {
+        XCTAssertEqual("This is a (simple) test".indexes(of: "X"), [])
+        XCTAssertEqual("This is a (simple) test".indexes(of: "("), [10])
+        XCTAssertEqual("(This) (is) (a) (simple) (test)".indexes(of: "("), [0, 7, 12, 16, 25])
+    }
 	
 }
