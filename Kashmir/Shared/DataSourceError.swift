@@ -6,13 +6,15 @@
 //  Copyright © 2016 Rock & Code. All rights reserved.
 //
 
-/// Representation of the possible error states a `DataSouce` can have during execution.
-///
-/// * **sectionsEmpty**: The sections' array is empty.
-/// * **sectionMistaken**: The given section is not required.
-/// * **sectionIndexOutOfBounds**: The given index position on the sections' array is out of bounds.
-/// * **itemsEmpty**: The items' array is empty.
-/// * **itemIndexOutOfBounds**: The given index position on the items' array is out of bounds.
+/**
+Representation of the possible error states a `DataSouce` can have during execution.
+ 
+* **sectionsEmpty**: The sections' array is empty.
+* **sectionMistaken**: The given section is not required.
+* **sectionIndexOutOfBounds**: The given index position on the sections' array is out of bounds.
+* **itemsEmpty**: The items' array is empty.
+* **itemIndexOutOfBounds**: The given index position on the items' array is out of bounds.
+*/
 public enum DataSourceError: Error {
     /// The sections' array is empty.
     case sectionsEmpty

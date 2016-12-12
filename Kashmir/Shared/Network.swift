@@ -6,5 +6,7 @@
 //  Copyright © 2016 Rock & Code. All rights reserved.
 //
 
-/// The structure that contains the network data and enumeration types.
+/**
+The structure that encapsulates the network data and enumeration types.
+*/
 public struct Network {}
