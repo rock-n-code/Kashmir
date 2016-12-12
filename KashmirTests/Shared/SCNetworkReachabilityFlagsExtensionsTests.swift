@@ -212,5 +212,81 @@ class SCNetworkReachabilityFlagsExtensionsTests: XCTestCase {
         
         XCTAssertFalse(flags.isReachableViaWiFi)
     }
+    
+    // MARK: - CustomStringConvertible tests
+    
+    func testDescriptionNoFlags() {
+        let flags = SCNetworkReachabilityFlags(rawValue: 0)
+        
+        XCTAssertEqual(flags.description, "XX --------")
+    }
+    
+    func testDescriptionIsTransientConnection() {
+        let flags = SCNetworkReachabilityFlags(rawValue: 1 << 0)
+        
+        XCTAssertEqual(flags.description, "XX -t------")
+    }
+    
+    func testDescriptionIsReachable() {
+        let flags = SCNetworkReachabilityFlags(rawValue: 1 << 1)
+        
+        XCTAssertEqual(flags.description, "XX R-------")
+    }
+    
+    func testDescriptionIsConnectionRequired() {
+        let flags = SCNetworkReachabilityFlags(rawValue: 1 << 2)
+        
+        XCTAssertEqual(flags.description, "XX --c-----")
+    }
+    
+    func testDescriptionIsConnectionOnTraffic() {
+        let flags = SCNetworkReachabilityFlags(rawValue: 1 << 3)
+        
+        XCTAssertEqual(flags.description, "XX ---C----")
+    }
+    
+    func testDescriptionIsInterventionRequired() {
+        let flags = SCNetworkReachabilityFlags(rawValue: 1 << 4)
+        
+        XCTAssertEqual(flags.description, "XX ----i---")
+    }
+    
+    func testDescriptionIsConnectionOnDemand() {
+        let flags = SCNetworkReachabilityFlags(rawValue: 1 << 5)
+        
+        XCTAssertEqual(flags.description, "XX -----D--")
+    }
+    
+    func testDescriptionIsALocalAddress() {
+        let flags = SCNetworkReachabilityFlags(rawValue: 1 << 16)
+        
+        XCTAssertEqual(flags.description, "XX ------l-")
+    }
+    
+    func testDescriptionIsDirectConnection() {
+        let flags = SCNetworkReachabilityFlags(rawValue: 1 << 17)
+        
+        XCTAssertEqual(flags.description, "XX -------d")
+    }
+    
+    func testDescriptionIsConnectionAutomatic() {
+        let flags = SCNetworkReachabilityFlags(rawValue: 1 << 3)
+        
+        #if os(iOS)
+            XCTAssertEqual(flags.description, "XA ---C---")
+        #else
+            XCTAssertEqual(flags.description, "XX ---C----")
+        #endif
+    }
+    
+    func testDescriptionIsOnWWAN() {
+        let flags = SCNetworkReachabilityFlags(rawValue: 1 << 18)
+        
+        #if os(iOS)
+            XCTAssertEqual(flags.description, "WX --------")
+        #else
+            XCTAssertEqual(flags.description, "XX --------")
+        #endif
+    }
 
 }
