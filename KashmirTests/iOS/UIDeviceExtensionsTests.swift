@@ -25,7 +25,7 @@ class UIDeviceExtensionsTests: XCTestCase {
     // MARK: Properties tests
     
     func testVersion() {
-        XCTAssertEqual(UIDevice.current.version, 10.1)
+        XCTAssertEqual(UIDevice.current.version, 10.2)
     }
     
     func testIsPortrait() {

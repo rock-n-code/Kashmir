@@ -23,8 +23,8 @@ public class XibableView: UIView {
         setupXib()
     }
     
-    required init?(coder aDecoder: NSCoder) {
-        super.init?(coder: aDecoder)
+    required public init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
         
         setupXib()
     }
