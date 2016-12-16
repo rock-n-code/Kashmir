@@ -6,6 +6,8 @@
 //  Copyright © 2016 Rock & Code. All rights reserved.
 //
 
+import SystemConfiguration
+
 /**
  This manager uses `Network.Reacher` instances to check on the network state of a device.
 */

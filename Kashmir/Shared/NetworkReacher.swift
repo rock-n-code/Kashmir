@@ -6,6 +6,7 @@
 //  Copyright © 2016 Rock & Code. All rights reserved.
 //
 
+import Foundation
 import SystemConfiguration
 
 typealias NetworkStatusExecutionBlock = (Network.Status) -> ()
