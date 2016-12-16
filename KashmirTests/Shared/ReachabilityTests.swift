@@ -22,4 +22,10 @@ class ReachabilityTests: XCTestCase {
         super.tearDown()
     }
 
+    // MARK: Static tests
+    
+    func testManager() {
+        XCTAssertNotNil(Reachability.manager)
+    }
+    
 }
