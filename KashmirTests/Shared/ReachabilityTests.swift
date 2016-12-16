@@ -28,4 +28,9 @@ class ReachabilityTests: XCTestCase {
         XCTAssertNotNil(Reachability.manager)
     }
     
+    // MARK: Properties tests
+    
+    func testHaveInternetConnection() {
+        XCTAssertTrue(Reachability.manager.haveInternetConnection)
+    }
 }
