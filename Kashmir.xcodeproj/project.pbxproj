@@ -40,6 +40,12 @@
 		022D7FDF1E1C9F2300E0A537 /* DataStackValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022D7FDC1E1C9F2300E0A537 /* DataStackValidation.swift */; };
 		022D7FE01E1C9F2300E0A537 /* DataStackValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022D7FDC1E1C9F2300E0A537 /* DataStackValidation.swift */; };
 		022D7FE11E1C9F2300E0A537 /* DataStackValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022D7FDC1E1C9F2300E0A537 /* DataStackValidation.swift */; };
+		022D7FE31E1CAC2500E0A537 /* DataStackStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022D7FE21E1CAC2500E0A537 /* DataStackStore.swift */; };
+		022D7FE41E1CAC2500E0A537 /* DataStackStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022D7FE21E1CAC2500E0A537 /* DataStackStore.swift */; };
+		022D7FE51E1CAC2500E0A537 /* DataStackStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022D7FE21E1CAC2500E0A537 /* DataStackStore.swift */; };
+		022D7FE61E1CAC2500E0A537 /* DataStackStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022D7FE21E1CAC2500E0A537 /* DataStackStore.swift */; };
+		022D7FE71E1CAC2500E0A537 /* DataStackStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022D7FE21E1CAC2500E0A537 /* DataStackStore.swift */; };
+		022D7FE91E1CBB1D00E0A537 /* DataStackStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022D7FE81E1CBB1D00E0A537 /* DataStackStoreTests.swift */; };
 		02384AC11DECB76700B664D3 /* NetworkStatusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02384AC01DECB76700B664D3 /* NetworkStatusTests.swift */; };
 		02384AC41DECD29600B664D3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02384AC31DECD29600B664D3 /* SystemConfiguration.framework */; };
 		02384ACD1DECF39A00B664D3 /* SCNetworkReachabilityFlagsExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02384ACC1DECF39A00B664D3 /* SCNetworkReachabilityFlagsExtensionsTests.swift */; };
@@ -167,6 +173,8 @@
 		022592831DEAE97F005DD338 /* IndexPathExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IndexPathExtensions.swift; path = Kashmir/iOS/IndexPathExtensions.swift; sourceTree = SOURCE_ROOT; };
 		022592871DEAE99A005DD338 /* IndexPathExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IndexPathExtensionsTests.swift; path = KashmirTests/iOS/IndexPathExtensionsTests.swift; sourceTree = SOURCE_ROOT; };
 		022D7FDC1E1C9F2300E0A537 /* DataStackValidation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStackValidation.swift; sourceTree = "<group>"; };
+		022D7FE21E1CAC2500E0A537 /* DataStackStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataStackStore.swift; path = Shared/DataStackStore.swift; sourceTree = "<group>"; };
+		022D7FE81E1CBB1D00E0A537 /* DataStackStoreTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataStackStoreTests.swift; path = Shared/DataStackStoreTests.swift; sourceTree = "<group>"; };
 		02384AC01DECB76700B664D3 /* NetworkStatusTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkStatusTests.swift; path = Shared/NetworkStatusTests.swift; sourceTree = "<group>"; };
 		02384AC31DECD29600B664D3 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		02384ACC1DECF39A00B664D3 /* SCNetworkReachabilityFlagsExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SCNetworkReachabilityFlagsExtensionsTests.swift; path = Shared/SCNetworkReachabilityFlagsExtensionsTests.swift; sourceTree = "<group>"; };
@@ -472,6 +480,7 @@
 		032A85DE1D1B875500401E29 /* Enumerations */ = {
 			isa = PBXGroup;
 			children = (
+				022D7FE21E1CAC2500E0A537 /* DataStackStore.swift */,
 				022D7FDC1E1C9F2300E0A537 /* DataStackValidation.swift */,
 				02CDE5E01DEC9FE100EE7892 /* NetworkConnectivity.swift */,
 				02CDE5E51DEC9FFC00EE7892 /* NetworkStatus.swift */,
@@ -506,8 +515,9 @@
 		032A85EE1D1BA9A100401E29 /* Enumerations */ = {
 			isa = PBXGroup;
 			children = (
-				02130A0B1DDA71950071940B /* URLRequestMethodTests.swift */,
+				022D7FE81E1CBB1D00E0A537 /* DataStackStoreTests.swift */,
 				02384AC01DECB76700B664D3 /* NetworkStatusTests.swift */,
+				02130A0B1DDA71950071940B /* URLRequestMethodTests.swift */,
 			);
 			name = Enumerations;
 			sourceTree = "<group>";
@@ -921,6 +931,7 @@
 				02CDE5E11DEC9FE100EE7892 /* NetworkConnectivity.swift in Sources */,
 				022592741DEA5BD1005DD338 /* DataSource.swift in Sources */,
 				0225926E1DEA5BA0005DD338 /* DataSourceError.swift in Sources */,
+				022D7FE31E1CAC2500E0A537 /* DataStackStore.swift in Sources */,
 				024F517F1DEF90990088A3B2 /* NetworkReacher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -941,6 +952,7 @@
 				022592801DEA5C50005DD338 /* DataSourceTests.swift in Sources */,
 				024F51851DEF91360088A3B2 /* NetworkReacherTests.swift in Sources */,
 				02384ACF1DECF47900B664D3 /* ReachabilityTests.swift in Sources */,
+				022D7FE91E1CBB1D00E0A537 /* DataStackStoreTests.swift in Sources */,
 				02130A1C1DDA71DE0071940B /* Test.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -957,6 +969,7 @@
 				03B67C7C1D8AF88A001DFFE6 /* DataStack.swift in Sources */,
 				03E668DC1D69AFEE00F6110A /* NSObjectExtensions.swift in Sources */,
 				02CDE5F11DECA12A00EE7892 /* Network.swift in Sources */,
+				022D7FE41E1CAC2500E0A537 /* DataStackStore.swift in Sources */,
 				03B8E5411D24F28E00E40586 /* URLRequestMethod.swift in Sources */,
 				0323207B1D245B0A00BB79A1 /* URLResponseError.swift in Sources */,
 				02CDE5EC1DECA06F00EE7892 /* SCNetworkReachabilityFlagsExtensions.swift in Sources */,
@@ -975,6 +988,7 @@
 			files = (
 				03B8E54A1D24F2A600E40586 /* StringExtensions.swift in Sources */,
 				02CDE5E31DEC9FE100EE7892 /* NetworkConnectivity.swift in Sources */,
+				022D7FE51E1CAC2500E0A537 /* DataStackStore.swift in Sources */,
 				02CDE5DE1DEC9F5C00EE7892 /* ReachabilityError.swift in Sources */,
 				0225927A1DEA5BF8005DD338 /* DataSourceError.swift in Sources */,
 				03B67C791D8AF884001DFFE6 /* DataStackError.swift in Sources */,
@@ -1008,6 +1022,7 @@
 				03B67C7E1D8AF88B001DFFE6 /* DataStack.swift in Sources */,
 				03E668DE1D69AFEE00F6110A /* NSObjectExtensions.swift in Sources */,
 				02CDE5F31DECA12A00EE7892 /* Network.swift in Sources */,
+				022D7FE61E1CAC2500E0A537 /* DataStackStore.swift in Sources */,
 				03B8E5431D24F29000E40586 /* URLRequestMethod.swift in Sources */,
 				0323207D1D245B0A00BB79A1 /* URLResponseError.swift in Sources */,
 				02CDE5EE1DECA06F00EE7892 /* SCNetworkReachabilityFlagsExtensions.swift in Sources */,
@@ -1033,6 +1048,7 @@
 				03B8E5481D24F2A000E40586 /* URLResponseStatusCode.swift in Sources */,
 				0340747E1D7088C2004099AC /* BundleExtensions.swift in Sources */,
 				022592781DEA5BF7005DD338 /* DataSourceError.swift in Sources */,
+				022D7FE71E1CAC2500E0A537 /* DataStackStore.swift in Sources */,
 				022D7FE11E1C9F2300E0A537 /* DataStackValidation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -43,6 +43,6 @@ public class Reachability {
     
     // MARK: Initialisations
     
-    fileprivate init() {}
+    private init() {}
 
 }
