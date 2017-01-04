@@ -35,6 +35,11 @@
 		022592851DEAE986005DD338 /* IndexPathExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022592831DEAE97F005DD338 /* IndexPathExtensions.swift */; };
 		022592861DEAE989005DD338 /* IndexPathExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022592831DEAE97F005DD338 /* IndexPathExtensions.swift */; };
 		022592891DEAE99F005DD338 /* IndexPathExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022592871DEAE99A005DD338 /* IndexPathExtensionsTests.swift */; };
+		022D7FDD1E1C9F2300E0A537 /* DataStackValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022D7FDC1E1C9F2300E0A537 /* DataStackValidation.swift */; };
+		022D7FDE1E1C9F2300E0A537 /* DataStackValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022D7FDC1E1C9F2300E0A537 /* DataStackValidation.swift */; };
+		022D7FDF1E1C9F2300E0A537 /* DataStackValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022D7FDC1E1C9F2300E0A537 /* DataStackValidation.swift */; };
+		022D7FE01E1C9F2300E0A537 /* DataStackValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022D7FDC1E1C9F2300E0A537 /* DataStackValidation.swift */; };
+		022D7FE11E1C9F2300E0A537 /* DataStackValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022D7FDC1E1C9F2300E0A537 /* DataStackValidation.swift */; };
 		02384AC11DECB76700B664D3 /* NetworkStatusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02384AC01DECB76700B664D3 /* NetworkStatusTests.swift */; };
 		02384AC41DECD29600B664D3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02384AC31DECD29600B664D3 /* SystemConfiguration.framework */; };
 		02384ACD1DECF39A00B664D3 /* SCNetworkReachabilityFlagsExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02384ACC1DECF39A00B664D3 /* SCNetworkReachabilityFlagsExtensionsTests.swift */; };
@@ -161,6 +166,7 @@
 		0225927F1DEA5C50005DD338 /* SectionableTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SectionableTests.swift; path = Shared/SectionableTests.swift; sourceTree = "<group>"; };
 		022592831DEAE97F005DD338 /* IndexPathExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IndexPathExtensions.swift; path = Kashmir/iOS/IndexPathExtensions.swift; sourceTree = SOURCE_ROOT; };
 		022592871DEAE99A005DD338 /* IndexPathExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IndexPathExtensionsTests.swift; path = KashmirTests/iOS/IndexPathExtensionsTests.swift; sourceTree = SOURCE_ROOT; };
+		022D7FDC1E1C9F2300E0A537 /* DataStackValidation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStackValidation.swift; sourceTree = "<group>"; };
 		02384AC01DECB76700B664D3 /* NetworkStatusTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkStatusTests.swift; path = Shared/NetworkStatusTests.swift; sourceTree = "<group>"; };
 		02384AC31DECD29600B664D3 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		02384ACC1DECF39A00B664D3 /* SCNetworkReachabilityFlagsExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SCNetworkReachabilityFlagsExtensionsTests.swift; path = Shared/SCNetworkReachabilityFlagsExtensionsTests.swift; sourceTree = "<group>"; };
@@ -466,6 +472,7 @@
 		032A85DE1D1B875500401E29 /* Enumerations */ = {
 			isa = PBXGroup;
 			children = (
+				022D7FDC1E1C9F2300E0A537 /* DataStackValidation.swift */,
 				02CDE5E01DEC9FE100EE7892 /* NetworkConnectivity.swift */,
 				02CDE5E51DEC9FFC00EE7892 /* NetworkStatus.swift */,
 				03B8E53F1D24F1B000E40586 /* URLRequestMethod.swift */,
@@ -898,6 +905,7 @@
 				02CDE5DC1DEC9F5C00EE7892 /* ReachabilityError.swift in Sources */,
 				0323207A1D245B0A00BB79A1 /* URLResponseError.swift in Sources */,
 				02CDE5EB1DECA06F00EE7892 /* SCNetworkReachabilityFlagsExtensions.swift in Sources */,
+				022D7FDD1E1C9F2300E0A537 /* DataStackValidation.swift in Sources */,
 				03B67C6D1D8AF116001DFFE6 /* DataStackError.swift in Sources */,
 				02CDE5E61DEC9FFC00EE7892 /* NetworkStatus.swift in Sources */,
 				03B67C701D8AF154001DFFE6 /* DataStack.swift in Sources */,
@@ -945,6 +953,7 @@
 				02CDE5E21DEC9FE100EE7892 /* NetworkConnectivity.swift in Sources */,
 				03B67C781D8AF884001DFFE6 /* DataStackError.swift in Sources */,
 				024F51801DEF90990088A3B2 /* NetworkReacher.swift in Sources */,
+				022D7FDE1E1C9F2300E0A537 /* DataStackValidation.swift in Sources */,
 				03B67C7C1D8AF88A001DFFE6 /* DataStack.swift in Sources */,
 				03E668DC1D69AFEE00F6110A /* NSObjectExtensions.swift in Sources */,
 				02CDE5F11DECA12A00EE7892 /* Network.swift in Sources */,
@@ -983,6 +992,7 @@
 				02130A241DDA75070071940B /* UIDeviceExtensions.swift in Sources */,
 				0340747C1D7088C2004099AC /* BundleExtensions.swift in Sources */,
 				02CDE5D91DEC9EB200EE7892 /* Reachability.swift in Sources */,
+				022D7FDF1E1C9F2300E0A537 /* DataStackValidation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -994,6 +1004,7 @@
 				02CDE5E41DEC9FE100EE7892 /* NetworkConnectivity.swift in Sources */,
 				03B67C7A1D8AF885001DFFE6 /* DataStackError.swift in Sources */,
 				024F51821DEF90990088A3B2 /* NetworkReacher.swift in Sources */,
+				022D7FE01E1C9F2300E0A537 /* DataStackValidation.swift in Sources */,
 				03B67C7E1D8AF88B001DFFE6 /* DataStack.swift in Sources */,
 				03E668DE1D69AFEE00F6110A /* NSObjectExtensions.swift in Sources */,
 				02CDE5F31DECA12A00EE7892 /* Network.swift in Sources */,
@@ -1022,6 +1033,7 @@
 				03B8E5481D24F2A000E40586 /* URLResponseStatusCode.swift in Sources */,
 				0340747E1D7088C2004099AC /* BundleExtensions.swift in Sources */,
 				022592781DEA5BF7005DD338 /* DataSourceError.swift in Sources */,
+				022D7FE11E1C9F2300E0A537 /* DataStackValidation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
