@@ -39,9 +39,15 @@ public class DataStack {
     /**
     Add a container to its dictionary.
 	
-    - parameter model: The model name in which a container will be initialized.
+    - parameters:
+      - model: The model name in which a container will be initialized.
+      - type: The store type in which a container will be initialized.
 	- throws: A `DataStackError` type error in case during the execution of this method.
     */
+    public func add(_ model: String, of type: DataStack.Store = .sql) throws {
+        try validate(model, for: [.modelNameIsNotEmpty])
+		
+		guard let url = Bundle.url(forResource: model, withExtension: "momd") else {
 			throw DataStackError.objectModelNotFound
 		}
 
@@ -49,9 +55,12 @@ public class DataStack {
 			throw DataStackError.objectModelNotCreated
 		}
 
-		try doesNotExists(modelName)
-
-		let container = NSPersistentContainer(name: modelName, managedObjectModel: objectModel)
+        try validate(model, for: [.containerNotExists])
+		
+		let container = NSPersistentContainer(name: model, managedObjectModel: objectModel)
+        let defaultDescription = makeDescription(for: model, with: type)
+        
+        container.persistentStoreDescriptions = [defaultDescription]
 
 		container.loadPersistentStores { [unowned self] storeDescription, error in
 			if let error = error as NSError? {
@@ -59,7 +68,7 @@ public class DataStack {
 				fatalError("Unresolved error \(error), \(error.userInfo)")
 			}
 			else {
-				self.containers[modelName] = container
+				self.containers[model] = container
 			}
 		}
 	}
@@ -67,21 +76,21 @@ public class DataStack {
     /**
     Remove a container from its dictionary.
 	
-    - parameter named: The model name in which a container has been initialized.
+    - parameter model: The model name in which a container has been initialized.
 	- throws: A `DataStackError` type error in case during the execution of this method.
     */
+	public func remove(_ model: String) throws {
+        try validate(model, for: [.modelNameIsNotEmpty, .containerExists])
 
-		guard let container = containers[modelName]
-			else {
-				throw DataStackError.containerNotFound
+        guard let container = containers[model] else {
+            throw DataStackError.containerNotFound
 		}
 
 		let coordinator = container.persistentStoreCoordinator
 
 		for store in coordinator.persistentStores {
-			guard let url = store.url
-				else {
-					throw DataStackError.storeUrlNotFound
+			guard let url = store.url else {
+                throw DataStackError.storeUrlNotFound
 			}
 
 			try coordinator.remove(store)
@@ -92,16 +101,14 @@ public class DataStack {
 				try FileManager.default.removeItem(atPath: urlPath)
 
 				if store.type == NSSQLiteStoreType {
-					let shmPath = "\(urlPath)-shm"
-					let walPath = "\(urlPath)-wal"
-
-					try FileManager.default.removeItem(atPath: shmPath)
-					try FileManager.default.removeItem(atPath: walPath)
+                    try ["\(urlPath)-shm", "\(urlPath)-wal"].forEach {
+                        try FileManager.default.removeItem(atPath: $0)
+                    }
 				}
 			}
 		}
 
-		containers[modelName] = nil
+		containers[model] = nil
 	}
 
     /**
@@ -111,8 +118,10 @@ public class DataStack {
 	- throws: A `DataStackError` type error in case during the execution of this method.
 	- returns: The managed object context from the requested container.
     */
+	public func foreContext(of model: String) throws -> NSManagedObjectContext {
+        try validate(model, for: [.modelNameIsNotEmpty, .containerExists])
 
-		return containers[modelName]!.viewContext
+		return containers[model]!.viewContext
 	}
 
     /**
@@ -122,8 +131,10 @@ public class DataStack {
 	- throws: A `DataStackError` type error in case during the execution of this method.
 	- returns: A managed object context from the requested container.
     */
+	public func backContext(of model: String) throws -> NSManagedObjectContext {
+        try validate(model, for: [.modelNameIsNotEmpty, .containerExists])
 
-		return containers[modelName]!.newBackgroundContext()
+        return containers[model]!.newBackgroundContext()
 	}
 
     /**
@@ -148,34 +159,54 @@ public class DataStack {
 
 	// MARK: Helpers
 
-	/// Check if a given model name is not an empty string.
-	///
-	/// - parameter modelName: The model name in which a container has been initialized.
-	/// - throws: A *DataStackError* type error in case the requested model name is an empty string.
-	private func isNotEmpty(_ modelName: String) throws {
-		guard !modelName.isEmpty else {
-			throw DataStackError.containerNameIsEmpty
-		}
-	}
+    /**
+    Makes a default persistent store description tailored to a given model and its respective store type.
+    
+    - parameters:
+	  - model: The model name in which a container has been initialized.
+	  - type: The store type in which a container will be initialized.
+    - returns: A persistent store description with all the relevant configuration to initialize a container.
+    */
+    fileprivate func makeDescription(for model: String, with type: DataStack.Store) -> NSPersistentStoreDescription {
+        let description = NSPersistentStoreDescription()
 
-	/// Check if a container does not exist in the containers' dictionary.
-	///
-	/// - parameter modelName: The model name in which a container has been initialized.
-	/// - throws: A *DataStackError* type error in case the requested model name is found in the keys' array of the containers' dictionary.
-	private func doesNotExists(_ modelName: String) throws {
-		guard !containers.keys.contains(modelName) else {
-			throw DataStackError.containerNameExists
-		}
-	}
-
-	/// Check if a container does exist in the containers' dictionary.
-	///
-	/// - parameter modelName: The model name in which a container has been initialized.
-	/// - throws: A *DataStackError* type error in case the requested model name is not found in the keys' array of the containers' dictionary.
-	private func doesExists(_ modelName: String) throws {
-		guard containers.keys.contains(modelName) else {
-			throw DataStackError.containerNameNotExists
-		}
-	}
+        description.configuration = "Default"
+        description.type = type.rawValue
+        description.isReadOnly = false
+        description.shouldAddStoreAsynchronously = false
+        description.shouldInferMappingModelAutomatically = true
+        description.shouldMigrateStoreAutomatically = true
+        
+        if type != .inMemory {
+            let directory = NSPersistentContainer.defaultDirectoryURL()
+            
+            description.url = directory.appendingPathComponent("\(model.lowercased()).\(type.extensionValue)")
+        }
+        
+        return description
+    }
+    
+    /**
+    Validates a model and/or its container based on a provided list of validation options.
+    
+    - parameters:
+      - model: The model name in which a container has been initialized.
+      - validations: A list of validation options to validate.
+    - throws: A `DataStackError` type error in case in case any of the requested validation checks fails.
+    */
+    fileprivate func validate(_ model: String, for validations: [DataStack.Validation]) throws {
+        try validations.forEach {
+            switch $0 {
+                case .modelNameIsNotEmpty where model.isEmpty:
+                    throw DataStackError.containerNameIsEmpty
+                case .containerExists where !containers.keys.contains(model):
+                    throw DataStackError.containerNameNotExists
+                case .containerNotExists where containers.keys.contains(model):
+                    throw DataStackError.containerNameExists
+                default:
+                    return
+            }
+        }
+    }
 
 }

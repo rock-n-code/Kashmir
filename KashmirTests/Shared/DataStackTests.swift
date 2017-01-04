@@ -45,7 +45,7 @@ class DataStackTests: XCTestCase {
 
 	// MARK: Functions tests
 
-	func testAddModelName() {
+	func testAddModelOfTypeSQL() {
 		do {
 			try manager.add(modelName)
 
@@ -55,7 +55,21 @@ class DataStackTests: XCTestCase {
 			try manager.remove(modelName)
 		}
 		catch {
-			XCTFail("Unexpected")
+			XCTFail("Unexpected error")
+		}
+	}
+	
+	func testAddModelOfTypeInMemory() {
+		do {
+			try manager.add(modelName, of: .inMemory)
+			
+			XCTAssertTrue(manager.containers.keys.contains(modelName))
+			XCTAssertNotNil(manager.containers[modelName])
+			
+			try manager.remove(modelName)
+		}
+		catch {
+			XCTFail("Unexpected error")
 		}
 	}
 
@@ -67,7 +81,7 @@ class DataStackTests: XCTestCase {
 			XCTAssertTrue(true)
 		}
 		catch {
-			XCTFail("Unexpected")
+			XCTFail("Unexpected error")
 		}
 	}
 
@@ -78,11 +92,15 @@ class DataStackTests: XCTestCase {
 			XCTAssertTrue(true)
 		}
 		catch {
-			XCTFail("Unexpected")
+			XCTFail("Unexpected error")
 		}
 	}
 
 	func testAddAlreadyExistsModelName() {
+		defer {
+			try! manager.remove(modelName)
+		}
+		
 		do {
 			try manager.add(modelName)
 			try manager.add(modelName)
@@ -91,10 +109,8 @@ class DataStackTests: XCTestCase {
 			XCTAssertTrue(true)
 		}
 		catch {
-			XCTFail("Unexpected")
+			XCTFail("Unexpected error")
 		}
-
-		try! manager.remove(modelName)
 	}
 
 	func testRemoveModelName() {
@@ -106,7 +122,7 @@ class DataStackTests: XCTestCase {
 			XCTAssertNil(manager.containers[modelName])
 		}
 		catch {
-			XCTFail("Unexpected")
+			XCTFail("Unexpected error")
 		}
 	}
 
@@ -118,7 +134,7 @@ class DataStackTests: XCTestCase {
 			XCTAssertTrue(true)
 		}
 		catch {
-			XCTFail("Unexpected")
+			XCTFail("Unexpected error")
 		}
 	}
 
@@ -132,7 +148,7 @@ class DataStackTests: XCTestCase {
 			XCTAssertTrue(true)
 		}
 		catch {
-			XCTFail("Unexpected")
+			XCTFail("Unexpected error")
 		}
 	}
 
@@ -146,7 +162,7 @@ class DataStackTests: XCTestCase {
 			try manager.remove(modelName)
 		}
 		catch {
-			XCTFail("Unexpected")
+			XCTFail("Unexpected error")
 		}
 	}
 
@@ -158,7 +174,7 @@ class DataStackTests: XCTestCase {
 			XCTAssertTrue(true)
 		}
 		catch {
-			XCTFail("Unexpected")
+			XCTFail("Unexpected error")
 		}
 	}
 
@@ -170,7 +186,7 @@ class DataStackTests: XCTestCase {
 			XCTAssertTrue(true)
 		}
 		catch {
-			XCTFail("Unexpected")
+			XCTFail("Unexpected error")
 		}
 	}
 
@@ -185,7 +201,7 @@ class DataStackTests: XCTestCase {
 			try manager.remove(modelName)
 		}
 		catch {
-			XCTFail("Unexpected")
+			XCTFail("Unexpected error")
 		}
 	}
 
@@ -197,7 +213,7 @@ class DataStackTests: XCTestCase {
 			XCTAssertTrue(true)
 		}
 		catch {
-			XCTFail("Unexpected")
+			XCTFail("Unexpected error")
 		}
 	}
 
@@ -209,7 +225,7 @@ class DataStackTests: XCTestCase {
 			XCTAssertTrue(true)
 		}
 		catch {
-			XCTFail("Unexpected")
+			XCTFail("Unexpected error")
 		}
 	}
 
@@ -232,7 +248,7 @@ class DataStackTests: XCTestCase {
 			try manager.remove(modelName)
 		}
 		catch {
-			XCTFail("Unexpected")
+			XCTFail("Unexpected error")
 		}
 	}
 
@@ -250,9 +266,9 @@ class DataStackTests: XCTestCase {
 		}
 	}
 
-	func testAddModelNamePerformance() {
+	func testAddModelOfTypeSQLPerformance() {
 		measure {
-			self.testAddModelName()
+			self.testAddModelOfTypeSQL()
 		}
 	}
 
