@@ -6,6 +6,8 @@
 //  Copyright © 2017 Rock & Code. All rights reserved.
 //
 
+import CoreData
+
 public extension DataStack {
     
     /**
