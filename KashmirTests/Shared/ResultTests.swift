@@ -107,5 +107,37 @@ class ResultTests: XCTestCase {
 		XCTAssertNotNil(result.error)
 	}
 
+	// MARK: Functons tests
+	
+	func testDematerializeValue() {
+		let result = Result {
+			return true
+		}
+		
+		do {
+			let value = try result.dematerialize()
+			
+			XCTAssertEqual(value, true)
+		}
+		catch {
+			XCTFail("Unexpected error")
+		}
+	}
+	
+	func testDematerializeError() {
+		let result = Result {
+			throw TestError.test
+		}
+		
+		do {
+			try result.dematerialize()
+		}
+		catch TestError.test {
+			XCTAssert(true)
+		}
+		catch {
+			XCTFail("Unexpected error")
+		}
+	}
 
 }

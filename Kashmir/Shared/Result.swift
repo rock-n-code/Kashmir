@@ -43,5 +43,16 @@ public enum Result<T> {
 		}
 	}
 	
+	// MARK: Functions
+	
+	@discardableResult
+	public func dematerialize() throws -> T {
+		switch self {
+			case let .value(value):
+				return value
+			case let .error(error):
+				throw error
+		}
+	}
 	
 }
