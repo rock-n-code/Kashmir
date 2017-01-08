@@ -85,5 +85,27 @@ class ResultTests: XCTestCase {
 		XCTAssertNotNil(result.error)
 	}
 	
+	// MARK: Initializations tests 
+	
+	func testInitWIthValue() {
+		let result = Result {
+			return true
+		}
+		
+		XCTAssertNotNil(result)
+		XCTAssertEqual(result.value!, true)
+		XCTAssertNil(result.error)
+	}
+	
+	func testInitWithError() {
+		let result = Result {
+			throw TestError.test
+		}
+		
+		XCTAssertNotNil(result)
+		XCTAssertNil(result.value)
+		XCTAssertNotNil(result.error)
+	}
+
 
 }

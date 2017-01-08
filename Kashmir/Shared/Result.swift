@@ -32,5 +32,16 @@ public enum Result<T> {
 		}
 	}
 	
+	// MARK: Initializations
+	
+	public init(function: () throws -> T) {
+		do {
+			self = .value(try function())
+		}
+		catch let error {
+			self = .error(error)
+		}
+	}
+	
 	
 }
