@@ -409,14 +409,6 @@
 			name = XIBs;
 			sourceTree = "<group>";
 		};
-		0294DDF71E20F6A80002E409 /* Structs */ = {
-			isa = PBXGroup;
-			children = (
-				0294DDF81E20F6C00002E409 /* ResultTests.swift */,
-			);
-			name = Structs;
-			sourceTree = "<group>";
-		};
 		02CDE5F41DECA14000EE7892 /* Structs */ = {
 			isa = PBXGroup;
 			children = (
@@ -472,7 +464,6 @@
 		031BF5B31CE37B4800DD028A /* KashmirTests */ = {
 			isa = PBXGroup;
 			children = (
-				0294DDF71E20F6A80002E409 /* Structs */,
 				032A85EE1D1BA9A100401E29 /* Enumerations */,
 				0225927C1DEA5C3C005DD338 /* Protocols */,
 				024F51831DEF911A0088A3B2 /* Controllers */,
@@ -533,6 +524,7 @@
 		032A85EE1D1BA9A100401E29 /* Enumerations */ = {
 			isa = PBXGroup;
 			children = (
+				0294DDF81E20F6C00002E409 /* ResultTests.swift */,
 				022D7FE81E1CBB1D00E0A537 /* DataStackStoreTests.swift */,
 				02384AC01DECB76700B664D3 /* NetworkStatusTests.swift */,
 				02130A0B1DDA71950071940B /* URLRequestMethodTests.swift */,

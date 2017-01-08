@@ -10,6 +10,10 @@ import XCTest
 
 @testable import Kashmir
 
+enum TestError: Error {
+	case test
+}
+
 class ResultTests: XCTestCase {
 	
 	// MARK: Setup
@@ -22,6 +26,64 @@ class ResultTests: XCTestCase {
 		super.tearDown()
 	}
 	
-	// MARK: Initializations tests
+	// MARK: Properties tests
+	
+	func testVoidValue() {
+		let result = Result<Void>.value()
+
+		XCTAssertNotNil(result)
+		XCTAssertNotNil(result.value)
+		XCTAssertNil(result.error)
+	}
+	
+	func testBoolValue() {
+		let result = Result<Bool>.value(true)
+		
+		XCTAssertNotNil(result)
+		XCTAssertEqual(result.value!, true)
+		XCTAssertNil(result.error)
+	}
+	
+	func testIntValue() {
+		let result = Result<Int>.value(0)
+		
+		XCTAssertNotNil(result)
+		XCTAssertEqual(result.value!, 0)
+		XCTAssertNil(result.error)
+	}
+	
+	func testStringValue() {
+		let result = Result<String>.value("test")
+		
+		XCTAssertNotNil(result)
+		XCTAssertEqual(result.value!, "test")
+		XCTAssertNil(result.error)
+	}
+	
+	func testArrayValue() {
+		let result = Result<[Int]>.value([0, 1, 2])
+		
+		XCTAssertNotNil(result)
+		XCTAssertEqual(result.value!, [0, 1, 2])
+		XCTAssertNil(result.error)
+	}
+	
+	func testDictionaryValue() {
+		let result = Result<[String: Int]>.value(["a": 0, "b": 1, "c": 2])
+		
+		XCTAssertNotNil(result)
+		XCTAssertEqual(result.value!, ["a": 0, "b": 1, "c": 2])
+		XCTAssertNil(result.error)
+
+	}
+	
+	func testError() {
+		let result = Result<Void>.error(TestError.test)
+		
+		XCTAssertNotNil(result)
+		XCTAssertNil(result.value)
+		XCTAssertNotNil(result.error)
+	}
+	
 
 }

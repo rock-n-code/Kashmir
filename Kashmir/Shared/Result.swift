@@ -8,8 +8,29 @@
 
 import Foundation
 
-public struct Result {
+public enum Result<T> {
+	case value(T)
+	case error(Error)
 	
-	// ...
+	// MARK: Properties
+	
+	public var value: T? {
+		switch self {
+			case .value(let value):
+				return value
+			default:
+				return nil
+		}
+	}
+	
+	public var error: Error? {
+		switch self {
+			case .error(let error):
+				return error
+			default:
+				return nil
+		}
+	}
+	
 	
 }
