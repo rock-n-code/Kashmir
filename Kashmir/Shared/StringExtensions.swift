@@ -12,11 +12,20 @@ public extension String {
 
 	// MARK: Properties
 
-	/// Returns an encoded version of the current string to use with *URL* paths.
+	/// Returns an encoded version of the current string to use with `URL` paths.
 	var urlEncoded: String {
 		let customAllowedSet = CharacterSet(charactersIn:"!*'();:@&=+$,/?%#[]").inverted
 
 		return self.addingPercentEncoding(withAllowedCharacters: customAllowedSet)!
+	}
+	
+	/// Returns an `URL` instance out of the current string.
+	var toUrl: URL? {
+		guard !self.isEmpty else {
+			return nil
+		}
+		
+		return URL(string: self)
 	}
     
     // MARK: Functions
