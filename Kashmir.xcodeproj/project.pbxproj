@@ -22,7 +22,6 @@
 		022592691DEA5249005DD338 /* TestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 027FD2B61DEA4CA7009814AB /* TestView.xib */; };
 		0225926E1DEA5BA0005DD338 /* DataSourceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0225926D1DEA5BA0005DD338 /* DataSourceError.swift */; };
 		022592741DEA5BD1005DD338 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022592701DEA5BD1005DD338 /* DataSource.swift */; };
-		022592751DEA5BD1005DD338 /* DataUnitable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022592711DEA5BD1005DD338 /* DataUnitable.swift */; };
 		022592761DEA5BD1005DD338 /* Itemable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022592721DEA5BD1005DD338 /* Itemable.swift */; };
 		022592771DEA5BD1005DD338 /* Sectionable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022592731DEA5BD1005DD338 /* Sectionable.swift */; };
 		022592781DEA5BF7005DD338 /* DataSourceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0225926D1DEA5BA0005DD338 /* DataSourceError.swift */; };
@@ -170,7 +169,6 @@
 		02130A211DDA75000071940B /* UIDeviceExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIDeviceExtensions.swift; path = Kashmir/iOS/UIDeviceExtensions.swift; sourceTree = SOURCE_ROOT; };
 		0225926D1DEA5BA0005DD338 /* DataSourceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataSourceError.swift; path = Shared/DataSourceError.swift; sourceTree = "<group>"; };
 		022592701DEA5BD1005DD338 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataSource.swift; path = Shared/DataSource.swift; sourceTree = "<group>"; };
-		022592711DEA5BD1005DD338 /* DataUnitable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataUnitable.swift; path = Shared/DataUnitable.swift; sourceTree = "<group>"; };
 		022592721DEA5BD1005DD338 /* Itemable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Itemable.swift; path = Shared/Itemable.swift; sourceTree = "<group>"; };
 		022592731DEA5BD1005DD338 /* Sectionable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Sectionable.swift; path = Shared/Sectionable.swift; sourceTree = "<group>"; };
 		0225927D1DEA5C50005DD338 /* DataSourceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataSourceTests.swift; path = Shared/DataSourceTests.swift; sourceTree = "<group>"; };
@@ -327,7 +325,6 @@
 		0225926F1DEA5BBE005DD338 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				022592711DEA5BD1005DD338 /* DataUnitable.swift */,
 				022592731DEA5BD1005DD338 /* Sectionable.swift */,
 				022592721DEA5BD1005DD338 /* Itemable.swift */,
 				022592701DEA5BD1005DD338 /* DataSource.swift */,
@@ -930,7 +927,6 @@
 				03B67C701D8AF154001DFFE6 /* DataStack.swift in Sources */,
 				0294DDFB1E20F8DB0002E409 /* DataStackValidation.swift in Sources */,
 				022592761DEA5BD1005DD338 /* Itemable.swift in Sources */,
-				022592751DEA5BD1005DD338 /* DataUnitable.swift in Sources */,
 				03E668DB1D69AFEE00F6110A /* NSObjectExtensions.swift in Sources */,
 				032A85E31D1BA4F300401E29 /* StringExtensions.swift in Sources */,
 				03B8E5401D24F1B000E40586 /* URLRequestMethod.swift in Sources */,

@@ -9,7 +9,7 @@
 /**
 This protocol defines the basic implementation of a section item used by the data dictionary within any class that implements the `DataSource` protocol.
 */
-public protocol Sectionable: DataUnitable, Hashable {
+public protocol Sectionable: Hashable, CustomStringConvertible, CustomDebugStringConvertible {
     
     // MARK: Properties
     

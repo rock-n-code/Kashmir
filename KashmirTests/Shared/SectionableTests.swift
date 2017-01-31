@@ -26,6 +26,15 @@ extension _Section: CustomStringConvertible {
                 "- Index: \(index)\n" +
                 "- Id: \(id)\n"
     }
+	
+}
+
+extension _Section: CustomDebugStringConvertible {
+
+	var debugDescription: String {
+		return description
+	}
+	
 }
 
 // MARK: -

@@ -19,6 +19,14 @@ extension _Item: CustomStringConvertible {
     }
 }
 
+extension _Item: CustomDebugStringConvertible {
+
+	var debugDescription: String {
+        return description
+    }
+
+}
+
 // MARK: -
 
 class ItemableTests: XCTestCase {
