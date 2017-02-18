@@ -417,7 +417,6 @@
 		02CDE5F41DECA14000EE7892 /* Structs */ = {
 			isa = PBXGroup;
 			children = (
-				0294DDF11E20F66D0002E409 /* Result.swift */,
 				02CDE5EF1DECA12A00EE7892 /* Network.swift */,
 			);
 			name = Structs;
@@ -494,6 +493,7 @@
 		032A85DE1D1B875500401E29 /* Enumerations */ = {
 			isa = PBXGroup;
 			children = (
+				0294DDF11E20F66D0002E409 /* Result.swift */,
 				022D7FE21E1CAC2500E0A537 /* DataStackStore.swift */,
 				0294DDFA1E20F8DB0002E409 /* DataStackValidation.swift */,
 				02CDE5E01DEC9FE100EE7892 /* NetworkConnectivity.swift */,
