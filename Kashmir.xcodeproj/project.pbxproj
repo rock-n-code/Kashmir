@@ -22,7 +22,6 @@
 		022592691DEA5249005DD338 /* TestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 027FD2B61DEA4CA7009814AB /* TestView.xib */; };
 		0225926E1DEA5BA0005DD338 /* DataSourceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0225926D1DEA5BA0005DD338 /* DataSourceError.swift */; };
 		022592741DEA5BD1005DD338 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022592701DEA5BD1005DD338 /* DataSource.swift */; };
-		022592751DEA5BD1005DD338 /* DataUnitable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022592711DEA5BD1005DD338 /* DataUnitable.swift */; };
 		022592761DEA5BD1005DD338 /* Itemable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022592721DEA5BD1005DD338 /* Itemable.swift */; };
 		022592771DEA5BD1005DD338 /* Sectionable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022592731DEA5BD1005DD338 /* Sectionable.swift */; };
 		022592781DEA5BF7005DD338 /* DataSourceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0225926D1DEA5BA0005DD338 /* DataSourceError.swift */; };
@@ -35,6 +34,18 @@
 		022592851DEAE986005DD338 /* IndexPathExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022592831DEAE97F005DD338 /* IndexPathExtensions.swift */; };
 		022592861DEAE989005DD338 /* IndexPathExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022592831DEAE97F005DD338 /* IndexPathExtensions.swift */; };
 		022592891DEAE99F005DD338 /* IndexPathExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022592871DEAE99A005DD338 /* IndexPathExtensionsTests.swift */; };
+		022D7FE31E1CAC2500E0A537 /* DataStackStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022D7FE21E1CAC2500E0A537 /* DataStackStore.swift */; };
+		022D7FE41E1CAC2500E0A537 /* DataStackStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022D7FE21E1CAC2500E0A537 /* DataStackStore.swift */; };
+		022D7FE51E1CAC2500E0A537 /* DataStackStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022D7FE21E1CAC2500E0A537 /* DataStackStore.swift */; };
+		022D7FE61E1CAC2500E0A537 /* DataStackStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022D7FE21E1CAC2500E0A537 /* DataStackStore.swift */; };
+		022D7FE71E1CAC2500E0A537 /* DataStackStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022D7FE21E1CAC2500E0A537 /* DataStackStore.swift */; };
+		022D7FE91E1CBB1D00E0A537 /* DataStackStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022D7FE81E1CBB1D00E0A537 /* DataStackStoreTests.swift */; };
+		022EE1231E5430BF0067AE2F /* UserDefaultsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022EE1221E5430BF0067AE2F /* UserDefaultsExtensions.swift */; };
+		022EE1241E5430BF0067AE2F /* UserDefaultsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022EE1221E5430BF0067AE2F /* UserDefaultsExtensions.swift */; };
+		022EE1251E5430BF0067AE2F /* UserDefaultsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022EE1221E5430BF0067AE2F /* UserDefaultsExtensions.swift */; };
+		022EE1261E5430BF0067AE2F /* UserDefaultsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022EE1221E5430BF0067AE2F /* UserDefaultsExtensions.swift */; };
+		022EE1271E5430BF0067AE2F /* UserDefaultsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022EE1221E5430BF0067AE2F /* UserDefaultsExtensions.swift */; };
+		022EE1291E5433920067AE2F /* UserDefaultsExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022EE1281E5433920067AE2F /* UserDefaultsExtensionsTests.swift */; };
 		02384AC11DECB76700B664D3 /* NetworkStatusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02384AC01DECB76700B664D3 /* NetworkStatusTests.swift */; };
 		02384AC41DECD29600B664D3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02384AC31DECD29600B664D3 /* SystemConfiguration.framework */; };
 		02384ACD1DECF39A00B664D3 /* SCNetworkReachabilityFlagsExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02384ACC1DECF39A00B664D3 /* SCNetworkReachabilityFlagsExtensionsTests.swift */; };
@@ -51,6 +62,17 @@
 		0288975A1E047FCD004E19BA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02384AC31DECD29600B664D3 /* SystemConfiguration.framework */; };
 		0288975B1E047FCE004E19BA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02384AC31DECD29600B664D3 /* SystemConfiguration.framework */; };
 		0288975C1E047FCF004E19BA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02384AC31DECD29600B664D3 /* SystemConfiguration.framework */; };
+		0294DDF21E20F66D0002E409 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0294DDF11E20F66D0002E409 /* Result.swift */; };
+		0294DDF31E20F66D0002E409 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0294DDF11E20F66D0002E409 /* Result.swift */; };
+		0294DDF41E20F66D0002E409 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0294DDF11E20F66D0002E409 /* Result.swift */; };
+		0294DDF51E20F66D0002E409 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0294DDF11E20F66D0002E409 /* Result.swift */; };
+		0294DDF61E20F66D0002E409 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0294DDF11E20F66D0002E409 /* Result.swift */; };
+		0294DDF91E20F6C00002E409 /* ResultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0294DDF81E20F6C00002E409 /* ResultTests.swift */; };
+		0294DDFB1E20F8DB0002E409 /* DataStackValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0294DDFA1E20F8DB0002E409 /* DataStackValidation.swift */; };
+		0294DDFC1E20F9460002E409 /* DataStackValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0294DDFA1E20F8DB0002E409 /* DataStackValidation.swift */; };
+		0294DDFD1E20F9460002E409 /* DataStackValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0294DDFA1E20F8DB0002E409 /* DataStackValidation.swift */; };
+		0294DDFE1E20F9470002E409 /* DataStackValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0294DDFA1E20F8DB0002E409 /* DataStackValidation.swift */; };
+		0294DDFF1E20F9480002E409 /* DataStackValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0294DDFA1E20F8DB0002E409 /* DataStackValidation.swift */; };
 		02CDE5D71DEC9EA700EE7892 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CDE5D61DEC9EA700EE7892 /* Reachability.swift */; };
 		02CDE5D81DEC9EB100EE7892 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CDE5D61DEC9EA700EE7892 /* Reachability.swift */; };
 		02CDE5D91DEC9EB200EE7892 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CDE5D61DEC9EA700EE7892 /* Reachability.swift */; };
@@ -153,7 +175,6 @@
 		02130A211DDA75000071940B /* UIDeviceExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIDeviceExtensions.swift; path = Kashmir/iOS/UIDeviceExtensions.swift; sourceTree = SOURCE_ROOT; };
 		0225926D1DEA5BA0005DD338 /* DataSourceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataSourceError.swift; path = Shared/DataSourceError.swift; sourceTree = "<group>"; };
 		022592701DEA5BD1005DD338 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataSource.swift; path = Shared/DataSource.swift; sourceTree = "<group>"; };
-		022592711DEA5BD1005DD338 /* DataUnitable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataUnitable.swift; path = Shared/DataUnitable.swift; sourceTree = "<group>"; };
 		022592721DEA5BD1005DD338 /* Itemable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Itemable.swift; path = Shared/Itemable.swift; sourceTree = "<group>"; };
 		022592731DEA5BD1005DD338 /* Sectionable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Sectionable.swift; path = Shared/Sectionable.swift; sourceTree = "<group>"; };
 		0225927D1DEA5C50005DD338 /* DataSourceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataSourceTests.swift; path = Shared/DataSourceTests.swift; sourceTree = "<group>"; };
@@ -161,6 +182,10 @@
 		0225927F1DEA5C50005DD338 /* SectionableTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SectionableTests.swift; path = Shared/SectionableTests.swift; sourceTree = "<group>"; };
 		022592831DEAE97F005DD338 /* IndexPathExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IndexPathExtensions.swift; path = Kashmir/iOS/IndexPathExtensions.swift; sourceTree = SOURCE_ROOT; };
 		022592871DEAE99A005DD338 /* IndexPathExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IndexPathExtensionsTests.swift; path = KashmirTests/iOS/IndexPathExtensionsTests.swift; sourceTree = SOURCE_ROOT; };
+		022D7FE21E1CAC2500E0A537 /* DataStackStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataStackStore.swift; path = Shared/DataStackStore.swift; sourceTree = "<group>"; };
+		022D7FE81E1CBB1D00E0A537 /* DataStackStoreTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataStackStoreTests.swift; path = Shared/DataStackStoreTests.swift; sourceTree = "<group>"; };
+		022EE1221E5430BF0067AE2F /* UserDefaultsExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserDefaultsExtensions.swift; path = Shared/UserDefaultsExtensions.swift; sourceTree = "<group>"; };
+		022EE1281E5433920067AE2F /* UserDefaultsExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserDefaultsExtensionsTests.swift; path = Shared/UserDefaultsExtensionsTests.swift; sourceTree = "<group>"; };
 		02384AC01DECB76700B664D3 /* NetworkStatusTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkStatusTests.swift; path = Shared/NetworkStatusTests.swift; sourceTree = "<group>"; };
 		02384AC31DECD29600B664D3 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		02384ACC1DECF39A00B664D3 /* SCNetworkReachabilityFlagsExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SCNetworkReachabilityFlagsExtensionsTests.swift; path = Shared/SCNetworkReachabilityFlagsExtensionsTests.swift; sourceTree = "<group>"; };
@@ -170,6 +195,9 @@
 		027FD2AD1DEA4BC5009814AB /* XibableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XibableView.swift; path = Kashmir/iOS/XibableView.swift; sourceTree = SOURCE_ROOT; };
 		027FD2B21DEA4C35009814AB /* XibableViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XibableViewTests.swift; path = KashmirTests/iOS/XibableViewTests.swift; sourceTree = SOURCE_ROOT; };
 		027FD2B61DEA4CA7009814AB /* TestView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TestView.xib; path = KashmirTests/iOS/TestView.xib; sourceTree = SOURCE_ROOT; };
+		0294DDF11E20F66D0002E409 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Shared/Result.swift; sourceTree = "<group>"; };
+		0294DDF81E20F6C00002E409 /* ResultTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResultTests.swift; path = Shared/ResultTests.swift; sourceTree = "<group>"; };
+		0294DDFA1E20F8DB0002E409 /* DataStackValidation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataStackValidation.swift; path = Shared/DataStackValidation.swift; sourceTree = "<group>"; };
 		02CDE5D61DEC9EA700EE7892 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Reachability.swift; path = Shared/Reachability.swift; sourceTree = "<group>"; };
 		02CDE5DB1DEC9F5C00EE7892 /* ReachabilityError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReachabilityError.swift; path = Shared/ReachabilityError.swift; sourceTree = "<group>"; };
 		02CDE5E01DEC9FE100EE7892 /* NetworkConnectivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkConnectivity.swift; path = Shared/NetworkConnectivity.swift; sourceTree = "<group>"; };
@@ -305,7 +333,6 @@
 		0225926F1DEA5BBE005DD338 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				022592711DEA5BD1005DD338 /* DataUnitable.swift */,
 				022592731DEA5BD1005DD338 /* Sectionable.swift */,
 				022592721DEA5BD1005DD338 /* Itemable.swift */,
 				022592701DEA5BD1005DD338 /* DataSource.swift */,
@@ -390,6 +417,7 @@
 		02CDE5F41DECA14000EE7892 /* Structs */ = {
 			isa = PBXGroup;
 			children = (
+				0294DDF11E20F66D0002E409 /* Result.swift */,
 				02CDE5EF1DECA12A00EE7892 /* Network.swift */,
 			);
 			name = Structs;
@@ -466,6 +494,8 @@
 		032A85DE1D1B875500401E29 /* Enumerations */ = {
 			isa = PBXGroup;
 			children = (
+				022D7FE21E1CAC2500E0A537 /* DataStackStore.swift */,
+				0294DDFA1E20F8DB0002E409 /* DataStackValidation.swift */,
 				02CDE5E01DEC9FE100EE7892 /* NetworkConnectivity.swift */,
 				02CDE5E51DEC9FFC00EE7892 /* NetworkStatus.swift */,
 				03B8E53F1D24F1B000E40586 /* URLRequestMethod.swift */,
@@ -479,6 +509,7 @@
 			children = (
 				034074791D7088C2004099AC /* BundleExtensions.swift */,
 				032A85E21D1BA4F300401E29 /* StringExtensions.swift */,
+				022EE1221E5430BF0067AE2F /* UserDefaultsExtensions.swift */,
 				03E668DA1D69AFEE00F6110A /* NSObjectExtensions.swift */,
 				02CDE5EA1DECA06F00EE7892 /* SCNetworkReachabilityFlagsExtensions.swift */,
 			);
@@ -490,6 +521,7 @@
 			children = (
 				02130A0F1DDA71B00071940B /* BundleExtensionsTests.swift */,
 				02130A111DDA71B00071940B /* StringExtensionsTests.swift */,
+				022EE1281E5433920067AE2F /* UserDefaultsExtensionsTests.swift */,
 				02130A101DDA71B00071940B /* NSObjectExtensionsTests.swift */,
 				02384ACC1DECF39A00B664D3 /* SCNetworkReachabilityFlagsExtensionsTests.swift */,
 			);
@@ -499,8 +531,10 @@
 		032A85EE1D1BA9A100401E29 /* Enumerations */ = {
 			isa = PBXGroup;
 			children = (
-				02130A0B1DDA71950071940B /* URLRequestMethodTests.swift */,
+				0294DDF81E20F6C00002E409 /* ResultTests.swift */,
+				022D7FE81E1CBB1D00E0A537 /* DataStackStoreTests.swift */,
 				02384AC01DECB76700B664D3 /* NetworkStatusTests.swift */,
+				02130A0B1DDA71950071940B /* URLRequestMethodTests.swift */,
 			);
 			name = Enumerations;
 			sourceTree = "<group>";
@@ -901,18 +935,21 @@
 				03B67C6D1D8AF116001DFFE6 /* DataStackError.swift in Sources */,
 				02CDE5E61DEC9FFC00EE7892 /* NetworkStatus.swift in Sources */,
 				03B67C701D8AF154001DFFE6 /* DataStack.swift in Sources */,
+				0294DDFB1E20F8DB0002E409 /* DataStackValidation.swift in Sources */,
 				022592761DEA5BD1005DD338 /* Itemable.swift in Sources */,
-				022592751DEA5BD1005DD338 /* DataUnitable.swift in Sources */,
 				03E668DB1D69AFEE00F6110A /* NSObjectExtensions.swift in Sources */,
 				032A85E31D1BA4F300401E29 /* StringExtensions.swift in Sources */,
 				03B8E5401D24F1B000E40586 /* URLRequestMethod.swift in Sources */,
+				0294DDF21E20F66D0002E409 /* Result.swift in Sources */,
 				02CDE5F01DECA12A00EE7892 /* Network.swift in Sources */,
 				032A85E01D1B879800401E29 /* URLResponseStatusCode.swift in Sources */,
 				022592771DEA5BD1005DD338 /* Sectionable.swift in Sources */,
 				0340747A1D7088C2004099AC /* BundleExtensions.swift in Sources */,
 				02CDE5E11DEC9FE100EE7892 /* NetworkConnectivity.swift in Sources */,
 				022592741DEA5BD1005DD338 /* DataSource.swift in Sources */,
+				022EE1231E5430BF0067AE2F /* UserDefaultsExtensions.swift in Sources */,
 				0225926E1DEA5BA0005DD338 /* DataSourceError.swift in Sources */,
+				022D7FE31E1CAC2500E0A537 /* DataStackStore.swift in Sources */,
 				024F517F1DEF90990088A3B2 /* NetworkReacher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -923,7 +960,9 @@
 			files = (
 				02130A141DDA71B00071940B /* StringExtensionsTests.swift in Sources */,
 				022592811DEA5C50005DD338 /* ItemableTests.swift in Sources */,
+				022EE1291E5433920067AE2F /* UserDefaultsExtensionsTests.swift in Sources */,
 				02130A0C1DDA71950071940B /* URLRequestMethodTests.swift in Sources */,
+				0294DDF91E20F6C00002E409 /* ResultTests.swift in Sources */,
 				02130A131DDA71B00071940B /* NSObjectExtensionsTests.swift in Sources */,
 				02384ACD1DECF39A00B664D3 /* SCNetworkReachabilityFlagsExtensionsTests.swift in Sources */,
 				02130A121DDA71B00071940B /* BundleExtensionsTests.swift in Sources */,
@@ -933,6 +972,7 @@
 				022592801DEA5C50005DD338 /* DataSourceTests.swift in Sources */,
 				024F51851DEF91360088A3B2 /* NetworkReacherTests.swift in Sources */,
 				02384ACF1DECF47900B664D3 /* ReachabilityTests.swift in Sources */,
+				022D7FE91E1CBB1D00E0A537 /* DataStackStoreTests.swift in Sources */,
 				02130A1C1DDA71DE0071940B /* Test.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -943,13 +983,17 @@
 			files = (
 				03B8E5491D24F2A600E40586 /* StringExtensions.swift in Sources */,
 				02CDE5E21DEC9FE100EE7892 /* NetworkConnectivity.swift in Sources */,
+				022EE1241E5430BF0067AE2F /* UserDefaultsExtensions.swift in Sources */,
+				0294DDF31E20F66D0002E409 /* Result.swift in Sources */,
 				03B67C781D8AF884001DFFE6 /* DataStackError.swift in Sources */,
 				024F51801DEF90990088A3B2 /* NetworkReacher.swift in Sources */,
 				03B67C7C1D8AF88A001DFFE6 /* DataStack.swift in Sources */,
 				03E668DC1D69AFEE00F6110A /* NSObjectExtensions.swift in Sources */,
 				02CDE5F11DECA12A00EE7892 /* Network.swift in Sources */,
+				022D7FE41E1CAC2500E0A537 /* DataStackStore.swift in Sources */,
 				03B8E5411D24F28E00E40586 /* URLRequestMethod.swift in Sources */,
 				0323207B1D245B0A00BB79A1 /* URLResponseError.swift in Sources */,
+				0294DDFC1E20F9460002E409 /* DataStackValidation.swift in Sources */,
 				02CDE5EC1DECA06F00EE7892 /* SCNetworkReachabilityFlagsExtensions.swift in Sources */,
 				03B8E5451D24F29E00E40586 /* URLResponseStatusCode.swift in Sources */,
 				02CDE5E71DEC9FFC00EE7892 /* NetworkStatus.swift in Sources */,
@@ -966,6 +1010,7 @@
 			files = (
 				03B8E54A1D24F2A600E40586 /* StringExtensions.swift in Sources */,
 				02CDE5E31DEC9FE100EE7892 /* NetworkConnectivity.swift in Sources */,
+				022D7FE51E1CAC2500E0A537 /* DataStackStore.swift in Sources */,
 				02CDE5DE1DEC9F5C00EE7892 /* ReachabilityError.swift in Sources */,
 				0225927A1DEA5BF8005DD338 /* DataSourceError.swift in Sources */,
 				03B67C791D8AF884001DFFE6 /* DataStackError.swift in Sources */,
@@ -973,6 +1018,8 @@
 				03E668DD1D69AFEE00F6110A /* NSObjectExtensions.swift in Sources */,
 				03B8E5421D24F28F00E40586 /* URLRequestMethod.swift in Sources */,
 				027FD2B01DEA4BFE009814AB /* XibableView.swift in Sources */,
+				0294DDF41E20F66D0002E409 /* Result.swift in Sources */,
+				0294DDFD1E20F9460002E409 /* DataStackValidation.swift in Sources */,
 				024F51811DEF90990088A3B2 /* NetworkReacher.swift in Sources */,
 				02CDE5ED1DECA06F00EE7892 /* SCNetworkReachabilityFlagsExtensions.swift in Sources */,
 				0323207C1D245B0A00BB79A1 /* URLResponseError.swift in Sources */,
@@ -980,6 +1027,7 @@
 				022592861DEAE989005DD338 /* IndexPathExtensions.swift in Sources */,
 				02CDE5E81DEC9FFC00EE7892 /* NetworkStatus.swift in Sources */,
 				02CDE5F21DECA12A00EE7892 /* Network.swift in Sources */,
+				022EE1251E5430BF0067AE2F /* UserDefaultsExtensions.swift in Sources */,
 				02130A241DDA75070071940B /* UIDeviceExtensions.swift in Sources */,
 				0340747C1D7088C2004099AC /* BundleExtensions.swift in Sources */,
 				02CDE5D91DEC9EB200EE7892 /* Reachability.swift in Sources */,
@@ -992,13 +1040,17 @@
 			files = (
 				03B8E54B1D24F2A700E40586 /* StringExtensions.swift in Sources */,
 				02CDE5E41DEC9FE100EE7892 /* NetworkConnectivity.swift in Sources */,
+				022EE1261E5430BF0067AE2F /* UserDefaultsExtensions.swift in Sources */,
+				0294DDF51E20F66D0002E409 /* Result.swift in Sources */,
 				03B67C7A1D8AF885001DFFE6 /* DataStackError.swift in Sources */,
 				024F51821DEF90990088A3B2 /* NetworkReacher.swift in Sources */,
 				03B67C7E1D8AF88B001DFFE6 /* DataStack.swift in Sources */,
 				03E668DE1D69AFEE00F6110A /* NSObjectExtensions.swift in Sources */,
 				02CDE5F31DECA12A00EE7892 /* Network.swift in Sources */,
+				022D7FE61E1CAC2500E0A537 /* DataStackStore.swift in Sources */,
 				03B8E5431D24F29000E40586 /* URLRequestMethod.swift in Sources */,
 				0323207D1D245B0A00BB79A1 /* URLResponseError.swift in Sources */,
+				0294DDFE1E20F9470002E409 /* DataStackValidation.swift in Sources */,
 				02CDE5EE1DECA06F00EE7892 /* SCNetworkReachabilityFlagsExtensions.swift in Sources */,
 				03B8E5471D24F29F00E40586 /* URLResponseStatusCode.swift in Sources */,
 				02CDE5E91DEC9FFC00EE7892 /* NetworkStatus.swift in Sources */,
@@ -1019,9 +1071,13 @@
 				03E668DF1D69AFEE00F6110A /* NSObjectExtensions.swift in Sources */,
 				03B8E5441D24F29100E40586 /* URLRequestMethod.swift in Sources */,
 				0323207E1D245B0A00BB79A1 /* URLResponseError.swift in Sources */,
+				0294DDF61E20F66D0002E409 /* Result.swift in Sources */,
+				022EE1271E5430BF0067AE2F /* UserDefaultsExtensions.swift in Sources */,
+				0294DDFF1E20F9480002E409 /* DataStackValidation.swift in Sources */,
 				03B8E5481D24F2A000E40586 /* URLResponseStatusCode.swift in Sources */,
 				0340747E1D7088C2004099AC /* BundleExtensions.swift in Sources */,
 				022592781DEA5BF7005DD338 /* DataSourceError.swift in Sources */,
+				022D7FE71E1CAC2500E0A537 /* DataStackStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1057,6 +1113,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LLVM_LTO = YES_THIN;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rockncode.kashmir.ios;
 				PRODUCT_MODULE_NAME = Kashmir;
@@ -1065,6 +1122,7 @@
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1082,10 +1140,12 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
 				INFOPLIST_FILE = "$(SRCROOT)/Kashmir/Info_iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LLVM_LTO = YES_THIN;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rockncode.kashmir.ios;
 				PRODUCT_MODULE_NAME = Kashmir;
@@ -1116,6 +1176,7 @@
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -1165,6 +1226,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1215,6 +1277,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1243,15 +1306,17 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = Kashmir/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LLVM_LTO = YES_THIN;
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rockncode.kashmir;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -1265,10 +1330,13 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_VERSION = A;
+				GCC_OPTIMIZATION_LEVEL = s;
 				INFOPLIST_FILE = Kashmir/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LLVM_LTO = YES_THIN;
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rockncode.kashmir;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1312,10 +1380,12 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "$(SRCROOT)/Kashmir/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LLVM_LTO = YES_THIN;
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rockncode.kashmir.macos;
 				PRODUCT_MODULE_NAME = Kashmir;
@@ -1323,7 +1393,7 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = macosx;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -1338,10 +1408,12 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "$(SRCROOT)/Kashmir/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LLVM_LTO = YES_THIN;
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rockncode.kashmir.macos;
 				PRODUCT_MODULE_NAME = Kashmir;
@@ -1366,13 +1438,14 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LLVM_LTO = YES_THIN;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rockncode.kashmir.ios;
 				PRODUCT_MODULE_NAME = Kashmir;
 				PRODUCT_NAME = Kashmir;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1391,6 +1464,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LLVM_LTO = YES_THIN;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rockncode.kashmir.ios;
 				PRODUCT_MODULE_NAME = Kashmir;
 				PRODUCT_NAME = Kashmir;
@@ -1415,13 +1489,14 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Kashmir/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LLVM_LTO = YES_THIN;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rockncode.kashmir.tvos;
 				PRODUCT_MODULE_NAME = Kashmir;
 				PRODUCT_NAME = Kashmir;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 10.0;
@@ -1440,6 +1515,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Kashmir/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LLVM_LTO = YES_THIN;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rockncode.kashmir.tvos;
 				PRODUCT_MODULE_NAME = Kashmir;
 				PRODUCT_NAME = Kashmir;
@@ -1466,13 +1542,14 @@
 				INFOPLIST_FILE = Kashmir/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LLVM_LTO = YES_THIN;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rockncode.kashmir.watchos;
 				PRODUCT_MODULE_NAME = Kashmir;
 				PRODUCT_NAME = Kashmir;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "watchsimulator watchos";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 3.0;
@@ -1492,6 +1569,7 @@
 				INFOPLIST_FILE = Kashmir/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LLVM_LTO = YES_THIN;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rockncode.kashmir.watchos;
 				PRODUCT_MODULE_NAME = Kashmir;
 				PRODUCT_NAME = Kashmir;

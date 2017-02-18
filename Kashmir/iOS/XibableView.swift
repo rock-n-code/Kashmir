@@ -48,7 +48,7 @@ public class XibableView: UIView {
         let bundle = Bundle(for: type(of: self))
         let nib = UINib(nibName: nameClass, bundle: bundle)
         
-        return nib.instantiate(withOwner: type(of: self), options: nil)[0] as? UIView
+        return nib.instantiate(withOwner: self, options: nil)[0] as? UIView
     }
 
 }

@@ -28,6 +28,14 @@ extension _Section: CustomStringConvertible {
     }
 }
 
+extension _Section: CustomDebugStringConvertible {
+
+	var debugDescription: String {
+		return description
+	}
+	
+}
+
 // MARK: -
 
 class SectionableTests: XCTestCase {

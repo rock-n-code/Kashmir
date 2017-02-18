@@ -30,7 +30,13 @@ class StringExtensionsTests: XCTestCase {
 		XCTAssertEqual("test/test".urlEncoded, "test%2Ftest")
 		XCTAssertEqual("test/test=42".urlEncoded, "test%2Ftest%3D42")
 	}
-    
+
+	func testToUrl() {
+		XCTAssertNil("".toUrl)
+		XCTAssertNotNil("rock-n-code.com".toUrl)
+		XCTAssertNotNil("http://rock-n-code.com".toUrl)
+	}
+
     // MARK: Functions tests
     
     func testIndexesOfCharacter() {

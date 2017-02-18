@@ -9,4 +9,4 @@
 /**
 This protocol defines the basic implementation of a item inside the item's array used by the data dictionary within any class that implements the `DataSource` protocol.
 */
-public protocol Itemable: DataUnitable {}
+public protocol Itemable: CustomStringConvertible, CustomDebugStringConvertible {}
