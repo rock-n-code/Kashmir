@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
     # Specification
     spec.name               = "Kashmir"
-    spec.version            = "0.1.7"
+    spec.version            = "0.1.8"
     spec.summary            = "Utility framework to help building macOS, iOS, tvOS and watchOS apps, the Rock & Code way."
     spec.homepage           = "http://git.rock-n-co.de/RockAndCode/Kashmir"
     spec.license            = {
@@ -31,5 +31,4 @@ Pod::Spec.new do |spec|
     spec.ios.source_files       = "Kashmir/iOS/**/*.{h,swift}"
     spec.tvos.source_files      = "Kashmir/tvOS/**/*.{h,swift}"
     spec.watchos.source_files   = "Kashmir/watchOS/**/*.{h,swift}"
-
 end
