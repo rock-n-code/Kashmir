@@ -6,6 +6,12 @@
 //  Copyright © 2016 Rock & Code. All rights reserved.
 //
 
+#if os(OSX)
+import AppKit
+#else
+import UIKit
+#endif
+
 /**
 This protocol defines the minimal requirements a compliant data source instance should implement in order to provide data to a view controller.
 */
