@@ -73,6 +73,18 @@
 		0294DDFD1E20F9460002E409 /* DataStackValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0294DDFA1E20F8DB0002E409 /* DataStackValidation.swift */; };
 		0294DDFE1E20F9470002E409 /* DataStackValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0294DDFA1E20F8DB0002E409 /* DataStackValidation.swift */; };
 		0294DDFF1E20F9480002E409 /* DataStackValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0294DDFA1E20F8DB0002E409 /* DataStackValidation.swift */; };
+		029DEF161E582F0000C4230C /* Sectionable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022592731DEA5BD1005DD338 /* Sectionable.swift */; };
+		029DEF171E582F0100C4230C /* Sectionable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022592731DEA5BD1005DD338 /* Sectionable.swift */; };
+		029DEF181E582F0100C4230C /* Sectionable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022592731DEA5BD1005DD338 /* Sectionable.swift */; };
+		029DEF191E582F0200C4230C /* Sectionable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022592731DEA5BD1005DD338 /* Sectionable.swift */; };
+		029DEF1A1E582F0700C4230C /* Itemable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022592721DEA5BD1005DD338 /* Itemable.swift */; };
+		029DEF1B1E582F0800C4230C /* Itemable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022592721DEA5BD1005DD338 /* Itemable.swift */; };
+		029DEF1C1E582F0900C4230C /* Itemable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022592721DEA5BD1005DD338 /* Itemable.swift */; };
+		029DEF1D1E582F0900C4230C /* Itemable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022592721DEA5BD1005DD338 /* Itemable.swift */; };
+		029DEF1E1E582F0E00C4230C /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022592701DEA5BD1005DD338 /* DataSource.swift */; };
+		029DEF1F1E582F0F00C4230C /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022592701DEA5BD1005DD338 /* DataSource.swift */; };
+		029DEF201E582F0F00C4230C /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022592701DEA5BD1005DD338 /* DataSource.swift */; };
+		029DEF211E582F1000C4230C /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022592701DEA5BD1005DD338 /* DataSource.swift */; };
 		02CDE5D71DEC9EA700EE7892 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CDE5D61DEC9EA700EE7892 /* Reachability.swift */; };
 		02CDE5D81DEC9EB100EE7892 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CDE5D61DEC9EA700EE7892 /* Reachability.swift */; };
 		02CDE5D91DEC9EB200EE7892 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CDE5D61DEC9EA700EE7892 /* Reachability.swift */; };
@@ -983,6 +995,7 @@
 			files = (
 				03B8E5491D24F2A600E40586 /* StringExtensions.swift in Sources */,
 				02CDE5E21DEC9FE100EE7892 /* NetworkConnectivity.swift in Sources */,
+				029DEF191E582F0200C4230C /* Sectionable.swift in Sources */,
 				022EE1241E5430BF0067AE2F /* UserDefaultsExtensions.swift in Sources */,
 				0294DDF31E20F66D0002E409 /* Result.swift in Sources */,
 				03B67C781D8AF884001DFFE6 /* DataStackError.swift in Sources */,
@@ -992,6 +1005,8 @@
 				02CDE5F11DECA12A00EE7892 /* Network.swift in Sources */,
 				022D7FE41E1CAC2500E0A537 /* DataStackStore.swift in Sources */,
 				03B8E5411D24F28E00E40586 /* URLRequestMethod.swift in Sources */,
+				029DEF1E1E582F0E00C4230C /* DataSource.swift in Sources */,
+				029DEF1A1E582F0700C4230C /* Itemable.swift in Sources */,
 				0323207B1D245B0A00BB79A1 /* URLResponseError.swift in Sources */,
 				0294DDFC1E20F9460002E409 /* DataStackValidation.swift in Sources */,
 				02CDE5EC1DECA06F00EE7892 /* SCNetworkReachabilityFlagsExtensions.swift in Sources */,
@@ -1013,6 +1028,7 @@
 				022D7FE51E1CAC2500E0A537 /* DataStackStore.swift in Sources */,
 				02CDE5DE1DEC9F5C00EE7892 /* ReachabilityError.swift in Sources */,
 				0225927A1DEA5BF8005DD338 /* DataSourceError.swift in Sources */,
+				029DEF181E582F0100C4230C /* Sectionable.swift in Sources */,
 				03B67C791D8AF884001DFFE6 /* DataStackError.swift in Sources */,
 				03B67C7D1D8AF88A001DFFE6 /* DataStack.swift in Sources */,
 				03E668DD1D69AFEE00F6110A /* NSObjectExtensions.swift in Sources */,
@@ -1023,7 +1039,9 @@
 				024F51811DEF90990088A3B2 /* NetworkReacher.swift in Sources */,
 				02CDE5ED1DECA06F00EE7892 /* SCNetworkReachabilityFlagsExtensions.swift in Sources */,
 				0323207C1D245B0A00BB79A1 /* URLResponseError.swift in Sources */,
+				029DEF1F1E582F0F00C4230C /* DataSource.swift in Sources */,
 				03B8E5461D24F29E00E40586 /* URLResponseStatusCode.swift in Sources */,
+				029DEF1B1E582F0800C4230C /* Itemable.swift in Sources */,
 				022592861DEAE989005DD338 /* IndexPathExtensions.swift in Sources */,
 				02CDE5E81DEC9FFC00EE7892 /* NetworkStatus.swift in Sources */,
 				02CDE5F21DECA12A00EE7892 /* Network.swift in Sources */,
@@ -1040,6 +1058,7 @@
 			files = (
 				03B8E54B1D24F2A700E40586 /* StringExtensions.swift in Sources */,
 				02CDE5E41DEC9FE100EE7892 /* NetworkConnectivity.swift in Sources */,
+				029DEF171E582F0100C4230C /* Sectionable.swift in Sources */,
 				022EE1261E5430BF0067AE2F /* UserDefaultsExtensions.swift in Sources */,
 				0294DDF51E20F66D0002E409 /* Result.swift in Sources */,
 				03B67C7A1D8AF885001DFFE6 /* DataStackError.swift in Sources */,
@@ -1049,6 +1068,8 @@
 				02CDE5F31DECA12A00EE7892 /* Network.swift in Sources */,
 				022D7FE61E1CAC2500E0A537 /* DataStackStore.swift in Sources */,
 				03B8E5431D24F29000E40586 /* URLRequestMethod.swift in Sources */,
+				029DEF201E582F0F00C4230C /* DataSource.swift in Sources */,
+				029DEF1C1E582F0900C4230C /* Itemable.swift in Sources */,
 				0323207D1D245B0A00BB79A1 /* URLResponseError.swift in Sources */,
 				0294DDFE1E20F9470002E409 /* DataStackValidation.swift in Sources */,
 				02CDE5EE1DECA06F00EE7892 /* SCNetworkReachabilityFlagsExtensions.swift in Sources */,
@@ -1071,11 +1092,14 @@
 				03E668DF1D69AFEE00F6110A /* NSObjectExtensions.swift in Sources */,
 				03B8E5441D24F29100E40586 /* URLRequestMethod.swift in Sources */,
 				0323207E1D245B0A00BB79A1 /* URLResponseError.swift in Sources */,
+				029DEF211E582F1000C4230C /* DataSource.swift in Sources */,
 				0294DDF61E20F66D0002E409 /* Result.swift in Sources */,
 				022EE1271E5430BF0067AE2F /* UserDefaultsExtensions.swift in Sources */,
 				0294DDFF1E20F9480002E409 /* DataStackValidation.swift in Sources */,
+				029DEF161E582F0000C4230C /* Sectionable.swift in Sources */,
 				03B8E5481D24F2A000E40586 /* URLResponseStatusCode.swift in Sources */,
 				0340747E1D7088C2004099AC /* BundleExtensions.swift in Sources */,
+				029DEF1D1E582F0900C4230C /* Itemable.swift in Sources */,
 				022592781DEA5BF7005DD338 /* DataSourceError.swift in Sources */,
 				022D7FE71E1CAC2500E0A537 /* DataStackStore.swift in Sources */,
 			);
