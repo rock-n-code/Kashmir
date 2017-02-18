@@ -8,10 +8,12 @@
 
 import UIKit
 
-/// Generic view class that automatically loads a respective XIB file and integrates it into the current view.
-///
-/// - important: This class **must** be used in case it is required to integrate a custom view into a storyboard.
-/// - seealso: For more information on [how to reuse a custom view with xib file in a storyboard](http://stackoverflow.com/questions/30335089/reuse-a-uiview-xib-in-storyboard/37668821#37668821)
+/**
+Generic view class that automatically loads a respective XIB file and integrates it into the current view.
+
+- important: This class **must** be used in case it is required to integrate a custom view into a storyboard.
+- seealso: For more information on [how to reuse a custom view with xib file in a storyboard](http://stackoverflow.com/questions/30335089/reuse-a-uiview-xib-in-storyboard/37668821#37668821)
+*/
 public class XibableView: UIView {
     
     // MARK: Initializers
