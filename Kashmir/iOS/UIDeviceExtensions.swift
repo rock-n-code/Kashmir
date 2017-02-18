@@ -16,17 +16,21 @@ public extension UIDevice {
     var version: Float {
         return Float(UIDevice.current.systemVersion)!
     }
+	
+	/**
+	Check if the current device is in portrait mode.
     
-    /// Check if the current device is in portrait mode.
-    ///
-    /// - important: This method checks for the orientation state of the device's status bar instead of checking the `UIDevice` instance's orientation.
+	- important: This method checks for the orientation state of the device's status bar instead of checking the `UIDevice` instance's orientation.
+	*/
     var isPortrait: Bool {
         return UIApplication.shared.statusBarOrientation.isPortrait
     }
-    
-    /// Check if the current device is in landscape mode.
-    ///
-    /// - important: This method checks for the orientation state of the device's status bar instead of checking the `UIDevice` instance's orientation.
+	
+	/**
+	Check if the current device is in landscape mode.
+
+	- important: This method checks for the orientation state of the device's status bar instead of checking the `UIDevice` instance's orientation.
+	*/
     var isLandscape: Bool {
         return UIApplication.shared.statusBarOrientation.isLandscape
     }
