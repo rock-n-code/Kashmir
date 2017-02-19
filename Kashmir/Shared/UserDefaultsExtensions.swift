@@ -31,7 +31,7 @@ extension UserDefaults {
 	- parameter key: A key in the current user's defaults database.
 	- returns: A custom object that is copmpliant to the `NSCoding` protocol.
 	*/
-	func decode(forKey key: String) -> Any? {
+	open func decode(forKey key: String) -> Any? {
 		guard
 			let data = object(forKey: key) as? Data,
 			let unarchivedObject = NSKeyedUnarchiver.unarchiveObject(with: data)
