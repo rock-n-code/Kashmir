@@ -14,7 +14,11 @@ public extension UIDevice {
 
     /// Gets the version number of the `UIDevice` instance's operating system.
     var version: Float {
-        return Float(UIDevice.current.systemVersion)!
+		guard let version = Float(UIDevice.current.systemVersion) else {
+			return 0.0
+		}
+		
+		return version
     }
 	
 	/**
