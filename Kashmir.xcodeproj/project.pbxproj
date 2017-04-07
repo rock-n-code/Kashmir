@@ -52,6 +52,8 @@
 		02384ACF1DECF47900B664D3 /* ReachabilityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02384ACE1DECF47900B664D3 /* ReachabilityTests.swift */; };
 		023A0C061E96AAED006C9198 /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023A0C051E96AAED006C9198 /* UIImageExtensions.swift */; };
 		023A0C081E96AC41006C9198 /* UIImageExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023A0C071E96AC41006C9198 /* UIImageExtensionsTests.swift */; };
+		023A0C0A1E97897B006C9198 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023A0C091E97897B006C9198 /* UIColorExtensions.swift */; };
+		023A0C0C1E97A46E006C9198 /* UIColorExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023A0C0B1E97A46E006C9198 /* UIColorExtensionsTests.swift */; };
 		024F517F1DEF90990088A3B2 /* NetworkReacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024F517E1DEF90990088A3B2 /* NetworkReacher.swift */; };
 		024F51801DEF90990088A3B2 /* NetworkReacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024F517E1DEF90990088A3B2 /* NetworkReacher.swift */; };
 		024F51811DEF90990088A3B2 /* NetworkReacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024F517E1DEF90990088A3B2 /* NetworkReacher.swift */; };
@@ -206,6 +208,8 @@
 		02384ACE1DECF47900B664D3 /* ReachabilityTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReachabilityTests.swift; path = Shared/ReachabilityTests.swift; sourceTree = "<group>"; };
 		023A0C051E96AAED006C9198 /* UIImageExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIImageExtensions.swift; path = Kashmir/iOS/UIImageExtensions.swift; sourceTree = SOURCE_ROOT; };
 		023A0C071E96AC41006C9198 /* UIImageExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIImageExtensionsTests.swift; path = KashmirTests/iOS/UIImageExtensionsTests.swift; sourceTree = SOURCE_ROOT; };
+		023A0C091E97897B006C9198 /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = SOURCE_ROOT; };
+		023A0C0B1E97A46E006C9198 /* UIColorExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColorExtensionsTests.swift; path = KashmirTests/iOS/UIColorExtensionsTests.swift; sourceTree = SOURCE_ROOT; };
 		024F517E1DEF90990088A3B2 /* NetworkReacher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkReacher.swift; path = Shared/NetworkReacher.swift; sourceTree = "<group>"; };
 		024F51841DEF91360088A3B2 /* NetworkReacherTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkReacherTests.swift; path = Shared/NetworkReacherTests.swift; sourceTree = "<group>"; };
 		027FD2AD1DEA4BC5009814AB /* XibableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XibableView.swift; path = Kashmir/iOS/XibableView.swift; sourceTree = SOURCE_ROOT; };
@@ -332,6 +336,7 @@
 			isa = PBXGroup;
 			children = (
 				022592831DEAE97F005DD338 /* IndexPathExtensions.swift */,
+				023A0C091E97897B006C9198 /* UIColorExtensions.swift */,
 				02130A211DDA75000071940B /* UIDeviceExtensions.swift */,
 				023A0C051E96AAED006C9198 /* UIImageExtensions.swift */,
 			);
@@ -342,6 +347,7 @@
 			isa = PBXGroup;
 			children = (
 				022592871DEAE99A005DD338 /* IndexPathExtensionsTests.swift */,
+				023A0C0B1E97A46E006C9198 /* UIColorExtensionsTests.swift */,
 				02130A1F1DDA74F00071940B /* UIDeviceExtensionsTests.swift */,
 				023A0C071E96AC41006C9198 /* UIImageExtensionsTests.swift */,
 			);
@@ -928,6 +934,7 @@
 				027FD2BC1DEA4EB4009814AB /* NSObjectExtensions.swift in Sources */,
 				022592851DEAE986005DD338 /* IndexPathExtensions.swift in Sources */,
 				023A0C061E96AAED006C9198 /* UIImageExtensions.swift in Sources */,
+				023A0C0A1E97897B006C9198 /* UIColorExtensions.swift in Sources */,
 				027FD2AF1DEA4BFC009814AB /* XibableView.swift in Sources */,
 				02130A231DDA75050071940B /* UIDeviceExtensions.swift in Sources */,
 			);
@@ -938,6 +945,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				022592891DEAE99F005DD338 /* IndexPathExtensionsTests.swift in Sources */,
+				023A0C0C1E97A46E006C9198 /* UIColorExtensionsTests.swift in Sources */,
 				027FD2B91DEA4CC5009814AB /* XibableViewTests.swift in Sources */,
 				02130A251DDA75840071940B /* UIDeviceExtensionsTests.swift in Sources */,
 				023A0C081E96AC41006C9198 /* UIImageExtensionsTests.swift in Sources */,
