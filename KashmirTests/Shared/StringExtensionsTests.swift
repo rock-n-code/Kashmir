@@ -27,6 +27,7 @@ class StringExtensionsTests: XCTestCase {
 	func testUrlEncoded() {
 		XCTAssertEqual("".urlEncoded, "")
 		XCTAssertEqual("test".urlEncoded, "test")
+		XCTAssertEqual("test test".urlEncoded, "test%20test")
 		XCTAssertEqual("test/test".urlEncoded, "test%2Ftest")
 		XCTAssertEqual("test/test=42".urlEncoded, "test%2Ftest%3D42")
 	}
