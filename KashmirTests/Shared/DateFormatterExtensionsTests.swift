@@ -22,4 +22,22 @@ class DateFormatterExtensionsTests: XCTestCase {
 		super.tearDown()
 	}
 
+	// MARK: Static tests
+	
+	func testUTC() {
+		let dateFormatter = DateFormatter.utc
+		
+		XCTAssertNotNil(dateFormatter)
+		XCTAssertEqual(dateFormatter.locale, Locale.current)
+		XCTAssertEqual(dateFormatter.timeZone, TimeZone(identifier: "GMT"))
+	}
+	
+	func testLocal() {
+		let dateFormatter = DateFormatter.local
+		
+		XCTAssertNotNil(dateFormatter)
+		XCTAssertEqual(dateFormatter.locale, Locale.current)
+		XCTAssertEqual(dateFormatter.timeZone, TimeZone.current)
+	}
+	
 }
