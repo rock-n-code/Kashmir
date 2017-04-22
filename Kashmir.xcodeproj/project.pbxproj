@@ -52,7 +52,6 @@
 		02384ACF1DECF47900B664D3 /* ReachabilityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02384ACE1DECF47900B664D3 /* ReachabilityTests.swift */; };
 		023A0C061E96AAED006C9198 /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023A0C051E96AAED006C9198 /* UIImageExtensions.swift */; };
 		023A0C081E96AC41006C9198 /* UIImageExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023A0C071E96AC41006C9198 /* UIImageExtensionsTests.swift */; };
-		023A0C0A1E97897B006C9198 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023A0C091E97897B006C9198 /* UIColorExtensions.swift */; };
 		023A0C0C1E97A46E006C9198 /* UIColorExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023A0C0B1E97A46E006C9198 /* UIColorExtensionsTests.swift */; };
 		024F517F1DEF90990088A3B2 /* NetworkReacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024F517E1DEF90990088A3B2 /* NetworkReacher.swift */; };
 		024F51801DEF90990088A3B2 /* NetworkReacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024F517E1DEF90990088A3B2 /* NetworkReacher.swift */; };
@@ -83,6 +82,8 @@
 		029961CD1EABB15E0027F54A /* DateFormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029961C91EABB15E0027F54A /* DateFormatterExtensions.swift */; };
 		029961CE1EABB15E0027F54A /* DateFormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029961C91EABB15E0027F54A /* DateFormatterExtensions.swift */; };
 		029961D01EABB1F90027F54A /* DateFormatterExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029961CF1EABB1F90027F54A /* DateFormatterExtensionsTests.swift */; };
+		029961D11EABD2E70027F54A /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023A0C091E97897B006C9198 /* UIColorExtensions.swift */; };
+		029961D21EABD2E90027F54A /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023A0C091E97897B006C9198 /* UIColorExtensions.swift */; };
 		029DEF161E582F0000C4230C /* Sectionable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022592731DEA5BD1005DD338 /* Sectionable.swift */; };
 		029DEF171E582F0100C4230C /* Sectionable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022592731DEA5BD1005DD338 /* Sectionable.swift */; };
 		029DEF181E582F0100C4230C /* Sectionable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022592731DEA5BD1005DD338 /* Sectionable.swift */; };
@@ -539,9 +540,9 @@
 		032A85E11D1BA4CD00401E29 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				032A85E21D1BA4F300401E29 /* StringExtensions.swift */,
 				034074791D7088C2004099AC /* BundleExtensions.swift */,
 				029961C91EABB15E0027F54A /* DateFormatterExtensions.swift */,
-				032A85E21D1BA4F300401E29 /* StringExtensions.swift */,
 				022EE1221E5430BF0067AE2F /* UserDefaultsExtensions.swift */,
 				03E668DA1D69AFEE00F6110A /* NSObjectExtensions.swift */,
 				02CDE5EA1DECA06F00EE7892 /* SCNetworkReachabilityFlagsExtensions.swift */,
@@ -552,9 +553,9 @@
 		032A85E41D1BA53300401E29 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				02130A111DDA71B00071940B /* StringExtensionsTests.swift */,
 				02130A0F1DDA71B00071940B /* BundleExtensionsTests.swift */,
 				029961CF1EABB1F90027F54A /* DateFormatterExtensionsTests.swift */,
-				02130A111DDA71B00071940B /* StringExtensionsTests.swift */,
 				022EE1281E5433920067AE2F /* UserDefaultsExtensionsTests.swift */,
 				02130A101DDA71B00071940B /* NSObjectExtensionsTests.swift */,
 				02384ACC1DECF39A00B664D3 /* SCNetworkReachabilityFlagsExtensionsTests.swift */,
@@ -944,7 +945,7 @@
 				027FD2BC1DEA4EB4009814AB /* NSObjectExtensions.swift in Sources */,
 				022592851DEAE986005DD338 /* IndexPathExtensions.swift in Sources */,
 				023A0C061E96AAED006C9198 /* UIImageExtensions.swift in Sources */,
-				023A0C0A1E97897B006C9198 /* UIColorExtensions.swift in Sources */,
+				029961D11EABD2E70027F54A /* UIColorExtensions.swift in Sources */,
 				027FD2AF1DEA4BFC009814AB /* XibableView.swift in Sources */,
 				02130A231DDA75050071940B /* UIDeviceExtensions.swift in Sources */,
 			);
@@ -1072,6 +1073,7 @@
 				029961CC1EABB15E0027F54A /* DateFormatterExtensions.swift in Sources */,
 				03B8E5461D24F29E00E40586 /* URLResponseStatusCode.swift in Sources */,
 				029DEF1B1E582F0800C4230C /* Itemable.swift in Sources */,
+				029961D21EABD2E90027F54A /* UIColorExtensions.swift in Sources */,
 				022592861DEAE989005DD338 /* IndexPathExtensions.swift in Sources */,
 				02CDE5E81DEC9FFC00EE7892 /* NetworkStatus.swift in Sources */,
 				02CDE5F21DECA12A00EE7892 /* Network.swift in Sources */,
