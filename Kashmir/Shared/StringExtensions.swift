@@ -6,7 +6,7 @@
 //  Copyright © 2016 Rock & Code. All rights reserved.
 //
 
-import Foundation
+//import Foundation
 
 public extension String {
 
