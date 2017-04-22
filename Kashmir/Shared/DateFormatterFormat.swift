@@ -13,7 +13,7 @@ public extension DateFormatter {
 	// MARK: Constants
 	
 	struct Format {
-		static var iso8601FullDateTimeUTC = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+		public static var iso8601FullDateTimeUTC = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
 	}
 	
 }
