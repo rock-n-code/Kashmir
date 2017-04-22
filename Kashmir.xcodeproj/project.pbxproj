@@ -77,6 +77,12 @@
 		0294DDFD1E20F9460002E409 /* DataStackValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0294DDFA1E20F8DB0002E409 /* DataStackValidation.swift */; };
 		0294DDFE1E20F9470002E409 /* DataStackValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0294DDFA1E20F8DB0002E409 /* DataStackValidation.swift */; };
 		0294DDFF1E20F9480002E409 /* DataStackValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0294DDFA1E20F8DB0002E409 /* DataStackValidation.swift */; };
+		029961CA1EABB15E0027F54A /* DateFormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029961C91EABB15E0027F54A /* DateFormatterExtensions.swift */; };
+		029961CB1EABB15E0027F54A /* DateFormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029961C91EABB15E0027F54A /* DateFormatterExtensions.swift */; };
+		029961CC1EABB15E0027F54A /* DateFormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029961C91EABB15E0027F54A /* DateFormatterExtensions.swift */; };
+		029961CD1EABB15E0027F54A /* DateFormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029961C91EABB15E0027F54A /* DateFormatterExtensions.swift */; };
+		029961CE1EABB15E0027F54A /* DateFormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029961C91EABB15E0027F54A /* DateFormatterExtensions.swift */; };
+		029961D01EABB1F90027F54A /* DateFormatterExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029961CF1EABB1F90027F54A /* DateFormatterExtensionsTests.swift */; };
 		029DEF161E582F0000C4230C /* Sectionable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022592731DEA5BD1005DD338 /* Sectionable.swift */; };
 		029DEF171E582F0100C4230C /* Sectionable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022592731DEA5BD1005DD338 /* Sectionable.swift */; };
 		029DEF181E582F0100C4230C /* Sectionable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022592731DEA5BD1005DD338 /* Sectionable.swift */; };
@@ -218,6 +224,8 @@
 		0294DDF11E20F66D0002E409 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Shared/Result.swift; sourceTree = "<group>"; };
 		0294DDF81E20F6C00002E409 /* ResultTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResultTests.swift; path = Shared/ResultTests.swift; sourceTree = "<group>"; };
 		0294DDFA1E20F8DB0002E409 /* DataStackValidation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataStackValidation.swift; path = Shared/DataStackValidation.swift; sourceTree = "<group>"; };
+		029961C91EABB15E0027F54A /* DateFormatterExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateFormatterExtensions.swift; path = Shared/DateFormatterExtensions.swift; sourceTree = "<group>"; };
+		029961CF1EABB1F90027F54A /* DateFormatterExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateFormatterExtensionsTests.swift; path = Shared/DateFormatterExtensionsTests.swift; sourceTree = "<group>"; };
 		02CDE5D61DEC9EA700EE7892 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Reachability.swift; path = Shared/Reachability.swift; sourceTree = "<group>"; };
 		02CDE5DB1DEC9F5C00EE7892 /* ReachabilityError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReachabilityError.swift; path = Shared/ReachabilityError.swift; sourceTree = "<group>"; };
 		02CDE5E01DEC9FE100EE7892 /* NetworkConnectivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkConnectivity.swift; path = Shared/NetworkConnectivity.swift; sourceTree = "<group>"; };
@@ -532,6 +540,7 @@
 			isa = PBXGroup;
 			children = (
 				034074791D7088C2004099AC /* BundleExtensions.swift */,
+				029961C91EABB15E0027F54A /* DateFormatterExtensions.swift */,
 				032A85E21D1BA4F300401E29 /* StringExtensions.swift */,
 				022EE1221E5430BF0067AE2F /* UserDefaultsExtensions.swift */,
 				03E668DA1D69AFEE00F6110A /* NSObjectExtensions.swift */,
@@ -544,6 +553,7 @@
 			isa = PBXGroup;
 			children = (
 				02130A0F1DDA71B00071940B /* BundleExtensionsTests.swift */,
+				029961CF1EABB1F90027F54A /* DateFormatterExtensionsTests.swift */,
 				02130A111DDA71B00071940B /* StringExtensionsTests.swift */,
 				022EE1281E5433920067AE2F /* UserDefaultsExtensionsTests.swift */,
 				02130A101DDA71B00071940B /* NSObjectExtensionsTests.swift */,
@@ -966,6 +976,7 @@
 				0294DDFB1E20F8DB0002E409 /* DataStackValidation.swift in Sources */,
 				022592761DEA5BD1005DD338 /* Itemable.swift in Sources */,
 				03E668DB1D69AFEE00F6110A /* NSObjectExtensions.swift in Sources */,
+				029961CA1EABB15E0027F54A /* DateFormatterExtensions.swift in Sources */,
 				032A85E31D1BA4F300401E29 /* StringExtensions.swift in Sources */,
 				03B8E5401D24F1B000E40586 /* URLRequestMethod.swift in Sources */,
 				0294DDF21E20F66D0002E409 /* Result.swift in Sources */,
@@ -1002,6 +1013,7 @@
 				02384ACF1DECF47900B664D3 /* ReachabilityTests.swift in Sources */,
 				022D7FE91E1CBB1D00E0A537 /* DataStackStoreTests.swift in Sources */,
 				02130A1C1DDA71DE0071940B /* Test.xcdatamodeld in Sources */,
+				029961D01EABB1F90027F54A /* DateFormatterExtensionsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1019,6 +1031,7 @@
 				03B67C7C1D8AF88A001DFFE6 /* DataStack.swift in Sources */,
 				03E668DC1D69AFEE00F6110A /* NSObjectExtensions.swift in Sources */,
 				02CDE5F11DECA12A00EE7892 /* Network.swift in Sources */,
+				029961CB1EABB15E0027F54A /* DateFormatterExtensions.swift in Sources */,
 				022D7FE41E1CAC2500E0A537 /* DataStackStore.swift in Sources */,
 				03B8E5411D24F28E00E40586 /* URLRequestMethod.swift in Sources */,
 				029DEF1E1E582F0E00C4230C /* DataSource.swift in Sources */,
@@ -1056,6 +1069,7 @@
 				02CDE5ED1DECA06F00EE7892 /* SCNetworkReachabilityFlagsExtensions.swift in Sources */,
 				0323207C1D245B0A00BB79A1 /* URLResponseError.swift in Sources */,
 				029DEF1F1E582F0F00C4230C /* DataSource.swift in Sources */,
+				029961CC1EABB15E0027F54A /* DateFormatterExtensions.swift in Sources */,
 				03B8E5461D24F29E00E40586 /* URLResponseStatusCode.swift in Sources */,
 				029DEF1B1E582F0800C4230C /* Itemable.swift in Sources */,
 				022592861DEAE989005DD338 /* IndexPathExtensions.swift in Sources */,
@@ -1082,6 +1096,7 @@
 				03B67C7E1D8AF88B001DFFE6 /* DataStack.swift in Sources */,
 				03E668DE1D69AFEE00F6110A /* NSObjectExtensions.swift in Sources */,
 				02CDE5F31DECA12A00EE7892 /* Network.swift in Sources */,
+				029961CD1EABB15E0027F54A /* DateFormatterExtensions.swift in Sources */,
 				022D7FE61E1CAC2500E0A537 /* DataStackStore.swift in Sources */,
 				03B8E5431D24F29000E40586 /* URLRequestMethod.swift in Sources */,
 				029DEF201E582F0F00C4230C /* DataSource.swift in Sources */,
@@ -1116,6 +1131,7 @@
 				03B8E5481D24F2A000E40586 /* URLResponseStatusCode.swift in Sources */,
 				0340747E1D7088C2004099AC /* BundleExtensions.swift in Sources */,
 				029DEF1D1E582F0900C4230C /* Itemable.swift in Sources */,
+				029961CE1EABB15E0027F54A /* DateFormatterExtensions.swift in Sources */,
 				022592781DEA5BF7005DD338 /* DataSourceError.swift in Sources */,
 				022D7FE71E1CAC2500E0A537 /* DataStackStore.swift in Sources */,
 			);
