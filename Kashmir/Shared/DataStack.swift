@@ -96,14 +96,14 @@ public class DataStack {
 			try coordinator.remove(store)
 
 			if store.type != NSInMemoryStoreType {
-				let urlPath = url.path
-
-				try FileManager.default.removeItem(atPath: urlPath)
-
+				var urls = [url.path]
+				
 				if store.type == NSSQLiteStoreType {
-                    try ["\(urlPath)-shm", "\(urlPath)-wal"].forEach {
-                        try FileManager.default.removeItem(atPath: $0)
-                    }
+					urls += ["\(url.path)-shm", "\(url.path)-wal"]
+				}
+				
+				try urls.forEach {
+					try FileManager.default.removeItem(atPath: $0)
 				}
 			}
 		}

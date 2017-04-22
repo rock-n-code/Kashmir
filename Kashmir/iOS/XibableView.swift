@@ -17,9 +17,8 @@ Generic view class that automatically loads a respective XIB file and integrates
 public class XibableView: UIView {
     
     // MARK: Initializers
-    
-    
-    override public init(frame: CGRect) {
+
+	override public init(frame: CGRect) {
         super.init(frame: frame)
         
         setupXib()
