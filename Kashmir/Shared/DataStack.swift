@@ -121,7 +121,16 @@ public class DataStack {
 	public func foreContext(of model: String) throws -> NSManagedObjectContext {
         try validate(model, for: [.modelNameIsNotEmpty, .containerExists])
 
-		return containers[model]!.viewContext
+		guard let context = containers[model]?.viewContext else {
+			throw DataStackError.contextNotFound
+		}
+		
+		context.mergePolicy = NSMergeByPropertyObjectTrumpMergePolicy
+		context.undoManager = nil
+		context.shouldDeleteInaccessibleFaults = true
+		context.automaticallyMergesChangesFromParent = true
+		
+		return context
 	}
 
     /**
@@ -134,7 +143,14 @@ public class DataStack {
 	public func backContext(of model: String) throws -> NSManagedObjectContext {
         try validate(model, for: [.modelNameIsNotEmpty, .containerExists])
 
-        return containers[model]!.newBackgroundContext()
+		guard let context = containers[model]?.newBackgroundContext() else {
+			throw DataStackError.contextNotCreated
+		}
+		
+		context.mergePolicy = NSMergeByPropertyObjectTrumpMergePolicy
+		context.undoManager = nil
+		
+        return context
 	}
 
     /**
