@@ -67,6 +67,10 @@
 		027803661EED8DE800C3D651 /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023A0C051E96AAED006C9198 /* UIImageExtensions.swift */; };
 		027803691EED8F1100C3D651 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027803671EED8F0400C3D651 /* UIColorExtensions.swift */; };
 		0278036A1EED8F1400C3D651 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027803671EED8F0400C3D651 /* UIColorExtensions.swift */; };
+		0278036D1EED92E400C3D651 /* UIStoryboardName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0278036C1EED92E400C3D651 /* UIStoryboardName.swift */; };
+		0278036E1EED92E400C3D651 /* UIStoryboardName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0278036C1EED92E400C3D651 /* UIStoryboardName.swift */; };
+		027803701EED935C00C3D651 /* UIStoryboardSegueName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0278036F1EED935C00C3D651 /* UIStoryboardSegueName.swift */; };
+		027803711EED935C00C3D651 /* UIStoryboardSegueName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0278036F1EED935C00C3D651 /* UIStoryboardSegueName.swift */; };
 		027FD2AF1DEA4BFC009814AB /* XibableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027FD2AD1DEA4BC5009814AB /* XibableView.swift */; };
 		027FD2B01DEA4BFE009814AB /* XibableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027FD2AD1DEA4BC5009814AB /* XibableView.swift */; };
 		027FD2B91DEA4CC5009814AB /* XibableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027FD2B21DEA4C35009814AB /* XibableViewTests.swift */; };
@@ -233,6 +237,8 @@
 		0278035D1EED7E1000C3D651 /* DataStackModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataStackModel.swift; path = Shared/DataStackModel.swift; sourceTree = "<group>"; };
 		027803641EED86A100C3D651 /* DataStackModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataStackModelTests.swift; path = Shared/DataStackModelTests.swift; sourceTree = "<group>"; };
 		027803671EED8F0400C3D651 /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColorExtensions.swift; path = Kashmir/iOS/UIColorExtensions.swift; sourceTree = SOURCE_ROOT; };
+		0278036C1EED92E400C3D651 /* UIStoryboardName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIStoryboardName.swift; path = Kashmir/iOS/UIStoryboardName.swift; sourceTree = SOURCE_ROOT; };
+		0278036F1EED935C00C3D651 /* UIStoryboardSegueName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIStoryboardSegueName.swift; path = Kashmir/iOS/UIStoryboardSegueName.swift; sourceTree = SOURCE_ROOT; };
 		027FD2AD1DEA4BC5009814AB /* XibableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XibableView.swift; path = Kashmir/iOS/XibableView.swift; sourceTree = SOURCE_ROOT; };
 		027FD2B21DEA4C35009814AB /* XibableViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XibableViewTests.swift; path = KashmirTests/iOS/XibableViewTests.swift; sourceTree = SOURCE_ROOT; };
 		027FD2B61DEA4CA7009814AB /* TestView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TestView.xib; path = KashmirTests/iOS/TestView.xib; sourceTree = SOURCE_ROOT; };
@@ -337,6 +343,7 @@
 			isa = PBXGroup;
 			children = (
 				02130A061DDA6EA90071940B /* Kashmir_iOS.h */,
+				0278036B1EED929500C3D651 /* Constants */,
 				02130A1D1DDA74D30071940B /* Extensions */,
 				027FD2AC1DEA4BB2009814AB /* Views */,
 				02130A051DDA6EA90071940B /* Info_iOS.plist */,
@@ -438,6 +445,15 @@
 			name = Constants;
 			sourceTree = "<group>";
 		};
+		0278036B1EED929500C3D651 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				0278036C1EED92E400C3D651 /* UIStoryboardName.swift */,
+				0278036F1EED935C00C3D651 /* UIStoryboardSegueName.swift */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
 		027FD2AC1DEA4BB2009814AB /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -518,10 +534,10 @@
 			isa = PBXGroup;
 			children = (
 				031BF5A81CE37B4800DD028A /* Kashmir.h */,
-				02CDE5F41DECA14000EE7892 /* Structs */,
 				029961D31EAC01D40027F54A /* Constants */,
 				032A85DE1D1B875500401E29 /* Enumerations */,
 				032320781D245ACA00BB79A1 /* Errors */,
+				02CDE5F41DECA14000EE7892 /* Structs */,
 				0225926F1DEA5BBE005DD338 /* Protocols */,
 				024F517D1DEF90210088A3B2 /* Controllers */,
 				03B67C6E1D8AF142001DFFE6 /* Managers */,
@@ -977,11 +993,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				027FD2BC1DEA4EB4009814AB /* NSObjectExtensions.swift in Sources */,
+				0278036D1EED92E400C3D651 /* UIStoryboardName.swift in Sources */,
 				022592851DEAE986005DD338 /* IndexPathExtensions.swift in Sources */,
 				023A0C061E96AAED006C9198 /* UIImageExtensions.swift in Sources */,
 				027803691EED8F1100C3D651 /* UIColorExtensions.swift in Sources */,
 				027FD2AF1DEA4BFC009814AB /* XibableView.swift in Sources */,
 				02130A231DDA75050071940B /* UIDeviceExtensions.swift in Sources */,
+				027803701EED935C00C3D651 /* UIStoryboardSegueName.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1117,9 +1135,11 @@
 				022592861DEAE989005DD338 /* IndexPathExtensions.swift in Sources */,
 				02CDE5E81DEC9FFC00EE7892 /* NetworkStatus.swift in Sources */,
 				02CDE5F21DECA12A00EE7892 /* Network.swift in Sources */,
+				0278036E1EED92E400C3D651 /* UIStoryboardName.swift in Sources */,
 				022EE1251E5430BF0067AE2F /* UserDefaultsExtensions.swift in Sources */,
 				027803601EED7E1000C3D651 /* DataStackModel.swift in Sources */,
 				02130A241DDA75070071940B /* UIDeviceExtensions.swift in Sources */,
+				027803711EED935C00C3D651 /* UIStoryboardSegueName.swift in Sources */,
 				0340747C1D7088C2004099AC /* BundleExtensions.swift in Sources */,
 				02CDE5D91DEC9EB200EE7892 /* Reachability.swift in Sources */,
 				027803661EED8DE800C3D651 /* UIImageExtensions.swift in Sources */,
