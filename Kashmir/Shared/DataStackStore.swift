@@ -11,12 +11,12 @@ import CoreData
 public extension DataStack {
     
     /**
-     Representation of the possible types of stores supported by the containers used in a `DataStack` instance.
+	Representation of the possible types of stores supported by the containers used in a `DataStack` instance.
      
-     * **sql**: The SQLite database store type.
-     * **xml**: The XML store type.
-     * **binary**: The binary store type.
-     * **inMemory**: The in-memory store type.
+	* **sql**: The SQLite database store type.
+	* **xml**: The XML store type.
+	* **binary**: The binary store type.
+	* **inMemory**: The in-memory store type.
     */
     public enum Store {
         /// The SQLite database store type.
