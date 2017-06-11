@@ -18,6 +18,8 @@ Representation of the errors that could be encountered while using *DataStack*.
 * **containerNameIsEmpty**: A container name passed to `DataStack` is actually an empty string.
 * **containerNameExists**: A container name passed to `DataStack` does exist on the list of containers it manages.
 * **containerNameNotExists**: A container name passed to `DataStack` does not exist on the list of containers it manages.
+* **foreContextNotFound**: A view context instance have not been found on the list of containers managed by `DataStack`.
+* **contextNotCreated**: A new background context was not created by the selected container managed by `DataStack`.
 * **other**: Any other type of `NSError` encountered while using `DataStack`.
 */
 public enum DataStackError: Error {
@@ -35,6 +37,10 @@ public enum DataStackError: Error {
 	case containerNameExists
     /// A container name passed to `DataStack` does not exist on the list of containers it manages.
 	case containerNameNotExists
+	/// A view context instance have not been found in the selected container managed by `DataStack`.
+	case contextNotFound
+	/// A new background context was not created by the selected container managed by `DataStack`.
+	case contextNotCreated
     /// Any other type of `NSError` encountered while using `DataStack`.
 	case other(NSError)
 }

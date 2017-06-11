@@ -1,6 +1,6 @@
 //
 //  UIDeviceExtensions.swift
-//  KLMCheckInservices
+//  Kashmir
 //
 //  Created by Javier Cicchelli on 31/10/2016.
 //  Copyright © 2016 Rock & Code. All rights reserved.
@@ -14,7 +14,11 @@ public extension UIDevice {
 
     /// Gets the version number of the `UIDevice` instance's operating system.
     var version: Float {
-        return Float(UIDevice.current.systemVersion)!
+		guard let version = Float(UIDevice.current.systemVersion) else {
+			return 0.0
+		}
+		
+		return version
     }
 	
 	/**

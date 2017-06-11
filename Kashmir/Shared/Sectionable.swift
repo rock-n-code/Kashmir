@@ -1,6 +1,6 @@
 //
 //  Sectionable.swift
-//  KLMCheckInservices
+//  Kashmir
 //
 //  Created by Javier Cicchelli on 09/11/2016.
 //  Copyright © 2016 Rock & Code. All rights reserved.

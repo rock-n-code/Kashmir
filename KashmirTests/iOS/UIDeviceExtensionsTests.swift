@@ -1,9 +1,9 @@
 //
 //  UIDeviceExtensionsTests.swift
-//  KLMCheckInservices
+//  Kashmir
 //
 //  Created by Javier Cicchelli on 31/10/2016.
-//  Copyright © 2016 KLM. All rights reserved.
+//  Copyright © 2016 Rock & Code. All rights reserved.
 //
 
 import XCTest
@@ -25,7 +25,7 @@ class UIDeviceExtensionsTests: XCTestCase {
     // MARK: Properties tests
     
     func testVersion() {
-        XCTAssertEqual(UIDevice.current.version, 10.2)
+        XCTAssertEqual(UIDevice.current.version, 10.3)
     }
     
     func testIsPortrait() {
