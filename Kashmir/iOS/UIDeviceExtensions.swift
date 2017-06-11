@@ -1,6 +1,6 @@
 //
 //  UIDeviceExtensions.swift
-//  KLMCheckInservices
+//  Kashmir
 //
 //  Created by Javier Cicchelli on 31/10/2016.
 //  Copyright © 2016 Rock & Code. All rights reserved.
