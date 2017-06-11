@@ -11,7 +11,8 @@ import Foundation
 public extension DateFormatter {
 	
 	// MARK: Static
-	
+
+	/// Returns a `DateFormatter` instance ready to use set on current locale and UTC timezone.
 	static var utc: DateFormatter {
 		let dateFormatter = DateFormatter()
 		
@@ -20,7 +21,8 @@ public extension DateFormatter {
 		
 		return dateFormatter
 	}
-	
+
+	/// Returns a `DateFormatter` instance ready to use set on current locale and timezone.
 	static var local: DateFormatter {
 		let dateFormatter = DateFormatter()
 		
