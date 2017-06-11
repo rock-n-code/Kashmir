@@ -125,6 +125,8 @@
 		02A26B7D1EEDE46E00FF2038 /* NSStoryboardSegueName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A26B7B1EEDE46E00FF2038 /* NSStoryboardSegueName.swift */; };
 		02A26B7F1EEDE4E100FF2038 /* NSStoryboardName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A26B7E1EEDE4E100FF2038 /* NSStoryboardName.swift */; };
 		02A26B801EEDE4E100FF2038 /* NSStoryboardName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A26B7E1EEDE4E100FF2038 /* NSStoryboardName.swift */; };
+		02A26B821EEDE5EE00FF2038 /* NSViewControllerName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A26B811EEDE5EE00FF2038 /* NSViewControllerName.swift */; };
+		02A26B831EEDE5EE00FF2038 /* NSViewControllerName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A26B811EEDE5EE00FF2038 /* NSViewControllerName.swift */; };
 		02CDE5D71DEC9EA700EE7892 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CDE5D61DEC9EA700EE7892 /* Reachability.swift */; };
 		02CDE5D81DEC9EB100EE7892 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CDE5D61DEC9EA700EE7892 /* Reachability.swift */; };
 		02CDE5D91DEC9EB200EE7892 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CDE5D61DEC9EA700EE7892 /* Reachability.swift */; };
@@ -276,6 +278,7 @@
 		02A26B741EEDE35B00FF2038 /* Blocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Blocks.swift; path = Shared/Blocks.swift; sourceTree = "<group>"; };
 		02A26B7B1EEDE46E00FF2038 /* NSStoryboardSegueName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NSStoryboardSegueName.swift; path = Kashmir/macOS/NSStoryboardSegueName.swift; sourceTree = SOURCE_ROOT; };
 		02A26B7E1EEDE4E100FF2038 /* NSStoryboardName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NSStoryboardName.swift; path = Kashmir/macOS/NSStoryboardName.swift; sourceTree = SOURCE_ROOT; };
+		02A26B811EEDE5EE00FF2038 /* NSViewControllerName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSViewControllerName.swift; sourceTree = SOURCE_ROOT; };
 		02CDE5D61DEC9EA700EE7892 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Reachability.swift; path = Shared/Reachability.swift; sourceTree = "<group>"; };
 		02CDE5DB1DEC9F5C00EE7892 /* ReachabilityError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReachabilityError.swift; path = Shared/ReachabilityError.swift; sourceTree = "<group>"; };
 		02CDE5E01DEC9FE100EE7892 /* NetworkConnectivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkConnectivity.swift; path = Shared/NetworkConnectivity.swift; sourceTree = "<group>"; };
@@ -567,6 +570,7 @@
 		02A26B7A1EEDE43F00FF2038 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
+				02A26B811EEDE5EE00FF2038 /* NSViewControllerName.swift */,
 				02A26B7E1EEDE4E100FF2038 /* NSStoryboardName.swift */,
 				02A26B7B1EEDE46E00FF2038 /* NSStoryboardSegueName.swift */,
 			);
@@ -1175,6 +1179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				02A26B7F1EEDE4E100FF2038 /* NSStoryboardName.swift in Sources */,
+				02A26B821EEDE5EE00FF2038 /* NSViewControllerName.swift in Sources */,
 				02A26B7C1EEDE46E00FF2038 /* NSStoryboardSegueName.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1271,6 +1276,7 @@
 				0323207B1D245B0A00BB79A1 /* URLResponseError.swift in Sources */,
 				0294DDFC1E20F9460002E409 /* DataStackValidation.swift in Sources */,
 				02CDE5EC1DECA06F00EE7892 /* SCNetworkReachabilityFlagsExtensions.swift in Sources */,
+				02A26B831EEDE5EE00FF2038 /* NSViewControllerName.swift in Sources */,
 				03B8E5451D24F29E00E40586 /* URLResponseStatusCode.swift in Sources */,
 				0278035F1EED7E1000C3D651 /* DataStackModel.swift in Sources */,
 				02CDE5E71DEC9FFC00EE7892 /* NetworkStatus.swift in Sources */,
