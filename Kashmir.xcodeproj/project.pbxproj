@@ -121,6 +121,10 @@
 		02A26B771EEDE35B00FF2038 /* Blocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A26B741EEDE35B00FF2038 /* Blocks.swift */; };
 		02A26B781EEDE35B00FF2038 /* Blocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A26B741EEDE35B00FF2038 /* Blocks.swift */; };
 		02A26B791EEDE35B00FF2038 /* Blocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A26B741EEDE35B00FF2038 /* Blocks.swift */; };
+		02A26B7C1EEDE46E00FF2038 /* NSStoryboardSegueName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A26B7B1EEDE46E00FF2038 /* NSStoryboardSegueName.swift */; };
+		02A26B7D1EEDE46E00FF2038 /* NSStoryboardSegueName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A26B7B1EEDE46E00FF2038 /* NSStoryboardSegueName.swift */; };
+		02A26B7F1EEDE4E100FF2038 /* NSStoryboardName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A26B7E1EEDE4E100FF2038 /* NSStoryboardName.swift */; };
+		02A26B801EEDE4E100FF2038 /* NSStoryboardName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A26B7E1EEDE4E100FF2038 /* NSStoryboardName.swift */; };
 		02CDE5D71DEC9EA700EE7892 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CDE5D61DEC9EA700EE7892 /* Reachability.swift */; };
 		02CDE5D81DEC9EB100EE7892 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CDE5D61DEC9EA700EE7892 /* Reachability.swift */; };
 		02CDE5D91DEC9EB200EE7892 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CDE5D61DEC9EA700EE7892 /* Reachability.swift */; };
@@ -270,6 +274,8 @@
 		029961CF1EABB1F90027F54A /* DateFormatterExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateFormatterExtensionsTests.swift; path = Shared/DateFormatterExtensionsTests.swift; sourceTree = "<group>"; };
 		029961D41EAC01FF0027F54A /* DateFormatterFormat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateFormatterFormat.swift; path = Shared/DateFormatterFormat.swift; sourceTree = "<group>"; };
 		02A26B741EEDE35B00FF2038 /* Blocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Blocks.swift; path = Shared/Blocks.swift; sourceTree = "<group>"; };
+		02A26B7B1EEDE46E00FF2038 /* NSStoryboardSegueName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NSStoryboardSegueName.swift; path = Kashmir/macOS/NSStoryboardSegueName.swift; sourceTree = SOURCE_ROOT; };
+		02A26B7E1EEDE4E100FF2038 /* NSStoryboardName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NSStoryboardName.swift; path = Kashmir/macOS/NSStoryboardName.swift; sourceTree = SOURCE_ROOT; };
 		02CDE5D61DEC9EA700EE7892 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Reachability.swift; path = Shared/Reachability.swift; sourceTree = "<group>"; };
 		02CDE5DB1DEC9F5C00EE7892 /* ReachabilityError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReachabilityError.swift; path = Shared/ReachabilityError.swift; sourceTree = "<group>"; };
 		02CDE5E01DEC9FE100EE7892 /* NetworkConnectivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkConnectivity.swift; path = Shared/NetworkConnectivity.swift; sourceTree = "<group>"; };
@@ -495,6 +501,7 @@
 			isa = PBXGroup;
 			children = (
 				027803AA1EEDC79600C3D651 /* Kashmir_macOS.h */,
+				02A26B7A1EEDE43F00FF2038 /* Constants */,
 				027803A81EEDC77100C3D651 /* Info_macOS.plist */,
 			);
 			path = Kashmir_macOS;
@@ -555,6 +562,15 @@
 				02A26B741EEDE35B00FF2038 /* Blocks.swift */,
 			);
 			name = Types;
+			sourceTree = "<group>";
+		};
+		02A26B7A1EEDE43F00FF2038 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				02A26B7E1EEDE4E100FF2038 /* NSStoryboardName.swift */,
+				02A26B7B1EEDE46E00FF2038 /* NSStoryboardSegueName.swift */,
+			);
+			name = Constants;
 			sourceTree = "<group>";
 		};
 		02CDE5F41DECA14000EE7892 /* Structs */ = {
@@ -986,6 +1002,7 @@
 					};
 					0278039F1EEDC6CA00C3D651 = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Manual;
 					};
 					027803AF1EEDC95F00C3D651 = {
@@ -1157,6 +1174,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02A26B7F1EEDE4E100FF2038 /* NSStoryboardName.swift in Sources */,
+				02A26B7C1EEDE46E00FF2038 /* NSStoryboardSegueName.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1232,6 +1251,8 @@
 			files = (
 				03B8E5491D24F2A600E40586 /* StringExtensions.swift in Sources */,
 				02CDE5E21DEC9FE100EE7892 /* NetworkConnectivity.swift in Sources */,
+				02A26B7D1EEDE46E00FF2038 /* NSStoryboardSegueName.swift in Sources */,
+				02A26B801EEDE4E100FF2038 /* NSStoryboardName.swift in Sources */,
 				029DEF191E582F0200C4230C /* Sectionable.swift in Sources */,
 				022EE1241E5430BF0067AE2F /* UserDefaultsExtensions.swift in Sources */,
 				0294DDF31E20F66D0002E409 /* Result.swift in Sources */,
@@ -1492,6 +1513,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1515,6 +1537,7 @@
 				SKIP_INSTALL = YES;
 				STRINGS_FILE_OUTPUT_ENCODING = "UTF-16";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -1523,6 +1546,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1552,6 +1576,7 @@
 		027803B91EEDC95F00C3D651 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1570,6 +1595,7 @@
 		027803BA1EEDC95F00C3D651 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				COMBINE_HIDPI_IMAGES = YES;
