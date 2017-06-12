@@ -11,7 +11,7 @@ public extension DataStack {
 	// MARK: Constants 
 	
 	/**
-	The structure which contains the names of the models used with a `DataStack` instance defined as constants.
+	The structure which contains the names of the models used by a `DataStack` instance defined as constants.
 	*/
 	public struct Model {}
 

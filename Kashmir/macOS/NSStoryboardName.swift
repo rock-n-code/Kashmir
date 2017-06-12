@@ -13,7 +13,7 @@ public extension NSStoryboard {
 	// MARK: Constants
 	
 	/**
-	The structure which contains the names of the storyboard used with a `NSStoryboard` instance defined as constants.
+	The structure which contains the names of the storyboard used by a `NSStoryboard` instance defined as constants.
 	*/
 	public struct Name {}
 

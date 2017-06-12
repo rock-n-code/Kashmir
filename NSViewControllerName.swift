@@ -13,7 +13,7 @@ public extension NSViewController {
 	// MARK: Constants
 	
 	/**
-	The structure which contains the names of the view controllers used with a `NSViewController` instance defined as constants.
+	The structure which contains the names of the view controllers used by a `NSViewController` instance defined as constants.
 	*/
 	public struct Name {}
 }

@@ -13,7 +13,7 @@ public extension UIStoryboardSegue {
 	// MARK: Constants
 	
 	/**
-	The structure which contains the names of the segues used with a `UIStoryboardSegue` instance defined as constants.
+	The structure which contains the names of the segues used by a `UIStoryboardSegue` instance defined as constants.
 	*/
 	public struct Name {}
 	
