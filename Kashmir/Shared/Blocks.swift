@@ -6,4 +6,4 @@
 //  Copyright © 2017 Rock & Code. All rights reserved.
 //
 
-typealias ExecutionBlock = (() -> ())
+public typealias ExecutionBlock = (() -> ())
