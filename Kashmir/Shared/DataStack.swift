@@ -147,8 +147,10 @@ public class DataStack {
 			throw DataStackError.contextNotCreated
 		}
 		
-		context.mergePolicy = NSMergeByPropertyObjectTrumpMergePolicy
+		context.mergePolicy = NSMergeByPropertyStoreTrumpMergePolicy
 		context.undoManager = nil
+		context.shouldDeleteInaccessibleFaults = true
+		context.automaticallyMergesChangesFromParent = true
 		
         return context
 	}
