@@ -125,7 +125,6 @@ public class DataStack {
 			throw DataStackError.contextNotFound
 		}
 		
-		context.mergePolicy = NSOverwriteMergePolicy
 		context.undoManager = nil
 		context.shouldDeleteInaccessibleFaults = true
 		context.automaticallyMergesChangesFromParent = true
@@ -147,7 +146,6 @@ public class DataStack {
 			throw DataStackError.contextNotCreated
 		}
 		
-		context.mergePolicy = NSMergeByPropertyObjectTrumpMergePolicy
 		context.undoManager = nil
 		context.shouldDeleteInaccessibleFaults = true
 		context.automaticallyMergesChangesFromParent = true
