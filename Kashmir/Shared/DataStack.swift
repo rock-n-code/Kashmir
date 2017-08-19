@@ -62,13 +62,13 @@ public class DataStack {
         
         container.persistentStoreDescriptions = [defaultDescription]
 
-		container.loadPersistentStores { [weak self] storeDescription, error in
+		container.loadPersistentStores { storeDescription, error in
 			if let error = error as NSError? {
 				// TODO: Throw the error back to the caller.
 				fatalError("Unresolved error \(error), \(error.userInfo)")
 			}
 			else {
-				self?.containers[model] = container
+				self.containers[model] = container
 			}
 		}
 	}
@@ -125,6 +125,7 @@ public class DataStack {
 			throw DataStackError.contextNotFound
 		}
 		
+		context.mergePolicy = NSMergeByPropertyObjectTrumpMergePolicy
 		context.undoManager = nil
 		context.shouldDeleteInaccessibleFaults = true
 		context.automaticallyMergesChangesFromParent = true
@@ -146,6 +147,7 @@ public class DataStack {
 			throw DataStackError.contextNotCreated
 		}
 		
+		context.mergePolicy = NSMergeByPropertyStoreTrumpMergePolicy
 		context.undoManager = nil
 		context.shouldDeleteInaccessibleFaults = true
 		context.automaticallyMergesChangesFromParent = true
@@ -187,7 +189,7 @@ public class DataStack {
         description.shouldAddStoreAsynchronously = false
         description.shouldInferMappingModelAutomatically = true
         description.shouldMigrateStoreAutomatically = true
-        
+		
         if type != .inMemory {
             let directory = NSPersistentContainer.defaultDirectoryURL()
             
