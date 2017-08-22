@@ -13,12 +13,12 @@ public extension NSObject {
 	// MARK: Properties
 
 	/// Returns the name of the class as a *String* type.
-	static var name: String {
-		return "\(self)"
+	static var denomination: String {
+		return String(describing: self)
 	}
 
 	/// Returns the name of the class of the object instance as a *String* type.
-	var nameClass: String {
+	var nameOfClass: String {
 		return "\(type(of: self))"
 	}
 

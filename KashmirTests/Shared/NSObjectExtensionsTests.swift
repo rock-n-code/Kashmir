@@ -27,14 +27,14 @@ class NSObjectExtensionsTests: XCTestCase {
 
 	// MARK: Properties tests
 
-	func testName() {
-		XCTAssertEqual(Test.name, "Test")
-		XCTAssertEqual(OtherTest.name, "OtherTest")
+	func testDenomination() {
+		XCTAssertEqual(Test.denomination, "Test")
+		XCTAssertEqual(OtherTest.denomination, "OtherTest")
 	}
 
-	func testNameClass() {
-		XCTAssertEqual(Test().nameClass, "Test")
-		XCTAssertEqual(OtherTest().nameClass, "OtherTest")
+	func testNameOfClass() {
+		XCTAssertEqual(Test().nameOfClass, "Test")
+		XCTAssertEqual(OtherTest().nameOfClass, "OtherTest")
 	}
 
 }
