@@ -7,3 +7,4 @@
 //
 
 public typealias ExecutionBlock = (() -> ())
+public typealias ErrorBlock = ((Error) -> ())
