@@ -159,6 +159,12 @@
 		02CDE5F21DECA12A00EE7892 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CDE5EF1DECA12A00EE7892 /* Network.swift */; };
 		02CDE5F31DECA12A00EE7892 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CDE5EF1DECA12A00EE7892 /* Network.swift */; };
 		02EE5EB91F4CC785001E39BF /* ConcurrentOperationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EE5EB81F4CC785001E39BF /* ConcurrentOperationTests.swift */; };
+		02EE5EBB1F4CCBDE001E39BF /* Semaphore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EE5EBA1F4CCBDE001E39BF /* Semaphore.swift */; };
+		02EE5EBC1F4CCBDE001E39BF /* Semaphore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EE5EBA1F4CCBDE001E39BF /* Semaphore.swift */; };
+		02EE5EBD1F4CCBDE001E39BF /* Semaphore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EE5EBA1F4CCBDE001E39BF /* Semaphore.swift */; };
+		02EE5EBE1F4CCBDE001E39BF /* Semaphore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EE5EBA1F4CCBDE001E39BF /* Semaphore.swift */; };
+		02EE5EBF1F4CCBDE001E39BF /* Semaphore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EE5EBA1F4CCBDE001E39BF /* Semaphore.swift */; };
+		02EE5EC21F4CCCE6001E39BF /* SemaphoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EE5EC11F4CCCE6001E39BF /* SemaphoreTests.swift */; };
 		031BF5A91CE37B4800DD028A /* Kashmir.h in Headers */ = {isa = PBXBuildFile; fileRef = 031BF5A81CE37B4800DD028A /* Kashmir.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		031BF5B01CE37B4800DD028A /* Kashmir.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 031BF5A51CE37B4800DD028A /* Kashmir.framework */; };
 		0323207A1D245B0A00BB79A1 /* URLResponseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032320791D245B0A00BB79A1 /* URLResponseError.swift */; };
@@ -296,6 +302,8 @@
 		02CDE5EA1DECA06F00EE7892 /* SCNetworkReachabilityFlagsExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SCNetworkReachabilityFlagsExtensions.swift; path = Shared/SCNetworkReachabilityFlagsExtensions.swift; sourceTree = "<group>"; };
 		02CDE5EF1DECA12A00EE7892 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Network.swift; path = Shared/Network.swift; sourceTree = "<group>"; };
 		02EE5EB81F4CC785001E39BF /* ConcurrentOperationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConcurrentOperationTests.swift; path = Shared/ConcurrentOperationTests.swift; sourceTree = "<group>"; };
+		02EE5EBA1F4CCBDE001E39BF /* Semaphore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Semaphore.swift; path = Shared/Semaphore.swift; sourceTree = "<group>"; };
+		02EE5EC11F4CCCE6001E39BF /* SemaphoreTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SemaphoreTests.swift; path = Shared/SemaphoreTests.swift; sourceTree = "<group>"; };
 		031BF5A51CE37B4800DD028A /* Kashmir.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kashmir.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		031BF5A81CE37B4800DD028A /* Kashmir.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Kashmir.h; sourceTree = "<group>"; };
 		031BF5AA1CE37B4800DD028A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -601,6 +609,11 @@
 			isa = PBXGroup;
 			children = (
 				02CDE5EF1DECA12A00EE7892 /* Network.swift */,
+				02EE5EBA1F4CCBDE001E39BF /* Semaphore.swift */,
+			);
+			name = Structs;
+			sourceTree = "<group>";
+		};
 		02EE5EB71F4CC758001E39BF /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -609,6 +622,10 @@
 			name = Classes;
 			sourceTree = "<group>";
 		};
+		02EE5EC01F4CCCD1001E39BF /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				02EE5EC11F4CCCE6001E39BF /* SemaphoreTests.swift */,
 			);
 			name = Structs;
 			sourceTree = "<group>";
@@ -668,6 +685,7 @@
 			children = (
 				027803631EED868900C3D651 /* Constants */,
 				032A85EE1D1BA9A100401E29 /* Enumerations */,
+				02EE5EC01F4CCCD1001E39BF /* Structs */,
 				0225927C1DEA5C3C005DD338 /* Protocols */,
 				02EE5EB71F4CC758001E39BF /* Classes */,
 				024F51831DEF911A0088A3B2 /* Controllers */,
@@ -1248,6 +1266,7 @@
 				022592771DEA5BD1005DD338 /* Sectionable.swift in Sources */,
 				0340747A1D7088C2004099AC /* BundleExtensions.swift in Sources */,
 				02CDE5E11DEC9FE100EE7892 /* NetworkConnectivity.swift in Sources */,
+				02EE5EBB1F4CCBDE001E39BF /* Semaphore.swift in Sources */,
 				0278035E1EED7E1000C3D651 /* DataStackModel.swift in Sources */,
 				022592741DEA5BD1005DD338 /* DataSource.swift in Sources */,
 				022EE1231E5430BF0067AE2F /* UserDefaultsExtensions.swift in Sources */,
@@ -1267,6 +1286,7 @@
 				022EE1291E5433920067AE2F /* UserDefaultsExtensionsTests.swift in Sources */,
 				02130A0C1DDA71950071940B /* URLRequestMethodTests.swift in Sources */,
 				0294DDF91E20F6C00002E409 /* ResultTests.swift in Sources */,
+				02EE5EC21F4CCCE6001E39BF /* SemaphoreTests.swift in Sources */,
 				02130A131DDA71B00071940B /* NSObjectExtensionsTests.swift in Sources */,
 				02384ACD1DECF39A00B664D3 /* SCNetworkReachabilityFlagsExtensionsTests.swift in Sources */,
 				02130A121DDA71B00071940B /* BundleExtensionsTests.swift in Sources */,
@@ -1294,6 +1314,7 @@
 				029DEF191E582F0200C4230C /* Sectionable.swift in Sources */,
 				022EE1241E5430BF0067AE2F /* UserDefaultsExtensions.swift in Sources */,
 				0294DDF31E20F66D0002E409 /* Result.swift in Sources */,
+				02EE5EBC1F4CCBDE001E39BF /* Semaphore.swift in Sources */,
 				03B67C781D8AF884001DFFE6 /* DataStackError.swift in Sources */,
 				026B53AF1F4ABB930010303A /* ConcurrentOperation.swift in Sources */,
 				024F51801DEF90990088A3B2 /* NetworkReacher.swift in Sources */,
@@ -1345,6 +1366,7 @@
 				02CDE5ED1DECA06F00EE7892 /* SCNetworkReachabilityFlagsExtensions.swift in Sources */,
 				0323207C1D245B0A00BB79A1 /* URLResponseError.swift in Sources */,
 				029DEF1F1E582F0F00C4230C /* DataSource.swift in Sources */,
+				02EE5EBD1F4CCBDE001E39BF /* Semaphore.swift in Sources */,
 				029961CC1EABB15E0027F54A /* DateFormatterExtensions.swift in Sources */,
 				03B8E5461D24F29E00E40586 /* URLResponseStatusCode.swift in Sources */,
 				029DEF1B1E582F0800C4230C /* Itemable.swift in Sources */,
@@ -1390,6 +1412,7 @@
 				0294DDFE1E20F9470002E409 /* DataStackValidation.swift in Sources */,
 				02CDE5EE1DECA06F00EE7892 /* SCNetworkReachabilityFlagsExtensions.swift in Sources */,
 				03B8E5471D24F29F00E40586 /* URLResponseStatusCode.swift in Sources */,
+				02EE5EBE1F4CCBDE001E39BF /* Semaphore.swift in Sources */,
 				027803611EED7E1000C3D651 /* DataStackModel.swift in Sources */,
 				02CDE5E91DEC9FFC00EE7892 /* NetworkStatus.swift in Sources */,
 				02CDE5DF1DEC9F5C00EE7892 /* ReachabilityError.swift in Sources */,
@@ -1411,6 +1434,7 @@
 				03B8E5441D24F29100E40586 /* URLRequestMethod.swift in Sources */,
 				0323207E1D245B0A00BB79A1 /* URLResponseError.swift in Sources */,
 				029DEF211E582F1000C4230C /* DataSource.swift in Sources */,
+				02EE5EBF1F4CCBDE001E39BF /* Semaphore.swift in Sources */,
 				0294DDF61E20F66D0002E409 /* Result.swift in Sources */,
 				027803621EED7E1000C3D651 /* DataStackModel.swift in Sources */,
 				022EE1271E5430BF0067AE2F /* UserDefaultsExtensions.swift in Sources */,
