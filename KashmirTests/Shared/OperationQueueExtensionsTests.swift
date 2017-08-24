@@ -53,11 +53,30 @@ class OperationQueueExtensionsTests: XCTestCase {
 		
 		queue.pause()
 		
-		queue.add([firstOperation,
-		           secondOperation,
-		           thirdOperation])
+		queue.add(operations: [firstOperation,
+		                       secondOperation,
+		                       thirdOperation])
 		
 		XCTAssertEqual(queue.operations.count, 3)
+	}
+	
+	func testAddChainedOperations() {
+		let queue = OperationQueue(name: "AddChainedOperations")
+		let firstOperation = Operation()
+		let secondOperation = Operation()
+		let thirdOperation = Operation()
+		
+		queue.pause()
+		
+		queue.add(chainedOperations: [firstOperation,
+		                              secondOperation,
+		                              thirdOperation])
+		
+		XCTAssertEqual(queue.operations.count, 3)
+		XCTAssertEqual(queue.operations.first, firstOperation)
+		XCTAssertEqual(queue.operations.first!.dependencies, [])
+		XCTAssertEqual(queue.operations.last, thirdOperation)
+		XCTAssertEqual(queue.operations.last!.dependencies, [secondOperation])
 	}
 	
 	func testPauseAndResume() {
