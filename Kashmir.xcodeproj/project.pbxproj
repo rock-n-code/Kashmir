@@ -58,6 +58,12 @@
 		024F51811DEF90990088A3B2 /* NetworkReacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024F517E1DEF90990088A3B2 /* NetworkReacher.swift */; };
 		024F51821DEF90990088A3B2 /* NetworkReacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024F517E1DEF90990088A3B2 /* NetworkReacher.swift */; };
 		024F51851DEF91360088A3B2 /* NetworkReacherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024F51841DEF91360088A3B2 /* NetworkReacherTests.swift */; };
+		026130301F4E8FE100EEFC1A /* OperationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0261302F1F4E8FE100EEFC1A /* OperationExtensions.swift */; };
+		026130311F4E8FE100EEFC1A /* OperationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0261302F1F4E8FE100EEFC1A /* OperationExtensions.swift */; };
+		026130321F4E8FE100EEFC1A /* OperationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0261302F1F4E8FE100EEFC1A /* OperationExtensions.swift */; };
+		026130331F4E8FE100EEFC1A /* OperationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0261302F1F4E8FE100EEFC1A /* OperationExtensions.swift */; };
+		026130341F4E8FE100EEFC1A /* OperationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0261302F1F4E8FE100EEFC1A /* OperationExtensions.swift */; };
+		026130361F4E91B000EEFC1A /* OperationExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026130351F4E91B000EEFC1A /* OperationExtensionsTests.swift */; };
 		026B53A71F4ABAA00010303A /* OperationQueueExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026B53A61F4ABAA00010303A /* OperationQueueExtensions.swift */; };
 		026B53A81F4ABAA00010303A /* OperationQueueExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026B53A61F4ABAA00010303A /* OperationQueueExtensions.swift */; };
 		026B53A91F4ABAA00010303A /* OperationQueueExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026B53A61F4ABAA00010303A /* OperationQueueExtensions.swift */; };
@@ -282,6 +288,8 @@
 		023A0C0B1E97A46E006C9198 /* UIColorExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColorExtensionsTests.swift; path = KashmirTests/iOS/UIColorExtensionsTests.swift; sourceTree = SOURCE_ROOT; };
 		024F517E1DEF90990088A3B2 /* NetworkReacher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkReacher.swift; path = Shared/NetworkReacher.swift; sourceTree = "<group>"; };
 		024F51841DEF91360088A3B2 /* NetworkReacherTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkReacherTests.swift; path = Shared/NetworkReacherTests.swift; sourceTree = "<group>"; };
+		0261302F1F4E8FE100EEFC1A /* OperationExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OperationExtensions.swift; path = Shared/OperationExtensions.swift; sourceTree = "<group>"; };
+		026130351F4E91B000EEFC1A /* OperationExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OperationExtensionsTests.swift; path = Shared/OperationExtensionsTests.swift; sourceTree = "<group>"; };
 		026B53A61F4ABAA00010303A /* OperationQueueExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OperationQueueExtensions.swift; path = Shared/OperationQueueExtensions.swift; sourceTree = "<group>"; };
 		026B53AD1F4ABB930010303A /* ConcurrentOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConcurrentOperation.swift; path = Shared/ConcurrentOperation.swift; sourceTree = "<group>"; };
 		0278035D1EED7E1000C3D651 /* DataStackModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataStackModel.swift; path = Shared/DataStackModel.swift; sourceTree = "<group>"; };
@@ -746,6 +754,7 @@
 				032A85E21D1BA4F300401E29 /* StringExtensions.swift */,
 				034074791D7088C2004099AC /* BundleExtensions.swift */,
 				029961C91EABB15E0027F54A /* DateFormatterExtensions.swift */,
+				0261302F1F4E8FE100EEFC1A /* OperationExtensions.swift */,
 				026B53A61F4ABAA00010303A /* OperationQueueExtensions.swift */,
 				022EE1221E5430BF0067AE2F /* UserDefaultsExtensions.swift */,
 				03E668DA1D69AFEE00F6110A /* NSObjectExtensions.swift */,
@@ -760,6 +769,7 @@
 				02130A111DDA71B00071940B /* StringExtensionsTests.swift */,
 				02130A0F1DDA71B00071940B /* BundleExtensionsTests.swift */,
 				029961CF1EABB1F90027F54A /* DateFormatterExtensionsTests.swift */,
+				026130351F4E91B000EEFC1A /* OperationExtensionsTests.swift */,
 				02EE5ECD1F4CD794001E39BF /* OperationQueueExtensionsTests.swift */,
 				022EE1281E5433920067AE2F /* UserDefaultsExtensionsTests.swift */,
 				02130A101DDA71B00071940B /* NSObjectExtensionsTests.swift */,
@@ -1287,6 +1297,7 @@
 				022592771DEA5BD1005DD338 /* Sectionable.swift in Sources */,
 				0340747A1D7088C2004099AC /* BundleExtensions.swift in Sources */,
 				02CDE5E11DEC9FE100EE7892 /* NetworkConnectivity.swift in Sources */,
+				026130301F4E8FE100EEFC1A /* OperationExtensions.swift in Sources */,
 				02EE5EBB1F4CCBDE001E39BF /* Semaphore.swift in Sources */,
 				0278035E1EED7E1000C3D651 /* DataStackModel.swift in Sources */,
 				022592741DEA5BD1005DD338 /* DataSource.swift in Sources */,
@@ -1314,6 +1325,7 @@
 				02130A121DDA71B00071940B /* BundleExtensionsTests.swift in Sources */,
 				02130A0E1DDA719F0071940B /* DataStackTests.swift in Sources */,
 				02384AC11DECB76700B664D3 /* NetworkStatusTests.swift in Sources */,
+				026130361F4E91B000EEFC1A /* OperationExtensionsTests.swift in Sources */,
 				022592821DEA5C50005DD338 /* SectionableTests.swift in Sources */,
 				022592801DEA5C50005DD338 /* DataSourceTests.swift in Sources */,
 				024F51851DEF91360088A3B2 /* NetworkReacherTests.swift in Sources */,
@@ -1363,6 +1375,7 @@
 				02CDE5E71DEC9FFC00EE7892 /* NetworkStatus.swift in Sources */,
 				02CDE5DD1DEC9F5C00EE7892 /* ReachabilityError.swift in Sources */,
 				0340747B1D7088C2004099AC /* BundleExtensions.swift in Sources */,
+				026130311F4E8FE100EEFC1A /* OperationExtensions.swift in Sources */,
 				02CDE5D81DEC9EB100EE7892 /* Reachability.swift in Sources */,
 				0225927B1DEA5BF9005DD338 /* DataSourceError.swift in Sources */,
 			);
@@ -1392,6 +1405,7 @@
 				02CDE5ED1DECA06F00EE7892 /* SCNetworkReachabilityFlagsExtensions.swift in Sources */,
 				0323207C1D245B0A00BB79A1 /* URLResponseError.swift in Sources */,
 				029DEF1F1E582F0F00C4230C /* DataSource.swift in Sources */,
+				026130321F4E8FE100EEFC1A /* OperationExtensions.swift in Sources */,
 				02EE5EBD1F4CCBDE001E39BF /* Semaphore.swift in Sources */,
 				029961CC1EABB15E0027F54A /* DateFormatterExtensions.swift in Sources */,
 				03B8E5461D24F29E00E40586 /* URLResponseStatusCode.swift in Sources */,
@@ -1441,6 +1455,7 @@
 				0294DDFE1E20F9470002E409 /* DataStackValidation.swift in Sources */,
 				02CDE5EE1DECA06F00EE7892 /* SCNetworkReachabilityFlagsExtensions.swift in Sources */,
 				03B8E5471D24F29F00E40586 /* URLResponseStatusCode.swift in Sources */,
+				026130331F4E8FE100EEFC1A /* OperationExtensions.swift in Sources */,
 				02EE5EBE1F4CCBDE001E39BF /* Semaphore.swift in Sources */,
 				027803611EED7E1000C3D651 /* DataStackModel.swift in Sources */,
 				02CDE5E91DEC9FFC00EE7892 /* NetworkStatus.swift in Sources */,
@@ -1468,6 +1483,7 @@
 				02EE5EBF1F4CCBDE001E39BF /* Semaphore.swift in Sources */,
 				0294DDF61E20F66D0002E409 /* Result.swift in Sources */,
 				027803621EED7E1000C3D651 /* DataStackModel.swift in Sources */,
+				026130341F4E8FE100EEFC1A /* OperationExtensions.swift in Sources */,
 				026B53AB1F4ABAA00010303A /* OperationQueueExtensions.swift in Sources */,
 				022EE1271E5430BF0067AE2F /* UserDefaultsExtensions.swift in Sources */,
 				0294DDFF1E20F9480002E409 /* DataStackValidation.swift in Sources */,
