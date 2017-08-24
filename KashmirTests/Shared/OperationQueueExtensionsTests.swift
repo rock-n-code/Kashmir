@@ -45,9 +45,24 @@ class OperationQueueExtensionsTests: XCTestCase {
 	
 	// MARK: Functions tests
 	
+	func testAddOperations() {
+		let queue = OperationQueue(name: "AddMultipleOperations")
+		let firstOperation = Operation()
+		let secondOperation = ConcurrentOperation()
+		let thirdOperation = SynchronousOperation()
+		
+		queue.pause()
+		
+		queue.add([firstOperation,
+		           secondOperation,
+		           thirdOperation])
+		
+		XCTAssertEqual(queue.operations.count, 3)
+	}
+	
 	func testPauseAndResume() {
 		let testExpectation = expectation(description: "Pause and Resume")
-		let queue = OperationQueue(name: "QueuerTestPauseAndResume")
+		let queue = OperationQueue(name: "TestPauseAndResume")
 		
 		var order = [Int]()
 		

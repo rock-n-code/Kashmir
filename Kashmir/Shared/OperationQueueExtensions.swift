@@ -33,6 +33,16 @@ extension OperationQueue {
 
 	// MARK: Functions
 	
+	/**
+	Add multiple operations to the queue at once.
+	
+	- parameter operations: An array of `Operation` objects that you want to add to the queue.
+	- note: The operations are added to the queue and control returns immediately to the caller.
+	*/
+	public func add(_ operations: [Operation]) {
+		addOperations(operations, waitUntilFinished: false)
+	}
+	
 	/// Pause the queue.
 	public func pause() {
 		isSuspended = true
