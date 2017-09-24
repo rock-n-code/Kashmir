@@ -237,7 +237,7 @@ class DataStackTests: XCTestCase {
 			let testing = Testing(context: context)
 			let request = Testing.fetchRequest() as NSFetchRequest<Testing>
 
-			testing.date = NSDate()
+			testing.date = Date()
 
 			try manager.save()
 
