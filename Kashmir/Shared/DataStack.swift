@@ -47,7 +47,7 @@ public class DataStack {
     public func add(_ model: String, of type: DataStack.Store = .sql) throws {
         try validate(model, for: [.modelNameIsNotEmpty])
 		
-		guard let url = Bundle.url(forResource: model, withExtension: "momd") else {
+		guard let url = Bundle.url(for: model, with: "momd") else {
 			throw DataStackError.objectModelNotFound
 		}
 
@@ -62,7 +62,7 @@ public class DataStack {
         
         container.persistentStoreDescriptions = [defaultDescription]
 
-		container.loadPersistentStores { [unowned self] storeDescription, error in
+		container.loadPersistentStores { storeDescription, error in
 			if let error = error as NSError? {
 				// TODO: Throw the error back to the caller.
 				fatalError("Unresolved error \(error), \(error.userInfo)")
@@ -147,8 +147,10 @@ public class DataStack {
 			throw DataStackError.contextNotCreated
 		}
 		
-		context.mergePolicy = NSMergeByPropertyObjectTrumpMergePolicy
+		context.mergePolicy = NSMergeByPropertyStoreTrumpMergePolicy
 		context.undoManager = nil
+		context.shouldDeleteInaccessibleFaults = true
+		context.automaticallyMergesChangesFromParent = true
 		
         return context
 	}
@@ -159,16 +161,11 @@ public class DataStack {
     - throws: A `DataStackError` type error in case during the execution of this method.
     */
 	public func save() throws -> () {
-		containers.forEach { name, container in
+		try containers.forEach { name, container in
 			let context = container.viewContext
 
 			if context.hasChanges {
-				do {
-					try context.save()
-				} catch let error as NSError {
-					// TODO: Throw the error back to the caller.
-					fatalError("Unresolved error \(error), \(error.userInfo)")
-				}
+				try context.save()
 			}
 		}
 	}
@@ -192,7 +189,7 @@ public class DataStack {
         description.shouldAddStoreAsynchronously = false
         description.shouldInferMappingModelAutomatically = true
         description.shouldMigrateStoreAutomatically = true
-        
+		
         if type != .inMemory {
             let directory = NSPersistentContainer.defaultDirectoryURL()
             

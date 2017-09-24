@@ -25,39 +25,39 @@ class BundleExtensionsTests: XCTestCase {
 	// MARK: Functions tests
 
 	func testUrlForResource() {
-		let url = Bundle.url(forResource: "Test")
+		let url = Bundle.url(for: "Test")
 
 		XCTAssertNotNil(url)
 	}
 
 	func testUrlForResourceWithExtension() {
-		let url = Bundle.url(forResource: "Info", withExtension: "plist")
+		let url = Bundle.url(for: "Info", with: "plist")
 
 		XCTAssertNotNil(url)
 	}
 
 	func testEmptyUrlForResourceWithExtension() {
-		let url = Bundle.url(forResource: "Info")
+		let url = Bundle.url(for: "Info")
 
 		XCTAssertNil(url)
 	}
 
 	func testUrlsForResource() {
-		let urls = Bundle.urls(forResource: "Test")
+		let urls = Bundle.urls(for: "Test")
 
 		XCTAssertNotNil(urls)
 		XCTAssertEqual(urls.count, 1)
 	}
 
 	func testUrlsForResourceWithExtension() {
-		let urls = Bundle.urls(forResource: "Info", withExtension: "plist")
+		let urls = Bundle.urls(for: "Info", with: "plist")
 
 		XCTAssertNotNil(urls)
 		XCTAssertGreaterThan(urls.count, 0)
 	}
 
 	func testEmptyUrlsForResource() {
-		let urls = Bundle.urls(forResource: "Info")
+		let urls = Bundle.urls(for: "Info")
 
 		XCTAssertNotNil(urls)
 		XCTAssertEqual(urls.count, 0)

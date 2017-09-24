@@ -47,9 +47,9 @@ public class XibableView: UIView {
     /// Loads the declaration of a view in a xib file into a view.
     private func loadViewFromNib() -> UIView? {
         let bundle = Bundle(for: type(of: self))
-        let nib = UINib(nibName: nameClass, bundle: bundle)
-        
-        return nib.instantiate(withOwner: self, options: nil)[0] as? UIView
+		let fileName = String(describing: type(of: self))
+		
+		return bundle.loadNibNamed(fileName, owner: self, options: nil)?.first as? UIView
     }
 
 }

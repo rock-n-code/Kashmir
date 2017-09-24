@@ -58,6 +58,23 @@
 		024F51811DEF90990088A3B2 /* NetworkReacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024F517E1DEF90990088A3B2 /* NetworkReacher.swift */; };
 		024F51821DEF90990088A3B2 /* NetworkReacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024F517E1DEF90990088A3B2 /* NetworkReacher.swift */; };
 		024F51851DEF91360088A3B2 /* NetworkReacherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024F51841DEF91360088A3B2 /* NetworkReacherTests.swift */; };
+		026130301F4E8FE100EEFC1A /* OperationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0261302F1F4E8FE100EEFC1A /* OperationExtensions.swift */; };
+		026130311F4E8FE100EEFC1A /* OperationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0261302F1F4E8FE100EEFC1A /* OperationExtensions.swift */; };
+		026130321F4E8FE100EEFC1A /* OperationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0261302F1F4E8FE100EEFC1A /* OperationExtensions.swift */; };
+		026130331F4E8FE100EEFC1A /* OperationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0261302F1F4E8FE100EEFC1A /* OperationExtensions.swift */; };
+		026130341F4E8FE100EEFC1A /* OperationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0261302F1F4E8FE100EEFC1A /* OperationExtensions.swift */; };
+		026130361F4E91B000EEFC1A /* OperationExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026130351F4E91B000EEFC1A /* OperationExtensionsTests.swift */; };
+		0265056C1F77C53D00CAE5BF /* NSViewControllerName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0265056B1F77C53D00CAE5BF /* NSViewControllerName.swift */; };
+		026B53A71F4ABAA00010303A /* OperationQueueExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026B53A61F4ABAA00010303A /* OperationQueueExtensions.swift */; };
+		026B53A81F4ABAA00010303A /* OperationQueueExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026B53A61F4ABAA00010303A /* OperationQueueExtensions.swift */; };
+		026B53A91F4ABAA00010303A /* OperationQueueExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026B53A61F4ABAA00010303A /* OperationQueueExtensions.swift */; };
+		026B53AA1F4ABAA00010303A /* OperationQueueExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026B53A61F4ABAA00010303A /* OperationQueueExtensions.swift */; };
+		026B53AB1F4ABAA00010303A /* OperationQueueExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026B53A61F4ABAA00010303A /* OperationQueueExtensions.swift */; };
+		026B53AE1F4ABB930010303A /* ConcurrentOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026B53AD1F4ABB930010303A /* ConcurrentOperation.swift */; };
+		026B53AF1F4ABB930010303A /* ConcurrentOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026B53AD1F4ABB930010303A /* ConcurrentOperation.swift */; };
+		026B53B01F4ABB930010303A /* ConcurrentOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026B53AD1F4ABB930010303A /* ConcurrentOperation.swift */; };
+		026B53B11F4ABB930010303A /* ConcurrentOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026B53AD1F4ABB930010303A /* ConcurrentOperation.swift */; };
+		026B53B21F4ABB930010303A /* ConcurrentOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026B53AD1F4ABB930010303A /* ConcurrentOperation.swift */; };
 		0278035E1EED7E1000C3D651 /* DataStackModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0278035D1EED7E1000C3D651 /* DataStackModel.swift */; };
 		0278035F1EED7E1000C3D651 /* DataStackModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0278035D1EED7E1000C3D651 /* DataStackModel.swift */; };
 		027803601EED7E1000C3D651 /* DataStackModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0278035D1EED7E1000C3D651 /* DataStackModel.swift */; };
@@ -67,6 +84,12 @@
 		027803661EED8DE800C3D651 /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023A0C051E96AAED006C9198 /* UIImageExtensions.swift */; };
 		027803691EED8F1100C3D651 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027803671EED8F0400C3D651 /* UIColorExtensions.swift */; };
 		0278036A1EED8F1400C3D651 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027803671EED8F0400C3D651 /* UIColorExtensions.swift */; };
+		0278036D1EED92E400C3D651 /* UIStoryboardName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0278036C1EED92E400C3D651 /* UIStoryboardName.swift */; };
+		0278036E1EED92E400C3D651 /* UIStoryboardName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0278036C1EED92E400C3D651 /* UIStoryboardName.swift */; };
+		027803701EED935C00C3D651 /* UIStoryboardSegueName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0278036F1EED935C00C3D651 /* UIStoryboardSegueName.swift */; };
+		027803711EED935C00C3D651 /* UIStoryboardSegueName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0278036F1EED935C00C3D651 /* UIStoryboardSegueName.swift */; };
+		027803AB1EEDC79600C3D651 /* Kashmir_macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 027803AA1EEDC79600C3D651 /* Kashmir_macOS.h */; };
+		027803B51EEDC95F00C3D651 /* Kashmir.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 027803A01EEDC6CA00C3D651 /* Kashmir.framework */; };
 		027FD2AF1DEA4BFC009814AB /* XibableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027FD2AD1DEA4BC5009814AB /* XibableView.swift */; };
 		027FD2B01DEA4BFE009814AB /* XibableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027FD2AD1DEA4BC5009814AB /* XibableView.swift */; };
 		027FD2B91DEA4CC5009814AB /* XibableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027FD2B21DEA4C35009814AB /* XibableViewTests.swift */; };
@@ -108,6 +131,17 @@
 		029DEF1F1E582F0F00C4230C /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022592701DEA5BD1005DD338 /* DataSource.swift */; };
 		029DEF201E582F0F00C4230C /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022592701DEA5BD1005DD338 /* DataSource.swift */; };
 		029DEF211E582F1000C4230C /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022592701DEA5BD1005DD338 /* DataSource.swift */; };
+		02A26B751EEDE35B00FF2038 /* Blocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A26B741EEDE35B00FF2038 /* Blocks.swift */; };
+		02A26B761EEDE35B00FF2038 /* Blocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A26B741EEDE35B00FF2038 /* Blocks.swift */; };
+		02A26B771EEDE35B00FF2038 /* Blocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A26B741EEDE35B00FF2038 /* Blocks.swift */; };
+		02A26B781EEDE35B00FF2038 /* Blocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A26B741EEDE35B00FF2038 /* Blocks.swift */; };
+		02A26B791EEDE35B00FF2038 /* Blocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A26B741EEDE35B00FF2038 /* Blocks.swift */; };
+		02A26B7C1EEDE46E00FF2038 /* NSStoryboardSegueName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A26B7B1EEDE46E00FF2038 /* NSStoryboardSegueName.swift */; };
+		02A26B7D1EEDE46E00FF2038 /* NSStoryboardSegueName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A26B7B1EEDE46E00FF2038 /* NSStoryboardSegueName.swift */; };
+		02A26B7F1EEDE4E100FF2038 /* NSStoryboardName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A26B7E1EEDE4E100FF2038 /* NSStoryboardName.swift */; };
+		02A26B801EEDE4E100FF2038 /* NSStoryboardName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A26B7E1EEDE4E100FF2038 /* NSStoryboardName.swift */; };
+		02A26B851EEE70DF00FF2038 /* UIViewControllerName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A26B841EEE70DF00FF2038 /* UIViewControllerName.swift */; };
+		02A26B861EEE70DF00FF2038 /* UIViewControllerName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A26B841EEE70DF00FF2038 /* UIViewControllerName.swift */; };
 		02CDE5D71DEC9EA700EE7892 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CDE5D61DEC9EA700EE7892 /* Reachability.swift */; };
 		02CDE5D81DEC9EB100EE7892 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CDE5D61DEC9EA700EE7892 /* Reachability.swift */; };
 		02CDE5D91DEC9EB200EE7892 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CDE5D61DEC9EA700EE7892 /* Reachability.swift */; };
@@ -132,6 +166,20 @@
 		02CDE5F11DECA12A00EE7892 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CDE5EF1DECA12A00EE7892 /* Network.swift */; };
 		02CDE5F21DECA12A00EE7892 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CDE5EF1DECA12A00EE7892 /* Network.swift */; };
 		02CDE5F31DECA12A00EE7892 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CDE5EF1DECA12A00EE7892 /* Network.swift */; };
+		02EE5EB91F4CC785001E39BF /* ConcurrentOperationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EE5EB81F4CC785001E39BF /* ConcurrentOperationTests.swift */; };
+		02EE5EBB1F4CCBDE001E39BF /* Semaphore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EE5EBA1F4CCBDE001E39BF /* Semaphore.swift */; };
+		02EE5EBC1F4CCBDE001E39BF /* Semaphore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EE5EBA1F4CCBDE001E39BF /* Semaphore.swift */; };
+		02EE5EBD1F4CCBDE001E39BF /* Semaphore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EE5EBA1F4CCBDE001E39BF /* Semaphore.swift */; };
+		02EE5EBE1F4CCBDE001E39BF /* Semaphore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EE5EBA1F4CCBDE001E39BF /* Semaphore.swift */; };
+		02EE5EBF1F4CCBDE001E39BF /* Semaphore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EE5EBA1F4CCBDE001E39BF /* Semaphore.swift */; };
+		02EE5EC21F4CCCE6001E39BF /* SemaphoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EE5EC11F4CCCE6001E39BF /* SemaphoreTests.swift */; };
+		02EE5EC41F4CCE8C001E39BF /* SynchronousOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EE5EC31F4CCE8C001E39BF /* SynchronousOperation.swift */; };
+		02EE5EC51F4CCE8C001E39BF /* SynchronousOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EE5EC31F4CCE8C001E39BF /* SynchronousOperation.swift */; };
+		02EE5EC61F4CCE8C001E39BF /* SynchronousOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EE5EC31F4CCE8C001E39BF /* SynchronousOperation.swift */; };
+		02EE5EC71F4CCE8C001E39BF /* SynchronousOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EE5EC31F4CCE8C001E39BF /* SynchronousOperation.swift */; };
+		02EE5EC81F4CCE8C001E39BF /* SynchronousOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EE5EC31F4CCE8C001E39BF /* SynchronousOperation.swift */; };
+		02EE5ECC1F4CCF7C001E39BF /* SynchronousOperationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EE5ECB1F4CCF7C001E39BF /* SynchronousOperationTests.swift */; };
+		02EE5ECE1F4CD794001E39BF /* OperationQueueExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EE5ECD1F4CD794001E39BF /* OperationQueueExtensionsTests.swift */; };
 		031BF5A91CE37B4800DD028A /* Kashmir.h in Headers */ = {isa = PBXBuildFile; fileRef = 031BF5A81CE37B4800DD028A /* Kashmir.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		031BF5B01CE37B4800DD028A /* Kashmir.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 031BF5A51CE37B4800DD028A /* Kashmir.framework */; };
 		0323207A1D245B0A00BB79A1 /* URLResponseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032320791D245B0A00BB79A1 /* URLResponseError.swift */; };
@@ -184,6 +232,13 @@
 			remoteGlobalIDString = 021309ED1DDA6DFD0071940B;
 			remoteInfo = Kashmir_iOS;
 		};
+		027803B61EEDC95F00C3D651 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 031BF59C1CE37B4800DD028A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0278039F1EEDC6CA00C3D651;
+			remoteInfo = Kashmir_macOS;
+		};
 		031BF5B11CE37B4800DD028A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 031BF59C1CE37B4800DD028A /* Project object */;
@@ -230,9 +285,21 @@
 		023A0C0B1E97A46E006C9198 /* UIColorExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColorExtensionsTests.swift; path = KashmirTests/iOS/UIColorExtensionsTests.swift; sourceTree = SOURCE_ROOT; };
 		024F517E1DEF90990088A3B2 /* NetworkReacher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkReacher.swift; path = Shared/NetworkReacher.swift; sourceTree = "<group>"; };
 		024F51841DEF91360088A3B2 /* NetworkReacherTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkReacherTests.swift; path = Shared/NetworkReacherTests.swift; sourceTree = "<group>"; };
+		0261302F1F4E8FE100EEFC1A /* OperationExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OperationExtensions.swift; path = Shared/OperationExtensions.swift; sourceTree = "<group>"; };
+		026130351F4E91B000EEFC1A /* OperationExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OperationExtensionsTests.swift; path = Shared/OperationExtensionsTests.swift; sourceTree = "<group>"; };
+		0265056B1F77C53D00CAE5BF /* NSViewControllerName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NSViewControllerName.swift; path = Kashmir/macOS/NSViewControllerName.swift; sourceTree = SOURCE_ROOT; };
+		026B53A61F4ABAA00010303A /* OperationQueueExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OperationQueueExtensions.swift; path = Shared/OperationQueueExtensions.swift; sourceTree = "<group>"; };
+		026B53AD1F4ABB930010303A /* ConcurrentOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConcurrentOperation.swift; path = Shared/ConcurrentOperation.swift; sourceTree = "<group>"; };
 		0278035D1EED7E1000C3D651 /* DataStackModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataStackModel.swift; path = Shared/DataStackModel.swift; sourceTree = "<group>"; };
 		027803641EED86A100C3D651 /* DataStackModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataStackModelTests.swift; path = Shared/DataStackModelTests.swift; sourceTree = "<group>"; };
 		027803671EED8F0400C3D651 /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColorExtensions.swift; path = Kashmir/iOS/UIColorExtensions.swift; sourceTree = SOURCE_ROOT; };
+		0278036C1EED92E400C3D651 /* UIStoryboardName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIStoryboardName.swift; path = Kashmir/iOS/UIStoryboardName.swift; sourceTree = SOURCE_ROOT; };
+		0278036F1EED935C00C3D651 /* UIStoryboardSegueName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIStoryboardSegueName.swift; path = Kashmir/iOS/UIStoryboardSegueName.swift; sourceTree = SOURCE_ROOT; };
+		027803A01EEDC6CA00C3D651 /* Kashmir.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kashmir.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		027803A81EEDC77100C3D651 /* Info_macOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info_macOS.plist; path = Kashmir/Info_macOS.plist; sourceTree = SOURCE_ROOT; };
+		027803AA1EEDC79600C3D651 /* Kashmir_macOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Kashmir_macOS.h; path = Kashmir/Kashmir_macOS.h; sourceTree = SOURCE_ROOT; };
+		027803B01EEDC95F00C3D651 /* KashmirTests_macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KashmirTests_macOS.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		027803BB1EEDC9B100C3D651 /* Info_macOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info_macOS.plist; path = KashmirTests/Info_macOS.plist; sourceTree = SOURCE_ROOT; };
 		027FD2AD1DEA4BC5009814AB /* XibableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XibableView.swift; path = Kashmir/iOS/XibableView.swift; sourceTree = SOURCE_ROOT; };
 		027FD2B21DEA4C35009814AB /* XibableViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XibableViewTests.swift; path = KashmirTests/iOS/XibableViewTests.swift; sourceTree = SOURCE_ROOT; };
 		027FD2B61DEA4CA7009814AB /* TestView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TestView.xib; path = KashmirTests/iOS/TestView.xib; sourceTree = SOURCE_ROOT; };
@@ -242,12 +309,22 @@
 		029961C91EABB15E0027F54A /* DateFormatterExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateFormatterExtensions.swift; path = Shared/DateFormatterExtensions.swift; sourceTree = "<group>"; };
 		029961CF1EABB1F90027F54A /* DateFormatterExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateFormatterExtensionsTests.swift; path = Shared/DateFormatterExtensionsTests.swift; sourceTree = "<group>"; };
 		029961D41EAC01FF0027F54A /* DateFormatterFormat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateFormatterFormat.swift; path = Shared/DateFormatterFormat.swift; sourceTree = "<group>"; };
+		02A26B741EEDE35B00FF2038 /* Blocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Blocks.swift; path = Shared/Blocks.swift; sourceTree = "<group>"; };
+		02A26B7B1EEDE46E00FF2038 /* NSStoryboardSegueName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NSStoryboardSegueName.swift; path = Kashmir/macOS/NSStoryboardSegueName.swift; sourceTree = SOURCE_ROOT; };
+		02A26B7E1EEDE4E100FF2038 /* NSStoryboardName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NSStoryboardName.swift; path = Kashmir/macOS/NSStoryboardName.swift; sourceTree = SOURCE_ROOT; };
+		02A26B841EEE70DF00FF2038 /* UIViewControllerName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewControllerName.swift; path = Kashmir/iOS/UIViewControllerName.swift; sourceTree = SOURCE_ROOT; };
 		02CDE5D61DEC9EA700EE7892 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Reachability.swift; path = Shared/Reachability.swift; sourceTree = "<group>"; };
 		02CDE5DB1DEC9F5C00EE7892 /* ReachabilityError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReachabilityError.swift; path = Shared/ReachabilityError.swift; sourceTree = "<group>"; };
 		02CDE5E01DEC9FE100EE7892 /* NetworkConnectivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkConnectivity.swift; path = Shared/NetworkConnectivity.swift; sourceTree = "<group>"; };
 		02CDE5E51DEC9FFC00EE7892 /* NetworkStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkStatus.swift; path = Shared/NetworkStatus.swift; sourceTree = "<group>"; };
 		02CDE5EA1DECA06F00EE7892 /* SCNetworkReachabilityFlagsExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SCNetworkReachabilityFlagsExtensions.swift; path = Shared/SCNetworkReachabilityFlagsExtensions.swift; sourceTree = "<group>"; };
 		02CDE5EF1DECA12A00EE7892 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Network.swift; path = Shared/Network.swift; sourceTree = "<group>"; };
+		02EE5EB81F4CC785001E39BF /* ConcurrentOperationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConcurrentOperationTests.swift; path = Shared/ConcurrentOperationTests.swift; sourceTree = "<group>"; };
+		02EE5EBA1F4CCBDE001E39BF /* Semaphore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Semaphore.swift; path = Shared/Semaphore.swift; sourceTree = "<group>"; };
+		02EE5EC11F4CCCE6001E39BF /* SemaphoreTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SemaphoreTests.swift; path = Shared/SemaphoreTests.swift; sourceTree = "<group>"; };
+		02EE5EC31F4CCE8C001E39BF /* SynchronousOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SynchronousOperation.swift; path = Shared/SynchronousOperation.swift; sourceTree = "<group>"; };
+		02EE5ECB1F4CCF7C001E39BF /* SynchronousOperationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SynchronousOperationTests.swift; path = Shared/SynchronousOperationTests.swift; sourceTree = "<group>"; };
+		02EE5ECD1F4CD794001E39BF /* OperationQueueExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OperationQueueExtensionsTests.swift; path = Shared/OperationQueueExtensionsTests.swift; sourceTree = "<group>"; };
 		031BF5A51CE37B4800DD028A /* Kashmir.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kashmir.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		031BF5A81CE37B4800DD028A /* Kashmir.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Kashmir.h; sourceTree = "<group>"; };
 		031BF5AA1CE37B4800DD028A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -280,6 +357,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				021309F71DDA6DFD0071940B /* Kashmir.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0278039C1EEDC6CA00C3D651 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		027803AD1EEDC95F00C3D651 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				027803B51EEDC95F00C3D651 /* Kashmir.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +429,7 @@
 			isa = PBXGroup;
 			children = (
 				02130A061DDA6EA90071940B /* Kashmir_iOS.h */,
+				0278036B1EED929500C3D651 /* Constants */,
 				02130A1D1DDA74D30071940B /* Extensions */,
 				027FD2AC1DEA4BB2009814AB /* Views */,
 				02130A051DDA6EA90071940B /* Info_iOS.plist */,
@@ -430,12 +523,49 @@
 			name = Controllers;
 			sourceTree = "<group>";
 		};
+		026B53AC1F4ABB700010303A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				026B53AD1F4ABB930010303A /* ConcurrentOperation.swift */,
+				02EE5EC31F4CCE8C001E39BF /* SynchronousOperation.swift */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
 		027803631EED868900C3D651 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
 				027803641EED86A100C3D651 /* DataStackModelTests.swift */,
 			);
 			name = Constants;
+			sourceTree = "<group>";
+		};
+		0278036B1EED929500C3D651 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				0278036C1EED92E400C3D651 /* UIStoryboardName.swift */,
+				0278036F1EED935C00C3D651 /* UIStoryboardSegueName.swift */,
+				02A26B841EEE70DF00FF2038 /* UIViewControllerName.swift */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		027803A11EEDC6CA00C3D651 /* Kashmir_macOS */ = {
+			isa = PBXGroup;
+			children = (
+				027803AA1EEDC79600C3D651 /* Kashmir_macOS.h */,
+				02A26B7A1EEDE43F00FF2038 /* Constants */,
+				027803A81EEDC77100C3D651 /* Info_macOS.plist */,
+			);
+			path = Kashmir_macOS;
+			sourceTree = SOURCE_ROOT;
+		};
+		027803B11EEDC95F00C3D651 /* KashmirTests_macOS */ = {
+			isa = PBXGroup;
+			children = (
+				027803BB1EEDC9B100C3D651 /* Info_macOS.plist */,
+			);
+			path = KashmirTests_macOS;
 			sourceTree = "<group>";
 		};
 		027FD2AC1DEA4BB2009814AB /* Views */ = {
@@ -479,10 +609,46 @@
 			name = Constants;
 			sourceTree = "<group>";
 		};
+		02A26B731EEDE33800FF2038 /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				02A26B741EEDE35B00FF2038 /* Blocks.swift */,
+			);
+			name = Types;
+			sourceTree = "<group>";
+		};
+		02A26B7A1EEDE43F00FF2038 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				0265056B1F77C53D00CAE5BF /* NSViewControllerName.swift */,
+				02A26B7E1EEDE4E100FF2038 /* NSStoryboardName.swift */,
+				02A26B7B1EEDE46E00FF2038 /* NSStoryboardSegueName.swift */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
 		02CDE5F41DECA14000EE7892 /* Structs */ = {
 			isa = PBXGroup;
 			children = (
 				02CDE5EF1DECA12A00EE7892 /* Network.swift */,
+				02EE5EBA1F4CCBDE001E39BF /* Semaphore.swift */,
+			);
+			name = Structs;
+			sourceTree = "<group>";
+		};
+		02EE5EB71F4CC758001E39BF /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				02EE5EB81F4CC785001E39BF /* ConcurrentOperationTests.swift */,
+				02EE5ECB1F4CCF7C001E39BF /* SynchronousOperationTests.swift */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		02EE5EC01F4CCCD1001E39BF /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				02EE5EC11F4CCCE6001E39BF /* SemaphoreTests.swift */,
 			);
 			name = Structs;
 			sourceTree = "<group>";
@@ -491,8 +657,10 @@
 			isa = PBXGroup;
 			children = (
 				031BF5A71CE37B4800DD028A /* Kashmir */,
+				027803A11EEDC6CA00C3D651 /* Kashmir_macOS */,
 				021309EF1DDA6DFD0071940B /* Kashmir_iOS */,
 				031BF5B31CE37B4800DD028A /* KashmirTests */,
+				027803B11EEDC95F00C3D651 /* KashmirTests_macOS */,
 				021309FA1DDA6DFD0071940B /* KashmirTests_iOS */,
 				02384AC21DECD29600B664D3 /* Frameworks */,
 				031BF5A61CE37B4800DD028A /* Products */,
@@ -510,6 +678,8 @@
 				031BF5FA1CE3805900DD028A /* Kashmir.framework */,
 				021309EE1DDA6DFD0071940B /* Kashmir.framework */,
 				021309F61DDA6DFD0071940B /* KashmirTests_iOS.xctest */,
+				027803A01EEDC6CA00C3D651 /* Kashmir.framework */,
+				027803B01EEDC95F00C3D651 /* KashmirTests_macOS.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -518,11 +688,13 @@
 			isa = PBXGroup;
 			children = (
 				031BF5A81CE37B4800DD028A /* Kashmir.h */,
-				02CDE5F41DECA14000EE7892 /* Structs */,
+				02A26B731EEDE33800FF2038 /* Types */,
 				029961D31EAC01D40027F54A /* Constants */,
 				032A85DE1D1B875500401E29 /* Enumerations */,
 				032320781D245ACA00BB79A1 /* Errors */,
+				02CDE5F41DECA14000EE7892 /* Structs */,
 				0225926F1DEA5BBE005DD338 /* Protocols */,
+				026B53AC1F4ABB700010303A /* Classes */,
 				024F517D1DEF90210088A3B2 /* Controllers */,
 				03B67C6E1D8AF142001DFFE6 /* Managers */,
 				032A85E11D1BA4CD00401E29 /* Extensions */,
@@ -536,7 +708,9 @@
 			children = (
 				027803631EED868900C3D651 /* Constants */,
 				032A85EE1D1BA9A100401E29 /* Enumerations */,
+				02EE5EC01F4CCCD1001E39BF /* Structs */,
 				0225927C1DEA5C3C005DD338 /* Protocols */,
+				02EE5EB71F4CC758001E39BF /* Classes */,
 				024F51831DEF911A0088A3B2 /* Controllers */,
 				03B67C711D8AF1B0001DFFE6 /* Managers */,
 				032A85E41D1BA53300401E29 /* Extensions */,
@@ -577,6 +751,8 @@
 				032A85E21D1BA4F300401E29 /* StringExtensions.swift */,
 				034074791D7088C2004099AC /* BundleExtensions.swift */,
 				029961C91EABB15E0027F54A /* DateFormatterExtensions.swift */,
+				0261302F1F4E8FE100EEFC1A /* OperationExtensions.swift */,
+				026B53A61F4ABAA00010303A /* OperationQueueExtensions.swift */,
 				022EE1221E5430BF0067AE2F /* UserDefaultsExtensions.swift */,
 				03E668DA1D69AFEE00F6110A /* NSObjectExtensions.swift */,
 				02CDE5EA1DECA06F00EE7892 /* SCNetworkReachabilityFlagsExtensions.swift */,
@@ -590,6 +766,8 @@
 				02130A111DDA71B00071940B /* StringExtensionsTests.swift */,
 				02130A0F1DDA71B00071940B /* BundleExtensionsTests.swift */,
 				029961CF1EABB1F90027F54A /* DateFormatterExtensionsTests.swift */,
+				026130351F4E91B000EEFC1A /* OperationExtensionsTests.swift */,
+				02EE5ECD1F4CD794001E39BF /* OperationQueueExtensionsTests.swift */,
 				022EE1281E5433920067AE2F /* UserDefaultsExtensionsTests.swift */,
 				02130A101DDA71B00071940B /* NSObjectExtensionsTests.swift */,
 				02384ACC1DECF39A00B664D3 /* SCNetworkReachabilityFlagsExtensionsTests.swift */,
@@ -651,6 +829,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				02130A081DDA6EA90071940B /* Kashmir_iOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0278039D1EEDC6CA00C3D651 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				027803AB1EEDC79600C3D651 /* Kashmir_macOS.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -727,6 +913,42 @@
 			name = KashmirTests_iOS;
 			productName = Kashmir_iOSTests;
 			productReference = 021309F61DDA6DFD0071940B /* KashmirTests_iOS.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0278039F1EEDC6CA00C3D651 /* Kashmir_macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 027803A51EEDC6CA00C3D651 /* Build configuration list for PBXNativeTarget "Kashmir_macOS" */;
+			buildPhases = (
+				0278039B1EEDC6CA00C3D651 /* Sources */,
+				0278039C1EEDC6CA00C3D651 /* Frameworks */,
+				0278039D1EEDC6CA00C3D651 /* Headers */,
+				0278039E1EEDC6CA00C3D651 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kashmir_macOS;
+			productName = Kashmir_macOS;
+			productReference = 027803A01EEDC6CA00C3D651 /* Kashmir.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		027803AF1EEDC95F00C3D651 /* KashmirTests_macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 027803B81EEDC95F00C3D651 /* Build configuration list for PBXNativeTarget "KashmirTests_macOS" */;
+			buildPhases = (
+				027803AC1EEDC95F00C3D651 /* Sources */,
+				027803AD1EEDC95F00C3D651 /* Frameworks */,
+				027803AE1EEDC95F00C3D651 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				027803B71EEDC95F00C3D651 /* PBXTargetDependency */,
+			);
+			name = KashmirTests_macOS;
+			productName = KashmirTests_macOS;
+			productReference = 027803B01EEDC95F00C3D651 /* KashmirTests_macOS.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		031BF5A41CE37B4800DD028A /* Kashmir */ = {
@@ -843,46 +1065,59 @@
 		031BF59C1CE37B4800DD028A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0820;
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Rock & Code";
 				TargetAttributes = {
 					021309ED1DDA6DFD0071940B = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 7FMNM89WKG;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					021309F51DDA6DFD0071940B = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 7FMNM89WKG;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+					};
+					0278039F1EEDC6CA00C3D651 = {
+						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Manual;
+					};
+					027803AF1EEDC95F00C3D651 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 7FMNM89WKG;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					031BF5A41CE37B4800DD028A = {
 						CreatedOnToolsVersion = 7.3.1;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0900;
 					};
 					031BF5AE1CE37B4800DD028A = {
 						CreatedOnToolsVersion = 7.3.1;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0900;
 					};
 					031BF5C31CE37EDE00DD028A = {
 						CreatedOnToolsVersion = 7.3.1;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0900;
 					};
 					031BF5DF1CE37FA700DD028A = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = 7FMNM89WKG;
 						DevelopmentTeamName = "Rock & Code";
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					031BF5EC1CE3800F00DD028A = {
 						CreatedOnToolsVersion = 7.3.1;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0900;
 					};
 					031BF5F91CE3805900DD028A = {
 						CreatedOnToolsVersion = 7.3.1;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0900;
 					};
 				};
 			};
@@ -899,8 +1134,10 @@
 			projectRoot = "";
 			targets = (
 				031BF5A41CE37B4800DD028A /* Kashmir */,
+				0278039F1EEDC6CA00C3D651 /* Kashmir_macOS */,
 				021309ED1DDA6DFD0071940B /* Kashmir_iOS */,
 				031BF5AE1CE37B4800DD028A /* KashmirTests */,
+				027803AF1EEDC95F00C3D651 /* KashmirTests_macOS */,
 				021309F51DDA6DFD0071940B /* KashmirTests_iOS */,
 				031BF5C31CE37EDE00DD028A /* Kashmir macOS */,
 				031BF5DF1CE37FA700DD028A /* Kashmir iOS */,
@@ -923,6 +1160,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				022592691DEA5249005DD338 /* TestView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0278039E1EEDC6CA00C3D651 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		027803AE1EEDC95F00C3D651 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -977,11 +1228,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				027FD2BC1DEA4EB4009814AB /* NSObjectExtensions.swift in Sources */,
+				0278036D1EED92E400C3D651 /* UIStoryboardName.swift in Sources */,
 				022592851DEAE986005DD338 /* IndexPathExtensions.swift in Sources */,
 				023A0C061E96AAED006C9198 /* UIImageExtensions.swift in Sources */,
+				02A26B851EEE70DF00FF2038 /* UIViewControllerName.swift in Sources */,
 				027803691EED8F1100C3D651 /* UIColorExtensions.swift in Sources */,
 				027FD2AF1DEA4BFC009814AB /* XibableView.swift in Sources */,
 				02130A231DDA75050071940B /* UIDeviceExtensions.swift in Sources */,
+				027803701EED935C00C3D651 /* UIStoryboardSegueName.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -997,6 +1251,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0278039B1EEDC6CA00C3D651 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02A26B7F1EEDE4E100FF2038 /* NSStoryboardName.swift in Sources */,
+				02A26B7C1EEDE46E00FF2038 /* NSStoryboardSegueName.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		027803AC1EEDC95F00C3D651 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		031BF5A01CE37B4800DD028A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1008,11 +1278,15 @@
 				03B67C6D1D8AF116001DFFE6 /* DataStackError.swift in Sources */,
 				02CDE5E61DEC9FFC00EE7892 /* NetworkStatus.swift in Sources */,
 				03B67C701D8AF154001DFFE6 /* DataStack.swift in Sources */,
+				0265056C1F77C53D00CAE5BF /* NSViewControllerName.swift in Sources */,
 				0294DDFB1E20F8DB0002E409 /* DataStackValidation.swift in Sources */,
 				022592761DEA5BD1005DD338 /* Itemable.swift in Sources */,
 				03E668DB1D69AFEE00F6110A /* NSObjectExtensions.swift in Sources */,
 				029961D51EAC01FF0027F54A /* DateFormatterFormat.swift in Sources */,
+				02EE5EC41F4CCE8C001E39BF /* SynchronousOperation.swift in Sources */,
 				029961CA1EABB15E0027F54A /* DateFormatterExtensions.swift in Sources */,
+				02A26B751EEDE35B00FF2038 /* Blocks.swift in Sources */,
+				026B53AE1F4ABB930010303A /* ConcurrentOperation.swift in Sources */,
 				032A85E31D1BA4F300401E29 /* StringExtensions.swift in Sources */,
 				03B8E5401D24F1B000E40586 /* URLRequestMethod.swift in Sources */,
 				0294DDF21E20F66D0002E409 /* Result.swift in Sources */,
@@ -1021,8 +1295,11 @@
 				022592771DEA5BD1005DD338 /* Sectionable.swift in Sources */,
 				0340747A1D7088C2004099AC /* BundleExtensions.swift in Sources */,
 				02CDE5E11DEC9FE100EE7892 /* NetworkConnectivity.swift in Sources */,
+				026130301F4E8FE100EEFC1A /* OperationExtensions.swift in Sources */,
+				02EE5EBB1F4CCBDE001E39BF /* Semaphore.swift in Sources */,
 				0278035E1EED7E1000C3D651 /* DataStackModel.swift in Sources */,
 				022592741DEA5BD1005DD338 /* DataSource.swift in Sources */,
+				026B53A71F4ABAA00010303A /* OperationQueueExtensions.swift in Sources */,
 				022EE1231E5430BF0067AE2F /* UserDefaultsExtensions.swift in Sources */,
 				0225926E1DEA5BA0005DD338 /* DataSourceError.swift in Sources */,
 				022D7FE31E1CAC2500E0A537 /* DataStackStore.swift in Sources */,
@@ -1034,22 +1311,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02EE5EB91F4CC785001E39BF /* ConcurrentOperationTests.swift in Sources */,
 				02130A141DDA71B00071940B /* StringExtensionsTests.swift in Sources */,
 				022592811DEA5C50005DD338 /* ItemableTests.swift in Sources */,
 				022EE1291E5433920067AE2F /* UserDefaultsExtensionsTests.swift in Sources */,
 				02130A0C1DDA71950071940B /* URLRequestMethodTests.swift in Sources */,
 				0294DDF91E20F6C00002E409 /* ResultTests.swift in Sources */,
+				02EE5EC21F4CCCE6001E39BF /* SemaphoreTests.swift in Sources */,
 				02130A131DDA71B00071940B /* NSObjectExtensionsTests.swift in Sources */,
 				02384ACD1DECF39A00B664D3 /* SCNetworkReachabilityFlagsExtensionsTests.swift in Sources */,
 				02130A121DDA71B00071940B /* BundleExtensionsTests.swift in Sources */,
 				02130A0E1DDA719F0071940B /* DataStackTests.swift in Sources */,
 				02384AC11DECB76700B664D3 /* NetworkStatusTests.swift in Sources */,
+				026130361F4E91B000EEFC1A /* OperationExtensionsTests.swift in Sources */,
 				022592821DEA5C50005DD338 /* SectionableTests.swift in Sources */,
 				022592801DEA5C50005DD338 /* DataSourceTests.swift in Sources */,
 				024F51851DEF91360088A3B2 /* NetworkReacherTests.swift in Sources */,
+				02EE5ECE1F4CD794001E39BF /* OperationQueueExtensionsTests.swift in Sources */,
 				02384ACF1DECF47900B664D3 /* ReachabilityTests.swift in Sources */,
 				027803651EED86A100C3D651 /* DataStackModelTests.swift in Sources */,
 				022D7FE91E1CBB1D00E0A537 /* DataStackStoreTests.swift in Sources */,
+				02EE5ECC1F4CCF7C001E39BF /* SynchronousOperationTests.swift in Sources */,
 				02130A1C1DDA71DE0071940B /* Test.xcdatamodeld in Sources */,
 				029961D01EABB1F90027F54A /* DateFormatterExtensionsTests.swift in Sources */,
 			);
@@ -1061,21 +1343,28 @@
 			files = (
 				03B8E5491D24F2A600E40586 /* StringExtensions.swift in Sources */,
 				02CDE5E21DEC9FE100EE7892 /* NetworkConnectivity.swift in Sources */,
+				02A26B7D1EEDE46E00FF2038 /* NSStoryboardSegueName.swift in Sources */,
+				02A26B801EEDE4E100FF2038 /* NSStoryboardName.swift in Sources */,
 				029DEF191E582F0200C4230C /* Sectionable.swift in Sources */,
 				022EE1241E5430BF0067AE2F /* UserDefaultsExtensions.swift in Sources */,
 				0294DDF31E20F66D0002E409 /* Result.swift in Sources */,
+				02EE5EBC1F4CCBDE001E39BF /* Semaphore.swift in Sources */,
 				03B67C781D8AF884001DFFE6 /* DataStackError.swift in Sources */,
+				026B53AF1F4ABB930010303A /* ConcurrentOperation.swift in Sources */,
 				024F51801DEF90990088A3B2 /* NetworkReacher.swift in Sources */,
 				03B67C7C1D8AF88A001DFFE6 /* DataStack.swift in Sources */,
 				03E668DC1D69AFEE00F6110A /* NSObjectExtensions.swift in Sources */,
+				02EE5EC51F4CCE8C001E39BF /* SynchronousOperation.swift in Sources */,
 				02CDE5F11DECA12A00EE7892 /* Network.swift in Sources */,
 				029961D61EAC01FF0027F54A /* DateFormatterFormat.swift in Sources */,
 				029961CB1EABB15E0027F54A /* DateFormatterExtensions.swift in Sources */,
+				02A26B761EEDE35B00FF2038 /* Blocks.swift in Sources */,
 				022D7FE41E1CAC2500E0A537 /* DataStackStore.swift in Sources */,
 				03B8E5411D24F28E00E40586 /* URLRequestMethod.swift in Sources */,
 				029DEF1E1E582F0E00C4230C /* DataSource.swift in Sources */,
 				029DEF1A1E582F0700C4230C /* Itemable.swift in Sources */,
 				0323207B1D245B0A00BB79A1 /* URLResponseError.swift in Sources */,
+				026B53A81F4ABAA00010303A /* OperationQueueExtensions.swift in Sources */,
 				0294DDFC1E20F9460002E409 /* DataStackValidation.swift in Sources */,
 				02CDE5EC1DECA06F00EE7892 /* SCNetworkReachabilityFlagsExtensions.swift in Sources */,
 				03B8E5451D24F29E00E40586 /* URLResponseStatusCode.swift in Sources */,
@@ -1083,6 +1372,7 @@
 				02CDE5E71DEC9FFC00EE7892 /* NetworkStatus.swift in Sources */,
 				02CDE5DD1DEC9F5C00EE7892 /* ReachabilityError.swift in Sources */,
 				0340747B1D7088C2004099AC /* BundleExtensions.swift in Sources */,
+				026130311F4E8FE100EEFC1A /* OperationExtensions.swift in Sources */,
 				02CDE5D81DEC9EB100EE7892 /* Reachability.swift in Sources */,
 				0225927B1DEA5BF9005DD338 /* DataSourceError.swift in Sources */,
 			);
@@ -1102,6 +1392,7 @@
 				029DEF181E582F0100C4230C /* Sectionable.swift in Sources */,
 				03B67C791D8AF884001DFFE6 /* DataStackError.swift in Sources */,
 				03B67C7D1D8AF88A001DFFE6 /* DataStack.swift in Sources */,
+				02A26B861EEE70DF00FF2038 /* UIViewControllerName.swift in Sources */,
 				03E668DD1D69AFEE00F6110A /* NSObjectExtensions.swift in Sources */,
 				03B8E5421D24F28F00E40586 /* URLRequestMethod.swift in Sources */,
 				027FD2B01DEA4BFE009814AB /* XibableView.swift in Sources */,
@@ -1111,17 +1402,25 @@
 				02CDE5ED1DECA06F00EE7892 /* SCNetworkReachabilityFlagsExtensions.swift in Sources */,
 				0323207C1D245B0A00BB79A1 /* URLResponseError.swift in Sources */,
 				029DEF1F1E582F0F00C4230C /* DataSource.swift in Sources */,
+				026130321F4E8FE100EEFC1A /* OperationExtensions.swift in Sources */,
+				02EE5EBD1F4CCBDE001E39BF /* Semaphore.swift in Sources */,
 				029961CC1EABB15E0027F54A /* DateFormatterExtensions.swift in Sources */,
 				03B8E5461D24F29E00E40586 /* URLResponseStatusCode.swift in Sources */,
 				029DEF1B1E582F0800C4230C /* Itemable.swift in Sources */,
 				022592861DEAE989005DD338 /* IndexPathExtensions.swift in Sources */,
+				02A26B771EEDE35B00FF2038 /* Blocks.swift in Sources */,
 				02CDE5E81DEC9FFC00EE7892 /* NetworkStatus.swift in Sources */,
 				02CDE5F21DECA12A00EE7892 /* Network.swift in Sources */,
+				026B53A91F4ABAA00010303A /* OperationQueueExtensions.swift in Sources */,
+				0278036E1EED92E400C3D651 /* UIStoryboardName.swift in Sources */,
 				022EE1251E5430BF0067AE2F /* UserDefaultsExtensions.swift in Sources */,
 				027803601EED7E1000C3D651 /* DataStackModel.swift in Sources */,
 				02130A241DDA75070071940B /* UIDeviceExtensions.swift in Sources */,
+				027803711EED935C00C3D651 /* UIStoryboardSegueName.swift in Sources */,
+				026B53B01F4ABB930010303A /* ConcurrentOperation.swift in Sources */,
 				0340747C1D7088C2004099AC /* BundleExtensions.swift in Sources */,
 				02CDE5D91DEC9EB200EE7892 /* Reachability.swift in Sources */,
+				02EE5EC61F4CCE8C001E39BF /* SynchronousOperation.swift in Sources */,
 				027803661EED8DE800C3D651 /* UIImageExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1141,7 +1440,10 @@
 				03E668DE1D69AFEE00F6110A /* NSObjectExtensions.swift in Sources */,
 				02CDE5F31DECA12A00EE7892 /* Network.swift in Sources */,
 				029961D81EAC01FF0027F54A /* DateFormatterFormat.swift in Sources */,
+				02EE5EC71F4CCE8C001E39BF /* SynchronousOperation.swift in Sources */,
 				029961CD1EABB15E0027F54A /* DateFormatterExtensions.swift in Sources */,
+				02A26B781EEDE35B00FF2038 /* Blocks.swift in Sources */,
+				026B53B11F4ABB930010303A /* ConcurrentOperation.swift in Sources */,
 				022D7FE61E1CAC2500E0A537 /* DataStackStore.swift in Sources */,
 				03B8E5431D24F29000E40586 /* URLRequestMethod.swift in Sources */,
 				029DEF201E582F0F00C4230C /* DataSource.swift in Sources */,
@@ -1150,8 +1452,11 @@
 				0294DDFE1E20F9470002E409 /* DataStackValidation.swift in Sources */,
 				02CDE5EE1DECA06F00EE7892 /* SCNetworkReachabilityFlagsExtensions.swift in Sources */,
 				03B8E5471D24F29F00E40586 /* URLResponseStatusCode.swift in Sources */,
+				026130331F4E8FE100EEFC1A /* OperationExtensions.swift in Sources */,
+				02EE5EBE1F4CCBDE001E39BF /* Semaphore.swift in Sources */,
 				027803611EED7E1000C3D651 /* DataStackModel.swift in Sources */,
 				02CDE5E91DEC9FFC00EE7892 /* NetworkStatus.swift in Sources */,
+				026B53AA1F4ABAA00010303A /* OperationQueueExtensions.swift in Sources */,
 				02CDE5DF1DEC9F5C00EE7892 /* ReachabilityError.swift in Sources */,
 				0340747D1D7088C2004099AC /* BundleExtensions.swift in Sources */,
 				02CDE5DA1DEC9EB300EE7892 /* Reachability.swift in Sources */,
@@ -1163,6 +1468,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				026B53B21F4ABB930010303A /* ConcurrentOperation.swift in Sources */,
+				02EE5EC81F4CCE8C001E39BF /* SynchronousOperation.swift in Sources */,
 				03B8E54C1D24F2A800E40586 /* StringExtensions.swift in Sources */,
 				03B67C7B1D8AF886001DFFE6 /* DataStackError.swift in Sources */,
 				03B67C7F1D8AF88C001DFFE6 /* DataStack.swift in Sources */,
@@ -1170,8 +1477,11 @@
 				03B8E5441D24F29100E40586 /* URLRequestMethod.swift in Sources */,
 				0323207E1D245B0A00BB79A1 /* URLResponseError.swift in Sources */,
 				029DEF211E582F1000C4230C /* DataSource.swift in Sources */,
+				02EE5EBF1F4CCBDE001E39BF /* Semaphore.swift in Sources */,
 				0294DDF61E20F66D0002E409 /* Result.swift in Sources */,
 				027803621EED7E1000C3D651 /* DataStackModel.swift in Sources */,
+				026130341F4E8FE100EEFC1A /* OperationExtensions.swift in Sources */,
+				026B53AB1F4ABAA00010303A /* OperationQueueExtensions.swift in Sources */,
 				022EE1271E5430BF0067AE2F /* UserDefaultsExtensions.swift in Sources */,
 				0294DDFF1E20F9480002E409 /* DataStackValidation.swift in Sources */,
 				029DEF161E582F0000C4230C /* Sectionable.swift in Sources */,
@@ -1180,6 +1490,7 @@
 				0340747E1D7088C2004099AC /* BundleExtensions.swift in Sources */,
 				029DEF1D1E582F0900C4230C /* Itemable.swift in Sources */,
 				029961CE1EABB15E0027F54A /* DateFormatterExtensions.swift in Sources */,
+				02A26B791EEDE35B00FF2038 /* Blocks.swift in Sources */,
 				022592781DEA5BF7005DD338 /* DataSourceError.swift in Sources */,
 				022D7FE71E1CAC2500E0A537 /* DataStackStore.swift in Sources */,
 			);
@@ -1192,6 +1503,11 @@
 			isa = PBXTargetDependency;
 			target = 021309ED1DDA6DFD0071940B /* Kashmir_iOS */;
 			targetProxy = 021309F81DDA6DFD0071940B /* PBXContainerItemProxy */;
+		};
+		027803B71EEDC95F00C3D651 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0278039F1EEDC6CA00C3D651 /* Kashmir_macOS */;
+			targetProxy = 027803B61EEDC95F00C3D651 /* PBXContainerItemProxy */;
 		};
 		031BF5B21CE37B4800DD028A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1227,7 +1543,8 @@
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1257,7 +1574,8 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -1281,7 +1599,8 @@
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -1301,8 +1620,114 @@
 				PRODUCT_NAME = KashmirTests_iOS;
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		027803A61EEDC6CA00C3D651 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "$(SRCROOT)/Kashmir/Info_macOS.plist";
+				INFOPLIST_OUTPUT_FORMAT = "same-as-input";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PLIST_FILE_OUTPUT_FORMAT = "same-as-input";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rockncode.kashmir.macos;
+				PRODUCT_MODULE_NAME = Kashmir;
+				PRODUCT_NAME = Kashmir;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				STRINGS_FILE_OUTPUT_ENCODING = "UTF-16";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		027803A71EEDC6CA00C3D651 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "$(SRCROOT)/Kashmir/Info_macOS.plist";
+				INFOPLIST_OUTPUT_FORMAT = "same-as-input";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PLIST_FILE_OUTPUT_FORMAT = "same-as-input";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rockncode.kashmir.macos;
+				PRODUCT_MODULE_NAME = Kashmir;
+				PRODUCT_NAME = Kashmir;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				STRINGS_FILE_OUTPUT_ENCODING = "UTF-16";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		027803B91EEDC95F00C3D651 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7FMNM89WKG;
+				INFOPLIST_FILE = KashmirTests/Info_macOS.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rockncode.kashmir.macos.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		027803BA1EEDC95F00C3D651 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7FMNM89WKG;
+				INFOPLIST_FILE = KashmirTests/Info_macOS.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rockncode.kashmir.macos.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -1315,14 +1740,20 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -1366,14 +1797,20 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -1421,7 +1858,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -1445,7 +1883,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rockncode.kashmir;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -1457,7 +1896,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rockncode.KashmirTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -1470,7 +1910,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rockncode.KashmirTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -1498,7 +1939,8 @@
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -1525,7 +1967,8 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = macosx;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -1550,7 +1993,8 @@
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1575,7 +2019,8 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -1601,7 +2046,8 @@
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 10.0;
 			};
@@ -1626,7 +2072,8 @@
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 10.0;
 				VALIDATE_PRODUCT = YES;
@@ -1654,7 +2101,8 @@
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "watchsimulator watchos";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
@@ -1680,7 +2128,8 @@
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "watchsimulator watchos";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
 				WATCHOS_DEPLOYMENT_TARGET = 3.0;
@@ -1704,6 +2153,24 @@
 			buildConfigurations = (
 				02130A011DDA6DFD0071940B /* Debug */,
 				02130A021DDA6DFD0071940B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		027803A51EEDC6CA00C3D651 /* Build configuration list for PBXNativeTarget "Kashmir_macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				027803A61EEDC6CA00C3D651 /* Debug */,
+				027803A71EEDC6CA00C3D651 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		027803B81EEDC95F00C3D651 /* Build configuration list for PBXNativeTarget "KashmirTests_macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				027803B91EEDC95F00C3D651 /* Debug */,
+				027803BA1EEDC95F00C3D651 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

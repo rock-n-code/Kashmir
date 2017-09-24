@@ -16,27 +16,25 @@ public extension Bundle {
 	Search for the first appearance of a file within all the declared frameworks and bundles and provide a URL containing the physical location of the requested file in case it is found.
     
     - parameters:
-         - named: The name of the file to search.
+         - resource: The name of the file to search.
          - fileExtension: The file extension of the file to search (if any).
 	- returns: A *URL* containing the physical location of the requested file in case it is actually found.
     */
-	static func url(forResource named: String, withExtension fileExtension: String? = nil) -> URL? {
+	static func url(for resource: String, with fileExtension: String? = nil) -> URL? {
 		var url: URL?
 
 		for framework in allFrameworks {
-			url = framework.url(forResource: named, withExtension: fileExtension)
+			url = framework.url(forResource: resource, withExtension: fileExtension)
 
-			guard url == nil
-			else {
+			guard url == nil else {
 				return url
 			}
 		}
 
 		for bundle in allBundles {
-			url = bundle.url(forResource: named, withExtension: fileExtension)
+			url = bundle.url(forResource: resource, withExtension: fileExtension)
 
-			guard url == nil
-			else {
+			guard url == nil else {
 				break
 			}
 		}
@@ -48,21 +46,21 @@ public extension Bundle {
     Search for the all the appearances of a file within all the declared frameworks and bundles and provide an array of URLs containing the physical locations of the requested file in case it is found.
     
     - parameters:
-         - named: The name of the file to search.
+         - resource: The name of the file to search.
          - fileExtension: The file extension of the file to search (if any).
 	- returns: An array of *URL* containing the physical locations of the requested file in case it is actually found. Otherwise it returns an empty array.
     */
-	static func urls(forResource named: String, withExtension fileExtension: String? = nil) -> [URL] {
+	static func urls(for resource: String, with fileExtension: String? = nil) -> [URL] {
 		var urls = [URL]()
 
 		for framework in allFrameworks {
-			if let url = framework.url(forResource: named, withExtension: fileExtension) {
+			if let url = framework.url(forResource: resource, withExtension: fileExtension) {
 				urls.append(url)
 			}
 		}
 
 		for bundle in allBundles {
-			if let url = bundle.url(forResource: named, withExtension: fileExtension) {
+			if let url = bundle.url(forResource: resource, withExtension: fileExtension) {
 				urls.append(url)
 			}
 		}

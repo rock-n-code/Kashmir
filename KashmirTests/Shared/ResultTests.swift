@@ -29,7 +29,7 @@ class ResultTests: XCTestCase {
 	// MARK: Properties tests
 	
 	func testVoidValue() {
-		let result = Result<Void>.value()
+		let result = Result<Void>.value(())
 
 		XCTAssertNotNil(result)
 		XCTAssertNotNil(result.value)
