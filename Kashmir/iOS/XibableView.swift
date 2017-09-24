@@ -49,7 +49,7 @@ public class XibableView: UIView {
         let bundle = Bundle(for: type(of: self))
 		let fileName = String(describing: type(of: self))
 		
-		return bundle.loadNibNamed(fileName, owner: self, options: nil)?.first
+		return bundle.loadNibNamed(fileName, owner: self, options: nil)?.first as? UIView
     }
 
 }
