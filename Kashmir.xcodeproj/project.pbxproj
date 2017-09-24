@@ -64,6 +64,7 @@
 		026130331F4E8FE100EEFC1A /* OperationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0261302F1F4E8FE100EEFC1A /* OperationExtensions.swift */; };
 		026130341F4E8FE100EEFC1A /* OperationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0261302F1F4E8FE100EEFC1A /* OperationExtensions.swift */; };
 		026130361F4E91B000EEFC1A /* OperationExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026130351F4E91B000EEFC1A /* OperationExtensionsTests.swift */; };
+		0265056C1F77C53D00CAE5BF /* NSViewControllerName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0265056B1F77C53D00CAE5BF /* NSViewControllerName.swift */; };
 		026B53A71F4ABAA00010303A /* OperationQueueExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026B53A61F4ABAA00010303A /* OperationQueueExtensions.swift */; };
 		026B53A81F4ABAA00010303A /* OperationQueueExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026B53A61F4ABAA00010303A /* OperationQueueExtensions.swift */; };
 		026B53A91F4ABAA00010303A /* OperationQueueExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026B53A61F4ABAA00010303A /* OperationQueueExtensions.swift */; };
@@ -139,8 +140,6 @@
 		02A26B7D1EEDE46E00FF2038 /* NSStoryboardSegueName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A26B7B1EEDE46E00FF2038 /* NSStoryboardSegueName.swift */; };
 		02A26B7F1EEDE4E100FF2038 /* NSStoryboardName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A26B7E1EEDE4E100FF2038 /* NSStoryboardName.swift */; };
 		02A26B801EEDE4E100FF2038 /* NSStoryboardName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A26B7E1EEDE4E100FF2038 /* NSStoryboardName.swift */; };
-		02A26B821EEDE5EE00FF2038 /* NSViewControllerName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A26B811EEDE5EE00FF2038 /* NSViewControllerName.swift */; };
-		02A26B831EEDE5EE00FF2038 /* NSViewControllerName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A26B811EEDE5EE00FF2038 /* NSViewControllerName.swift */; };
 		02A26B851EEE70DF00FF2038 /* UIViewControllerName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A26B841EEE70DF00FF2038 /* UIViewControllerName.swift */; };
 		02A26B861EEE70DF00FF2038 /* UIViewControllerName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A26B841EEE70DF00FF2038 /* UIViewControllerName.swift */; };
 		02CDE5D71DEC9EA700EE7892 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CDE5D61DEC9EA700EE7892 /* Reachability.swift */; };
@@ -288,6 +287,7 @@
 		024F51841DEF91360088A3B2 /* NetworkReacherTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkReacherTests.swift; path = Shared/NetworkReacherTests.swift; sourceTree = "<group>"; };
 		0261302F1F4E8FE100EEFC1A /* OperationExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OperationExtensions.swift; path = Shared/OperationExtensions.swift; sourceTree = "<group>"; };
 		026130351F4E91B000EEFC1A /* OperationExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OperationExtensionsTests.swift; path = Shared/OperationExtensionsTests.swift; sourceTree = "<group>"; };
+		0265056B1F77C53D00CAE5BF /* NSViewControllerName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NSViewControllerName.swift; path = Kashmir/macOS/NSViewControllerName.swift; sourceTree = SOURCE_ROOT; };
 		026B53A61F4ABAA00010303A /* OperationQueueExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OperationQueueExtensions.swift; path = Shared/OperationQueueExtensions.swift; sourceTree = "<group>"; };
 		026B53AD1F4ABB930010303A /* ConcurrentOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConcurrentOperation.swift; path = Shared/ConcurrentOperation.swift; sourceTree = "<group>"; };
 		0278035D1EED7E1000C3D651 /* DataStackModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataStackModel.swift; path = Shared/DataStackModel.swift; sourceTree = "<group>"; };
@@ -312,7 +312,6 @@
 		02A26B741EEDE35B00FF2038 /* Blocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Blocks.swift; path = Shared/Blocks.swift; sourceTree = "<group>"; };
 		02A26B7B1EEDE46E00FF2038 /* NSStoryboardSegueName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NSStoryboardSegueName.swift; path = Kashmir/macOS/NSStoryboardSegueName.swift; sourceTree = SOURCE_ROOT; };
 		02A26B7E1EEDE4E100FF2038 /* NSStoryboardName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NSStoryboardName.swift; path = Kashmir/macOS/NSStoryboardName.swift; sourceTree = SOURCE_ROOT; };
-		02A26B811EEDE5EE00FF2038 /* NSViewControllerName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSViewControllerName.swift; sourceTree = SOURCE_ROOT; };
 		02A26B841EEE70DF00FF2038 /* UIViewControllerName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewControllerName.swift; path = Kashmir/iOS/UIViewControllerName.swift; sourceTree = SOURCE_ROOT; };
 		02CDE5D61DEC9EA700EE7892 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Reachability.swift; path = Shared/Reachability.swift; sourceTree = "<group>"; };
 		02CDE5DB1DEC9F5C00EE7892 /* ReachabilityError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReachabilityError.swift; path = Shared/ReachabilityError.swift; sourceTree = "<group>"; };
@@ -621,7 +620,7 @@
 		02A26B7A1EEDE43F00FF2038 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
-				02A26B811EEDE5EE00FF2038 /* NSViewControllerName.swift */,
+				0265056B1F77C53D00CAE5BF /* NSViewControllerName.swift */,
 				02A26B7E1EEDE4E100FF2038 /* NSStoryboardName.swift */,
 				02A26B7B1EEDE46E00FF2038 /* NSStoryboardSegueName.swift */,
 			);
@@ -1257,7 +1256,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				02A26B7F1EEDE4E100FF2038 /* NSStoryboardName.swift in Sources */,
-				02A26B821EEDE5EE00FF2038 /* NSViewControllerName.swift in Sources */,
 				02A26B7C1EEDE46E00FF2038 /* NSStoryboardSegueName.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1280,6 +1278,7 @@
 				03B67C6D1D8AF116001DFFE6 /* DataStackError.swift in Sources */,
 				02CDE5E61DEC9FFC00EE7892 /* NetworkStatus.swift in Sources */,
 				03B67C701D8AF154001DFFE6 /* DataStack.swift in Sources */,
+				0265056C1F77C53D00CAE5BF /* NSViewControllerName.swift in Sources */,
 				0294DDFB1E20F8DB0002E409 /* DataStackValidation.swift in Sources */,
 				022592761DEA5BD1005DD338 /* Itemable.swift in Sources */,
 				03E668DB1D69AFEE00F6110A /* NSObjectExtensions.swift in Sources */,
@@ -1368,7 +1367,6 @@
 				026B53A81F4ABAA00010303A /* OperationQueueExtensions.swift in Sources */,
 				0294DDFC1E20F9460002E409 /* DataStackValidation.swift in Sources */,
 				02CDE5EC1DECA06F00EE7892 /* SCNetworkReachabilityFlagsExtensions.swift in Sources */,
-				02A26B831EEDE5EE00FF2038 /* NSViewControllerName.swift in Sources */,
 				03B8E5451D24F29E00E40586 /* URLResponseStatusCode.swift in Sources */,
 				0278035F1EED7E1000C3D651 /* DataStackModel.swift in Sources */,
 				02CDE5E71DEC9FFC00EE7892 /* NetworkStatus.swift in Sources */,
