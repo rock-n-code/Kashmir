@@ -26,19 +26,44 @@ class TimeZoneExtensionsTests: XCTestCase {
 	// MARK: Initializers tests
 	
 	func testInitWithUTCDateString() {
-		XCTFail("Not implemented yet")
+		let timeZone = TimeZone(dateString: "2017-01-01T00:00:00.000Z")
+		
+		XCTAssertNotNil(timeZone)
+		XCTAssertEqual(timeZone?.identifier, "GMT")
+		XCTAssertEqual(timeZone?.secondsFromGMT(), 0)
 	}
 	
-	func testInitWithOffsetDateString() {
-		XCTFail("Not implemented yet")
+	func testInitWithNoOffsetDateString() {
+		let timeZone = TimeZone(dateString: "2017-01-01T00:00:00.000+00:00")
+		
+		XCTAssertNotNil(timeZone)
+		XCTAssertEqual(timeZone?.secondsFromGMT(), 0)
+	}
+	
+	func testInitWithPositiveOffsetDateString() {
+		let timeZone = TimeZone(dateString: "2017-01-01T00:00:00.000+02:00")
+		
+		XCTAssertNotNil(timeZone)
+		XCTAssertEqual(timeZone?.secondsFromGMT(), 7200)
+	}
+	
+	func testInitWithNegativeOffsetDateString() {
+		let timeZone = TimeZone(dateString: "2017-01-01T00:00:00.000-04:00")
+		
+		XCTAssertNotNil(timeZone)
+		XCTAssertEqual(timeZone?.secondsFromGMT(), -14400)
 	}
 	
 	func testInitWithEmptyString() {
-		XCTFail("Not implemented yet")
+		let timeZone = TimeZone(dateString: "")
+		
+		XCTAssertNil(timeZone)
 	}
 	
 	func testInitWithWrongDateString() {
-		XCTFail("Not implemented yet")
+		let timeZone = TimeZone(dateString: "2017-01-01T00:00:00.000")
+		
+		XCTAssertNil(timeZone)
 	}
 
 }
