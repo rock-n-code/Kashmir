@@ -37,6 +37,40 @@ class StringExtensionsTests: XCTestCase {
 		XCTAssertNotNil("rock-n-code.com".toUrl)
 		XCTAssertNotNil("http://rock-n-code.com".toUrl)
 	}
+	
+	// MARK: Operations tests
+	
+	func testOperatorMatchesInWithRegularExpressionAndString() {
+		XCTAssertTrue("^[s|S]" ~?> "Some string...")
+	}
+	
+	func testOperatorMatchesInWithWrongRegularExpressionAndString() {
+		XCTAssertFalse("[s|S]$" ~?> "Some string...")
+	}
+	
+	func testOperatorMatchesInWithEmptyRegularExpressionAndString() {
+		XCTAssertFalse("" ~?> "Some string...")
+	}
+	
+	func testOperatorMatchesInWithRegularExpressionAndEmptyString() {
+		XCTAssertFalse("^[a]" ~?> "")
+	}
+	
+	func testOperatorMatchesWithRegularExpressionAndString() {
+		XCTAssertNotEqual("^[s|S]" ~~> "Some string...", [])
+	}
+	
+	func testOperatorMatchesWithWrongRegularExpressionAndString() {
+		XCTAssertEqual("[s|S]$" ~~> "Some string...", [])
+	}
+	
+	func testOperatorMatchesWithEmptyRegularExpressionAndString() {
+		XCTAssertEqual("" ~~> "Some string...", [])
+	}
+	
+	func testOperatorMatchesWithRegularExpressionAndEmptyString() {
+		XCTAssertEqual("^[a]" ~~> "", [])
+	}
     
     // MARK: Functions tests
     
