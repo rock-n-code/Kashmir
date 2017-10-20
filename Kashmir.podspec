@@ -1,20 +1,20 @@
 Pod::Spec.new do |spec|
     # Specification
-    spec.name               = "Kashmir"
-    spec.version            = "0.2.0"
-    spec.summary            = "Utility framework to help building macOS, iOS, tvOS and watchOS apps, the Rock & Code way."
-    spec.homepage           = "http://git.rock-n-co.de/RockAndCode/Kashmir"
-    spec.license            = {
-                                :type => "MIT", 
-                                :file => "LICENSE"
-                            }
-    spec.source             = {
-                                git: "https://github.com/rock-n-code/Kashmir.git", 
-                                tag: "#{spec.version}"
-                            }
-    spec.authors            = {
-                                "Javier Cicchelli" => "javier@rock-n-code.com"
-                            } 
+    spec.name       = "Kashmir"
+    spec.version    = "0.2.1"
+    spec.summary    = "Utility framework to help building macOS, iOS, tvOS and watchOS apps, the Rock & Code way."
+    spec.homepage   = "http://git.rock-n-co.de/RockAndCode/Kashmir"
+    spec.license    = {
+                        :type => "MIT", 
+                        :file => "LICENSE"
+                    }
+    spec.source     = {
+                        git: "https://github.com/rock-n-code/Kashmir.git", 
+                        tag: "#{spec.version}"
+                    }
+    spec.authors    = {
+                        "Javier Cicchelli" => "javier@rock-n-code.com"
+                    } 
 
     # Platform
     spec.osx.deployment_target      = "10.12"
