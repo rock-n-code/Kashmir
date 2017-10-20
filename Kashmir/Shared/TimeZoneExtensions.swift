@@ -33,23 +33,28 @@ public extension TimeZone {
 			return nil
 		}
 		
-		var secondsFromGMT = 0
-		
-		if let range = offset.first?.range {
-			let substring = (dateString as NSString).substring(with: range)
-			let components = substring.components(separatedBy: ":")
-			
-			if
-				let firstComponent = components.first,
-				let lastComponent = components.last,
-				let hours = Int(firstComponent),
-				let minutes = Int(lastComponent)
-			{
-				secondsFromGMT = hours * 3600 + minutes * 60
-			}
+		guard
+			let range = offset.first?.range,
+			let subrange = Range(range, in: dateString)
+		else {
+			self.init(secondsFromGMT: 0)
+			return
 		}
 		
-		self.init(secondsFromGMT: secondsFromGMT)
+		let components = dateString[subrange].components(separatedBy: ":")
+
+		guard
+			components.count == 2, 
+			let firstComponent = components.first,
+			let lastComponent = components.last,
+			let hours = Int(firstComponent),
+			let minutes = Int(lastComponent)
+		else {
+			self.init(secondsFromGMT: 0)
+			return
+		}
+		
+		self.init(secondsFromGMT: hours * 3600 + minutes * 60)
 	}
 	
 }
