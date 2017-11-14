@@ -12,7 +12,7 @@ open class ConcurrentOperation: Operation {
 	
 	// MARK: Constants
 	
-	fileprivate struct Key {
+	private struct Key {
 		fileprivate static let isExecuting = "isExecuting"
 		fileprivate static let isFinished = "isFinished"
 	}

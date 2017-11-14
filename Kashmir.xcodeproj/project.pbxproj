@@ -86,6 +86,12 @@
 		026B53B01F4ABB930010303A /* ConcurrentOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026B53AD1F4ABB930010303A /* ConcurrentOperation.swift */; };
 		026B53B11F4ABB930010303A /* ConcurrentOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026B53AD1F4ABB930010303A /* ConcurrentOperation.swift */; };
 		026B53B21F4ABB930010303A /* ConcurrentOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026B53AD1F4ABB930010303A /* ConcurrentOperation.swift */; };
+		026D56CF1FBB6867007FDBB2 /* GroupOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026D56CE1FBB6867007FDBB2 /* GroupOperation.swift */; };
+		026D56D01FBB6867007FDBB2 /* GroupOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026D56CE1FBB6867007FDBB2 /* GroupOperation.swift */; };
+		026D56D11FBB6867007FDBB2 /* GroupOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026D56CE1FBB6867007FDBB2 /* GroupOperation.swift */; };
+		026D56D21FBB6867007FDBB2 /* GroupOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026D56CE1FBB6867007FDBB2 /* GroupOperation.swift */; };
+		026D56D31FBB6867007FDBB2 /* GroupOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026D56CE1FBB6867007FDBB2 /* GroupOperation.swift */; };
+		026D56D51FBB689F007FDBB2 /* GroupOperationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026D56D41FBB689F007FDBB2 /* GroupOperationTests.swift */; };
 		0278035E1EED7E1000C3D651 /* DataStackModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0278035D1EED7E1000C3D651 /* DataStackModel.swift */; };
 		0278035F1EED7E1000C3D651 /* DataStackModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0278035D1EED7E1000C3D651 /* DataStackModel.swift */; };
 		027803601EED7E1000C3D651 /* DataStackModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0278035D1EED7E1000C3D651 /* DataStackModel.swift */; };
@@ -105,12 +111,6 @@
 		027FD2B01DEA4BFE009814AB /* XibableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027FD2AD1DEA4BC5009814AB /* XibableView.swift */; };
 		027FD2B91DEA4CC5009814AB /* XibableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027FD2B21DEA4C35009814AB /* XibableViewTests.swift */; };
 		027FD2BC1DEA4EB4009814AB /* NSObjectExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E668DA1D69AFEE00F6110A /* NSObjectExtensions.swift */; };
-		0286D7231F99F0F300550172 /* OperationWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0286D7221F99F0F300550172 /* OperationWrapper.swift */; };
-		0286D7251F99F10900550172 /* OperationWrapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0286D7241F99F10900550172 /* OperationWrapperTests.swift */; };
-		0286D7261F99F1EC00550172 /* OperationWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0286D7221F99F0F300550172 /* OperationWrapper.swift */; };
-		0286D7271F99F1ED00550172 /* OperationWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0286D7221F99F0F300550172 /* OperationWrapper.swift */; };
-		0286D7281F99F1EE00550172 /* OperationWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0286D7221F99F0F300550172 /* OperationWrapper.swift */; };
-		0286D7291F99F1EE00550172 /* OperationWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0286D7221F99F0F300550172 /* OperationWrapper.swift */; };
 		0288975A1E047FCD004E19BA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02384AC31DECD29600B664D3 /* SystemConfiguration.framework */; };
 		0288975B1E047FCE004E19BA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02384AC31DECD29600B664D3 /* SystemConfiguration.framework */; };
 		0288975C1E047FCF004E19BA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02384AC31DECD29600B664D3 /* SystemConfiguration.framework */; };
@@ -310,6 +310,8 @@
 		0265056B1F77C53D00CAE5BF /* NSViewControllerName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NSViewControllerName.swift; path = Kashmir/macOS/NSViewControllerName.swift; sourceTree = SOURCE_ROOT; };
 		026B53A61F4ABAA00010303A /* OperationQueueExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OperationQueueExtensions.swift; path = Shared/OperationQueueExtensions.swift; sourceTree = "<group>"; };
 		026B53AD1F4ABB930010303A /* ConcurrentOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConcurrentOperation.swift; path = Shared/ConcurrentOperation.swift; sourceTree = "<group>"; };
+		026D56CE1FBB6867007FDBB2 /* GroupOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GroupOperation.swift; path = Shared/GroupOperation.swift; sourceTree = "<group>"; };
+		026D56D41FBB689F007FDBB2 /* GroupOperationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GroupOperationTests.swift; path = Shared/GroupOperationTests.swift; sourceTree = "<group>"; };
 		0278035D1EED7E1000C3D651 /* DataStackModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataStackModel.swift; path = Shared/DataStackModel.swift; sourceTree = "<group>"; };
 		027803641EED86A100C3D651 /* DataStackModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataStackModelTests.swift; path = Shared/DataStackModelTests.swift; sourceTree = "<group>"; };
 		027803671EED8F0400C3D651 /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColorExtensions.swift; path = Kashmir/iOS/UIColorExtensions.swift; sourceTree = SOURCE_ROOT; };
@@ -552,6 +554,7 @@
 			children = (
 				026B53AD1F4ABB930010303A /* ConcurrentOperation.swift */,
 				02EE5EC31F4CCE8C001E39BF /* SynchronousOperation.swift */,
+				026D56CE1FBB6867007FDBB2 /* GroupOperation.swift */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -666,6 +669,7 @@
 			children = (
 				02EE5EB81F4CC785001E39BF /* ConcurrentOperationTests.swift */,
 				02EE5ECB1F4CCF7C001E39BF /* SynchronousOperationTests.swift */,
+				026D56D41FBB689F007FDBB2 /* GroupOperationTests.swift */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -1302,6 +1306,7 @@
 				02CDE5DC1DEC9F5C00EE7892 /* ReachabilityError.swift in Sources */,
 				0323207A1D245B0A00BB79A1 /* URLResponseError.swift in Sources */,
 				02CDE5EB1DECA06F00EE7892 /* SCNetworkReachabilityFlagsExtensions.swift in Sources */,
+				026D56CF1FBB6867007FDBB2 /* GroupOperation.swift in Sources */,
 				03B67C6D1D8AF116001DFFE6 /* DataStackError.swift in Sources */,
 				02CDE5E61DEC9FFC00EE7892 /* NetworkStatus.swift in Sources */,
 				03B67C701D8AF154001DFFE6 /* DataStack.swift in Sources */,
@@ -1354,6 +1359,7 @@
 				02130A0E1DDA719F0071940B /* DataStackTests.swift in Sources */,
 				02384AC11DECB76700B664D3 /* NetworkStatusTests.swift in Sources */,
 				026130361F4E91B000EEFC1A /* OperationExtensionsTests.swift in Sources */,
+				026D56D51FBB689F007FDBB2 /* GroupOperationTests.swift in Sources */,
 				022592821DEA5C50005DD338 /* SectionableTests.swift in Sources */,
 				0211F8DA1F929B4A0012E340 /* TimeZoneExtensionsTests.swift in Sources */,
 				022592801DEA5C50005DD338 /* DataSourceTests.swift in Sources */,
@@ -1402,6 +1408,7 @@
 				0294DDFC1E20F9460002E409 /* DataStackValidation.swift in Sources */,
 				02CDE5EC1DECA06F00EE7892 /* SCNetworkReachabilityFlagsExtensions.swift in Sources */,
 				02214C481F98757B00B8EA5C /* Operations.swift in Sources */,
+				026D56D01FBB6867007FDBB2 /* GroupOperation.swift in Sources */,
 				03B8E5451D24F29E00E40586 /* URLResponseStatusCode.swift in Sources */,
 				0278035F1EED7E1000C3D651 /* DataStackModel.swift in Sources */,
 				02CDE5E71DEC9FFC00EE7892 /* NetworkStatus.swift in Sources */,
@@ -1422,6 +1429,7 @@
 				022D7FE51E1CAC2500E0A537 /* DataStackStore.swift in Sources */,
 				02214C491F98757B00B8EA5C /* Operations.swift in Sources */,
 				0278036A1EED8F1400C3D651 /* UIColorExtensions.swift in Sources */,
+				026D56D11FBB6867007FDBB2 /* GroupOperation.swift in Sources */,
 				02CDE5DE1DEC9F5C00EE7892 /* ReachabilityError.swift in Sources */,
 				0225927A1DEA5BF8005DD338 /* DataSourceError.swift in Sources */,
 				029961D71EAC01FF0027F54A /* DateFormatterFormat.swift in Sources */,
@@ -1480,6 +1488,7 @@
 				02214C4A1F98757B00B8EA5C /* Operations.swift in Sources */,
 				02CDE5F31DECA12A00EE7892 /* Network.swift in Sources */,
 				029961D81EAC01FF0027F54A /* DateFormatterFormat.swift in Sources */,
+				026D56D21FBB6867007FDBB2 /* GroupOperation.swift in Sources */,
 				0211F8D71F9299680012E340 /* TimeZoneExtensions.swift in Sources */,
 				02EE5EC71F4CCE8C001E39BF /* SynchronousOperation.swift in Sources */,
 				029961CD1EABB15E0027F54A /* DateFormatterExtensions.swift in Sources */,
@@ -1513,6 +1522,7 @@
 				02EE5EC81F4CCE8C001E39BF /* SynchronousOperation.swift in Sources */,
 				03B8E54C1D24F2A800E40586 /* StringExtensions.swift in Sources */,
 				03B67C7B1D8AF886001DFFE6 /* DataStackError.swift in Sources */,
+				026D56D31FBB6867007FDBB2 /* GroupOperation.swift in Sources */,
 				03B67C7F1D8AF88C001DFFE6 /* DataStack.swift in Sources */,
 				03E668DF1D69AFEE00F6110A /* NSObjectExtensions.swift in Sources */,
 				0211F8D81F9299680012E340 /* TimeZoneExtensions.swift in Sources */,
