@@ -26,29 +26,11 @@ class GroupOperationTests: XCTestCase {
 	// MARK: Initializers tests
 	
 	func testInitWithExecutionBlock() {
-		let operation = GroupOperation {}
+		let operation = GroupOperation()
 		
 		XCTAssertNotNil(operation.queue)
 		XCTAssertTrue(operation.queue.isSuspended)
 		XCTAssertEqual(operation.queue.operationCount, 0)
-	}
-	
-	// MARK: Functions tests
-	
-	func testStart() {
-		let testExpectation = expectation(description: "Group Operation start")
-		let queue = OperationQueue()
-		let operation = GroupOperation {
-			testExpectation.fulfill()
-		}
-		
-		queue.name = "Group Operation Start"
-
-		operation.add(to: queue)
-		
-		waitForExpectations(timeout: 5) { error in
-			XCTAssertNil(error)
-		}
 	}
 
 }

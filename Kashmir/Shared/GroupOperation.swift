@@ -16,10 +16,10 @@ public class GroupOperation: ConcurrentOperation {
 	
 	// MARK: Initializers
 	
-	public override init(executionBlock: ExecutionBlock?) {
+	public init() {
 		self.queue = OperationQueue()
 		
-		super.init(executionBlock: executionBlock)
+		super.init()
 		
 		self.queue.isSuspended = true
 	}

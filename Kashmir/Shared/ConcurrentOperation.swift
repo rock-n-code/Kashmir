@@ -94,16 +94,6 @@ open class ConcurrentOperation: Operation {
 	}
 	
 	/**
-	Notify the completion of async task and hence the completion of the operation.
-	
-	- note: Must be called when the operation is finished.
-	*/
-	public func finish() {
-		_executing = false
-		_finished = true
-	}
-	
-	/**
 	Pause the current Operation, if it's supported.
 	
 	- note: Must be overridend by subclass to get a custom pause action.
@@ -117,6 +107,16 @@ open class ConcurrentOperation: Operation {
 	*/
 	open func resume() {}
 
+	/**
+	Notify the completion of async task and hence the completion of the operation.
+	
+	- note: Must be called when the operation is finished.
+	*/
+	public func finish() {
+		_executing = false
+		_finished = true
+	}
+	
 	/**
 	Adds the operation to the custom queue.
 	
