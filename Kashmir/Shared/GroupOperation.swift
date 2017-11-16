@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class GroupOperation: ConcurrentOperation {
+open class GroupOperation: ConcurrentOperation {
 	
 	// MARK: Properties
 	
@@ -26,25 +26,25 @@ public class GroupOperation: ConcurrentOperation {
 
 	// MARK: Functions
 	
-	public override func start() {
+	override open func start() {
 		queue.isSuspended = false
 		
 		super.start()
 	}
 
-	override public func cancel() {
+	override open func cancel() {
 		queue.cancelAllOperations()
 		
 		super.cancel()
 	}
 	
-	override public func pause() {
+	override open func pause() {
 		queue.pause()
 		
 		super.pause()
 	}
 	
-	override public func resume() {
+	override open func resume() {
 		queue.resume()
 		
 		super.resume()
