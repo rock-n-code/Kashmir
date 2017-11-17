@@ -14,6 +14,16 @@ open class GroupOperation: ConcurrentOperation {
 	
 	public let queue: OperationQueue
 	
+	public var error: Error? {
+		didSet {
+			guard error != nil else {
+				return
+			}
+			
+			cancel()
+		}
+	}
+	
 	// MARK: Initializers
 	
 	public init() {
