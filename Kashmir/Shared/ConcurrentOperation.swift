@@ -98,14 +98,18 @@ open class ConcurrentOperation: Operation {
 	
 	- note: Must be overridend by subclass to get a custom pause action.
 	*/
-	open func pause() {}
+	open func pause() {
+		_executing = false
+	}
 	
 	/**
 	Resume the current Operation, if it's supported.
 	
 	- note: Must be overridend by subclass to get a custom resume action.
 	*/
-	open func resume() {}
+	open func resume() {
+		_executing = true
+	}
 
 	/**
 	Notify the completion of async task and hence the completion of the operation.
