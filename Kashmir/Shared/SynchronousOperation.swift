@@ -27,8 +27,6 @@ public class SynchronousOperation: ConcurrentOperation {
 	
 	/**
 	Execute the operation.
-	
-	- note: If `executionBlock` is set, it will be executed and also `finish()` will be called.
 	*/
 	public override func execute() {
 		super.execute()

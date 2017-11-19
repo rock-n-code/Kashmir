@@ -8,6 +8,9 @@
 
 import Foundation
 
+/**
+...
+*/
 open class ConcurrentOperation: Operation {
 	
 	// MARK: Constants
@@ -85,16 +88,12 @@ open class ConcurrentOperation: Operation {
 	- note: If `executionBlock` is set, it will be executed and also `finish()` will be called.
 	*/
 	open func execute() {
-		guard let executionBlock = executionBlock else {
-			return
-		}
-		
-		executionBlock()
+		executionBlock?()
 		finish()
 	}
 	
 	/**
-	Pause the current Operation, if it's supported.
+	Pause the operation.
 	
 	- note: Must be overridend by subclass to get a custom pause action.
 	*/
@@ -103,7 +102,7 @@ open class ConcurrentOperation: Operation {
 	}
 	
 	/**
-	Resume the current Operation, if it's supported.
+	Resume the operation.
 	
 	- note: Must be overridend by subclass to get a custom resume action.
 	*/

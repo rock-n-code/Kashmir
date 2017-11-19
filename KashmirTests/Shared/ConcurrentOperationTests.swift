@@ -58,7 +58,7 @@ class ConcurrentOperationTests: XCTestCase {
 	// MARK: Functions tests
 	
 	func testExecute() {
-		let testExpectation = expectation(description: "Concurrent execute test")
+		let testExpectation = expectation(description: "ConcurrentOperation execute test")
 		let queue = OperationQueue()
 		let operation = ConcurrentOperation {
 			testExpectation.fulfill()
@@ -66,7 +66,7 @@ class ConcurrentOperationTests: XCTestCase {
 		
 		operation.add(to: queue)
 		
-		waitForExpectations(timeout: 5) { error in
+		waitForExpectations(timeout: 10.0) { error in
 			XCTAssertNil(error)
 			XCTAssertFalse(operation.isExecuting)
 			XCTAssertTrue(operation.isFinished)
@@ -75,7 +75,7 @@ class ConcurrentOperationTests: XCTestCase {
 	}
 	
 	func testPause() {
-		let testExpectation = expectation(description: "Concurrent pause test")
+		let testExpectation = expectation(description: "ConcurrentOperation pause test")
 		let queue = OperationQueue()
 		let operation = ConcurrentOperation {
 			Thread.sleep(forTimeInterval: 10.0)
@@ -99,7 +99,7 @@ class ConcurrentOperationTests: XCTestCase {
 	}
 	
 	func testResume() {
-		let testExpectation = expectation(description: "Concurrent resume test")
+		let testExpectation = expectation(description: "ConcurrentOperation resume test")
 		let queue = OperationQueue()
 		let operation = ConcurrentOperation {
 			Thread.sleep(forTimeInterval: 10.0)
@@ -127,7 +127,7 @@ class ConcurrentOperationTests: XCTestCase {
 	}
 	
 	func testCancel() {
-		let testExpectation = expectation(description: "Concurrent cancel test")
+		let testExpectation = expectation(description: "ConcurrentOperation cancel test")
 		let queue = OperationQueue()
 		let operation = ConcurrentOperation {
 			Thread.sleep(forTimeInterval: 10.0)
@@ -152,7 +152,7 @@ class ConcurrentOperationTests: XCTestCase {
 	
 	func testAddToQueue() {
 		let queue = OperationQueue()
-		let operation = ConcurrentOperation()
+		let operation = ConcurrentOperation {}
 
 		operation.add(to: queue)
 		

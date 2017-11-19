@@ -35,7 +35,7 @@ class SynchronousOperationTests: XCTestCase {
 	// MARK: Functions tests
 	
 	func testCancel() {
-		let testExpectation = expectation(description: "Synchronous cancel test")
+		let testExpectation = expectation(description: "SynchronousOperation cancel test")
 		let queue = OperationQueue()
 		
 		var testString = ""
