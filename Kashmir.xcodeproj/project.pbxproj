@@ -117,6 +117,21 @@
 		027FD2B01DEA4BFE009814AB /* XibableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027FD2AD1DEA4BC5009814AB /* XibableView.swift */; };
 		027FD2B91DEA4CC5009814AB /* XibableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027FD2B21DEA4C35009814AB /* XibableViewTests.swift */; };
 		027FD2BC1DEA4EB4009814AB /* NSObjectExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E668DA1D69AFEE00F6110A /* NSObjectExtensions.swift */; };
+		0280628620004B1700D508BC /* CoreDataDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0280628520004B1700D508BC /* CoreDataDecodable.swift */; };
+		0280628720004B1700D508BC /* CoreDataDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0280628520004B1700D508BC /* CoreDataDecodable.swift */; };
+		0280628820004B1700D508BC /* CoreDataDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0280628520004B1700D508BC /* CoreDataDecodable.swift */; };
+		0280628920004B1700D508BC /* CoreDataDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0280628520004B1700D508BC /* CoreDataDecodable.swift */; };
+		0280628A20004B1700D508BC /* CoreDataDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0280628520004B1700D508BC /* CoreDataDecodable.swift */; };
+		0280628C20004B6500D508BC /* NSManagedObjectContextExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0280628B20004B6500D508BC /* NSManagedObjectContextExtensions.swift */; };
+		0280628D20004B6500D508BC /* NSManagedObjectContextExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0280628B20004B6500D508BC /* NSManagedObjectContextExtensions.swift */; };
+		0280628E20004B6500D508BC /* NSManagedObjectContextExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0280628B20004B6500D508BC /* NSManagedObjectContextExtensions.swift */; };
+		0280628F20004B6500D508BC /* NSManagedObjectContextExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0280628B20004B6500D508BC /* NSManagedObjectContextExtensions.swift */; };
+		0280629020004B6500D508BC /* NSManagedObjectContextExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0280628B20004B6500D508BC /* NSManagedObjectContextExtensions.swift */; };
+		0280629220004BF500D508BC /* CoreDataDecodingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0280629120004BF500D508BC /* CoreDataDecodingError.swift */; };
+		0280629320004BF500D508BC /* CoreDataDecodingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0280629120004BF500D508BC /* CoreDataDecodingError.swift */; };
+		0280629420004BF500D508BC /* CoreDataDecodingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0280629120004BF500D508BC /* CoreDataDecodingError.swift */; };
+		0280629520004BF500D508BC /* CoreDataDecodingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0280629120004BF500D508BC /* CoreDataDecodingError.swift */; };
+		0280629620004BF500D508BC /* CoreDataDecodingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0280629120004BF500D508BC /* CoreDataDecodingError.swift */; };
 		0288975A1E047FCD004E19BA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02384AC31DECD29600B664D3 /* SystemConfiguration.framework */; };
 		0288975B1E047FCE004E19BA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02384AC31DECD29600B664D3 /* SystemConfiguration.framework */; };
 		0288975C1E047FCF004E19BA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02384AC31DECD29600B664D3 /* SystemConfiguration.framework */; };
@@ -338,6 +353,9 @@
 		027FD2AD1DEA4BC5009814AB /* XibableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XibableView.swift; path = Kashmir/iOS/XibableView.swift; sourceTree = SOURCE_ROOT; };
 		027FD2B21DEA4C35009814AB /* XibableViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XibableViewTests.swift; path = KashmirTests/iOS/XibableViewTests.swift; sourceTree = SOURCE_ROOT; };
 		027FD2B61DEA4CA7009814AB /* TestView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TestView.xib; path = KashmirTests/iOS/TestView.xib; sourceTree = SOURCE_ROOT; };
+		0280628520004B1700D508BC /* CoreDataDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CoreDataDecodable.swift; path = Shared/CoreDataDecodable.swift; sourceTree = "<group>"; };
+		0280628B20004B6500D508BC /* NSManagedObjectContextExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NSManagedObjectContextExtensions.swift; path = Shared/NSManagedObjectContextExtensions.swift; sourceTree = "<group>"; };
+		0280629120004BF500D508BC /* CoreDataDecodingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CoreDataDecodingError.swift; path = Shared/CoreDataDecodingError.swift; sourceTree = "<group>"; };
 		0294DDF11E20F66D0002E409 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Shared/Result.swift; sourceTree = "<group>"; };
 		0294DDF81E20F6C00002E409 /* ResultTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResultTests.swift; path = Shared/ResultTests.swift; sourceTree = "<group>"; };
 		0294DDFA1E20F8DB0002E409 /* DataStackValidation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataStackValidation.swift; path = Shared/DataStackValidation.swift; sourceTree = "<group>"; };
@@ -513,6 +531,7 @@
 				022592731DEA5BD1005DD338 /* Sectionable.swift */,
 				022592721DEA5BD1005DD338 /* Itemable.swift */,
 				022592701DEA5BD1005DD338 /* DataSource.swift */,
+				0280628520004B1700D508BC /* CoreDataDecodable.swift */,
 				02743AC21FBEDCCA00B18A6C /* OperationRunner.swift */,
 			);
 			name = Protocols;
@@ -769,6 +788,7 @@
 				0225926D1DEA5BA0005DD338 /* DataSourceError.swift */,
 				02CDE5DB1DEC9F5C00EE7892 /* ReachabilityError.swift */,
 				032320791D245B0A00BB79A1 /* URLResponseError.swift */,
+				0280629120004BF500D508BC /* CoreDataDecodingError.swift */,
 			);
 			name = Errors;
 			sourceTree = "<group>";
@@ -799,6 +819,7 @@
 				022EE1221E5430BF0067AE2F /* UserDefaultsExtensions.swift */,
 				03E668DA1D69AFEE00F6110A /* NSObjectExtensions.swift */,
 				02CDE5EA1DECA06F00EE7892 /* SCNetworkReachabilityFlagsExtensions.swift */,
+				0280628B20004B6500D508BC /* NSManagedObjectContextExtensions.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -1328,11 +1349,14 @@
 				022592761DEA5BD1005DD338 /* Itemable.swift in Sources */,
 				03E668DB1D69AFEE00F6110A /* NSObjectExtensions.swift in Sources */,
 				02BAAD491FBEF46A00F5D009 /* OperationQueueName.swift in Sources */,
+				0280628620004B1700D508BC /* CoreDataDecodable.swift in Sources */,
 				029961D51EAC01FF0027F54A /* DateFormatterFormat.swift in Sources */,
 				0211F8D41F9299680012E340 /* TimeZoneExtensions.swift in Sources */,
 				02EE5EC41F4CCE8C001E39BF /* SynchronousOperation.swift in Sources */,
 				029961CA1EABB15E0027F54A /* DateFormatterExtensions.swift in Sources */,
 				02A26B751EEDE35B00FF2038 /* Blocks.swift in Sources */,
+				0280629220004BF500D508BC /* CoreDataDecodingError.swift in Sources */,
+				0280628C20004B6500D508BC /* NSManagedObjectContextExtensions.swift in Sources */,
 				026B53AE1F4ABB930010303A /* ConcurrentOperation.swift in Sources */,
 				032A85E31D1BA4F300401E29 /* StringExtensions.swift in Sources */,
 				03B8E5401D24F1B000E40586 /* URLRequestMethod.swift in Sources */,
@@ -1393,6 +1417,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0280628720004B1700D508BC /* CoreDataDecodable.swift in Sources */,
 				03B8E5491D24F2A600E40586 /* StringExtensions.swift in Sources */,
 				02CDE5E21DEC9FE100EE7892 /* NetworkConnectivity.swift in Sources */,
 				02A26B7D1EEDE46E00FF2038 /* NSStoryboardSegueName.swift in Sources */,
@@ -1414,6 +1439,7 @@
 				02A26B761EEDE35B00FF2038 /* Blocks.swift in Sources */,
 				022D7FE41E1CAC2500E0A537 /* DataStackStore.swift in Sources */,
 				03B8E5411D24F28E00E40586 /* URLRequestMethod.swift in Sources */,
+				0280628D20004B6500D508BC /* NSManagedObjectContextExtensions.swift in Sources */,
 				029DEF1E1E582F0E00C4230C /* DataSource.swift in Sources */,
 				029DEF1A1E582F0700C4230C /* Itemable.swift in Sources */,
 				0323207B1D245B0A00BB79A1 /* URLResponseError.swift in Sources */,
@@ -1429,6 +1455,7 @@
 				02CDE5E71DEC9FFC00EE7892 /* NetworkStatus.swift in Sources */,
 				02CDE5DD1DEC9F5C00EE7892 /* ReachabilityError.swift in Sources */,
 				0340747B1D7088C2004099AC /* BundleExtensions.swift in Sources */,
+				0280629320004BF500D508BC /* CoreDataDecodingError.swift in Sources */,
 				026130311F4E8FE100EEFC1A /* OperationExtensions.swift in Sources */,
 				02CDE5D81DEC9EB100EE7892 /* Reachability.swift in Sources */,
 				0225927B1DEA5BF9005DD338 /* DataSourceError.swift in Sources */,
@@ -1460,6 +1487,7 @@
 				0294DDF41E20F66D0002E409 /* Result.swift in Sources */,
 				0294DDFD1E20F9460002E409 /* DataStackValidation.swift in Sources */,
 				024F51811DEF90990088A3B2 /* NetworkReacher.swift in Sources */,
+				0280628E20004B6500D508BC /* NSManagedObjectContextExtensions.swift in Sources */,
 				02CDE5ED1DECA06F00EE7892 /* SCNetworkReachabilityFlagsExtensions.swift in Sources */,
 				0323207C1D245B0A00BB79A1 /* URLResponseError.swift in Sources */,
 				029DEF1F1E582F0F00C4230C /* DataSource.swift in Sources */,
@@ -1470,7 +1498,9 @@
 				029DEF1B1E582F0800C4230C /* Itemable.swift in Sources */,
 				022592861DEAE989005DD338 /* IndexPathExtensions.swift in Sources */,
 				02A26B771EEDE35B00FF2038 /* Blocks.swift in Sources */,
+				0280629420004BF500D508BC /* CoreDataDecodingError.swift in Sources */,
 				02CDE5E81DEC9FFC00EE7892 /* NetworkStatus.swift in Sources */,
+				0280628820004B1700D508BC /* CoreDataDecodable.swift in Sources */,
 				02CDE5F21DECA12A00EE7892 /* Network.swift in Sources */,
 				026B53A91F4ABAA00010303A /* OperationQueueExtensions.swift in Sources */,
 				0278036E1EED92E400C3D651 /* UIStoryboardName.swift in Sources */,
@@ -1494,6 +1524,7 @@
 				03B8E54B1D24F2A700E40586 /* StringExtensions.swift in Sources */,
 				02CDE5E41DEC9FE100EE7892 /* NetworkConnectivity.swift in Sources */,
 				029DEF171E582F0100C4230C /* Sectionable.swift in Sources */,
+				0280628F20004B6500D508BC /* NSManagedObjectContextExtensions.swift in Sources */,
 				022EE1261E5430BF0067AE2F /* UserDefaultsExtensions.swift in Sources */,
 				0294DDF51E20F66D0002E409 /* Result.swift in Sources */,
 				03B67C7A1D8AF885001DFFE6 /* DataStackError.swift in Sources */,
@@ -1506,6 +1537,7 @@
 				029961D81EAC01FF0027F54A /* DateFormatterFormat.swift in Sources */,
 				026D56D21FBB6867007FDBB2 /* GroupOperation.swift in Sources */,
 				0211F8D71F9299680012E340 /* TimeZoneExtensions.swift in Sources */,
+				0280629520004BF500D508BC /* CoreDataDecodingError.swift in Sources */,
 				02EE5EC71F4CCE8C001E39BF /* SynchronousOperation.swift in Sources */,
 				029961CD1EABB15E0027F54A /* DateFormatterExtensions.swift in Sources */,
 				02A26B781EEDE35B00FF2038 /* Blocks.swift in Sources */,
@@ -1527,6 +1559,7 @@
 				0340747D1D7088C2004099AC /* BundleExtensions.swift in Sources */,
 				02CDE5DA1DEC9EB300EE7892 /* Reachability.swift in Sources */,
 				022592791DEA5BF8005DD338 /* DataSourceError.swift in Sources */,
+				0280628920004B1700D508BC /* CoreDataDecodable.swift in Sources */,
 				02743AC61FBEDCCA00B18A6C /* OperationRunner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1544,6 +1577,7 @@
 				03E668DF1D69AFEE00F6110A /* NSObjectExtensions.swift in Sources */,
 				0211F8D81F9299680012E340 /* TimeZoneExtensions.swift in Sources */,
 				03B8E5441D24F29100E40586 /* URLRequestMethod.swift in Sources */,
+				0280628A20004B1700D508BC /* CoreDataDecodable.swift in Sources */,
 				0323207E1D245B0A00BB79A1 /* URLResponseError.swift in Sources */,
 				029DEF211E582F1000C4230C /* DataSource.swift in Sources */,
 				02EE5EBF1F4CCBDE001E39BF /* Semaphore.swift in Sources */,
@@ -1561,7 +1595,9 @@
 				0340747E1D7088C2004099AC /* BundleExtensions.swift in Sources */,
 				02743AC71FBEDCCA00B18A6C /* OperationRunner.swift in Sources */,
 				029DEF1D1E582F0900C4230C /* Itemable.swift in Sources */,
+				0280629020004B6500D508BC /* NSManagedObjectContextExtensions.swift in Sources */,
 				029961CE1EABB15E0027F54A /* DateFormatterExtensions.swift in Sources */,
+				0280629620004BF500D508BC /* CoreDataDecodingError.swift in Sources */,
 				02A26B791EEDE35B00FF2038 /* Blocks.swift in Sources */,
 				022592781DEA5BF7005DD338 /* DataSourceError.swift in Sources */,
 				022D7FE71E1CAC2500E0A537 /* DataStackStore.swift in Sources */,
