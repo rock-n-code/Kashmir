@@ -73,9 +73,6 @@ public extension CoreDataDecodable where Self: NSManagedObject {
 		request.predicate = predicate
 		request.fetchLimit = 1
 		request.resultType = .managedObjectResultType
-		request.includesSubentities = true
-		request.includesPropertyValues = true
-		request.returnsObjectsAsFaults = false
 		
 		return try context.fetch(request).first
 	}
@@ -100,8 +97,6 @@ public extension CoreDataDecodable where Self: NSManagedObject {
 		self.init(context: context)
 		
 		try update(from: dto)
-		
-		try context.save()
 	}
 	
 }
