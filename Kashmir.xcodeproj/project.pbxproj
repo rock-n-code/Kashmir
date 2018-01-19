@@ -165,6 +165,9 @@
 		029961D71EAC01FF0027F54A /* DateFormatterFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029961D41EAC01FF0027F54A /* DateFormatterFormat.swift */; };
 		029961D81EAC01FF0027F54A /* DateFormatterFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029961D41EAC01FF0027F54A /* DateFormatterFormat.swift */; };
 		029961D91EAC01FF0027F54A /* DateFormatterFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029961D41EAC01FF0027F54A /* DateFormatterFormat.swift */; };
+		029DDDBE20123ADB003519FE /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029DDDBD20123ADB003519FE /* UIViewControllerExtensions.swift */; };
+		029DDDBF20123ADB003519FE /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029DDDBD20123ADB003519FE /* UIViewControllerExtensions.swift */; };
+		029DDDC120123D5F003519FE /* UIViewControllerExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029DDDC020123D5F003519FE /* UIViewControllerExtensionsTests.swift */; };
 		029DEF161E582F0000C4230C /* Sectionable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022592731DEA5BD1005DD338 /* Sectionable.swift */; };
 		029DEF171E582F0100C4230C /* Sectionable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022592731DEA5BD1005DD338 /* Sectionable.swift */; };
 		029DEF181E582F0100C4230C /* Sectionable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022592731DEA5BD1005DD338 /* Sectionable.swift */; };
@@ -374,6 +377,8 @@
 		029961C91EABB15E0027F54A /* DateFormatterExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateFormatterExtensions.swift; path = Shared/DateFormatterExtensions.swift; sourceTree = "<group>"; };
 		029961CF1EABB1F90027F54A /* DateFormatterExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateFormatterExtensionsTests.swift; path = Shared/DateFormatterExtensionsTests.swift; sourceTree = "<group>"; };
 		029961D41EAC01FF0027F54A /* DateFormatterFormat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateFormatterFormat.swift; path = Shared/DateFormatterFormat.swift; sourceTree = "<group>"; };
+		029DDDBD20123ADB003519FE /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIViewControllerExtensions.swift; path = Kashmir/iOS/UIViewControllerExtensions.swift; sourceTree = SOURCE_ROOT; };
+		029DDDC020123D5F003519FE /* UIViewControllerExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIViewControllerExtensionsTests.swift; path = KashmirTests/iOS/UIViewControllerExtensionsTests.swift; sourceTree = SOURCE_ROOT; };
 		02A26B741EEDE35B00FF2038 /* Blocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Blocks.swift; path = Shared/Blocks.swift; sourceTree = "<group>"; };
 		02A26B7B1EEDE46E00FF2038 /* NSStoryboardSegueName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NSStoryboardSegueName.swift; path = Kashmir/macOS/NSStoryboardSegueName.swift; sourceTree = SOURCE_ROOT; };
 		02A26B7E1EEDE4E100FF2038 /* NSStoryboardName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NSStoryboardName.swift; path = Kashmir/macOS/NSStoryboardName.swift; sourceTree = SOURCE_ROOT; };
@@ -526,6 +531,7 @@
 				027803671EED8F0400C3D651 /* UIColorExtensions.swift */,
 				02130A211DDA75000071940B /* UIDeviceExtensions.swift */,
 				023A0C051E96AAED006C9198 /* UIImageExtensions.swift */,
+				029DDDBD20123ADB003519FE /* UIViewControllerExtensions.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -537,6 +543,7 @@
 				023A0C0B1E97A46E006C9198 /* UIColorExtensionsTests.swift */,
 				02130A1F1DDA74F00071940B /* UIDeviceExtensionsTests.swift */,
 				023A0C071E96AC41006C9198 /* UIImageExtensionsTests.swift */,
+				029DDDC020123D5F003519FE /* UIViewControllerExtensionsTests.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -1346,6 +1353,7 @@
 				024E48392010FF5000BF55D2 /* BiometricType.swift in Sources */,
 				022592851DEAE986005DD338 /* IndexPathExtensions.swift in Sources */,
 				023A0C061E96AAED006C9198 /* UIImageExtensions.swift in Sources */,
+				029DDDBE20123ADB003519FE /* UIViewControllerExtensions.swift in Sources */,
 				024E48362010FF4000BF55D2 /* BiometricError.swift in Sources */,
 				024E48302010CFB800BF55D2 /* Result.swift in Sources */,
 				02A26B851EEE70DF00FF2038 /* UIViewControllerName.swift in Sources */,
@@ -1363,6 +1371,7 @@
 				022592891DEAE99F005DD338 /* IndexPathExtensionsTests.swift in Sources */,
 				023A0C0C1E97A46E006C9198 /* UIColorExtensionsTests.swift in Sources */,
 				027FD2B91DEA4CC5009814AB /* XibableViewTests.swift in Sources */,
+				029DDDC120123D5F003519FE /* UIViewControllerExtensionsTests.swift in Sources */,
 				02130A251DDA75840071940B /* UIDeviceExtensionsTests.swift in Sources */,
 				024E48432011044A00BF55D2 /* BiometricsTests.swift in Sources */,
 				023A0C081E96AC41006C9198 /* UIImageExtensionsTests.swift in Sources */,
@@ -1535,6 +1544,7 @@
 				02A26B861EEE70DF00FF2038 /* UIViewControllerName.swift in Sources */,
 				03E668DD1D69AFEE00F6110A /* NSObjectExtensions.swift in Sources */,
 				0211F8D61F9299680012E340 /* TimeZoneExtensions.swift in Sources */,
+				029DDDBF20123ADB003519FE /* UIViewControllerExtensions.swift in Sources */,
 				03B8E5421D24F28F00E40586 /* URLRequestMethod.swift in Sources */,
 				027FD2B01DEA4BFE009814AB /* XibableView.swift in Sources */,
 				0294DDF41E20F66D0002E409 /* Result.swift in Sources */,
