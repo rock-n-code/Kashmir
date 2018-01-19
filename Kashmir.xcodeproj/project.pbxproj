@@ -174,6 +174,16 @@
 		029DDDC6201240A2003519FE /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029DDDC2201240A2003519FE /* Cell.swift */; };
 		029DDDC7201240A2003519FE /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029DDDC2201240A2003519FE /* Cell.swift */; };
 		029DDDC920124172003519FE /* CellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029DDDC820124172003519FE /* CellTests.swift */; };
+		029DDDCB20124560003519FE /* CellExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029DDDCA20124560003519FE /* CellExtensions.swift */; };
+		029DDDCC20124581003519FE /* CellExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029DDDCA20124560003519FE /* CellExtensions.swift */; };
+		029DDDCD20124589003519FE /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029DDDC2201240A2003519FE /* Cell.swift */; };
+		029DDDCF2012463C003519FE /* CellError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029DDDCE2012463C003519FE /* CellError.swift */; };
+		029DDDD02012463C003519FE /* CellError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029DDDCE2012463C003519FE /* CellError.swift */; };
+		029DDDD12012463C003519FE /* CellError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029DDDCE2012463C003519FE /* CellError.swift */; };
+		029DDDD22012463C003519FE /* CellError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029DDDCE2012463C003519FE /* CellError.swift */; };
+		029DDDD32012463C003519FE /* CellError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029DDDCE2012463C003519FE /* CellError.swift */; };
+		029DDDD42012463C003519FE /* CellError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029DDDCE2012463C003519FE /* CellError.swift */; };
+		029DDDD620124925003519FE /* CellExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029DDDD520124925003519FE /* CellExtensionsTests.swift */; };
 		029DEF161E582F0000C4230C /* Sectionable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022592731DEA5BD1005DD338 /* Sectionable.swift */; };
 		029DEF171E582F0100C4230C /* Sectionable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022592731DEA5BD1005DD338 /* Sectionable.swift */; };
 		029DEF181E582F0100C4230C /* Sectionable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022592731DEA5BD1005DD338 /* Sectionable.swift */; };
@@ -387,6 +397,9 @@
 		029DDDC020123D5F003519FE /* UIViewControllerExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIViewControllerExtensionsTests.swift; path = KashmirTests/iOS/UIViewControllerExtensionsTests.swift; sourceTree = SOURCE_ROOT; };
 		029DDDC2201240A2003519FE /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Cell.swift; path = Shared/Cell.swift; sourceTree = "<group>"; };
 		029DDDC820124172003519FE /* CellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CellTests.swift; path = Shared/CellTests.swift; sourceTree = "<group>"; };
+		029DDDCA20124560003519FE /* CellExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CellExtensions.swift; path = Kashmir/iOS/CellExtensions.swift; sourceTree = SOURCE_ROOT; };
+		029DDDCE2012463C003519FE /* CellError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CellError.swift; path = Shared/CellError.swift; sourceTree = "<group>"; };
+		029DDDD520124925003519FE /* CellExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CellExtensionsTests.swift; path = KashmirTests/iOS/CellExtensionsTests.swift; sourceTree = SOURCE_ROOT; };
 		02A26B741EEDE35B00FF2038 /* Blocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Blocks.swift; path = Shared/Blocks.swift; sourceTree = "<group>"; };
 		02A26B7B1EEDE46E00FF2038 /* NSStoryboardSegueName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NSStoryboardSegueName.swift; path = Kashmir/macOS/NSStoryboardSegueName.swift; sourceTree = SOURCE_ROOT; };
 		02A26B7E1EEDE4E100FF2038 /* NSStoryboardName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NSStoryboardName.swift; path = Kashmir/macOS/NSStoryboardName.swift; sourceTree = SOURCE_ROOT; };
@@ -535,6 +548,7 @@
 		02130A1D1DDA74D30071940B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				029DDDCA20124560003519FE /* CellExtensions.swift */,
 				022592831DEAE97F005DD338 /* IndexPathExtensions.swift */,
 				027803671EED8F0400C3D651 /* UIColorExtensions.swift */,
 				02130A211DDA75000071940B /* UIDeviceExtensions.swift */,
@@ -547,6 +561,7 @@
 		02130A1E1DDA74DE0071940B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				029DDDD520124925003519FE /* CellExtensionsTests.swift */,
 				022592871DEAE99A005DD338 /* IndexPathExtensionsTests.swift */,
 				023A0C0B1E97A46E006C9198 /* UIColorExtensionsTests.swift */,
 				02130A1F1DDA74F00071940B /* UIDeviceExtensionsTests.swift */,
@@ -563,8 +578,8 @@
 				022592721DEA5BD1005DD338 /* Itemable.swift */,
 				022592701DEA5BD1005DD338 /* DataSource.swift */,
 				029DDDC2201240A2003519FE /* Cell.swift */,
-				0280628520004B1700D508BC /* CoreDataDecodable.swift */,
 				02743AC21FBEDCCA00B18A6C /* OperationRunner.swift */,
+				0280628520004B1700D508BC /* CoreDataDecodable.swift */,
 			);
 			name = Protocols;
 			sourceTree = "<group>";
@@ -854,6 +869,7 @@
 				02CDE5DB1DEC9F5C00EE7892 /* ReachabilityError.swift */,
 				032320791D245B0A00BB79A1 /* URLResponseError.swift */,
 				0280629120004BF500D508BC /* CoreDataDecodingError.swift */,
+				029DDDCE2012463C003519FE /* CellError.swift */,
 			);
 			name = Errors;
 			sourceTree = "<group>";
@@ -1362,8 +1378,11 @@
 				0278036D1EED92E400C3D651 /* UIStoryboardName.swift in Sources */,
 				024E48392010FF5000BF55D2 /* BiometricType.swift in Sources */,
 				022592851DEAE986005DD338 /* IndexPathExtensions.swift in Sources */,
+				029DDDD02012463C003519FE /* CellError.swift in Sources */,
+				029DDDCD20124589003519FE /* Cell.swift in Sources */,
 				023A0C061E96AAED006C9198 /* UIImageExtensions.swift in Sources */,
 				029DDDBE20123ADB003519FE /* UIViewControllerExtensions.swift in Sources */,
+				029DDDCB20124560003519FE /* CellExtensions.swift in Sources */,
 				024E48362010FF4000BF55D2 /* BiometricError.swift in Sources */,
 				024E48302010CFB800BF55D2 /* Result.swift in Sources */,
 				02A26B851EEE70DF00FF2038 /* UIViewControllerName.swift in Sources */,
@@ -1385,6 +1404,7 @@
 				02130A251DDA75840071940B /* UIDeviceExtensionsTests.swift in Sources */,
 				024E48432011044A00BF55D2 /* BiometricsTests.swift in Sources */,
 				023A0C081E96AC41006C9198 /* UIImageExtensionsTests.swift in Sources */,
+				029DDDD620124925003519FE /* CellExtensionsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1408,6 +1428,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				029DDDCF2012463C003519FE /* CellError.swift in Sources */,
 				02CDE5D71DEC9EA700EE7892 /* Reachability.swift in Sources */,
 				02CDE5DC1DEC9F5C00EE7892 /* ReachabilityError.swift in Sources */,
 				0323207A1D245B0A00BB79A1 /* URLResponseError.swift in Sources */,
@@ -1519,6 +1540,7 @@
 				0323207B1D245B0A00BB79A1 /* URLResponseError.swift in Sources */,
 				0211F8D51F9299680012E340 /* TimeZoneExtensions.swift in Sources */,
 				026B53A81F4ABAA00010303A /* OperationQueueExtensions.swift in Sources */,
+				029DDDD12012463C003519FE /* CellError.swift in Sources */,
 				029DDDC4201240A2003519FE /* Cell.swift in Sources */,
 				0294DDFC1E20F9460002E409 /* DataStackValidation.swift in Sources */,
 				02CDE5EC1DECA06F00EE7892 /* SCNetworkReachabilityFlagsExtensions.swift in Sources */,
@@ -1569,6 +1591,7 @@
 				0323207C1D245B0A00BB79A1 /* URLResponseError.swift in Sources */,
 				029DEF1F1E582F0F00C4230C /* DataSource.swift in Sources */,
 				026130321F4E8FE100EEFC1A /* OperationExtensions.swift in Sources */,
+				029DDDD22012463C003519FE /* CellError.swift in Sources */,
 				02EE5EBD1F4CCBDE001E39BF /* Semaphore.swift in Sources */,
 				029961CC1EABB15E0027F54A /* DateFormatterExtensions.swift in Sources */,
 				03B8E5461D24F29E00E40586 /* URLResponseStatusCode.swift in Sources */,
@@ -1578,6 +1601,7 @@
 				0280629420004BF500D508BC /* CoreDataDecodingError.swift in Sources */,
 				02CDE5E81DEC9FFC00EE7892 /* NetworkStatus.swift in Sources */,
 				0280628820004B1700D508BC /* CoreDataDecodable.swift in Sources */,
+				029DDDCC20124581003519FE /* CellExtensions.swift in Sources */,
 				024E483D2010FF6700BF55D2 /* Biometrics.swift in Sources */,
 				02CDE5F21DECA12A00EE7892 /* Network.swift in Sources */,
 				026B53A91F4ABAA00010303A /* OperationQueueExtensions.swift in Sources */,
@@ -1637,6 +1661,7 @@
 				02CDE5E91DEC9FFC00EE7892 /* NetworkStatus.swift in Sources */,
 				026B53AA1F4ABAA00010303A /* OperationQueueExtensions.swift in Sources */,
 				02CDE5DF1DEC9F5C00EE7892 /* ReachabilityError.swift in Sources */,
+				029DDDD32012463C003519FE /* CellError.swift in Sources */,
 				0340747D1D7088C2004099AC /* BundleExtensions.swift in Sources */,
 				02CDE5DA1DEC9EB300EE7892 /* Reachability.swift in Sources */,
 				022592791DEA5BF8005DD338 /* DataSourceError.swift in Sources */,
@@ -1657,6 +1682,7 @@
 				029DDDC7201240A2003519FE /* Cell.swift in Sources */,
 				03B67C7F1D8AF88C001DFFE6 /* DataStack.swift in Sources */,
 				03E668DF1D69AFEE00F6110A /* NSObjectExtensions.swift in Sources */,
+				029DDDD42012463C003519FE /* CellError.swift in Sources */,
 				0211F8D81F9299680012E340 /* TimeZoneExtensions.swift in Sources */,
 				03B8E5441D24F29100E40586 /* URLRequestMethod.swift in Sources */,
 				0280628A20004B1700D508BC /* CoreDataDecodable.swift in Sources */,
