@@ -9,7 +9,7 @@
 /**
 This protocol defines the minimal requirements a compliant cell instance should implement to provide common functionalities to a cell.
 */
-protocol Cell: class {
+public protocol Cell: class {
 	
 	// MARK: Types
 	
@@ -32,7 +32,7 @@ protocol Cell: class {
 
 // MARK: -
 
-extension Cell {
+public extension Cell {
 	
 	// MARK: Static
 
