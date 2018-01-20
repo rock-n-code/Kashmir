@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension Cell where Self: UITableViewCell {
+public extension Cell where Self: UITableViewCell {
 	
 	// MARK: Static
 	
