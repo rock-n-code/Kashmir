@@ -15,7 +15,7 @@ public class Biometrics {
 	
 	// MARK: Types
 	
-	public typealias AuthenticateBlock = (Error?) -> ()
+	public typealias BiometricsAuthenticationBlock = (Result<Bool>) -> ()
 
 	// MARK: Properties
 
@@ -45,7 +45,15 @@ public class Biometrics {
 		return context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics,
 										 error: nil)
 	}
-	
+
+	/// Checks if biometric authentication is activated and supported, meaning it is available for use.
+	public var isAvailable: Bool {
+		return isActivated && isSupported
+	}
+
+	/// Checks if biometric authentication is activated by the application.
+	public var isActivated: Bool
+
 	/// Persists the local authentication context used by this manager.
 	private let context: LAContext
 	
@@ -53,6 +61,7 @@ public class Biometrics {
 	
 	private init() {
 		self.context = LAContext()
+		self.isActivated = false
 	}
 	
 	// MARK: Static
@@ -67,23 +76,26 @@ public class Biometrics {
 	
 	- parameter completion: this block returns an error if something happens during the biometric authentication, otherwise it returns nil.
 	*/
-	public func authenticate(_ completion: @escaping AuthenticateBlock) {
+	public func authenticate(_ completion: @escaping BiometricsAuthenticationBlock) {
 		guard isSupported else {
-			completion(BiometricError.notSupported)
+			completion(Result<Bool> {
+				throw BiometricError.notSupported
+			})
 			return
 		}
 		
 		context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics,
 							   localizedReason: "xxx") { isSuccess, error in
-			guard
-				let error = error,
-				!isSuccess
-			else {
-				completion(nil)
+			guard let error = error else {
+				completion(Result<Bool> {
+					return isSuccess
+				})
 				return
 			}
 			
-			completion(self.handle(error))
+			completion(Result<Bool> {
+				throw self.handle(error)
+			})
 		}
 	}
 

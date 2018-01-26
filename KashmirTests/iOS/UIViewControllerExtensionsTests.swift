@@ -25,7 +25,7 @@ class UIViewControllerExtensionsTests: XCTestCase {
 		super.setUp()
 	}
 	
-	override func tearDown() { 
+	override func tearDown() {
 		super.tearDown()
 	}
 	

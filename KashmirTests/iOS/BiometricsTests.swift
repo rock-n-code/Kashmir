@@ -36,6 +36,18 @@ class BiometricsTests: XCTestCase {
 		XCTAssertFalse(Biometrics.manager.isSupported)
 	}
 	
+	func testIsActivated() {
+		XCTAssertFalse(Biometrics.manager.isActivated)
+		
+		Biometrics.manager.isActivated = true
+		
+		XCTAssertTrue(Biometrics.manager.isActivated)
+	}
+	
+	func testIsAvailable() {
+		XCTAssertFalse(Biometrics.manager.isAvailable)
+	}
+	
 	// MARK: Static tests
 	
 	func testManager() {
@@ -47,17 +59,21 @@ class BiometricsTests: XCTestCase {
 	func testAuthenticate() {
 		let expectation = self.expectation(description: "Biometric authentication test")
 
-		Biometrics.manager.authenticate { error in
-			XCTAssertNotNil(error)
+		Biometrics.manager.authenticate { result in
+			XCTAssertNotNil(result)
 			
-			switch error! {
-			case BiometricError.notSupported:
+			defer {
+				expectation.fulfill()
+			}
+			do {
+				_ = try result.dematerialize()
+			}
+			catch BiometricError.notSupported {
 				XCTAssertTrue(true)
-			default:
+			}
+			catch {
 				XCTFail("Unexpected error")
 			}
-
-			expectation.fulfill()
 		}
 		
 		waitForExpectations(timeout: 15.0) { error in
