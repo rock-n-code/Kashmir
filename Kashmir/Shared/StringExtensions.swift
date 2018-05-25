@@ -75,7 +75,7 @@ public extension String {
     - returns: An array containing the index positions for the occurrences of the character within the string if any. Otherwise, an empty array.
     */
     func indexes(of character: Character) -> [Int] {
-        return characters.enumerated().filter { $0.element == character }.map { $0.offset }
+        return enumerated().filter { $0.element == character }.map { $0.offset }
     }
 
 }

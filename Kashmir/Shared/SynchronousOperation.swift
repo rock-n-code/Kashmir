@@ -13,11 +13,6 @@ It allows synchronous tasks, has a pause and resume states, can be easily added 
 */
 public class SynchronousOperation: ConcurrentOperation {
 	
-	// MARK: Constants
-	
-	/// Private semaphore instance.
-	let semaphore = Semaphore()
-	
 	// MARK: Properties
 	
 	/// Set the operation as synchronous.
@@ -25,7 +20,19 @@ public class SynchronousOperation: ConcurrentOperation {
 		return false
 	}
 	
+	/// Private semaphore instance.
+	private let semaphore = Semaphore()
+	
 	// MARK: Functions
+	
+	/**
+	Execute the operation.
+	*/
+	public override func execute() {
+		super.execute()
+		
+		semaphore.wait()
+	}
 	
 	/**
 	Notify the completion of sync task and hence the completion of the operation.
@@ -33,6 +40,8 @@ public class SynchronousOperation: ConcurrentOperation {
 	- note: Must be called when the operation is finished.
 	*/
 	public override func finish() {
+		super.finish()
+		
 		semaphore.continue()
 	}
 	
@@ -44,16 +53,5 @@ public class SynchronousOperation: ConcurrentOperation {
 		
 		semaphore.continue()
 	}
-	
-	/**
-	Execute the operation.
-	
-	- note: If `executionBlock` is set, it will be executed and also `finish()` will be called.
-	*/
-	public override func execute() {
-		super.execute()
-		
-		semaphore.wait()
-	}
-	
+
 }

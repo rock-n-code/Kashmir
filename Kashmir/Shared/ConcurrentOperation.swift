@@ -8,11 +8,14 @@
 
 import Foundation
 
+/**
+...
+*/
 open class ConcurrentOperation: Operation {
 	
 	// MARK: Constants
 	
-	fileprivate struct Key {
+	private struct Key {
 		fileprivate static let isExecuting = "isExecuting"
 		fileprivate static let isFinished = "isFinished"
 	}
@@ -85,14 +88,28 @@ open class ConcurrentOperation: Operation {
 	- note: If `executionBlock` is set, it will be executed and also `finish()` will be called.
 	*/
 	open func execute() {
-		guard let executionBlock = executionBlock else {
-			return
-		}
-		
-		executionBlock()
+		executionBlock?()
 		finish()
 	}
 	
+	/**
+	Pause the operation.
+	
+	- note: Must be overridend by subclass to get a custom pause action.
+	*/
+	open func pause() {
+		_executing = false
+	}
+	
+	/**
+	Resume the operation.
+	
+	- note: Must be overridend by subclass to get a custom resume action.
+	*/
+	open func resume() {
+		_executing = true
+	}
+
 	/**
 	Notify the completion of async task and hence the completion of the operation.
 	
@@ -103,20 +120,6 @@ open class ConcurrentOperation: Operation {
 		_finished = true
 	}
 	
-	/**
-	Pause the current Operation, if it's supported.
-	
-	- note: Must be overridend by subclass to get a custom pause action.
-	*/
-	open func pause() {}
-	
-	/**
-	Resume the current Operation, if it's supported.
-	
-	- note: Must be overridend by subclass to get a custom resume action.
-	*/
-	open func resume() {}
-
 	/**
 	Adds the operation to the custom queue.
 	

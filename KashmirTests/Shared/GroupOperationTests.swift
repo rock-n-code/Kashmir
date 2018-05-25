@@ -1,8 +1,8 @@
 //
-//  ConcurrentOperationTests.swift
-//  Kashmir
+//  GroupOperationTests.swift
+//  KashmirTests
 //
-//  Created by Javier Cicchelli on 22/08/2017.
+//  Created by Javier Cicchelli on 14/11/2017.
 //  Copyright © 2017 Rock & Code. All rights reserved.
 //
 
@@ -11,7 +11,39 @@ import Foundation
 
 @testable import Kashmir
 
-class ConcurrentOperationTests: XCTestCase {
+class TestGroup: GroupOperation {
+	
+	// MARK: Initializers
+	
+	override init() {
+		super.init()
+		
+		queue.name = "Test group operation"
+		queue.qualityOfService = .userInitiated
+	}
+	
+	// MARK: ConcurrentOperation
+	
+	override func execute() {
+		let firstOperation = ConcurrentOperation {}
+		let secondOperation = ConcurrentOperation {
+			Thread.sleep(forTimeInterval: 5.0)
+		}
+		let thirdOperation = ConcurrentOperation {}
+		
+		thirdOperation.completionBlock = {
+			self.finish()
+		}
+		
+		queue.add(chainedOperations: [firstOperation,
+									  secondOperation,
+									  thirdOperation])
+	}
+}
+
+// MARK: - 
+
+class GroupOperationTests: XCTestCase {
 	
 	// MARK: Setup
 	
@@ -26,41 +58,28 @@ class ConcurrentOperationTests: XCTestCase {
 	// MARK: Initializers tests
 	
 	func testInit() {
-		let operation = ConcurrentOperation()
+		let operation = GroupOperation()
 		
 		XCTAssertNotNil(operation)
+		XCTAssertNil(operation.error)
+		XCTAssertNotNil(operation.queue)
 		XCTAssertNil(operation.executionBlock)
 		XCTAssertFalse(operation.isExecuting)
 		XCTAssertFalse(operation.isFinished)
 		XCTAssertFalse(operation.isCancelled)
 		XCTAssertTrue(operation.isConcurrent)
+		XCTAssertTrue(operation.queue.isSuspended)
+		XCTAssertEqual(operation.queue.operationCount, 0)
 	}
-	
-	func testInitWithExecutionBlock() {
-		let operation = ConcurrentOperation {}
 
-		XCTAssertNotNil(operation)
-		XCTAssertNotNil(operation.executionBlock)
-		XCTAssertFalse(operation.isExecuting)
-		XCTAssertFalse(operation.isFinished)
-		XCTAssertFalse(operation.isCancelled)
-		XCTAssertTrue(operation.isConcurrent)
-	}
-	
-	// MARK: Properties tests
-	
-	func testIsAsynchronous() {
-		let operation = ConcurrentOperation()
-		
-		XCTAssertTrue(operation.isAsynchronous)
-	}
-	
 	// MARK: Functions tests
 	
 	func testExecute() {
-		let testExpectation = expectation(description: "ConcurrentOperation execute test")
+		let testExpectation = expectation(description: "GroupOperation execute test")
 		let queue = OperationQueue()
-		let operation = ConcurrentOperation {
+		let operation = TestGroup()
+		
+		operation.completionBlock = {
 			testExpectation.fulfill()
 		}
 		
@@ -71,19 +90,18 @@ class ConcurrentOperationTests: XCTestCase {
 			XCTAssertFalse(operation.isExecuting)
 			XCTAssertTrue(operation.isFinished)
 			XCTAssertFalse(operation.isCancelled)
+			XCTAssertFalse(operation.queue.isSuspended)
 		}
 	}
 	
 	func testPause() {
-		let testExpectation = expectation(description: "ConcurrentOperation pause test")
+		let testExpectation = expectation(description: "GroupOperation pause test")
 		let queue = OperationQueue()
-		let operation = ConcurrentOperation {
-			Thread.sleep(forTimeInterval: 10.0)
-		}
-
+		let operation = TestGroup()
+		
 		operation.add(to: queue)
 		
-		DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
+		DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
 			operation.pause()
 			testExpectation.fulfill()
 		}
@@ -93,25 +111,24 @@ class ConcurrentOperationTests: XCTestCase {
 			XCTAssertFalse(operation.isExecuting)
 			XCTAssertFalse(operation.isFinished)
 			XCTAssertFalse(operation.isCancelled)
+			XCTAssertTrue(operation.queue.isSuspended)
 			
 			queue.cancelAllOperations()
 		}
 	}
 	
 	func testResume() {
-		let testExpectation = expectation(description: "ConcurrentOperation resume test")
+		let testExpectation = expectation(description: "GroupOperation resume test")
 		let queue = OperationQueue()
-		let operation = ConcurrentOperation {
-			Thread.sleep(forTimeInterval: 10.0)
-		}
+		let operation = TestGroup()
 		
 		operation.add(to: queue)
 		
-		DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
+		DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
 			operation.pause()
 		}
 		
-		DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
+		DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
 			operation.resume()
 			testExpectation.fulfill()
 		}
@@ -121,17 +138,16 @@ class ConcurrentOperationTests: XCTestCase {
 			XCTAssertTrue(operation.isExecuting)
 			XCTAssertFalse(operation.isFinished)
 			XCTAssertFalse(operation.isCancelled)
+			XCTAssertFalse(operation.queue.isSuspended)
 			
 			queue.cancelAllOperations()
 		}
 	}
 	
 	func testCancel() {
-		let testExpectation = expectation(description: "ConcurrentOperation cancel test")
+		let testExpectation = expectation(description: "GroupOperation cancel test")
 		let queue = OperationQueue()
-		let operation = ConcurrentOperation {
-			Thread.sleep(forTimeInterval: 10.0)
-		}
+		let operation = TestGroup()
 		
 		operation.add(to: queue)
 		
@@ -139,25 +155,16 @@ class ConcurrentOperationTests: XCTestCase {
 			operation.cancel()
 			testExpectation.fulfill()
 		}
-
+		
 		waitForExpectations(timeout: 10.0) { error in
 			XCTAssertNil(error)
-			XCTAssertTrue(operation.isExecuting)
-			XCTAssertFalse(operation.isFinished)
+			XCTAssertFalse(operation.isExecuting)
+			XCTAssertTrue(operation.isFinished)
 			XCTAssertTrue(operation.isCancelled)
+			XCTAssertFalse(operation.queue.isSuspended)
 			
 			queue.cancelAllOperations()
 		}
 	}
-	
-	func testAddToQueue() {
-		let queue = OperationQueue()
-		let operation = ConcurrentOperation {}
 
-		operation.add(to: queue)
-		
-		XCTAssertEqual(queue.operationCount, 1)
-		XCTAssertEqual(queue.operations, [operation])
-	}
-	
 }
