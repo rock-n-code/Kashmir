@@ -42,7 +42,7 @@ public class DataStack {
 	- parameter model: The model name of the container to check.
 	- returns: A `Bool` instance which represents whether the container is initialized or not.
 	*/
-	func isInitialized(_ model: String) -> Bool {
+	public func isInitialized(_ model: String) -> Bool {
 		return containers.keys.contains(model)
 	}
 	

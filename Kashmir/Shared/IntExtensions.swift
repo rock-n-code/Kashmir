@@ -6,7 +6,7 @@
 //  Copyright © 2018 Rock & Code. All rights reserved.
 //
 
-extension Int {
+public extension Int {
 	
 	// MARK: Initializers
 	
