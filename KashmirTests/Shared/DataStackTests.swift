@@ -45,6 +45,26 @@ class DataStackTests: XCTestCase {
 
 	// MARK: Functions tests
 
+	func testIsInitializedWithNoContainer() {
+		defer {
+			XCTAssertFalse(manager.isInitialized(modelName))
+		}
+		do {
+			try manager.remove(modelName)
+		}
+		catch {}
+	}
+	
+	func testIsInitializedWithContainer() {
+		defer {
+			XCTAssertTrue(manager.isInitialized(modelName))
+		}
+		do {
+			try manager.add(modelName)
+		}
+		catch {}
+	}
+	
 	func testAddModelOfTypeSQL() {
 		do {
 			try manager.add(modelName)

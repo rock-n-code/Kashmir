@@ -36,6 +36,16 @@ public class DataStack {
 
 	// MARK: Functions
 
+	/**
+	Checks if a container associated with a model has been initialized.
+	
+	- parameter model: The model name of the container to check.
+	- returns: A `Bool` instance which represents whether the container is initialized or not.
+	*/
+	func isInitialized(_ model: String) -> Bool {
+		return containers.keys.contains(model)
+	}
+	
     /**
     Add a container to its dictionary.
 	
@@ -44,10 +54,13 @@ public class DataStack {
       - type: The store type in which a container will be initialized.
 	- throws: A `DataStackError` type error in case during the execution of this method.
     */
-    public func add(_ model: String, of type: DataStack.Store = .sql) throws {
-        try validate(model, for: [.modelNameIsNotEmpty])
+    public func add(_ model: String,
+					of type: DataStack.Store = .sql) throws {
+        try validate(model,
+					 for: [.modelNameIsNotEmpty])
 		
-		guard let url = Bundle.url(for: model, with: "momd") else {
+		guard let url = Bundle.url(for: model,
+								   with: "momd") else {
 			throw DataStackError.objectModelNotFound
 		}
 
@@ -55,10 +68,13 @@ public class DataStack {
 			throw DataStackError.objectModelNotCreated
 		}
 
-        try validate(model, for: [.containerNotExists])
+        try validate(model,
+					 for: [.containerNotExists])
 		
-		let container = NSPersistentContainer(name: model, managedObjectModel: objectModel)
-        let defaultDescription = makeDescription(for: model, with: type)
+		let container = NSPersistentContainer(name: model,
+											  managedObjectModel: objectModel)
+        let defaultDescription = makeDescription(for: model,
+												 with: type)
         
         container.persistentStoreDescriptions = [defaultDescription]
 
@@ -80,7 +96,9 @@ public class DataStack {
 	- throws: A `DataStackError` type error in case during the execution of this method.
     */
 	public func remove(_ model: String) throws {
-        try validate(model, for: [.modelNameIsNotEmpty, .containerExists])
+        try validate(model,
+					 for: [.modelNameIsNotEmpty,
+						   .containerExists])
 
         guard let container = containers[model] else {
             throw DataStackError.containerNotFound
@@ -119,7 +137,9 @@ public class DataStack {
 	- returns: The managed object context from the requested container.
     */
 	public func foreContext(of model: String) throws -> NSManagedObjectContext {
-        try validate(model, for: [.modelNameIsNotEmpty, .containerExists])
+        try validate(model,
+					 for: [.modelNameIsNotEmpty,
+						   .containerExists])
 
 		guard let context = containers[model]?.viewContext else {
 			throw DataStackError.contextNotFound
@@ -141,7 +161,9 @@ public class DataStack {
 	- returns: A managed object context from the requested container.
     */
 	public func backContext(of model: String) throws -> NSManagedObjectContext {
-        try validate(model, for: [.modelNameIsNotEmpty, .containerExists])
+        try validate(model,
+					 for: [.modelNameIsNotEmpty,
+						   .containerExists])
 
 		guard let context = containers[model]?.newBackgroundContext() else {
 			throw DataStackError.contextNotCreated
@@ -160,7 +182,7 @@ public class DataStack {
 	
     - throws: A `DataStackError` type error in case during the execution of this method.
     */
-	public func save() throws -> () {
+	public func save() throws {
 		try containers.forEach { name, container in
 			let context = container.viewContext
 
@@ -180,7 +202,8 @@ public class DataStack {
 	  - type: The store type in which a container will be initialized.
     - returns: A persistent store description with all the relevant configuration to initialize a container.
     */
-    fileprivate func makeDescription(for model: String, with type: DataStack.Store) -> NSPersistentStoreDescription {
+    fileprivate func makeDescription(for model: String,
+									 with type: DataStack.Store) -> NSPersistentStoreDescription {
         let description = NSPersistentStoreDescription()
 
         description.configuration = "Default"
@@ -207,7 +230,8 @@ public class DataStack {
       - validations: A list of validation options to validate.
     - throws: A `DataStackError` type error in case in case any of the requested validation checks fails.
     */
-    fileprivate func validate(_ model: String, for validations: [DataStack.Validation]) throws {
+    fileprivate func validate(_ model: String,
+							  for validations: [DataStack.Validation]) throws {
         try validations.forEach {
             switch $0 {
                 case .modelNameIsNotEmpty where model.isEmpty:
