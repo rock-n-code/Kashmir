@@ -64,6 +64,8 @@
 		023A0C061E96AAED006C9198 /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023A0C051E96AAED006C9198 /* UIImageExtensions.swift */; };
 		023A0C081E96AC41006C9198 /* UIImageExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023A0C071E96AC41006C9198 /* UIImageExtensionsTests.swift */; };
 		023A0C0C1E97A46E006C9198 /* UIColorExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023A0C0B1E97A46E006C9198 /* UIColorExtensionsTests.swift */; };
+		024703B320BF622E00A58CE0 /* IntExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024703B220BF622E00A58CE0 /* IntExtensions.swift */; };
+		024703B520BF63A700A58CE0 /* IntExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024703B420BF63A700A58CE0 /* IntExtensionsTests.swift */; };
 		024E48302010CFB800BF55D2 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0294DDF11E20F66D0002E409 /* Result.swift */; };
 		024E48362010FF4000BF55D2 /* BiometricError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024E48352010FF4000BF55D2 /* BiometricError.swift */; };
 		024E48372010FF4000BF55D2 /* BiometricError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024E48352010FF4000BF55D2 /* BiometricError.swift */; };
@@ -356,6 +358,8 @@
 		023A0C051E96AAED006C9198 /* UIImageExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIImageExtensions.swift; path = Kashmir/iOS/UIImageExtensions.swift; sourceTree = SOURCE_ROOT; };
 		023A0C071E96AC41006C9198 /* UIImageExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIImageExtensionsTests.swift; path = KashmirTests/iOS/UIImageExtensionsTests.swift; sourceTree = SOURCE_ROOT; };
 		023A0C0B1E97A46E006C9198 /* UIColorExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColorExtensionsTests.swift; path = KashmirTests/iOS/UIColorExtensionsTests.swift; sourceTree = SOURCE_ROOT; };
+		024703B220BF622E00A58CE0 /* IntExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = IntExtensions.swift; path = Shared/IntExtensions.swift; sourceTree = "<group>"; };
+		024703B420BF63A700A58CE0 /* IntExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = IntExtensionsTests.swift; path = Shared/IntExtensionsTests.swift; sourceTree = "<group>"; };
 		024E48352010FF4000BF55D2 /* BiometricError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BiometricError.swift; path = Kashmir/iOS/BiometricError.swift; sourceTree = SOURCE_ROOT; };
 		024E48382010FF5000BF55D2 /* BiometricType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BiometricType.swift; path = Kashmir/iOS/BiometricType.swift; sourceTree = SOURCE_ROOT; };
 		024E483B2010FF6700BF55D2 /* Biometrics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Biometrics.swift; path = Kashmir/iOS/Biometrics.swift; sourceTree = SOURCE_ROOT; };
@@ -891,6 +895,7 @@
 		032A85E11D1BA4CD00401E29 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				024703B220BF622E00A58CE0 /* IntExtensions.swift */,
 				032A85E21D1BA4F300401E29 /* StringExtensions.swift */,
 				034074791D7088C2004099AC /* BundleExtensions.swift */,
 				029961C91EABB15E0027F54A /* DateFormatterExtensions.swift */,
@@ -908,6 +913,7 @@
 		032A85E41D1BA53300401E29 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				024703B420BF63A700A58CE0 /* IntExtensionsTests.swift */,
 				02130A111DDA71B00071940B /* StringExtensionsTests.swift */,
 				02130A0F1DDA71B00071940B /* BundleExtensionsTests.swift */,
 				029961CF1EABB1F90027F54A /* DateFormatterExtensionsTests.swift */,
@@ -1465,6 +1471,7 @@
 				026130301F4E8FE100EEFC1A /* OperationExtensions.swift in Sources */,
 				02EE5EBB1F4CCBDE001E39BF /* Semaphore.swift in Sources */,
 				0278035E1EED7E1000C3D651 /* DataStackModel.swift in Sources */,
+				024703B320BF622E00A58CE0 /* IntExtensions.swift in Sources */,
 				022592741DEA5BD1005DD338 /* DataSource.swift in Sources */,
 				026B53A71F4ABAA00010303A /* OperationQueueExtensions.swift in Sources */,
 				022EE1231E5430BF0067AE2F /* UserDefaultsExtensions.swift in Sources */,
@@ -1483,6 +1490,7 @@
 				022592811DEA5C50005DD338 /* ItemableTests.swift in Sources */,
 				022EE1291E5433920067AE2F /* UserDefaultsExtensionsTests.swift in Sources */,
 				02130A0C1DDA71950071940B /* URLRequestMethodTests.swift in Sources */,
+				024703B520BF63A700A58CE0 /* IntExtensionsTests.swift in Sources */,
 				0294DDF91E20F6C00002E409 /* ResultTests.swift in Sources */,
 				02EE5EC21F4CCCE6001E39BF /* SemaphoreTests.swift in Sources */,
 				02130A131DDA71B00071940B /* NSObjectExtensionsTests.swift in Sources */,
