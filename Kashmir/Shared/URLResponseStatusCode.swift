@@ -36,7 +36,7 @@ extension URLResponse {
         /// The request has been fulfilled, resulting in the creation of a new resource.
 		case created = 201
         /// The server successfully processed the request and is not returning any content.
-		case noContest = 204
+		case noContent = 204
 
 		// MARK: 3XX - Redirection
 
