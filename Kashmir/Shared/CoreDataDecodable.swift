@@ -89,7 +89,22 @@ public extension CoreDataDecodable where Self: NSManagedObject {
 			return try createNew(from: dto,
 								 in: context)
 		}
-		
+	}
+	
+	static func createOrUpdate(from dto: DTO,
+							   in context: NSManagedObjectContext) throws -> Self {
+		if let object = try findFirst(from: dto,
+									  in: context) {
+			if try object.shouldUpdate(from: dto) {
+				try object.update(from: dto)
+			}
+
+			return object
+		}
+		else {
+			return try createNew(from: dto,
+								 in: context)
+		}
 	}
 	
 	// MARK: Initializers
