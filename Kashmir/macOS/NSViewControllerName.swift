@@ -15,12 +15,6 @@ public extension NSViewController {
 	/**
 	The structure which contains the names of the view controllers used by a `NSViewController` instance defined as constants.
 	*/
-	public struct Name {
-		
-		// MARK: Initializers
-		
-		private init() {}
-		
-	}
+	public class Name: Nomenclature {}
 	
 }
