@@ -15,7 +15,13 @@ public extension OperationQueue {
 	/**
 	The structure which contains the names of the storyboards used by a `OperationQueue` instance defined as constants.
 	*/
-	public struct Name {}
+	public struct Name {
+		
+		// MARK: Initializers
+		
+		private init() {}
+		
+	}
 	
 }
 

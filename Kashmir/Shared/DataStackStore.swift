@@ -33,32 +33,32 @@ public extension DataStack {
         /// Gets the associated value from the selected case.
         var rawValue: String {
             switch self {
-                case .sql:
-                    return NSSQLiteStoreType
-                case .xml:
-                    #if os(OSX)
-                    return NSXMLStoreType
-                    #else
-                    return NSSQLiteStoreType
-                    #endif
-                case .binary:
-                    return NSBinaryStoreType
-                default:
-                    return NSInMemoryStoreType
+			case .sql:
+				return NSSQLiteStoreType
+			case .xml:
+				#if os(OSX)
+				return NSXMLStoreType
+				#else
+				return NSSQLiteStoreType
+				#endif
+			case .binary:
+				return NSBinaryStoreType
+			default:
+				return NSInMemoryStoreType
             }
         }
         
         /// Gets the associated file extension value from the selected case.
         var extensionValue: String {
             switch self {
-                case .sql:
-                    return "sqlite"
-                case .xml:
-                    return "xml"
-                case .binary:
-                    return "bin"
-                default:
-                    return ""
+			case .sql:
+				return "sqlite"
+			case .xml:
+				return "xml"
+			case .binary:
+				return "bin"
+			default:
+				return ""
             }
         }
     }

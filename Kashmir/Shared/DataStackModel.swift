@@ -13,6 +13,12 @@ public extension DataStack {
 	/**
 	The structure which contains the names of the models used by a `DataStack` instance defined as constants.
 	*/
-	public struct Model {}
+	public struct Model {
+		
+		// MARK: Initializers
+		
+		private init() {}
+		
+	}
 
 }
