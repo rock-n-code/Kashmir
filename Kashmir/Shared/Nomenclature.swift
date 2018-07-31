@@ -1,5 +1,5 @@
 //
-//  Constant.swift
+//  Nomenclature.swift
 //  Kashmir
 //
 //  Created by Javier Cicchelli on 31/07/2018.
@@ -9,16 +9,16 @@
 /**
 The type used to define a nested constant type, inspired by the `NSNotification.Name` type.
 */
-public class Constant {
+public class Nomenclature {
 	
 	// MARK: Properties
 	
 	/// The hidden value of the defined constant.
-	private let constant: String
+	private let name: String
 	
 	/// The exposed value of the defined constant.
 	public var value: String {
-		return constant
+		return name
 	}
 	
 	// MARK: Initializers
@@ -28,29 +28,29 @@ public class Constant {
 	
 	- parameter constant: The string to define as constant.
 	*/
-	public required init(_ constant: String) {
-		self.constant = constant
+	public required init(_ name: String) {
+		self.name = name
 	}
 	
 }
 
 // MARK: - Equatable
 
-extension Constant: Equatable {
+extension Nomenclature: Equatable {
 
 	// MARK: Functions
 
 	/**
-	Indicates whether two constants are equal.
+	Indicates whether two nomenclatures are equal.
 
 	- parameters:
-	   - lhs: The constant at the left side of the `==` operator.
-	   - rhs: The constant at the right side of the `==` operator.
-	- returns: A Boolean value indicating whether two constants are equal.
+	   - lhs: The nomenclature at the left side of the `==` operator.
+	   - rhs: The nomenclature at the right side of the `==` operator.
+	- returns: A Boolean value indicating whether two nomenclatures are equal.
 	*/
-	public static func == (lhs: Constant,
-						   rhs: Constant) -> Bool {
-		return lhs.constant == rhs.constant
+	public static func == (lhs: Nomenclature,
+						   rhs: Nomenclature) -> Bool {
+		return lhs.name == rhs.name
 	}
 	
 }
