@@ -15,12 +15,6 @@ public extension UIStoryboardSegue {
 	/**
 	The structure which contains the names of the segues used by a `UIStoryboardSegue` instance defined as constants.
 	*/
-	public struct Name {
-		
-		// MARK: Initializers
-		
-		private init() {}
-		
-	}
+	public class Name: Nomenclature {}
 	
 }

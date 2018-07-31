@@ -15,11 +15,6 @@ public extension UIViewController {
 	/**
 	The structure which contains the names of the view controllers used by a `UIViewController` instance defined as constants.
 	*/
-	public struct Name {
-		
-		// MARK: Initializers
-		
-		private init() {}
-		
-	}
+	public class Name: Nomenclature {}
+	
 }

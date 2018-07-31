@@ -15,12 +15,6 @@ public extension UIStoryboard {
 	/**
 	The structure which contains the names of the storyboards used by a `UIStoryboard` instance defined as constants.
 	*/
-	public struct Name {
-
-		// MARK: Initializers
-		
-		private init() {}
-		
-	}
+	public class Name: Nomenclature {}
 	
 }
