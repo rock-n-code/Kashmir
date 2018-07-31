@@ -26,6 +26,8 @@ public protocol CoreDataDecodable: Decodable {
 	
 	// MARK: Functions
 	
+	func shouldUpdate(from dto: DTO) throws -> Bool
+	
 	func update(from dto: DTO) throws
 	
 }
