@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		020D5F19211107F30091FBE7 /* CoreDataDecodableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020D5F18211107F30091FBE7 /* CoreDataDecodableTests.swift */; };
 		0211F8D41F9299680012E340 /* TimeZoneExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0211F8D31F9299680012E340 /* TimeZoneExtensions.swift */; };
 		0211F8D51F9299680012E340 /* TimeZoneExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0211F8D31F9299680012E340 /* TimeZoneExtensions.swift */; };
 		0211F8D61F9299680012E340 /* TimeZoneExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0211F8D31F9299680012E340 /* TimeZoneExtensions.swift */; };
@@ -321,6 +322,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		020D5F18211107F30091FBE7 /* CoreDataDecodableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CoreDataDecodableTests.swift; path = Shared/CoreDataDecodableTests.swift; sourceTree = "<group>"; };
 		0211F8D31F9299680012E340 /* TimeZoneExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TimeZoneExtensions.swift; path = Shared/TimeZoneExtensions.swift; sourceTree = "<group>"; };
 		0211F8D91F929B4A0012E340 /* TimeZoneExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TimeZoneExtensionsTests.swift; path = Shared/TimeZoneExtensionsTests.swift; sourceTree = "<group>"; };
 		021309EE1DDA6DFD0071940B /* Kashmir.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kashmir.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -596,6 +598,7 @@
 				0225927D1DEA5C50005DD338 /* DataSourceTests.swift */,
 				029DDDC820124172003519FE /* CellTests.swift */,
 				0250A0811FC19F1E004CE7A0 /* OperationRunnerTests.swift */,
+				020D5F18211107F30091FBE7 /* CoreDataDecodableTests.swift */,
 			);
 			name = Protocols;
 			sourceTree = "<group>";
@@ -1503,6 +1506,7 @@
 				022592821DEA5C50005DD338 /* SectionableTests.swift in Sources */,
 				0211F8DA1F929B4A0012E340 /* TimeZoneExtensionsTests.swift in Sources */,
 				022592801DEA5C50005DD338 /* DataSourceTests.swift in Sources */,
+				020D5F19211107F30091FBE7 /* CoreDataDecodableTests.swift in Sources */,
 				024F51851DEF91360088A3B2 /* NetworkReacherTests.swift in Sources */,
 				02EE5ECE1F4CD794001E39BF /* OperationQueueExtensionsTests.swift in Sources */,
 				02384ACF1DECF47900B664D3 /* ReachabilityTests.swift in Sources */,
