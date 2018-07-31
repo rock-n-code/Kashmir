@@ -7,16 +7,16 @@
 //
 
 /**
-The type used to define a nested constant type, inspired by the `NSNotification.Name` type.
+The type used to define a nested system of terms or names, inspired by the `NSNotification.Name` type.
 */
 public class Nomenclature {
 	
 	// MARK: Properties
 	
-	/// The hidden value of the defined constant.
+	/// The hidden value of the defined name.
 	private let name: String
 	
-	/// The exposed value of the defined constant.
+	/// The exposed value of the defined name.
 	public var value: String {
 		return name
 	}
@@ -26,7 +26,7 @@ public class Nomenclature {
 	/**
 	Default initializer.
 	
-	- parameter constant: The string to define as constant.
+	- parameter name: The string to define as name.
 	*/
 	public required init(_ name: String) {
 		self.name = name

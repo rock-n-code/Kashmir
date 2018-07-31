@@ -122,7 +122,6 @@
 		027803601EED7E1000C3D651 /* DataStackModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0278035D1EED7E1000C3D651 /* DataStackModel.swift */; };
 		027803611EED7E1000C3D651 /* DataStackModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0278035D1EED7E1000C3D651 /* DataStackModel.swift */; };
 		027803621EED7E1000C3D651 /* DataStackModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0278035D1EED7E1000C3D651 /* DataStackModel.swift */; };
-		027803651EED86A100C3D651 /* DataStackModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027803641EED86A100C3D651 /* DataStackModelTests.swift */; };
 		027803661EED8DE800C3D651 /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023A0C051E96AAED006C9198 /* UIImageExtensions.swift */; };
 		027803691EED8F1100C3D651 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027803671EED8F0400C3D651 /* UIColorExtensions.swift */; };
 		0278036A1EED8F1400C3D651 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027803671EED8F0400C3D651 /* UIColorExtensions.swift */; };
@@ -388,7 +387,6 @@
 		026D56D41FBB689F007FDBB2 /* GroupOperationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GroupOperationTests.swift; path = Shared/GroupOperationTests.swift; sourceTree = "<group>"; };
 		02743AC21FBEDCCA00B18A6C /* OperationRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OperationRunner.swift; path = Shared/OperationRunner.swift; sourceTree = "<group>"; };
 		0278035D1EED7E1000C3D651 /* DataStackModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataStackModel.swift; path = Shared/DataStackModel.swift; sourceTree = "<group>"; };
-		027803641EED86A100C3D651 /* DataStackModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataStackModelTests.swift; path = Shared/DataStackModelTests.swift; sourceTree = "<group>"; };
 		027803671EED8F0400C3D651 /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColorExtensions.swift; path = Kashmir/iOS/UIColorExtensions.swift; sourceTree = SOURCE_ROOT; };
 		0278036C1EED92E400C3D651 /* UIStoryboardName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIStoryboardName.swift; path = Kashmir/iOS/UIStoryboardName.swift; sourceTree = SOURCE_ROOT; };
 		0278036F1EED935C00C3D651 /* UIStoryboardSegueName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIStoryboardSegueName.swift; path = Kashmir/iOS/UIStoryboardSegueName.swift; sourceTree = SOURCE_ROOT; };
@@ -688,14 +686,6 @@
 			name = Classes;
 			sourceTree = "<group>";
 		};
-		027803631EED868900C3D651 /* Constants */ = {
-			isa = PBXGroup;
-			children = (
-				027803641EED86A100C3D651 /* DataStackModelTests.swift */,
-			);
-			name = Constants;
-			sourceTree = "<group>";
-		};
 		0278036B1EED929500C3D651 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
@@ -866,7 +856,6 @@
 		031BF5B31CE37B4800DD028A /* KashmirTests */ = {
 			isa = PBXGroup;
 			children = (
-				027803631EED868900C3D651 /* Constants */,
 				0225927C1DEA5C3C005DD338 /* Protocols */,
 				032A85EE1D1BA9A100401E29 /* Enumerations */,
 				02EE5EC01F4CCCD1001E39BF /* Structs */,
@@ -1526,7 +1515,6 @@
 				024F51851DEF91360088A3B2 /* NetworkReacherTests.swift in Sources */,
 				02EE5ECE1F4CD794001E39BF /* OperationQueueExtensionsTests.swift in Sources */,
 				02384ACF1DECF47900B664D3 /* ReachabilityTests.swift in Sources */,
-				027803651EED86A100C3D651 /* DataStackModelTests.swift in Sources */,
 				0250A0821FC19F1E004CE7A0 /* OperationRunnerTests.swift in Sources */,
 				029DDDC920124172003519FE /* CellTests.swift in Sources */,
 				022D7FE91E1CBB1D00E0A537 /* DataStackStoreTests.swift in Sources */,
