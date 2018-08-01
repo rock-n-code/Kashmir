@@ -41,16 +41,16 @@ class NomenclatureTests: XCTestCase {
 	// MARK: Functions tests
 	
 	func testEqual() {
-		let oneName = Name("test")
-		let otherName = Name("test")
+		let oneName = Nomenclature("test")
+		let otherName = Nomenclature("test")
 		
 		XCTAssertTrue(oneName == otherName)
 		XCTAssertFalse(oneName != otherName)
 	}
 	
 	func testNotEqual() {
-		let oneName = Name("test")
-		let otherName = Name("tset")
+		let oneName = Nomenclature("test")
+		let otherName = Nomenclature("tset")
 		
 		XCTAssertTrue(oneName != otherName)
 		XCTAssertFalse(oneName == otherName)

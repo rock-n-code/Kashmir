@@ -25,9 +25,7 @@ public protocol CoreDataDecodable: Decodable {
 		 context: NSManagedObjectContext) throws
 	
 	// MARK: Functions
-	
-	func shouldUpdate(from dto: DTO) throws -> Bool
-	
+
 	func update(from dto: DTO) throws
 	
 }
@@ -95,9 +93,7 @@ public extension CoreDataDecodable where Self: NSManagedObject {
 							   in context: NSManagedObjectContext) throws -> Self {
 		if let object = try findFirst(from: dto,
 									  in: context) {
-			if try object.shouldUpdate(from: dto) {
-				try object.update(from: dto)
-			}
+			try object.update(from: dto)
 
 			return object
 		}
