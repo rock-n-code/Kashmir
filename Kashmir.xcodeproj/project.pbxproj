@@ -88,7 +88,6 @@
 		024F51811DEF90990088A3B2 /* NetworkReacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024F517E1DEF90990088A3B2 /* NetworkReacher.swift */; };
 		024F51821DEF90990088A3B2 /* NetworkReacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024F517E1DEF90990088A3B2 /* NetworkReacher.swift */; };
 		024F51851DEF91360088A3B2 /* NetworkReacherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024F51841DEF91360088A3B2 /* NetworkReacherTests.swift */; };
-		0250A0821FC19F1E004CE7A0 /* OperationRunnerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0250A0811FC19F1E004CE7A0 /* OperationRunnerTests.swift */; };
 		026130301F4E8FE100EEFC1A /* OperationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0261302F1F4E8FE100EEFC1A /* OperationExtensions.swift */; };
 		026130311F4E8FE100EEFC1A /* OperationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0261302F1F4E8FE100EEFC1A /* OperationExtensions.swift */; };
 		026130321F4E8FE100EEFC1A /* OperationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0261302F1F4E8FE100EEFC1A /* OperationExtensions.swift */; };
@@ -106,17 +105,6 @@
 		026B53B01F4ABB930010303A /* ConcurrentOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026B53AD1F4ABB930010303A /* ConcurrentOperation.swift */; };
 		026B53B11F4ABB930010303A /* ConcurrentOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026B53AD1F4ABB930010303A /* ConcurrentOperation.swift */; };
 		026B53B21F4ABB930010303A /* ConcurrentOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026B53AD1F4ABB930010303A /* ConcurrentOperation.swift */; };
-		026D56CF1FBB6867007FDBB2 /* GroupOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026D56CE1FBB6867007FDBB2 /* GroupOperation.swift */; };
-		026D56D01FBB6867007FDBB2 /* GroupOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026D56CE1FBB6867007FDBB2 /* GroupOperation.swift */; };
-		026D56D11FBB6867007FDBB2 /* GroupOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026D56CE1FBB6867007FDBB2 /* GroupOperation.swift */; };
-		026D56D21FBB6867007FDBB2 /* GroupOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026D56CE1FBB6867007FDBB2 /* GroupOperation.swift */; };
-		026D56D31FBB6867007FDBB2 /* GroupOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026D56CE1FBB6867007FDBB2 /* GroupOperation.swift */; };
-		026D56D51FBB689F007FDBB2 /* GroupOperationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026D56D41FBB689F007FDBB2 /* GroupOperationTests.swift */; };
-		02743AC31FBEDCCA00B18A6C /* OperationRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02743AC21FBEDCCA00B18A6C /* OperationRunner.swift */; };
-		02743AC41FBEDCCA00B18A6C /* OperationRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02743AC21FBEDCCA00B18A6C /* OperationRunner.swift */; };
-		02743AC51FBEDCCA00B18A6C /* OperationRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02743AC21FBEDCCA00B18A6C /* OperationRunner.swift */; };
-		02743AC61FBEDCCA00B18A6C /* OperationRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02743AC21FBEDCCA00B18A6C /* OperationRunner.swift */; };
-		02743AC71FBEDCCA00B18A6C /* OperationRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02743AC21FBEDCCA00B18A6C /* OperationRunner.swift */; };
 		0278035E1EED7E1000C3D651 /* DataStackModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0278035D1EED7E1000C3D651 /* DataStackModel.swift */; };
 		0278035F1EED7E1000C3D651 /* DataStackModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0278035D1EED7E1000C3D651 /* DataStackModel.swift */; };
 		027803601EED7E1000C3D651 /* DataStackModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0278035D1EED7E1000C3D651 /* DataStackModel.swift */; };
@@ -377,15 +365,11 @@
 		024E4840201102EE00BF55D2 /* BiometricsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BiometricsTests.swift; path = KashmirTests/iOS/BiometricsTests.swift; sourceTree = SOURCE_ROOT; };
 		024F517E1DEF90990088A3B2 /* NetworkReacher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkReacher.swift; path = Shared/NetworkReacher.swift; sourceTree = "<group>"; };
 		024F51841DEF91360088A3B2 /* NetworkReacherTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkReacherTests.swift; path = Shared/NetworkReacherTests.swift; sourceTree = "<group>"; };
-		0250A0811FC19F1E004CE7A0 /* OperationRunnerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OperationRunnerTests.swift; path = Shared/OperationRunnerTests.swift; sourceTree = "<group>"; };
 		0261302F1F4E8FE100EEFC1A /* OperationExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OperationExtensions.swift; path = Shared/OperationExtensions.swift; sourceTree = "<group>"; };
 		026130351F4E91B000EEFC1A /* OperationExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OperationExtensionsTests.swift; path = Shared/OperationExtensionsTests.swift; sourceTree = "<group>"; };
 		0265056B1F77C53D00CAE5BF /* NSViewControllerName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NSViewControllerName.swift; path = Kashmir/macOS/NSViewControllerName.swift; sourceTree = SOURCE_ROOT; };
 		026B53A61F4ABAA00010303A /* OperationQueueExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OperationQueueExtensions.swift; path = Shared/OperationQueueExtensions.swift; sourceTree = "<group>"; };
 		026B53AD1F4ABB930010303A /* ConcurrentOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConcurrentOperation.swift; path = Shared/ConcurrentOperation.swift; sourceTree = "<group>"; };
-		026D56CE1FBB6867007FDBB2 /* GroupOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GroupOperation.swift; path = Shared/GroupOperation.swift; sourceTree = "<group>"; };
-		026D56D41FBB689F007FDBB2 /* GroupOperationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GroupOperationTests.swift; path = Shared/GroupOperationTests.swift; sourceTree = "<group>"; };
-		02743AC21FBEDCCA00B18A6C /* OperationRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OperationRunner.swift; path = Shared/OperationRunner.swift; sourceTree = "<group>"; };
 		0278035D1EED7E1000C3D651 /* DataStackModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataStackModel.swift; path = Shared/DataStackModel.swift; sourceTree = "<group>"; };
 		027803671EED8F0400C3D651 /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColorExtensions.swift; path = Kashmir/iOS/UIColorExtensions.swift; sourceTree = SOURCE_ROOT; };
 		0278036C1EED92E400C3D651 /* UIStoryboardName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIStoryboardName.swift; path = Kashmir/iOS/UIStoryboardName.swift; sourceTree = SOURCE_ROOT; };
@@ -592,7 +576,6 @@
 				022592721DEA5BD1005DD338 /* Itemable.swift */,
 				022592701DEA5BD1005DD338 /* DataSource.swift */,
 				029DDDC2201240A2003519FE /* Cell.swift */,
-				02743AC21FBEDCCA00B18A6C /* OperationRunner.swift */,
 				0280628520004B1700D508BC /* CoreDataDecodable.swift */,
 			);
 			name = Protocols;
@@ -605,7 +588,6 @@
 				0225927E1DEA5C50005DD338 /* ItemableTests.swift */,
 				0225927D1DEA5C50005DD338 /* DataSourceTests.swift */,
 				029DDDC820124172003519FE /* CellTests.swift */,
-				0250A0811FC19F1E004CE7A0 /* OperationRunnerTests.swift */,
 				020D5F18211107F30091FBE7 /* CoreDataDecodableTests.swift */,
 			);
 			name = Protocols;
@@ -681,7 +663,6 @@
 				020D5F1A211113170091FBE7 /* Nomenclature.swift */,
 				026B53AD1F4ABB930010303A /* ConcurrentOperation.swift */,
 				02EE5EC31F4CCE8C001E39BF /* SynchronousOperation.swift */,
-				026D56CE1FBB6867007FDBB2 /* GroupOperation.swift */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -790,7 +771,6 @@
 				020D5F26211116FF0091FBE7 /* NomenclatureTests.swift */,
 				02EE5EB81F4CC785001E39BF /* ConcurrentOperationTests.swift */,
 				02EE5ECB1F4CCF7C001E39BF /* SynchronousOperationTests.swift */,
-				026D56D41FBB689F007FDBB2 /* GroupOperationTests.swift */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -1445,7 +1425,6 @@
 				02CDE5DC1DEC9F5C00EE7892 /* ReachabilityError.swift in Sources */,
 				0323207A1D245B0A00BB79A1 /* URLResponseError.swift in Sources */,
 				02CDE5EB1DECA06F00EE7892 /* SCNetworkReachabilityFlagsExtensions.swift in Sources */,
-				026D56CF1FBB6867007FDBB2 /* GroupOperation.swift in Sources */,
 				03B67C6D1D8AF116001DFFE6 /* DataStackError.swift in Sources */,
 				02CDE5E61DEC9FFC00EE7892 /* NetworkStatus.swift in Sources */,
 				03B67C701D8AF154001DFFE6 /* DataStack.swift in Sources */,
@@ -1471,7 +1450,6 @@
 				02CDE5F01DECA12A00EE7892 /* Network.swift in Sources */,
 				032A85E01D1B879800401E29 /* URLResponseStatusCode.swift in Sources */,
 				022592771DEA5BD1005DD338 /* Sectionable.swift in Sources */,
-				02743AC31FBEDCCA00B18A6C /* OperationRunner.swift in Sources */,
 				0340747A1D7088C2004099AC /* BundleExtensions.swift in Sources */,
 				02214C471F98757B00B8EA5C /* Operators.swift in Sources */,
 				02CDE5E11DEC9FE100EE7892 /* NetworkConnectivity.swift in Sources */,
@@ -1507,7 +1485,6 @@
 				02130A0E1DDA719F0071940B /* DataStackTests.swift in Sources */,
 				02384AC11DECB76700B664D3 /* NetworkStatusTests.swift in Sources */,
 				026130361F4E91B000EEFC1A /* OperationExtensionsTests.swift in Sources */,
-				026D56D51FBB689F007FDBB2 /* GroupOperationTests.swift in Sources */,
 				022592821DEA5C50005DD338 /* SectionableTests.swift in Sources */,
 				0211F8DA1F929B4A0012E340 /* TimeZoneExtensionsTests.swift in Sources */,
 				022592801DEA5C50005DD338 /* DataSourceTests.swift in Sources */,
@@ -1515,7 +1492,6 @@
 				024F51851DEF91360088A3B2 /* NetworkReacherTests.swift in Sources */,
 				02EE5ECE1F4CD794001E39BF /* OperationQueueExtensionsTests.swift in Sources */,
 				02384ACF1DECF47900B664D3 /* ReachabilityTests.swift in Sources */,
-				0250A0821FC19F1E004CE7A0 /* OperationRunnerTests.swift in Sources */,
 				029DDDC920124172003519FE /* CellTests.swift in Sources */,
 				022D7FE91E1CBB1D00E0A537 /* DataStackStoreTests.swift in Sources */,
 				02EE5ECC1F4CCF7C001E39BF /* SynchronousOperationTests.swift in Sources */,
@@ -1536,7 +1512,6 @@
 				029DEF191E582F0200C4230C /* Sectionable.swift in Sources */,
 				022EE1241E5430BF0067AE2F /* UserDefaultsExtensions.swift in Sources */,
 				0294DDF31E20F66D0002E409 /* Result.swift in Sources */,
-				02743AC41FBEDCCA00B18A6C /* OperationRunner.swift in Sources */,
 				02EE5EBC1F4CCBDE001E39BF /* Semaphore.swift in Sources */,
 				03B67C781D8AF884001DFFE6 /* DataStackError.swift in Sources */,
 				026B53AF1F4ABB930010303A /* ConcurrentOperation.swift in Sources */,
@@ -1563,7 +1538,6 @@
 				02CDE5EC1DECA06F00EE7892 /* SCNetworkReachabilityFlagsExtensions.swift in Sources */,
 				02214C481F98757B00B8EA5C /* Operators.swift in Sources */,
 				02BAAD4A1FBEF46A00F5D009 /* OperationQueueName.swift in Sources */,
-				026D56D01FBB6867007FDBB2 /* GroupOperation.swift in Sources */,
 				03B8E5451D24F29E00E40586 /* URLResponseStatusCode.swift in Sources */,
 				0278035F1EED7E1000C3D651 /* DataStackModel.swift in Sources */,
 				02CDE5E71DEC9FFC00EE7892 /* NetworkStatus.swift in Sources */,
@@ -1586,7 +1560,6 @@
 				02214C491F98757B00B8EA5C /* Operators.swift in Sources */,
 				0278036A1EED8F1400C3D651 /* UIColorExtensions.swift in Sources */,
 				02BAAD4B1FBEF46A00F5D009 /* OperationQueueName.swift in Sources */,
-				026D56D11FBB6867007FDBB2 /* GroupOperation.swift in Sources */,
 				02CDE5DE1DEC9F5C00EE7892 /* ReachabilityError.swift in Sources */,
 				0225927A1DEA5BF8005DD338 /* DataSourceError.swift in Sources */,
 				029DDDC5201240A2003519FE /* Cell.swift in Sources */,
@@ -1624,7 +1597,6 @@
 				026B53A91F4ABAA00010303A /* OperationQueueExtensions.swift in Sources */,
 				0278036E1EED92E400C3D651 /* UIStoryboardName.swift in Sources */,
 				022EE1251E5430BF0067AE2F /* UserDefaultsExtensions.swift in Sources */,
-				02743AC51FBEDCCA00B18A6C /* OperationRunner.swift in Sources */,
 				027803601EED7E1000C3D651 /* DataStackModel.swift in Sources */,
 				024E483A2010FF5000BF55D2 /* BiometricType.swift in Sources */,
 				024E48372010FF4000BF55D2 /* BiometricError.swift in Sources */,
@@ -1659,7 +1631,6 @@
 				02BAAD4C1FBEF46A00F5D009 /* OperationQueueName.swift in Sources */,
 				029DDDC6201240A2003519FE /* Cell.swift in Sources */,
 				029961D81EAC01FF0027F54A /* DateFormatterFormat.swift in Sources */,
-				026D56D21FBB6867007FDBB2 /* GroupOperation.swift in Sources */,
 				0211F8D71F9299680012E340 /* TimeZoneExtensions.swift in Sources */,
 				0280629520004BF500D508BC /* CoreDataDecodingError.swift in Sources */,
 				02EE5EC71F4CCE8C001E39BF /* SynchronousOperation.swift in Sources */,
@@ -1685,7 +1656,6 @@
 				02CDE5DA1DEC9EB300EE7892 /* Reachability.swift in Sources */,
 				022592791DEA5BF8005DD338 /* DataSourceError.swift in Sources */,
 				0280628920004B1700D508BC /* CoreDataDecodable.swift in Sources */,
-				02743AC61FBEDCCA00B18A6C /* OperationRunner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1697,7 +1667,6 @@
 				02EE5EC81F4CCE8C001E39BF /* SynchronousOperation.swift in Sources */,
 				03B8E54C1D24F2A800E40586 /* StringExtensions.swift in Sources */,
 				03B67C7B1D8AF886001DFFE6 /* DataStackError.swift in Sources */,
-				026D56D31FBB6867007FDBB2 /* GroupOperation.swift in Sources */,
 				029DDDC7201240A2003519FE /* Cell.swift in Sources */,
 				020D5F1F211113170091FBE7 /* Nomenclature.swift in Sources */,
 				03B67C7F1D8AF88C001DFFE6 /* DataStack.swift in Sources */,
@@ -1721,7 +1690,6 @@
 				029961D91EAC01FF0027F54A /* DateFormatterFormat.swift in Sources */,
 				03B8E5481D24F2A000E40586 /* URLResponseStatusCode.swift in Sources */,
 				0340747E1D7088C2004099AC /* BundleExtensions.swift in Sources */,
-				02743AC71FBEDCCA00B18A6C /* OperationRunner.swift in Sources */,
 				029DEF1D1E582F0900C4230C /* Itemable.swift in Sources */,
 				0280629020004B6500D508BC /* NSManagedObjectContextExtensions.swift in Sources */,
 				029961CE1EABB15E0027F54A /* DateFormatterExtensions.swift in Sources */,
