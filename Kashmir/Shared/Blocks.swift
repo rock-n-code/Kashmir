@@ -6,5 +6,5 @@
 //  Copyright © 2017 Rock & Code. All rights reserved.
 //
 
-public typealias ExecutionBlock = (() -> ())
-public typealias ErrorBlock = ((Error) -> ())
+public typealias ExecutionBlock = () -> ()
+public typealias ErrorBlock = (Error) -> ()

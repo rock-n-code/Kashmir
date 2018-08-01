@@ -1,5 +1,5 @@
 //
-//  Operations.swift
+//  Operators.swift
 //  Kashmir
 //
 //  Created by Javier Cicchelli on 19/10/2017.
