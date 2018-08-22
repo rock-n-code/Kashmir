@@ -38,6 +38,18 @@ class NomenclatureTests: XCTestCase {
 		XCTAssertEqual(name.value, "test")
 	}
 	
+	func testIsValid() {
+		let name = Nomenclature("test")
+		
+		XCTAssertTrue(name.isValid)
+	}
+	
+	func testIsInvalid() {
+		let name = Nomenclature("")
+		
+		XCTAssertFalse(name.isValid)
+	}
+	
 	// MARK: Functions tests
 	
 	func testEqual() {
@@ -57,4 +69,3 @@ class NomenclatureTests: XCTestCase {
 	}
 	
 }
-

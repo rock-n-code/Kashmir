@@ -14,6 +14,8 @@ enum TestError: Error {
 	case test
 }
 
+// MARK: -
+
 class ResultTests: XCTestCase {
 	
 	// MARK: Setup

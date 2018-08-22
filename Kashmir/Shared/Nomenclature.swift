@@ -21,6 +21,11 @@ public class Nomenclature {
 		return name
 	}
 	
+	/// Checks if the defined name is an empty string.
+	public var isValid: Bool {
+		return !name.isEmpty
+	}
+	
 	// MARK: Initializers
 
 	/**
