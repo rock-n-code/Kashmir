@@ -6,10 +6,33 @@
 //  Copyright © 2018 Rock & Code. All rights reserved.
 //
 
-internal enum FiniteMachineState<T: FiniteState> {
+public enum FiniteMachineState<S: FiniteState & Equatable> {
 	case none
 	case start
-	case transit(T)
+	case transit(S)
 	case finish
 	case error(Error?)
+}
+
+// MARK: - Equatable
+
+extension FiniteMachineState: Equatable {
+
+	// MARK: Static
+	
+	public static func == (lhs: FiniteMachineState<S>,
+						   rhs: FiniteMachineState<S>) -> Bool {
+		switch (lhs, rhs) {
+		case (.none, .none),
+			 (.start, .start),
+			 (.finish, .finish),
+			 (.error(_), .error(_)):
+			return true
+		case (.transit(let ls), .transit(let rs)):
+			return ls == rs
+		default:
+			return false
+		}
+	}
+	
 }

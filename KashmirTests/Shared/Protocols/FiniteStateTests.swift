@@ -10,7 +10,7 @@ import XCTest
 
 @testable import Kashmir
 
-enum TestFiniteState {
+enum TestFiniteState: Equatable {
 	case firstState
 	case secondState
 	case thirdState
