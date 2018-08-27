@@ -181,6 +181,12 @@
 		02998A0A2134218400C574A7 /* FiniteStateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02998A062134218400C574A7 /* FiniteStateMachine.swift */; };
 		02998A0B2134218400C574A7 /* FiniteStateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02998A062134218400C574A7 /* FiniteStateMachine.swift */; };
 		02998A0D213421B100C574A7 /* FiniteStateMachineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02998A0C213421B100C574A7 /* FiniteStateMachineTests.swift */; };
+		02998A0F2134621200C574A7 /* StateMachineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02998A0E2134621200C574A7 /* StateMachineController.swift */; };
+		02998A102134621200C574A7 /* StateMachineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02998A0E2134621200C574A7 /* StateMachineController.swift */; };
+		02998A112134621200C574A7 /* StateMachineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02998A0E2134621200C574A7 /* StateMachineController.swift */; };
+		02998A122134621200C574A7 /* StateMachineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02998A0E2134621200C574A7 /* StateMachineController.swift */; };
+		02998A132134621200C574A7 /* StateMachineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02998A0E2134621200C574A7 /* StateMachineController.swift */; };
+		02998A152134627200C574A7 /* StateMachineControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02998A142134627200C574A7 /* StateMachineControllerTests.swift */; };
 		029DDDBE20123ADB003519FE /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029DDDBD20123ADB003519FE /* UIViewControllerExtensions.swift */; };
 		029DDDBF20123ADB003519FE /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029DDDBD20123ADB003519FE /* UIViewControllerExtensions.swift */; };
 		029DDDC120123D5F003519FE /* UIViewControllerExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029DDDC020123D5F003519FE /* UIViewControllerExtensionsTests.swift */; };
@@ -415,6 +421,8 @@
 		02998A0421341E8A00C574A7 /* FiniteMachineStateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FiniteMachineStateTests.swift; path = Shared/Enumerations/FiniteMachineStateTests.swift; sourceTree = "<group>"; };
 		02998A062134218400C574A7 /* FiniteStateMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FiniteStateMachine.swift; path = Shared/Protocols/FiniteStateMachine.swift; sourceTree = "<group>"; };
 		02998A0C213421B100C574A7 /* FiniteStateMachineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FiniteStateMachineTests.swift; path = Shared/Protocols/FiniteStateMachineTests.swift; sourceTree = "<group>"; };
+		02998A0E2134621200C574A7 /* StateMachineController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StateMachineController.swift; path = Shared/Controllers/StateMachineController.swift; sourceTree = "<group>"; };
+		02998A142134627200C574A7 /* StateMachineControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StateMachineControllerTests.swift; path = Shared/Controllers/StateMachineControllerTests.swift; sourceTree = "<group>"; };
 		029DDDBD20123ADB003519FE /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIViewControllerExtensions.swift; path = Kashmir/iOS/UIViewControllerExtensions.swift; sourceTree = SOURCE_ROOT; };
 		029DDDC020123D5F003519FE /* UIViewControllerExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIViewControllerExtensionsTests.swift; path = KashmirTests/iOS/UIViewControllerExtensionsTests.swift; sourceTree = SOURCE_ROOT; };
 		029DDDC2201240A2003519FE /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Cell.swift; path = Shared/Cell.swift; sourceTree = "<group>"; };
@@ -673,6 +681,7 @@
 			isa = PBXGroup;
 			children = (
 				024F517E1DEF90990088A3B2 /* NetworkReacher.swift */,
+				02998A0E2134621200C574A7 /* StateMachineController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -681,6 +690,7 @@
 			isa = PBXGroup;
 			children = (
 				024F51841DEF91360088A3B2 /* NetworkReacherTests.swift */,
+				02998A142134627200C574A7 /* StateMachineControllerTests.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -1458,6 +1468,7 @@
 				03B67C6D1D8AF116001DFFE6 /* DataStackError.swift in Sources */,
 				02CDE5E61DEC9FFC00EE7892 /* NetworkStatus.swift in Sources */,
 				03B67C701D8AF154001DFFE6 /* DataStack.swift in Sources */,
+				02998A0F2134621200C574A7 /* StateMachineController.swift in Sources */,
 				0265056C1F77C53D00CAE5BF /* NSViewControllerName.swift in Sources */,
 				0294DDFB1E20F8DB0002E409 /* DataStackValidation.swift in Sources */,
 				022592761DEA5BD1005DD338 /* Itemable.swift in Sources */,
@@ -1503,6 +1514,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02998A152134627200C574A7 /* StateMachineControllerTests.swift in Sources */,
 				02EE5EB91F4CC785001E39BF /* ConcurrentOperationTests.swift in Sources */,
 				020D5F27211116FF0091FBE7 /* NomenclatureTests.swift in Sources */,
 				02130A141DDA71B00071940B /* StringExtensionsTests.swift in Sources */,
@@ -1548,6 +1560,7 @@
 				029DEF191E582F0200C4230C /* Sectionable.swift in Sources */,
 				022EE1241E5430BF0067AE2F /* UserDefaultsExtensions.swift in Sources */,
 				0294DDF31E20F66D0002E409 /* Result.swift in Sources */,
+				02998A102134621200C574A7 /* StateMachineController.swift in Sources */,
 				02EE5EBC1F4CCBDE001E39BF /* Semaphore.swift in Sources */,
 				03B67C781D8AF884001DFFE6 /* DataStackError.swift in Sources */,
 				026B53AF1F4ABB930010303A /* ConcurrentOperation.swift in Sources */,
@@ -1632,6 +1645,7 @@
 				0280629420004BF500D508BC /* CoreDataDecodingError.swift in Sources */,
 				02CDE5E81DEC9FFC00EE7892 /* NetworkStatus.swift in Sources */,
 				0280628820004B1700D508BC /* CoreDataDecodable.swift in Sources */,
+				02998A112134621200C574A7 /* StateMachineController.swift in Sources */,
 				029DDDCC20124581003519FE /* CellExtensions.swift in Sources */,
 				024E483D2010FF6700BF55D2 /* Biometrics.swift in Sources */,
 				02CDE5F21DECA12A00EE7892 /* Network.swift in Sources */,
@@ -1666,6 +1680,7 @@
 				022EE1261E5430BF0067AE2F /* UserDefaultsExtensions.swift in Sources */,
 				02998A0221341E6C00C574A7 /* FiniteMachineState.swift in Sources */,
 				0294DDF51E20F66D0002E409 /* Result.swift in Sources */,
+				02998A122134621200C574A7 /* StateMachineController.swift in Sources */,
 				03B67C7A1D8AF885001DFFE6 /* DataStackError.swift in Sources */,
 				024F51821DEF90990088A3B2 /* NetworkReacher.swift in Sources */,
 				03B67C7E1D8AF88B001DFFE6 /* DataStack.swift in Sources */,
@@ -1723,6 +1738,7 @@
 				0280628A20004B1700D508BC /* CoreDataDecodable.swift in Sources */,
 				0323207E1D245B0A00BB79A1 /* URLResponseError.swift in Sources */,
 				029DEF211E582F1000C4230C /* DataSource.swift in Sources */,
+				02998A132134621200C574A7 /* StateMachineController.swift in Sources */,
 				02EE5EBF1F4CCBDE001E39BF /* Semaphore.swift in Sources */,
 				02998A0321341E6C00C574A7 /* FiniteMachineState.swift in Sources */,
 				0294DDF61E20F66D0002E409 /* Result.swift in Sources */,
