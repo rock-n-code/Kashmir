@@ -6,6 +6,23 @@
 //  Copyright © 2018 Rock & Code. All rights reserved.
 //
 
-public class StateMachineController {
+public class StateMachineController<S: FiniteState & Equatable> {
+	
+	// MARK: Types
+	
+	public typealias StateExecutionBlock = (FiniteMachineState<S>) -> ()
+	
+	// MARK: Properties
+	
+	public var onStateChanged: StateExecutionBlock?
+	
+	internal var state: FiniteMachineState<S>
+	
+	// MARK: Initializers
+	
+	public init() {
+		self.state = .none
+	}
+	
 	
 }
