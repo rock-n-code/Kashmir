@@ -181,6 +181,11 @@
 		02998A122134621200C574A7 /* StateMachineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02998A0E2134621200C574A7 /* StateMachineController.swift */; };
 		02998A132134621200C574A7 /* StateMachineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02998A0E2134621200C574A7 /* StateMachineController.swift */; };
 		02998A152134627200C574A7 /* StateMachineControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02998A142134627200C574A7 /* StateMachineControllerTests.swift */; };
+		02998A172134AA1600C574A7 /* StateMachineError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02998A162134AA1600C574A7 /* StateMachineError.swift */; };
+		02998A182134AA1600C574A7 /* StateMachineError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02998A162134AA1600C574A7 /* StateMachineError.swift */; };
+		02998A192134AA1600C574A7 /* StateMachineError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02998A162134AA1600C574A7 /* StateMachineError.swift */; };
+		02998A1A2134AA1600C574A7 /* StateMachineError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02998A162134AA1600C574A7 /* StateMachineError.swift */; };
+		02998A1B2134AA1600C574A7 /* StateMachineError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02998A162134AA1600C574A7 /* StateMachineError.swift */; };
 		029DDDBE20123ADB003519FE /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029DDDBD20123ADB003519FE /* UIViewControllerExtensions.swift */; };
 		029DDDBF20123ADB003519FE /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029DDDBD20123ADB003519FE /* UIViewControllerExtensions.swift */; };
 		029DDDC120123D5F003519FE /* UIViewControllerExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029DDDC020123D5F003519FE /* UIViewControllerExtensionsTests.swift */; };
@@ -415,6 +420,7 @@
 		02998A0421341E8A00C574A7 /* FiniteMachineStateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FiniteMachineStateTests.swift; path = Shared/Enumerations/FiniteMachineStateTests.swift; sourceTree = "<group>"; };
 		02998A0E2134621200C574A7 /* StateMachineController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StateMachineController.swift; path = Shared/Controllers/StateMachineController.swift; sourceTree = "<group>"; };
 		02998A142134627200C574A7 /* StateMachineControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StateMachineControllerTests.swift; path = Shared/Controllers/StateMachineControllerTests.swift; sourceTree = "<group>"; };
+		02998A162134AA1600C574A7 /* StateMachineError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StateMachineError.swift; path = Shared/Errors/StateMachineError.swift; sourceTree = "<group>"; };
 		029DDDBD20123ADB003519FE /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIViewControllerExtensions.swift; path = Kashmir/iOS/UIViewControllerExtensions.swift; sourceTree = SOURCE_ROOT; };
 		029DDDC020123D5F003519FE /* UIViewControllerExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIViewControllerExtensionsTests.swift; path = KashmirTests/iOS/UIViewControllerExtensionsTests.swift; sourceTree = SOURCE_ROOT; };
 		029DDDC2201240A2003519FE /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Cell.swift; path = Shared/Cell.swift; sourceTree = "<group>"; };
@@ -886,6 +892,7 @@
 				032320791D245B0A00BB79A1 /* URLResponseError.swift */,
 				0280629120004BF500D508BC /* CoreDataDecodingError.swift */,
 				029DDDCE2012463C003519FE /* CellError.swift */,
+				02998A162134AA1600C574A7 /* StateMachineError.swift */,
 			);
 			name = Errors;
 			sourceTree = "<group>";
@@ -1468,6 +1475,7 @@
 				029961D51EAC01FF0027F54A /* DateFormatterFormat.swift in Sources */,
 				0211F8D41F9299680012E340 /* TimeZoneExtensions.swift in Sources */,
 				029989FF21341E6C00C574A7 /* FiniteMachineState.swift in Sources */,
+				02998A172134AA1600C574A7 /* StateMachineError.swift in Sources */,
 				02EE5EC41F4CCE8C001E39BF /* SynchronousOperation.swift in Sources */,
 				029961CA1EABB15E0027F54A /* DateFormatterExtensions.swift in Sources */,
 				02A26B751EEDE35B00FF2038 /* Blocks.swift in Sources */,
@@ -1558,6 +1566,7 @@
 				02EE5EC51F4CCE8C001E39BF /* SynchronousOperation.swift in Sources */,
 				02CDE5F11DECA12A00EE7892 /* Network.swift in Sources */,
 				02998A0021341E6C00C574A7 /* FiniteMachineState.swift in Sources */,
+				02998A182134AA1600C574A7 /* StateMachineError.swift in Sources */,
 				029961D61EAC01FF0027F54A /* DateFormatterFormat.swift in Sources */,
 				029961CB1EABB15E0027F54A /* DateFormatterExtensions.swift in Sources */,
 				02A26B761EEDE35B00FF2038 /* Blocks.swift in Sources */,
@@ -1641,6 +1650,7 @@
 				022EE1251E5430BF0067AE2F /* UserDefaultsExtensions.swift in Sources */,
 				027803601EED7E1000C3D651 /* DataStackModel.swift in Sources */,
 				024E483A2010FF5000BF55D2 /* BiometricType.swift in Sources */,
+				02998A192134AA1600C574A7 /* StateMachineError.swift in Sources */,
 				024E48372010FF4000BF55D2 /* BiometricError.swift in Sources */,
 				02130A241DDA75070071940B /* UIDeviceExtensions.swift in Sources */,
 				027803711EED935C00C3D651 /* UIStoryboardSegueName.swift in Sources */,
@@ -1700,6 +1710,7 @@
 				02CDE5DA1DEC9EB300EE7892 /* Reachability.swift in Sources */,
 				022592791DEA5BF8005DD338 /* DataSourceError.swift in Sources */,
 				029989FA2134165500C574A7 /* FiniteState.swift in Sources */,
+				02998A1A2134AA1600C574A7 /* StateMachineError.swift in Sources */,
 				0280628920004B1700D508BC /* CoreDataDecodable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1742,6 +1753,7 @@
 				0280629020004B6500D508BC /* NSManagedObjectContextExtensions.swift in Sources */,
 				029961CE1EABB15E0027F54A /* DateFormatterExtensions.swift in Sources */,
 				0280629620004BF500D508BC /* CoreDataDecodingError.swift in Sources */,
+				02998A1B2134AA1600C574A7 /* StateMachineError.swift in Sources */,
 				02A26B791EEDE35B00FF2038 /* Blocks.swift in Sources */,
 				022592781DEA5BF7005DD338 /* DataSourceError.swift in Sources */,
 				022D7FE71E1CAC2500E0A537 /* DataStackStore.swift in Sources */,
