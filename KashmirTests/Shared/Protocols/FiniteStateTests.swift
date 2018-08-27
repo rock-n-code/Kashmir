@@ -24,11 +24,23 @@ extension TestFiniteState: FiniteState {
 		return .firstState
 	}
 	
-	// MARK: Properties
-	
-	var isFinalState: Bool {
-		return self == .thirdState
+	static var endStates: [TestFiniteState] {
+		return [.thirdState]
 	}
+	
+	static var shouldStartAutomatically: Bool {
+		return false
+	}
+	
+	static var shouldEndAutomatically: Bool {
+		return false
+	}
+	
+	static var shouldRetryFromStart: Bool {
+		return false
+	}
+	
+	// MARK: Properties
 	
 	var nextState: TestFiniteState? {
 		switch self {
@@ -75,12 +87,28 @@ class FiniteStateTests: XCTestCase {
 		XCTAssertEqual(TestFiniteState.startState, TestFiniteState.firstState)
 	}
 	
+	func testEndStates() {
+		XCTAssertEqual(TestFiniteState.endStates, [TestFiniteState.thirdState])
+	}
+	
+	func testShouldStartAutomatically() {
+		XCTAssertFalse(TestFiniteState.shouldStartAutomatically)
+	}
+	
+	func testShouldEndAutomatically() {
+		XCTAssertFalse(TestFiniteState.shouldEndAutomatically)
+	}
+	
+	func testShouldRetryFromStart() {
+		XCTAssertFalse(TestFiniteState.shouldRetryFromStart)
+	}
+	
 	// MARK: Properties tests
 	
-	func testIsFinalState() {
-		XCTAssertFalse(TestFiniteState.firstState.isFinalState)
-		XCTAssertFalse(TestFiniteState.secondState.isFinalState)
-		XCTAssertTrue(TestFiniteState.thirdState.isFinalState)
+	func testIsEndState() {
+		XCTAssertFalse(TestFiniteState.firstState.isEndState)
+		XCTAssertFalse(TestFiniteState.secondState.isEndState)
+		XCTAssertTrue(TestFiniteState.thirdState.isEndState)
 	}
 	
 	func testNextState() {
