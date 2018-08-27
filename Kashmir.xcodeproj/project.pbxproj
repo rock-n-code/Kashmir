@@ -163,6 +163,12 @@
 		029961D71EAC01FF0027F54A /* DateFormatterFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029961D41EAC01FF0027F54A /* DateFormatterFormat.swift */; };
 		029961D81EAC01FF0027F54A /* DateFormatterFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029961D41EAC01FF0027F54A /* DateFormatterFormat.swift */; };
 		029961D91EAC01FF0027F54A /* DateFormatterFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029961D41EAC01FF0027F54A /* DateFormatterFormat.swift */; };
+		029989F72134165500C574A7 /* FiniteState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029989F62134165500C574A7 /* FiniteState.swift */; };
+		029989F82134165500C574A7 /* FiniteState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029989F62134165500C574A7 /* FiniteState.swift */; };
+		029989F92134165500C574A7 /* FiniteState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029989F62134165500C574A7 /* FiniteState.swift */; };
+		029989FA2134165500C574A7 /* FiniteState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029989F62134165500C574A7 /* FiniteState.swift */; };
+		029989FB2134165500C574A7 /* FiniteState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029989F62134165500C574A7 /* FiniteState.swift */; };
+		029989FD213418DB00C574A7 /* FiniteStateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029989FC213418DB00C574A7 /* FiniteStateTests.swift */; };
 		029DDDBE20123ADB003519FE /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029DDDBD20123ADB003519FE /* UIViewControllerExtensions.swift */; };
 		029DDDBF20123ADB003519FE /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029DDDBD20123ADB003519FE /* UIViewControllerExtensions.swift */; };
 		029DDDC120123D5F003519FE /* UIViewControllerExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029DDDC020123D5F003519FE /* UIViewControllerExtensionsTests.swift */; };
@@ -391,6 +397,8 @@
 		029961C91EABB15E0027F54A /* DateFormatterExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateFormatterExtensions.swift; path = Shared/DateFormatterExtensions.swift; sourceTree = "<group>"; };
 		029961CF1EABB1F90027F54A /* DateFormatterExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateFormatterExtensionsTests.swift; path = Shared/DateFormatterExtensionsTests.swift; sourceTree = "<group>"; };
 		029961D41EAC01FF0027F54A /* DateFormatterFormat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateFormatterFormat.swift; path = Shared/DateFormatterFormat.swift; sourceTree = "<group>"; };
+		029989F62134165500C574A7 /* FiniteState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FiniteState.swift; path = Shared/Protocols/FiniteState.swift; sourceTree = "<group>"; };
+		029989FC213418DB00C574A7 /* FiniteStateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FiniteStateTests.swift; path = Shared/Protocols/FiniteStateTests.swift; sourceTree = "<group>"; };
 		029DDDBD20123ADB003519FE /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIViewControllerExtensions.swift; path = Kashmir/iOS/UIViewControllerExtensions.swift; sourceTree = SOURCE_ROOT; };
 		029DDDC020123D5F003519FE /* UIViewControllerExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIViewControllerExtensionsTests.swift; path = KashmirTests/iOS/UIViewControllerExtensionsTests.swift; sourceTree = SOURCE_ROOT; };
 		029DDDC2201240A2003519FE /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Cell.swift; path = Shared/Cell.swift; sourceTree = "<group>"; };
@@ -577,6 +585,7 @@
 				022592701DEA5BD1005DD338 /* DataSource.swift */,
 				029DDDC2201240A2003519FE /* Cell.swift */,
 				0280628520004B1700D508BC /* CoreDataDecodable.swift */,
+				029989F62134165500C574A7 /* FiniteState.swift */,
 			);
 			name = Protocols;
 			sourceTree = "<group>";
@@ -589,6 +598,7 @@
 				0225927D1DEA5C50005DD338 /* DataSourceTests.swift */,
 				029DDDC820124172003519FE /* CellTests.swift */,
 				020D5F18211107F30091FBE7 /* CoreDataDecodableTests.swift */,
+				029989FC213418DB00C574A7 /* FiniteStateTests.swift */,
 			);
 			name = Protocols;
 			sourceTree = "<group>";
@@ -1460,6 +1470,7 @@
 				022592741DEA5BD1005DD338 /* DataSource.swift in Sources */,
 				026B53A71F4ABAA00010303A /* OperationQueueExtensions.swift in Sources */,
 				022EE1231E5430BF0067AE2F /* UserDefaultsExtensions.swift in Sources */,
+				029989F72134165500C574A7 /* FiniteState.swift in Sources */,
 				0225926E1DEA5BA0005DD338 /* DataSourceError.swift in Sources */,
 				022D7FE31E1CAC2500E0A537 /* DataStackStore.swift in Sources */,
 				024F517F1DEF90990088A3B2 /* NetworkReacher.swift in Sources */,
@@ -1486,6 +1497,7 @@
 				02384AC11DECB76700B664D3 /* NetworkStatusTests.swift in Sources */,
 				026130361F4E91B000EEFC1A /* OperationExtensionsTests.swift in Sources */,
 				022592821DEA5C50005DD338 /* SectionableTests.swift in Sources */,
+				029989FD213418DB00C574A7 /* FiniteStateTests.swift in Sources */,
 				0211F8DA1F929B4A0012E340 /* TimeZoneExtensionsTests.swift in Sources */,
 				022592801DEA5C50005DD338 /* DataSourceTests.swift in Sources */,
 				020D5F19211107F30091FBE7 /* CoreDataDecodableTests.swift in Sources */,
@@ -1544,6 +1556,7 @@
 				02CDE5DD1DEC9F5C00EE7892 /* ReachabilityError.swift in Sources */,
 				0340747B1D7088C2004099AC /* BundleExtensions.swift in Sources */,
 				0280629320004BF500D508BC /* CoreDataDecodingError.swift in Sources */,
+				029989F82134165500C574A7 /* FiniteState.swift in Sources */,
 				026130311F4E8FE100EEFC1A /* OperationExtensions.swift in Sources */,
 				02CDE5D81DEC9EB100EE7892 /* Reachability.swift in Sources */,
 				0225927B1DEA5BF9005DD338 /* DataSourceError.swift in Sources */,
@@ -1594,6 +1607,7 @@
 				029DDDCC20124581003519FE /* CellExtensions.swift in Sources */,
 				024E483D2010FF6700BF55D2 /* Biometrics.swift in Sources */,
 				02CDE5F21DECA12A00EE7892 /* Network.swift in Sources */,
+				029989F92134165500C574A7 /* FiniteState.swift in Sources */,
 				026B53A91F4ABAA00010303A /* OperationQueueExtensions.swift in Sources */,
 				0278036E1EED92E400C3D651 /* UIStoryboardName.swift in Sources */,
 				022EE1251E5430BF0067AE2F /* UserDefaultsExtensions.swift in Sources */,
@@ -1655,6 +1669,7 @@
 				0340747D1D7088C2004099AC /* BundleExtensions.swift in Sources */,
 				02CDE5DA1DEC9EB300EE7892 /* Reachability.swift in Sources */,
 				022592791DEA5BF8005DD338 /* DataSourceError.swift in Sources */,
+				029989FA2134165500C574A7 /* FiniteState.swift in Sources */,
 				0280628920004B1700D508BC /* CoreDataDecodable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1668,6 +1683,7 @@
 				03B8E54C1D24F2A800E40586 /* StringExtensions.swift in Sources */,
 				03B67C7B1D8AF886001DFFE6 /* DataStackError.swift in Sources */,
 				029DDDC7201240A2003519FE /* Cell.swift in Sources */,
+				029989FB2134165500C574A7 /* FiniteState.swift in Sources */,
 				020D5F1F211113170091FBE7 /* Nomenclature.swift in Sources */,
 				03B67C7F1D8AF88C001DFFE6 /* DataStack.swift in Sources */,
 				03E668DF1D69AFEE00F6110A /* NSObjectExtensions.swift in Sources */,
