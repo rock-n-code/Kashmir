@@ -32,5 +32,63 @@ class StateMachineControllerTests: XCTestCase {
 		XCTAssertNil(controller.onStateChanged)
 	}
 	
+	// MARK: Functions
+	
+	func testStartWithNoneState() {
+		let expectation = self.expectation(description: "Start in StateMachineController with none state")
+		let controller = StateMachineController<TestFiniteState>()
+
+		controller.onStateChanged = { state in
+			XCTAssertEqual(state, .start)
+			
+			expectation.fulfill()
+		}
+		
+		controller.start()
+		
+		waitForExpectations(timeout: 5.0) { error in
+			XCTAssertNil(error)
+		}
+	}
+	
+	func testStartWithNoneStateAndAutomaticStart() {
+		let expectation = self.expectation(description: "Start in StateMachineController with none state and automatic start")
+		let controller = StateMachineController<OtherFiniteState>()
+		
+		controller.onStateChanged = { state in
+			switch state {
+			case .transit(_):
+				XCTAssertEqual(state, .transit(.firstState))
+				
+				expectation.fulfill()
+			default:
+				break
+			}
+		}
+		
+		controller.start()
+		
+		waitForExpectations(timeout: 5.0) { error in
+			XCTAssertNil(error)
+		}
+	}
+	
+	func testStartWithOtherState() {
+		let expectation = self.expectation(description: "Start in StateMachineController with other state")
+		let controller = StateMachineController<TestFiniteState>()
+		
+		controller.state = .start
+		controller.onStateChanged = { state in
+			XCTAssertEqual(state, .error(StateMachineError.cannotExecuteStart))
+			
+			expectation.fulfill()
+		}
+		
+		controller.start()
+		
+		waitForExpectations(timeout: 5.0) { error in
+			XCTAssertNil(error)
+		}
+	}
 
 }

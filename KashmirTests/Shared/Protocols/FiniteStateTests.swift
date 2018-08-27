@@ -10,65 +10,6 @@ import XCTest
 
 @testable import Kashmir
 
-enum TestFiniteState: Equatable {
-	case firstState
-	case secondState
-	case thirdState
-}
-
-extension TestFiniteState: FiniteState {
-
-	// MARK: Static
-	
-	static var startState: TestFiniteState {
-		return .firstState
-	}
-	
-	static var endStates: [TestFiniteState] {
-		return [.thirdState]
-	}
-	
-	static var shouldStartAutomatically: Bool {
-		return false
-	}
-	
-	static var shouldEndAutomatically: Bool {
-		return false
-	}
-	
-	static var shouldRetryFromStart: Bool {
-		return false
-	}
-	
-	// MARK: Properties
-	
-	var nextState: TestFiniteState? {
-		switch self {
-		case .firstState:
-			return .secondState
-		case .secondState:
-			return .thirdState
-		default:
-			return nil
-		}
-	}
-	
-	// MARK: Functions
-	
-	func canTransit(toState state: TestFiniteState) -> Bool {
-		switch (self, state) {
-		case (.firstState, .secondState),
-			 (.secondState, .thirdState):
-			return true
-		default:
-			return false
-		}
-	}
-	
-}
-
-// MARK: - 
-
 class FiniteStateTests: XCTestCase {
 	
 	// MARK: Setup

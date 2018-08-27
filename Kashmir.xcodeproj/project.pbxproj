@@ -186,6 +186,8 @@
 		02998A192134AA1600C574A7 /* StateMachineError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02998A162134AA1600C574A7 /* StateMachineError.swift */; };
 		02998A1A2134AA1600C574A7 /* StateMachineError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02998A162134AA1600C574A7 /* StateMachineError.swift */; };
 		02998A1B2134AA1600C574A7 /* StateMachineError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02998A162134AA1600C574A7 /* StateMachineError.swift */; };
+		02998A222134B7DA00C574A7 /* OtherFiniteState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02998A212134B7DA00C574A7 /* OtherFiniteState.swift */; };
+		02998A242134B7EF00C574A7 /* TestFiniteState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02998A232134B7EF00C574A7 /* TestFiniteState.swift */; };
 		029DDDBE20123ADB003519FE /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029DDDBD20123ADB003519FE /* UIViewControllerExtensions.swift */; };
 		029DDDBF20123ADB003519FE /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029DDDBD20123ADB003519FE /* UIViewControllerExtensions.swift */; };
 		029DDDC120123D5F003519FE /* UIViewControllerExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029DDDC020123D5F003519FE /* UIViewControllerExtensionsTests.swift */; };
@@ -421,6 +423,8 @@
 		02998A0E2134621200C574A7 /* StateMachineController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StateMachineController.swift; path = Shared/Controllers/StateMachineController.swift; sourceTree = "<group>"; };
 		02998A142134627200C574A7 /* StateMachineControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StateMachineControllerTests.swift; path = Shared/Controllers/StateMachineControllerTests.swift; sourceTree = "<group>"; };
 		02998A162134AA1600C574A7 /* StateMachineError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StateMachineError.swift; path = Shared/Errors/StateMachineError.swift; sourceTree = "<group>"; };
+		02998A212134B7DA00C574A7 /* OtherFiniteState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OtherFiniteState.swift; path = Shared/Helpers/Enumerations/OtherFiniteState.swift; sourceTree = "<group>"; };
+		02998A232134B7EF00C574A7 /* TestFiniteState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TestFiniteState.swift; path = Shared/Helpers/Enumerations/TestFiniteState.swift; sourceTree = "<group>"; };
 		029DDDBD20123ADB003519FE /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIViewControllerExtensions.swift; path = Kashmir/iOS/UIViewControllerExtensions.swift; sourceTree = SOURCE_ROOT; };
 		029DDDC020123D5F003519FE /* UIViewControllerExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIViewControllerExtensionsTests.swift; path = KashmirTests/iOS/UIViewControllerExtensionsTests.swift; sourceTree = SOURCE_ROOT; };
 		029DDDC2201240A2003519FE /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Cell.swift; path = Shared/Cell.swift; sourceTree = "<group>"; };
@@ -771,6 +775,23 @@
 			name = Constants;
 			sourceTree = "<group>";
 		};
+		02998A1F2134B6D400C574A7 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				02998A202134B6DD00C574A7 /* Enumerations */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		02998A202134B6DD00C574A7 /* Enumerations */ = {
+			isa = PBXGroup;
+			children = (
+				02998A232134B7EF00C574A7 /* TestFiniteState.swift */,
+				02998A212134B7DA00C574A7 /* OtherFiniteState.swift */,
+			);
+			name = Enumerations;
+			sourceTree = "<group>";
+		};
 		02A26B731EEDE33800FF2038 /* Definitions */ = {
 			isa = PBXGroup;
 			children = (
@@ -870,6 +891,7 @@
 		031BF5B31CE37B4800DD028A /* KashmirTests */ = {
 			isa = PBXGroup;
 			children = (
+				02998A1F2134B6D400C574A7 /* Helpers */,
 				0225927C1DEA5C3C005DD338 /* Protocols */,
 				032A85EE1D1BA9A100401E29 /* Enumerations */,
 				02EE5EC01F4CCCD1001E39BF /* Structs */,
@@ -1522,10 +1544,12 @@
 				0294DDF91E20F6C00002E409 /* ResultTests.swift in Sources */,
 				02EE5EC21F4CCCE6001E39BF /* SemaphoreTests.swift in Sources */,
 				02130A131DDA71B00071940B /* NSObjectExtensionsTests.swift in Sources */,
+				02998A222134B7DA00C574A7 /* OtherFiniteState.swift in Sources */,
 				02384ACD1DECF39A00B664D3 /* SCNetworkReachabilityFlagsExtensionsTests.swift in Sources */,
 				02130A121DDA71B00071940B /* BundleExtensionsTests.swift in Sources */,
 				02130A0E1DDA719F0071940B /* DataStackTests.swift in Sources */,
 				02998A0521341E8A00C574A7 /* FiniteMachineStateTests.swift in Sources */,
+				02998A242134B7EF00C574A7 /* TestFiniteState.swift in Sources */,
 				02384AC11DECB76700B664D3 /* NetworkStatusTests.swift in Sources */,
 				026130361F4E91B000EEFC1A /* OperationExtensionsTests.swift in Sources */,
 				022592821DEA5C50005DD338 /* SectionableTests.swift in Sources */,
