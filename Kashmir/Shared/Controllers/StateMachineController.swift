@@ -35,6 +35,17 @@ public class StateMachineController<S: FiniteState & Equatable> {
 		}
 	}
 	
+	public func retry() {
+		switch state {
+		case .transit(_):
+			S.shouldRetryFromStart ?
+				change(toState: .start) :
+				change(toState: state)
+		default:
+			change(toState: .error(StateMachineError.cannotExecuteRetry))
+		}
+	}
+	
 	// MARK: Helpers
 	
 	private func change(toState finiteState: FiniteMachineState<S>) {
