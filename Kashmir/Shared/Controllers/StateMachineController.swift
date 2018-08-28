@@ -46,6 +46,22 @@ public class StateMachineController<S: FiniteState & Equatable> {
 		}
 	}
 	
+	public func transit(toState newState: S) {
+		switch state {
+		case .transit(let transitionalState):
+			guard transitionalState.canTransit(toState: newState) else {
+				transitionalState.isEndState ?
+					change(toState: .finish) :
+					change(toState: .error(StateMachineError.cannotTransitToNewState))
+				return
+			}
+			
+			change(toState: .transit(newState))
+		default:
+			change(toState: .error(StateMachineError.cannotExecuteTransit))
+		}
+	}
+	
 	// MARK: Helpers
 	
 	private func change(toState finiteState: FiniteMachineState<S>) {

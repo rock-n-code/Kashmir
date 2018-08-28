@@ -155,5 +155,117 @@ class StateMachineControllerTests: XCTestCase {
 			XCTAssertNil(error)
 		}
 	}
+	
+	func testTransitToTransitionableState() {
+		let expectation = self.expectation(description: "Transit in StateMachineController to transitionable state")
+		let controller = StateMachineController<OtherFiniteState>()
+		
+		controller.state = .transit(.firstState)
+		controller.onStateChanged = { state in
+			XCTAssertEqual(state, .transit(.secondState))
+			
+			expectation.fulfill()
+		}
+		
+		controller.transit(toState: .secondState)
+		
+		waitForExpectations(timeout: 5.0) { error in
+			XCTAssertNil(error)
+		}
+	}
+	
+	func testTransitToEndState() {
+		let expectation = self.expectation(description: "Transit in StateMachineController to end state")
+		let controller = StateMachineController<TestFiniteState>()
+		
+		controller.state = .transit(.secondState)
+		controller.onStateChanged = { state in
+			XCTAssertEqual(state, .transit(.thirdState))
+			
+			expectation.fulfill()
+		}
+		
+		controller.transit(toState: .thirdState)
+		
+		waitForExpectations(timeout: 5.0) { error in
+			XCTAssertNil(error)
+		}
+	}
+	
+	func testTransitToEndStateManually() {
+		let expectation = self.expectation(description: "Transit in StateMachineController to end state manually")
+		let controller = StateMachineController<TestFiniteState>()
+		
+		controller.state = .transit(.thirdState)
+		controller.onStateChanged = { state in
+			XCTAssertEqual(state, .finish)
+			
+			expectation.fulfill()
+		}
+		
+		controller.transit(toState: .thirdState)
+		
+		waitForExpectations(timeout: 5.0) { error in
+			XCTAssertNil(error)
+		}
+	}
+	
+	func testTransitToEndStateAutomatically() {
+		let expectation = self.expectation(description: "Transit in StateMachineController to end state automatically")
+		let controller = StateMachineController<OtherFiniteState>()
+		
+		controller.state = .transit(.secondState)
+		controller.onStateChanged = { state in
+			if state == .finish {
+				XCTAssertEqual(state, .finish)
+				
+				expectation.fulfill()
+			}
+			else {
+				XCTAssertEqual(state, .transit(.thirdState))
+			}
+		}
+		
+		controller.transit(toState: .thirdState)
+		
+		waitForExpectations(timeout: 5.0) { error in
+			XCTAssertNil(error)
+		}
+	}
+	
+	func testTransitToNonTransitionableState() {
+		let expectation = self.expectation(description: "Transit in StateMachineController to non-transitionable state")
+		let controller = StateMachineController<OtherFiniteState>()
+		
+		controller.state = .transit(.firstState)
+		controller.onStateChanged = { state in
+			XCTAssertEqual(state, .error(StateMachineError.cannotTransitToNewState))
+			
+			expectation.fulfill()
+		}
+		
+		controller.transit(toState: .thirdState)
+		
+		waitForExpectations(timeout: 5.0) { error in
+			XCTAssertNil(error)
+		}
+	}
+	
+	func testTransitFromOtherState() {
+		let expectation = self.expectation(description: "Transit in StateMachineController from other state")
+		let controller = StateMachineController<OtherFiniteState>()
+
+		controller.onStateChanged = { state in
+			XCTAssertEqual(state, .error(StateMachineError.cannotExecuteTransit))
+			
+			expectation.fulfill()
+		}
+		
+		controller.transit(toState: .firstState)
+		
+		waitForExpectations(timeout: 5.0) { error in
+			XCTAssertNil(error)
+		}
+	}
 
 }
