@@ -24,7 +24,7 @@ public protocol StateMachineHandler: class {
 
 // MARK: -
 
-extension StateMachineHandler {
+public extension StateMachineHandler {
 	
 	// MARK: Functions
 	
