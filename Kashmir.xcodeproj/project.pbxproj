@@ -106,6 +106,7 @@
 		026B53B01F4ABB930010303A /* ConcurrentOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026B53AD1F4ABB930010303A /* ConcurrentOperation.swift */; };
 		026B53B11F4ABB930010303A /* ConcurrentOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026B53AD1F4ABB930010303A /* ConcurrentOperation.swift */; };
 		026B53B21F4ABB930010303A /* ConcurrentOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026B53AD1F4ABB930010303A /* ConcurrentOperation.swift */; };
+		0276DCD22135461200351275 /* TestLogicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0276DCD12135461200351275 /* TestLogicController.swift */; };
 		0278035E1EED7E1000C3D651 /* DataStackModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0278035D1EED7E1000C3D651 /* DataStackModel.swift */; };
 		0278035F1EED7E1000C3D651 /* DataStackModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0278035D1EED7E1000C3D651 /* DataStackModel.swift */; };
 		027803601EED7E1000C3D651 /* DataStackModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0278035D1EED7E1000C3D651 /* DataStackModel.swift */; };
@@ -402,6 +403,7 @@
 		0265056B1F77C53D00CAE5BF /* NSViewControllerName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NSViewControllerName.swift; path = Kashmir/macOS/NSViewControllerName.swift; sourceTree = SOURCE_ROOT; };
 		026B53A61F4ABAA00010303A /* OperationQueueExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OperationQueueExtensions.swift; path = Shared/OperationQueueExtensions.swift; sourceTree = "<group>"; };
 		026B53AD1F4ABB930010303A /* ConcurrentOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConcurrentOperation.swift; path = Shared/ConcurrentOperation.swift; sourceTree = "<group>"; };
+		0276DCD12135461200351275 /* TestLogicController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TestLogicController.swift; path = "Shared/Helpers/Logic Controllers/TestLogicController.swift"; sourceTree = "<group>"; };
 		0278035D1EED7E1000C3D651 /* DataStackModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataStackModel.swift; path = Shared/DataStackModel.swift; sourceTree = "<group>"; };
 		027803671EED8F0400C3D651 /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColorExtensions.swift; path = Kashmir/iOS/UIColorExtensions.swift; sourceTree = SOURCE_ROOT; };
 		0278036C1EED92E400C3D651 /* UIStoryboardName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIStoryboardName.swift; path = Kashmir/iOS/UIStoryboardName.swift; sourceTree = SOURCE_ROOT; };
@@ -715,6 +717,14 @@
 			name = Classes;
 			sourceTree = "<group>";
 		};
+		0276DCD0213545E600351275 /* Logic Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0276DCD12135461200351275 /* TestLogicController.swift */,
+			);
+			name = "Logic Controllers";
+			sourceTree = "<group>";
+		};
 		0278036B1EED929500C3D651 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
@@ -789,6 +799,7 @@
 			isa = PBXGroup;
 			children = (
 				02998A202134B6DD00C574A7 /* Enumerations */,
+				0276DCD0213545E600351275 /* Logic Controllers */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -1560,6 +1571,7 @@
 				02130A121DDA71B00071940B /* BundleExtensionsTests.swift in Sources */,
 				02130A0E1DDA719F0071940B /* DataStackTests.swift in Sources */,
 				02998A0521341E8A00C574A7 /* FiniteMachineStateTests.swift in Sources */,
+				0276DCD22135461200351275 /* TestLogicController.swift in Sources */,
 				02998A242134B7EF00C574A7 /* TestFiniteState.swift in Sources */,
 				02384AC11DECB76700B664D3 /* NetworkStatusTests.swift in Sources */,
 				026130361F4E91B000EEFC1A /* OperationExtensionsTests.swift in Sources */,

@@ -21,5 +21,14 @@ class StateMachineHandlerTests: XCTestCase {
 	override func tearDown() {
 		super.tearDown()
 	}
+	
+	// MARK: Initializers tests
+	
+	func testInit() {
+		let logicController = TestLogicController()
+		
+		XCTAssertNotNil(logicController)
+		XCTAssertNotNil(logicController.stateController)
+	}
 
 }

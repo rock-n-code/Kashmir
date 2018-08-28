@@ -12,8 +12,28 @@ public protocol StateMachineHandler: class {
 	
 	associatedtype State: FiniteState, Equatable
 
+	// MARK: Properties
+	
+	var stateController: StateMachineController<State> { get set }
+	
 	// MARK: Functions
 
 	func handle(_ state: FiniteMachineState<State>)
+	
+}
+
+// MARK: -
+
+extension StateMachineHandler {
+	
+	// MARK: Functions
+	
+	func start() {
+		stateController.start()
+	}
+	
+	func retry() {
+		stateController.retry()
+	}
 	
 }
