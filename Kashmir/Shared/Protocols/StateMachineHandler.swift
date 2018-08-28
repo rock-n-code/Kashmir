@@ -36,4 +36,17 @@ public extension StateMachineHandler {
 		stateController.retry()
 	}
 	
+	func process(_ result: Result<State>?) {
+		do {
+			guard let state = try result?.dematerialize() else {
+				return
+			}
+			
+			self.stateController.transit(toState: state)
+		}
+		catch let error {
+			self.handle(.error(error))
+		}
+	}
+	
 }
