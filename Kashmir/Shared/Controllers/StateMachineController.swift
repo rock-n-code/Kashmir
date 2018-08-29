@@ -78,7 +78,7 @@ public class StateMachineController<S: FiniteState & Equatable> {
 			if let nextState = transitionalState.nextState {
 				change(toState: .transit(nextState))
 			}
-			else if transitionalState.isEndState, S.shouldEndAutomatically {
+			else if transitionalState.isEndState {
 				change(toState: .finish)
 			}
 		case .finish:

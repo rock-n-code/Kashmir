@@ -28,18 +28,14 @@ class FiniteStateTests: XCTestCase {
 		XCTAssertEqual(TestFiniteState.startState, TestFiniteState.firstState)
 	}
 	
-	func testEndStates() {
-		XCTAssertEqual(TestFiniteState.endStates, [TestFiniteState.thirdState])
+	func testEndState() {
+		XCTAssertEqual(TestFiniteState.endState, TestFiniteState.thirdState)
 	}
 	
 	func testShouldStartAutomatically() {
 		XCTAssertFalse(TestFiniteState.shouldStartAutomatically)
 	}
-	
-	func testShouldEndAutomatically() {
-		XCTAssertFalse(TestFiniteState.shouldEndAutomatically)
-	}
-	
+
 	func testShouldRetryFromStart() {
 		XCTAssertFalse(TestFiniteState.shouldRetryFromStart)
 	}

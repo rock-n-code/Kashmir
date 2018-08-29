@@ -24,15 +24,11 @@ extension OtherFiniteState: FiniteState {
 		return .firstState
 	}
 	
-	static var endStates: [OtherFiniteState] {
-		return [.thirdState]
+	static var endState: OtherFiniteState {
+		return .thirdState
 	}
 	
 	static var shouldStartAutomatically: Bool {
-		return true
-	}
-	
-	static var shouldEndAutomatically: Bool {
 		return true
 	}
 	
