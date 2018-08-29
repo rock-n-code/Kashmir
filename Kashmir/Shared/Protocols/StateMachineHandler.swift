@@ -38,14 +38,17 @@ public extension StateMachineHandler {
 	
 	func process(_ result: Result<State>?) {
 		do {
-			guard let state = try result?.dematerialize() else {
+			guard
+				stateController.state != .finish, 
+				let state = try result?.dematerialize()
+			else {
 				return
 			}
 			
-			self.stateController.transit(toState: state)
+			stateController.transit(toState: state)
 		}
 		catch let error {
-			self.handle(.error(error))
+			handle(.error(error))
 		}
 	}
 	
