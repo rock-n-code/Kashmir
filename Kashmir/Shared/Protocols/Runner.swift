@@ -12,11 +12,11 @@ public protocol Runner: class {
 	
 	// MARK: Associated types
 	
-	associatedtype State: FiniteState
+	associatedtype Value
 	
 	// MARK: Types
 	
-	typealias RunnerExecutionBlock = (Result<State>) -> ()
+	typealias RunnerExecutionBlock = (Result<Value>) -> ()
 	
 	// MARK: Properties
 	
