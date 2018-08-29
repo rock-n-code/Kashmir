@@ -24,18 +24,14 @@ extension TestFiniteState: FiniteState {
 		return .firstState
 	}
 	
-	static var endStates: [TestFiniteState] {
-		return [.thirdState]
+	static var endState: TestFiniteState {
+		return .thirdState
 	}
 	
 	static var shouldStartAutomatically: Bool {
 		return false
 	}
-	
-	static var shouldEndAutomatically: Bool {
-		return false
-	}
-	
+
 	static var shouldRetryFromStart: Bool {
 		return false
 	}

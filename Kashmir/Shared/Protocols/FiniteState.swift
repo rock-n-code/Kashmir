@@ -11,9 +11,8 @@ public protocol FiniteState {
 	// MARK: Static
 	
 	static var startState: Self { get }
-	static var endStates: [Self] { get }
+	static var endState: Self { get }
 	static var shouldStartAutomatically: Bool { get }
-	static var shouldEndAutomatically: Bool { get }
 	static var shouldRetryFromStart: Bool { get }
 	
 	// MARK: Properties
@@ -33,9 +32,7 @@ extension FiniteState where Self: Equatable {
 	// MARK: Properties
 	
 	var isEndState: Bool {
-		return Self.endStates.contains { state in
-			self == state
-		}
+		return self == Self.endState
 	}
 	
 }
