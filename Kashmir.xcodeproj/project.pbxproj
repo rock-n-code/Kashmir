@@ -228,10 +228,10 @@
 		02A14C1A2137F4610057D81B /* StringRegularExpressions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A14C162137F4610057D81B /* StringRegularExpressions.swift */; };
 		02A14C1B2137F4610057D81B /* StringRegularExpressions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A14C162137F4610057D81B /* StringRegularExpressions.swift */; };
 		02A14C3E2138045C0057D81B /* StringRegularExpressionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A14C3D2138045C0057D81B /* StringRegularExpressionsTests.swift */; };
-		02A14C4E2138105C0057D81B /* IndexPathExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022592871DEAE99A005DD338 /* IndexPathExtensionsTests.swift */; };
 		02A14C55213811720057D81B /* CellExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A14C54213811720057D81B /* CellExtensions.swift */; };
 		02A14C56213811720057D81B /* CellExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A14C54213811720057D81B /* CellExtensions.swift */; };
 		02A14C65213813AC0057D81B /* TestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02A14C64213813AB0057D81B /* TestView.xib */; };
+		02A14C66213832420057D81B /* IndexPathExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022592871DEAE99A005DD338 /* IndexPathExtensionsTests.swift */; };
 		02A26B751EEDE35B00FF2038 /* Blocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A26B741EEDE35B00FF2038 /* Blocks.swift */; };
 		02A26B761EEDE35B00FF2038 /* Blocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A26B741EEDE35B00FF2038 /* Blocks.swift */; };
 		02A26B771EEDE35B00FF2038 /* Blocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A26B741EEDE35B00FF2038 /* Blocks.swift */; };
@@ -358,8 +358,8 @@
 		0225927D1DEA5C50005DD338 /* DataSourceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSourceTests.swift; sourceTree = "<group>"; };
 		0225927E1DEA5C50005DD338 /* ItemableTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemableTests.swift; sourceTree = "<group>"; };
 		0225927F1DEA5C50005DD338 /* SectionableTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionableTests.swift; sourceTree = "<group>"; };
-		022592831DEAE97F005DD338 /* IndexPathExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IndexPathExtensions.swift; path = Kashmir/Shared/Common/Extensions/IndexPathExtensions.swift; sourceTree = SOURCE_ROOT; };
-		022592871DEAE99A005DD338 /* IndexPathExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IndexPathExtensionsTests.swift; path = KashmirTests/Shared/Common/Extensions/IndexPathExtensionsTests.swift; sourceTree = SOURCE_ROOT; };
+		022592831DEAE97F005DD338 /* IndexPathExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IndexPathExtensions.swift; path = Kashmir/iOS/Common/Extensions/IndexPathExtensions.swift; sourceTree = SOURCE_ROOT; };
+		022592871DEAE99A005DD338 /* IndexPathExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IndexPathExtensionsTests.swift; path = KashmirTests/iOS/Common/Extensions/IndexPathExtensionsTests.swift; sourceTree = SOURCE_ROOT; };
 		022D7FE21E1CAC2500E0A537 /* DataStackStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStackStore.swift; sourceTree = "<group>"; };
 		022D7FE81E1CBB1D00E0A537 /* DataStackStoreTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStackStoreTests.swift; sourceTree = "<group>"; };
 		022EE1221E5430BF0067AE2F /* UserDefaultsExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsExtensions.swift; sourceTree = "<group>"; };
@@ -757,7 +757,6 @@
 				034074791D7088C2004099AC /* BundleExtensions.swift */,
 				029961C91EABB15E0027F54A /* DateFormatterExtensions.swift */,
 				0211F8D31F9299680012E340 /* TimeZoneExtensions.swift */,
-				022592831DEAE97F005DD338 /* IndexPathExtensions.swift */,
 				022EE1221E5430BF0067AE2F /* UserDefaultsExtensions.swift */,
 				03E668DA1D69AFEE00F6110A /* NSObjectExtensions.swift */,
 			);
@@ -1025,7 +1024,6 @@
 				02130A0F1DDA71B00071940B /* BundleExtensionsTests.swift */,
 				029961CF1EABB1F90027F54A /* DateFormatterExtensionsTests.swift */,
 				0211F8D91F929B4A0012E340 /* TimeZoneExtensionsTests.swift */,
-				022592871DEAE99A005DD338 /* IndexPathExtensionsTests.swift */,
 				022EE1281E5433920067AE2F /* UserDefaultsExtensionsTests.swift */,
 				02130A101DDA71B00071940B /* NSObjectExtensionsTests.swift */,
 			);
@@ -1291,6 +1289,7 @@
 		02A14C4A21380D7F0057D81B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				022592831DEAE97F005DD338 /* IndexPathExtensions.swift */,
 				027803671EED8F0400C3D651 /* UIColorExtensions.swift */,
 				02130A211DDA75000071940B /* UIDeviceExtensions.swift */,
 				023A0C051E96AAED006C9198 /* UIImageExtensions.swift */,
@@ -1339,6 +1338,7 @@
 		02A14C51213810D90057D81B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				022592871DEAE99A005DD338 /* IndexPathExtensionsTests.swift */,
 				023A0C0B1E97A46E006C9198 /* UIColorExtensionsTests.swift */,
 				02130A1F1DDA74F00071940B /* UIDeviceExtensionsTests.swift */,
 				023A0C071E96AC41006C9198 /* UIImageExtensionsTests.swift */,
@@ -1931,6 +1931,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				023A0C0C1E97A46E006C9198 /* UIColorExtensionsTests.swift in Sources */,
+				02A14C66213832420057D81B /* IndexPathExtensionsTests.swift in Sources */,
 				027FD2B91DEA4CC5009814AB /* XibableViewTests.swift in Sources */,
 				029DDDC120123D5F003519FE /* UIViewControllerExtensionsTests.swift in Sources */,
 				02130A251DDA75840071940B /* UIDeviceExtensionsTests.swift in Sources */,
@@ -2042,7 +2043,6 @@
 				022D7FE91E1CBB1D00E0A537 /* DataStackStoreTests.swift in Sources */,
 				02EE5ECC1F4CCF7C001E39BF /* SynchronousOperationTests.swift in Sources */,
 				02130A1C1DDA71DE0071940B /* Test.xcdatamodeld in Sources */,
-				02A14C4E2138105C0057D81B /* IndexPathExtensionsTests.swift in Sources */,
 				029961D01EABB1F90027F54A /* DateFormatterExtensionsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
