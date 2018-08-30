@@ -13,7 +13,7 @@ public extension OperationQueue {
 	// MARK: Constants
 	
 	/**
-	The structure which contains the names of the storyboards used by a `OperationQueue` instance defined as constants.
+	The structure which contains the names of the queues used by a `OperationQueue` instance defined as constants.
 	*/
 	public class Name: Nomenclature {}
 	
