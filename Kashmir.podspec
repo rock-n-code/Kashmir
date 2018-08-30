@@ -31,7 +31,4 @@ Pod::Spec.new do |spec|
     spec.ios.source_files       = "Kashmir/iOS/**/*.{h,swift}"
     spec.tvos.source_files      = "Kashmir/tvOS/**/*.{h,swift}"
     spec.watchos.source_files   = "Kashmir/watchOS/**/*.{h,swift}"
-    spec.watchos.exclude_files  = "Kashmir/Shared/**/Network*.swift", 
-                                  "Kashmir/Shared/**/Reachability*.swift", 
-                                  "Kashmir/Shared/**/SC*.swift"
 end
