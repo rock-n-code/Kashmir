@@ -36,6 +36,12 @@ public extension StateMachineHandler {
 		stateController.retry()
 	}
 	
+	func setStateEvents() {
+		stateController.onStateChanged = { state in
+			self.handle(state)
+		}
+	}
+	
 	func process(_ result: Result<State>?) {
 		do {
 			guard
